@@ -99,7 +99,7 @@ const page = () => {
 
       <div className='h-auto w-full flex items-center flex-col relative bg-gray-800'>
           <footer className=" text-white py-4">
-            <div className="container mx-auto text-center font-Jost text-xs">
+            <div className="container mx-auto text-center font-Jost text-sm">
               <p>&copy; 2014 - {currentYear} Your Company. All rights reserved.</p>
             </div>
           </footer>
