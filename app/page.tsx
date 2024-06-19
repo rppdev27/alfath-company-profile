@@ -98,7 +98,12 @@ const page = () => {
                 </p>
               </div>
               <div className="w-full md:w-1/2 xl:w-1/2 p-4">
-                  <img src="https://ik.imagekit.io/vtvggda66/laptopillustration.svg?updatedAt=1718809603591" alt="alfath innovative"/>
+                  <img src="https://ik.imagekit.io/vtvggda66/laptopillustration.svg?updatedAt=1718809603591" alt="alfath innovative"
+                    style={{
+                      width: '300px',
+                      height: 'auto'
+                    }}
+                  />
               </div>
             </div>
           </div>
