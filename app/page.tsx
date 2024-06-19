@@ -2,7 +2,13 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div>coming soon!</div>
+    <>
+        <div className='bg-[#00adef] min-h-screen w-full flex items-center justify-center'>
+            <div className="font-bold text-white">
+                Coming Soon!
+            </div>
+        </div>
+    </>
   )
 }
 
