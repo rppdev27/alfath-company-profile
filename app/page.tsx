@@ -87,9 +87,9 @@ const page = () => {
           //   backgroundImage: `url('https://ik.imagekit.io/vtvggda66/bg%20softgrey%20wave.svg?updatedAt=1718809149167')`,
           // }}
         >
-          <div className="absolute top-0 w-3/4 h-32 md:h-48 lg:h-[25rem] bg-cover bg-no-repeat bg-center" style={{ backgroundImage: 'url(https://ik.imagekit.io/vtvggda66/bg%20softgrey%20wave.svg?updatedAt=1718809149167)' }}>
+          <div className="absolute top-0 w-3/4 h-32 md:h-48 lg:h-[25rem] bg-cover bg-no-repeat bg-center z-10" style={{ backgroundImage: 'url(https://ik.imagekit.io/vtvggda66/bg%20softgrey%20wave.svg?updatedAt=1718809149167)' }}>
           </div>
-          <div className="container mx-auto p-4 pt-6 font-Jost pb-32">
+          <div className="container mx-auto p-4 pt-6 font-Jost pb-32 z-20">
             <div className="flex flex-wrap">
               <div className="w-full md:w-1/2 xl:w-1/2 p-4">
                 <h2 className="text-3xl font-bold text-[#00adef]">A small but enthusiast team of software designers and developers.</h2>
