@@ -92,16 +92,13 @@ const page = () => {
           <div className="container mx-auto p-4 pt-6 font-Jost pb-32">
             <div className="flex flex-wrap">
               <div className="w-full md:w-1/2 xl:w-1/2 p-4">
-                <h2 className="text-3xl font-bold">Column 1 Title</h2>
+                <h2 className="text-3xl font-bold text-[#00adef]">A small but enthusiast team of software designers and developers.</h2>
                 <p>
-                  This is the content for column 1. You can add more text, images, or other elements as needed.
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip.
                 </p>
               </div>
               <div className="w-full md:w-1/2 xl:w-1/2 p-4">
-                <h2 className="text-3xl font-bold">Column 2 Title</h2>
-                <p>
-                  This is the content for column 2. You can add more text, images, or other elements as needed.
-                </p>
+                  <img src="https://ik.imagekit.io/vtvggda66/laptopillustration.svg?updatedAt=1718809603591" alt="alfath innovative"/>
               </div>
             </div>
           </div>
