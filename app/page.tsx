@@ -12,7 +12,7 @@ const page = () => {
     },
     {
       name: 'React',
-      color: '#00adef',
+      color: '#E1AFD1',
       logo: '',
     },
     {
@@ -22,12 +22,12 @@ const page = () => {
     },
     {
       name: 'Vue',
-      color: '#00adef',
+      color: '#80C4E9',
       logo: '',
     },
     {
       name: 'NuxtJS',
-      color: '#ee426f',
+      color: '#EE4E4E',
       logo: '',
     },
     {
