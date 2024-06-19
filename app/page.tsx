@@ -4,6 +4,45 @@ const page = () => {
 
   const currentYear = new Date().getFullYear();
 
+  const tech_stack = [
+    {
+      name: 'JS',
+      color: '#ee426f',
+      logo: '',
+    },
+    {
+      name: 'React',
+      color: '#00adef',
+      logo: '',
+    },
+    {
+      name: 'NextJS',
+      color: '#f7c75b',
+      logo: '',
+    },
+    {
+      name: 'Vue',
+      color: '#00adef',
+      logo: '',
+    },
+    {
+      name: 'NuxtJS',
+      color: '#ee426f',
+      logo: '',
+    },
+    {
+      name: 'HTML/CSS3',
+      color: '#f7c75b',
+      logo: '',
+    },
+    {
+      name: 'PHP',
+      color: '#ee426f',
+      logo: '',
+    },
+
+  ]
+
   return (
     
     <>
@@ -41,13 +80,15 @@ const page = () => {
       <div className='bg-white min-h-screen w-full flex items-center flex-col relative p-12 sm:p-32'>
 
           <div className="grid auto-rows-[192px] grid-cols-3 gap-4 w-full">
-            {[...Array(7)].map((_, i) => (
+            {tech_stack.map((data, i) => (
               <div
                 key={i}
-                className={`row-span-1 rounded-xl border-2 border-slate-400/10 bg-neutral-100 p-4 dark:bg-neutral-900 ${
+                className={`row-span-1 rounded-xl border-2 border-slate-400/10 bg-neutral-100 p-4 dark:bg-neutral-900 flex justify-center items-center font-bold text-slate-600 font-Jost${
                   i === 3 || i === 6 ? "col-span-2" : ""
                 }`}
-              ></div>
+              >
+                {data.name}
+              </div>
             ))}
           </div>
 
