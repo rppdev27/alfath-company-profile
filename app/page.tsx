@@ -3,7 +3,7 @@ import React from 'react'
 const page = () => {
   return (
     <>
-        <div className='bg-[#00adef] min-h-screen w-full flex items-center justify-center'>
+        <div className='bg-[#00adef] min-h-screen w-full flex items-center justify-center flex-col'>
             <img 
               src="https://ik.imagekit.io/vtvggda66/logogram%20alfath.svg?updatedAt=1718804248063" 
               alt="alfath innovative"
@@ -13,7 +13,7 @@ const page = () => {
               }}
             />
             <img 
-              src="https://ik.imagekit.io/vtvggda66/logogram%20alfath.svg?updatedAt=1718804248063" 
+              src="https://ik.imagekit.io/vtvggda66/logotype%20alfath.svg?updatedAt=1718804247754" 
               alt="alfath innovative"
               style={{
                 width: '400px',
@@ -21,7 +21,7 @@ const page = () => {
               }}
             />
             
-            <div className="font-bold text-base text-red-700">
+            <div className="font-bold text-base text-red-600 font-Montserrat">
                 Coming Soon!
             </div>
         </div>
