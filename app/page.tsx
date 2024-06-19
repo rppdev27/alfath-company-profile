@@ -81,6 +81,22 @@ const page = () => {
           </div>
       </div>
 
+      <div className='min-h-[300px] h-auto w-full flex items-center flex-col relative bg-slate-300 py-12'>
+
+         {/* Heading */}
+         <h1 className="text-2xl font-Jost text-gray-600 font-bold">
+            Our History
+         </h1>
+
+         {/* Description */}
+         <div className="text-sm font-Jost text-gray-600">
+            Lorem Ipsum Dolot
+         </div>
+
+         {/* Content */}
+
+      </div>
+
       <div className='bg-white min-h-screen w-full flex items-center flex-col relative p-12 sm:p-32'>
 
           <div className="grid auto-rows-[192px] grid-cols-3 gap-4 w-full">
@@ -98,6 +114,22 @@ const page = () => {
               </div>
             ))}
           </div>
+
+      </div>
+
+      <div className='min-h-[300px] h-auto w-full flex items-center flex-col relative bg-slate-400 py-12'>
+
+         {/* Heading */}
+         <h1 className="text-2xl font-Jost text-gray-600 font-bold">
+            What We Do
+         </h1>
+
+         {/* Description */}
+         <div className="text-sm font-Jost text-gray-600">
+            Lorem Ipsum Dolot
+         </div>
+
+         {/* Content */}
 
       </div>
 
