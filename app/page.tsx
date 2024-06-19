@@ -22,6 +22,9 @@ const page = () => {
               }}
               className='my-2'
             />
+            <div className="font-bold text-base text-slate-200 font-Montserrat my-2 tracking-tight p-2 rounded-md bg-[#0f7ba5] inline-block">
+                Software Company
+            </div>
             
             <div className="font-bold text-base text-slate-200 font-Jost">
                 Coming Soon!
