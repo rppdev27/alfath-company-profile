@@ -7,7 +7,7 @@ const page = () => {
   const tech_stack = [
     {
       name: 'JS',
-      color: '#ee426f',
+      color: '#B6C7AA',
       logo: '',
     },
     {
@@ -37,7 +37,7 @@ const page = () => {
     },
     {
       name: 'PHP',
-      color: '#ee426f',
+      color: '#E7D4B5',
       logo: '',
     },
 
@@ -83,7 +83,7 @@ const page = () => {
             {tech_stack.map((data, i) => (
               <div
                 key={i}
-                className={`text-base row-span-1 rounded-xl border-2 border-slate-400/10 bg-neutral-100 p-4 dark:bg-neutral-900 flex justify-center items-center font-bold text-slate-600 font-Jost ${
+                className={`text-lg row-span-1 rounded-xl border-2 border-slate-400/10 bg-neutral-100 p-4 dark:bg-neutral-900 flex justify-center items-center font-bold text-slate-600 font-Jost ${
                   i === 3 || i === 6 ? "col-span-2" : ""
                 }`}
                 style={{
