@@ -207,7 +207,7 @@ const page = () => {
             Lorem Ipsum Dolot
          </div>
 
-          <div className="grid auto-rows-[192px] grid-cols-3 gap-4 w-full">
+          <div className="grid auto-rows-[192px] grid-cols-2 gap-4 w-full">
             {whatwedo.map((data, i) => (
               <div
                 key={i}
