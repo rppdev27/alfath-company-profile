@@ -85,11 +85,22 @@ const page = () => {
         <div
           className="absolute top-0 w-full h-32 md:h-48 lg:h-[25rem] bg-no-repeat bg-center z-10"
           style={{
-            backgroundImage:
-              'url(https://ik.imagekit.io/vtvggda66/bg%20softgrey%20wave.svg?updatedAt=1718809149167)',
+            // backgroundImage:
+              // 'url(https://ik.imagekit.io/vtvggda66/bg%20softgrey%20wave.svg?updatedAt=1718809149167)',
             backgroundSize: 'contain',
           }}
-        ></div>
+        >
+          <img
+                src="https://ik.imagekit.io/vtvggda66/bg%20softgrey%20wave.svg?updatedAt=1718809149167"
+                alt="alfath innovative"
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                }}
+        />
+        </div>
+
+          
           <div className="container mx-auto p-4 pt-6 font-Jost pb-32 relative z-20">
             <div className="flex flex-wrap">
               <div className="w-full md:w-1/2 xl:w-1/2 p-4">
