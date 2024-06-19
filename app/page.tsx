@@ -43,6 +43,30 @@ const page = () => {
 
   ]
 
+  const whatwedo = [
+    {
+      name: 'WebApp',
+      color: '#B6C7AA',
+      logo: '',
+    },
+    {
+      name: 'MobileApp',
+      color: '#E1AFD1',
+      logo: '',
+    },
+    {
+      name: 'UI Mockup',
+      color: '#f7c75b',
+      logo: '',
+    },
+    // {
+    //   name: 'Vue',
+    //   color: '#80C4E9',
+    //   logo: '',
+    // },
+
+  ]
+
   return (
     
     <>
@@ -97,18 +121,18 @@ const page = () => {
       </div>
 
           
-          <div className="container mx-auto px-12 pt-16 font-Jost pb-16 relative z-20">
+          <div className="container mx-auto px-12 pt-16 font-Jost pb-12 relative z-20">
             <div className="flex flex-wrap">
               <div className="w-full md:w-1/2 xl:w-1/2 p-4">
                 <h2 className="text-3xl font-bold text-[#00adef]">
                   A small but enthusiast team of software designers and developers.
                 </h2>
-                <p>
+                <div className='mt-2'>
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
                   nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
                   volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
                   ullamcorper suscipit lobortis nisl ut aliquip.
-                </p>
+                </div>
               </div>
               <div className="w-full md:w-1/2 xl:w-1/2 p-4 flex justify-center items-center">
                 <img
@@ -184,6 +208,21 @@ const page = () => {
          </div>
 
          {/* Content */}
+         <div className="grid auto-rows-[192px] grid-cols-3 gap-4 w-full">
+            {whatwedo.map((data, i) => (
+              <div
+                key={i}
+                className={`text-lg row-span-1 rounded-xl border-2 border-slate-400/10 bg-neutral-100 p-4 dark:bg-neutral-900 flex justify-center items-center font-bold text-[#4a4a4a] font-Jost ${
+                  i === 3 || i === 6 ? "col-span-2" : ""
+                }`}
+                style={{
+                  backgroundColor: data.color
+                }}
+              >
+                {data.name}
+              </div>
+            ))}
+          </div>
 
       </section>
 
