@@ -68,6 +68,10 @@ const page = () => {
           <div className="font-bold text-base text-slate-200 font-Montserrat my-5 tracking-tight py-2 px-4 rounded-lg bg-[#0f7ba5] inline-block shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]">
               Software Company
           </div>
+
+          <div className="font-bold text-xs text-white font-Montserrat my-1 tracking-tight py-2 px-4 rounded-lg bg-[#FF5580] inline-block shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]">
+              BETA
+          </div>
           
           {/* <div className="font-bold text-base text-slate-200 font-Jost my-3">
               Coming Soon!
