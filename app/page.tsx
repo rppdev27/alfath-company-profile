@@ -101,6 +101,24 @@ const page = () => {
 
       </div>
 
+      
+
+      <div className='h-auto w-full flex items-center flex-col relative bg-[#234755] py-4'>
+
+         {/* Heading */}
+         <h1 className="text-lg font-Jost">
+            Get Connected
+         </h1>
+
+         {/* Description */}
+         <div className="text-sm font-Jost">
+            Wanna say hello to Alfath?
+         </div>
+
+         {/* Content */}
+
+      </div>
+
       <div className='h-auto w-full flex items-center flex-col relative bg-gray-800'>
           <footer className=" text-white py-4">
             <div className="container mx-auto text-center font-Jost text-sm">
