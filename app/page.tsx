@@ -11,6 +11,7 @@ const page = () => {
                 width: '50px',
                 height: 'auto'
               }}
+              className='my-2'
             />
             <img 
               src="https://ik.imagekit.io/vtvggda66/logotype%20alfath.svg?updatedAt=1718804247754" 
@@ -19,9 +20,10 @@ const page = () => {
                 width: '400px',
                 height: 'auto'
               }}
+              className='my-2'
             />
             
-            <div className="font-bold text-base text-red-600 font-Montserrat">
+            <div className="font-bold text-base text-slate-200 font-Jost">
                 Coming Soon!
             </div>
         </div>

@@ -35,6 +35,13 @@ const config = {
       },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
+        DM: ["DM Sans", "sans-serif"],
+        IBM: ["IBM Plex Sans", "sans-serif"],
+        Montserrat: ["Montserrat", "sans-serif"],
+        Poppins: ["Poppins", "sans-serif"],
+        Nunito: ["Nunito", "sans-serif"],
+        Jost: ["Jost", "sans-serif"],
+        Playwrite: ["Playwrite DE Grund", "sans-serif"],
       },
     },
   },
