@@ -11,13 +11,13 @@ const page = () => {
                   width: '50px',
                   height: 'auto'
               }}
-              className='mb-[100px]'
+              className='mb-[50px]'
           />
           <img 
               src="https://ik.imagekit.io/vtvggda66/logotype%20alfath.svg?updatedAt=1718804247754" 
               alt="alfath innovative"
               style={{
-                  width: '65%',
+                  width: '45%',
                   height: 'auto'
               }}
               className='my-2'
