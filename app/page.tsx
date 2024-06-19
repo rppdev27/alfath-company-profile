@@ -82,18 +82,19 @@ const page = () => {
       </section>
 
       <section className="bg-cover bg-center min-h-[400px] h-auto relative pb-60">
-        <div
-          className="absolute top-0 w-3/4 h-32 md:h-48 lg:h-[25rem] bg-no-repeat bg-center z-10"
-        >
-          <img
-                src="https://ik.imagekit.io/vtvggda66/bg%20softgrey%20wave.svg?updatedAt=1718809149167"
-                alt="alfath innovative"
-                style={{
-                  width: '100%',
-                  height: 'auto',
-                }}
+      <div
+        className="absolute top-0 w-3/4 h-auto md:h-auto lg:h-auto bg-no-repeat bg-center z-10"
+      >
+        <img
+          src="https://ik.imagekit.io/vtvggda66/bg%20softgrey%20wave.svg?updatedAt=1718809149167"
+          alt="alfath innovative"
+          style={{
+            width: '100%',
+            height: 'auto',
+            objectFit: 'cover', // You can also try 'contain', 'fill', or other values based on your needs
+          }}
         />
-        </div>
+      </div>
 
           
           <div className="container mx-auto p-4 pt-6 font-Jost pb-32 relative z-20">
