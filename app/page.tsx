@@ -30,7 +30,7 @@ const page = () => {
               Coming Soon!
           </div> */}
 
-          <div className="absolute bottom-0 w-full h-32 md:h-48 lg:h-64 bg-cover bg-no-repeat bg-center" style={{ backgroundImage: 'url(https://ik.imagekit.io/vtvggda66/peopleillust.svg?updatedAt=1718805343633)' }}>
+          <div className="absolute bottom-0 w-full h-32 md:h-48 lg:h-[20rem] bg-cover bg-no-repeat bg-center" style={{ backgroundImage: 'url(https://ik.imagekit.io/vtvggda66/peopleillust.svg?updatedAt=1718805343633)' }}>
           </div>
       </div>
 
