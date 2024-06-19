@@ -38,9 +38,9 @@ const page = () => {
           </div>
       </div>
 
-      <div className='bg-white min-h-screen w-full flex items-center flex-col relative pt-32'>
+      <div className='bg-white min-h-screen w-full flex items-center flex-col relative p-12 sm:p-32'>
 
-          <div className="grid auto-rows-[192px] grid-cols-3 gap-4">
+          <div className="grid auto-rows-[192px] grid-cols-3 gap-4 w-full">
             {[...Array(7)].map((_, i) => (
               <div
                 key={i}
