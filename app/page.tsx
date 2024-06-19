@@ -195,20 +195,19 @@ const page = () => {
 
       </section>
 
-      <section className='min-h-[300px] h-auto w-full flex items-center flex-col relative bg-slate-400 py-12'>
+      <section className='bg-slate-400 min-h-screen w-full flex items-center flex-col relative p-12 sm:p-32'>
 
-         {/* Heading */}
+          {/* Heading */}
          <h1 className="text-2xl font-Jost text-gray-600 font-bold">
-            What We Do
+          What We Do
          </h1>
 
          {/* Description */}
-         <div className="text-sm font-Jost text-gray-600">
+         <div className="text-sm font-Jost text-gray-600 my-2">
             Lorem Ipsum Dolot
          </div>
 
-         {/* Content */}
-         <div className="grid auto-rows-[192px] grid-cols-3 gap-4 w-full">
+          <div className="grid auto-rows-[192px] grid-cols-3 gap-4 w-full">
             {whatwedo.map((data, i) => (
               <div
                 key={i}
@@ -225,6 +224,7 @@ const page = () => {
           </div>
 
       </section>
+
 
       <section className='min-h-[300px] h-auto w-full flex items-center flex-col relative bg-slate-300 py-12'>
 
