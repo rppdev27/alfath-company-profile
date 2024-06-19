@@ -82,12 +82,12 @@ const page = () => {
       </section>
 
       <section
-          className="bg-cover bg-center h-screen"
+          className="bg-cover bg-center min-h-[400px] h-auto"
           style={{
             backgroundImage: `url('https://ik.imagekit.io/vtvggda66/bg%20softgrey%20wave.svg?updatedAt=1718809149167')`,
           }}
         >
-          <div className="container mx-auto p-4 pt-6">
+          <div className="container mx-auto p-4 pt-6 font-Jost">
             <div className="flex flex-wrap">
               <div className="w-full md:w-1/2 xl:w-1/2 p-4">
                 <h2 className="text-3xl font-bold">Column 1 Title</h2>
