@@ -38,6 +38,19 @@ const page = () => {
           </div>
       </div>
 
+      <div className='bg-[#00adef] min-h-screen w-full flex items-center flex-col relative pt-32'>
+
+        <div className="columns-1 gap-4">
+          {[24, 32, 36, 32, 32, 32, 16, 16, 64].map((height, index) => (
+            <div
+              key={index}
+              className={`mb-4 h-${height} break-inside-avoid rounded-xl border-2 border-slate-400/10 bg-neutral-100 p-4 dark:bg-neutral-900`}
+            />
+          ))}
+        </div>
+
+      </div>
+
       <div className='bg-[#00adef] h-auto w-full flex items-center flex-col relative pt-32'>
           <footer className="bg-gray-800 text-white py-4">
             <div className="container mx-auto text-center">
