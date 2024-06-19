@@ -3,7 +3,7 @@ import React from 'react'
 const page = () => {
   return (
     <>
-        <div className='bg-[#00adef] min-h-screen w-full flex items-center justify-center flex-col relative'>
+        <div className='bg-[#00adef] min-h-screen w-full flex items-center flex-col relative pt-32'>
           <img 
               src="https://ik.imagekit.io/vtvggda66/logogram%20alfath.svg?updatedAt=1718804248063" 
               alt="alfath innovative"
@@ -11,7 +11,6 @@ const page = () => {
                   width: '50px',
                   height: 'auto'
               }}
-              className='mb-[50px]'
           />
           <img 
               src="https://ik.imagekit.io/vtvggda66/logotype%20alfath.svg?updatedAt=1718804247754" 
