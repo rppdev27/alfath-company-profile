@@ -94,9 +94,9 @@ const page = () => {
 
       </div>
 
-      <div className='h-auto w-full flex items-center flex-col relative pt-32 bg-gray-800'>
+      <div className='h-auto w-full flex items-center flex-col relative bg-gray-800'>
           <footer className=" text-white py-4">
-            <div className="container mx-auto text-center">
+            <div className="container mx-auto text-center font-Jost text-xs">
               <p>&copy; 2014 - {currentYear} Your Company. All rights reserved.</p>
             </div>
           </footer>
