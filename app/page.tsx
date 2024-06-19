@@ -81,6 +81,30 @@ const page = () => {
           </div>
       </div>
 
+      <section
+          className="bg-cover bg-center h-screen"
+          style={{
+            backgroundImage: `url('https://ik.imagekit.io/vtvggda66/bg%20softgrey%20wave.svg?updatedAt=1718809149167')`,
+          }}
+        >
+          <div className="container mx-auto p-4 pt-6">
+            <div className="flex flex-wrap">
+              <div className="w-full md:w-1/2 xl:w-1/2 p-4">
+                <h2 className="text-3xl font-bold">Column 1 Title</h2>
+                <p>
+                  This is the content for column 1. You can add more text, images, or other elements as needed.
+                </p>
+              </div>
+              <div className="w-full md:w-1/2 xl:w-1/2 p-4">
+                <h2 className="text-3xl font-bold">Column 2 Title</h2>
+                <p>
+                  This is the content for column 2. You can add more text, images, or other elements as needed.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
       <div className='min-h-[300px] h-auto w-full flex items-center flex-col relative bg-slate-300 py-12'>
 
          {/* Heading */}
