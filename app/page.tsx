@@ -82,12 +82,12 @@ const page = () => {
       </section>
 
       <section
-          className="bg-cover bg-center min-h-[400px] h-auto relative"
+          className="bg-cover bg-center min-h-[400px] h-auto relative pb-60"
           // style={{
           //   backgroundImage: `url('https://ik.imagekit.io/vtvggda66/bg%20softgrey%20wave.svg?updatedAt=1718809149167')`,
           // }}
         >
-          <div className="absolute top-0 w-full h-32 md:h-48 lg:h-[20rem] bg-cover bg-no-repeat bg-center" style={{ backgroundImage: 'url(https://ik.imagekit.io/vtvggda66/bg%20softgrey%20wave.svg?updatedAt=1718809149167)' }}>
+          <div className="absolute top-0 w-3/4 h-32 md:h-48 lg:h-[25rem] bg-cover bg-no-repeat bg-center" style={{ backgroundImage: 'url(https://ik.imagekit.io/vtvggda66/bg%20softgrey%20wave.svg?updatedAt=1718809149167)' }}>
           </div>
           <div className="container mx-auto p-4 pt-6 font-Jost pb-32">
             <div className="flex flex-wrap">
