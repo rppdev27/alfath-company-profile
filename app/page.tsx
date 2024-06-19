@@ -31,12 +31,12 @@ const page = () => {
       logo: '',
     },
     {
-      name: 'HTML/CSS3',
+      name: 'PHP',
       color: '#f7c75b',
       logo: '',
     },
     {
-      name: 'PHP',
+      name: 'HTML/CSS3',
       color: '#E7D4B5',
       logo: '',
     },
@@ -98,6 +98,16 @@ const page = () => {
       </div>
 
       <div className='bg-white min-h-screen w-full flex items-center flex-col relative p-12 sm:p-32'>
+
+          {/* Heading */}
+         <h1 className="text-2xl font-Jost text-gray-600 font-bold">
+            Tech Stack
+         </h1>
+
+         {/* Description */}
+         <div className="text-sm font-Jost text-gray-600">
+            Lorem Ipsum Dolot
+         </div>
 
           <div className="grid auto-rows-[192px] grid-cols-3 gap-4 w-full">
             {tech_stack.map((data, i) => (
