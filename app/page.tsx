@@ -26,11 +26,11 @@ const page = () => {
               Software Company
           </div>
           
-          <div className="font-bold text-base text-slate-200 font-Jost my-3">
+          {/* <div className="font-bold text-base text-slate-200 font-Jost my-3">
               Coming Soon!
-          </div>
+          </div> */}
 
-          <div className="absolute bottom-0 w-full h-1/4 bg-cover bg-no-repeat" style={{ backgroundImage: 'url(https://ik.imagekit.io/vtvggda66/peopleillust.svg?updatedAt=1718805343633)' }}>
+          <div className="absolute bottom-0 w-full h-32 md:h-48 lg:h-64 bg-cover bg-no-repeat bg-center" style={{ backgroundImage: 'url(https://ik.imagekit.io/vtvggda66/peopleillust.svg?updatedAt=1718805343633)' }}>
           </div>
       </div>
 
