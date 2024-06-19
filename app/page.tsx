@@ -81,33 +81,41 @@ const page = () => {
           </div>
       </section>
 
-      <section
-          className="bg-cover bg-center min-h-[400px] h-auto relative pb-60"
-          // style={{
-          //   backgroundImage: `url('https://ik.imagekit.io/vtvggda66/bg%20softgrey%20wave.svg?updatedAt=1718809149167')`,
-          // }}
-        >
-          <div className="absolute top-0 w-3/4 h-32 md:h-48 lg:h-[25rem] bg-cover bg-no-repeat bg-center z-10" style={{ backgroundImage: 'url(https://ik.imagekit.io/vtvggda66/bg%20softgrey%20wave.svg?updatedAt=1718809149167)' }}>
-          </div>
-          <div className="container mx-auto p-4 pt-6 font-Jost pb-32 z-20">
+      <section className="bg-cover bg-center min-h-[400px] h-auto relative pb-60">
+          <div
+            className="absolute top-0 w-3/4 h-32 md:h-48 lg:h-[25rem] bg-cover bg-no-repeat bg-center z-10"
+            style={{
+              backgroundImage:
+                'url(https://ik.imagekit.io/vtvggda66/bg%20softgrey%20wave.svg?updatedAt=1718809149167)',
+            }}
+          ></div>
+          <div className="container mx-auto p-4 pt-6 font-Jost pb-32 relative z-20">
             <div className="flex flex-wrap">
               <div className="w-full md:w-1/2 xl:w-1/2 p-4">
-                <h2 className="text-3xl font-bold text-[#00adef]">A small but enthusiast team of software designers and developers.</h2>
+                <h2 className="text-3xl font-bold text-[#00adef]">
+                  A small but enthusiast team of software designers and developers.
+                </h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip.
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                  nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                  volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                  ullamcorper suscipit lobortis nisl ut aliquip.
                 </p>
               </div>
               <div className="w-full md:w-1/2 xl:w-1/2 p-4">
-                  <img src="https://ik.imagekit.io/vtvggda66/laptopillustration.svg?updatedAt=1718809603591" alt="alfath innovative"
-                    style={{
-                      width: '300px',
-                      height: 'auto'
-                    }}
-                  />
+                <img
+                  src="https://ik.imagekit.io/vtvggda66/laptopillustration.svg?updatedAt=1718809603591"
+                  alt="alfath innovative"
+                  style={{
+                    width: '300px',
+                    height: 'auto',
+                  }}
+                />
               </div>
             </div>
           </div>
         </section>
+
 
       <section className='min-h-[300px] h-auto w-full flex items-center flex-col relative bg-slate-300 py-12'>
 
