@@ -101,6 +101,22 @@ const page = () => {
 
       </div>
 
+      <div className='h-auto w-full flex items-center flex-col relative bg-[#234755] py-12'>
+
+         {/* Heading */}
+         <h1 className="text-lg font-Jost text-white font-bold">
+            Products
+         </h1>
+
+         {/* Description */}
+         <div className="text-sm font-Jost text-white">
+            Lorem Ipsum Dolot
+         </div>
+
+         {/* Content */}
+
+      </div>
+
       
 
       <div className='h-auto w-full flex items-center flex-col relative bg-[#234755] py-12'>
