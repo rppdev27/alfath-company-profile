@@ -83,7 +83,7 @@ const page = () => {
 
       <section className="bg-cover bg-center min-h-[400px] h-auto relative pb-60">
       <div
-        className="absolute top-0 w-3/4 h-auto md:h-auto lg:h-auto bg-no-repeat bg-center z-10"
+        className="absolute top-0 w-full h-auto md:h-auto lg:h-auto bg-no-repeat bg-center z-10"
       >
         <img
           src="https://ik.imagekit.io/vtvggda66/bg%20softgrey%20wave.svg?updatedAt=1718809149167"
@@ -97,7 +97,7 @@ const page = () => {
       </div>
 
           
-          <div className="container mx-auto p-4 pt-6 font-Jost pb-32 relative z-20">
+          <div className="container mx-auto px-12 pt-16 font-Jost pb-16 relative z-20">
             <div className="flex flex-wrap">
               <div className="w-full md:w-1/2 xl:w-1/2 p-4">
                 <h2 className="text-3xl font-bold text-[#00adef]">
@@ -110,7 +110,7 @@ const page = () => {
                   ullamcorper suscipit lobortis nisl ut aliquip.
                 </p>
               </div>
-              <div className="w-full md:w-1/2 xl:w-1/2 p-4">
+              <div className="w-full md:w-1/2 xl:w-1/2 p-4 flex justify-center items-center">
                 <img
                   src="https://ik.imagekit.io/vtvggda66/laptopillustration.svg?updatedAt=1718809603591"
                   alt="alfath innovative"
