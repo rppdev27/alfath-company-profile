@@ -87,7 +87,7 @@ const page = () => {
             {tech_stack.map((data, i) => (
               <div
                 key={i}
-                className={`text-lg row-span-1 rounded-xl border-2 border-slate-400/10 bg-neutral-100 p-4 dark:bg-neutral-900 flex justify-center items-center font-bold text-slate-600 font-Jost ${
+                className={`text-lg row-span-1 rounded-xl border-2 border-slate-400/10 bg-neutral-100 p-4 dark:bg-neutral-900 flex justify-center items-center font-bold text-[#4a4a4a] font-Jost ${
                   i === 3 || i === 6 ? "col-span-2" : ""
                 }`}
                 style={{
