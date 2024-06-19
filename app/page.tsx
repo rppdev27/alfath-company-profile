@@ -173,7 +173,7 @@ const page = () => {
          </h1>
 
          {/* Description */}
-         <div className="text-sm font-Jost text-gray-600">
+         <div className="text-sm font-Jost text-gray-600 my-2">
             Lorem Ipsum Dolot
          </div>
 
