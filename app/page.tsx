@@ -1,7 +1,11 @@
 import React from 'react'
 
 const page = () => {
+
+  const currentYear = new Date().getFullYear();
+
   return (
+    
     <>
         <div className='bg-[#00adef] min-h-screen w-full flex items-center flex-col relative pt-32'>
           <img 
@@ -11,17 +15,18 @@ const page = () => {
                   width: '50px',
                   height: 'auto'
               }}
+              className='mb-5'
           />
           <img 
               src="https://ik.imagekit.io/vtvggda66/logotype%20alfath.svg?updatedAt=1718804247754" 
               alt="alfath innovative"
               style={{
-                  width: '45%',
+                  width: '40%',
                   height: 'auto'
               }}
               className='my-2'
           />
-          <div className="font-bold text-base text-slate-200 font-Montserrat my-5 tracking-tight py-2 px-3 rounded-md bg-[#0f7ba5] inline-block">
+          <div className="font-bold text-base text-slate-200 font-Montserrat my-5 tracking-tight py-2 px-4 rounded-lg bg-[#0f7ba5] inline-block">
               Software Company
           </div>
           
@@ -32,6 +37,16 @@ const page = () => {
           <div className="absolute bottom-0 w-full h-32 md:h-48 lg:h-[20rem] bg-cover bg-no-repeat bg-center" style={{ backgroundImage: 'url(https://ik.imagekit.io/vtvggda66/peopleillust.svg?updatedAt=1718805343633)' }}>
           </div>
       </div>
+
+      <div className='bg-[#00adef] h-auto w-full flex items-center flex-col relative pt-32'>
+          <footer className="bg-gray-800 text-white py-4">
+            <div className="container mx-auto text-center">
+              <p>&copy; 2014 - {currentYear} Your Company. All rights reserved.</p>
+            </div>
+          </footer>
+      </div>
+
+      
 
     </>
   )
