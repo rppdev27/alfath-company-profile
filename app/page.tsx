@@ -46,7 +46,7 @@ const page = () => {
   return (
     
     <>
-        <div className='bg-[#00adef] min-h-screen w-full flex items-center flex-col relative pt-32'>
+        <section className='bg-[#00adef] min-h-screen w-full flex items-center flex-col relative pt-32'>
           <img 
               src="https://ik.imagekit.io/vtvggda66/logogram%20alfath.svg?updatedAt=1718804248063" 
               alt="alfath innovative"
@@ -79,7 +79,7 @@ const page = () => {
 
           <div className="absolute bottom-0 w-full h-32 md:h-48 lg:h-[20rem] bg-cover bg-no-repeat bg-center" style={{ backgroundImage: 'url(https://ik.imagekit.io/vtvggda66/peopleillust.svg?updatedAt=1718805343633)' }}>
           </div>
-      </div>
+      </section>
 
       <section
           className="bg-cover bg-center h-screen"
@@ -105,7 +105,7 @@ const page = () => {
           </div>
         </section>
 
-      <div className='min-h-[300px] h-auto w-full flex items-center flex-col relative bg-slate-300 py-12'>
+      <section className='min-h-[300px] h-auto w-full flex items-center flex-col relative bg-slate-300 py-12'>
 
          {/* Heading */}
          <h1 className="text-2xl font-Jost text-gray-600 font-bold">
@@ -119,9 +119,9 @@ const page = () => {
 
          {/* Content */}
 
-      </div>
+      </section>
 
-      <div className='bg-white min-h-screen w-full flex items-center flex-col relative p-12 sm:p-32'>
+      <section className='bg-white min-h-screen w-full flex items-center flex-col relative p-12 sm:p-32'>
 
           {/* Heading */}
          <h1 className="text-2xl font-Jost text-gray-600 font-bold">
@@ -149,9 +149,9 @@ const page = () => {
             ))}
           </div>
 
-      </div>
+      </section>
 
-      <div className='min-h-[300px] h-auto w-full flex items-center flex-col relative bg-slate-400 py-12'>
+      <section className='min-h-[300px] h-auto w-full flex items-center flex-col relative bg-slate-400 py-12'>
 
          {/* Heading */}
          <h1 className="text-2xl font-Jost text-gray-600 font-bold">
@@ -165,9 +165,9 @@ const page = () => {
 
          {/* Content */}
 
-      </div>
+      </section>
 
-      <div className='min-h-[300px] h-auto w-full flex items-center flex-col relative bg-slate-300 py-12'>
+      <section className='min-h-[300px] h-auto w-full flex items-center flex-col relative bg-slate-300 py-12'>
 
          {/* Heading */}
          <h1 className="text-2xl font-Jost text-gray-600 font-bold">
@@ -181,11 +181,11 @@ const page = () => {
 
          {/* Content */}
 
-      </div>
+      </section>
 
       
 
-      <div className='min-h-[300px] h-auto w-full flex items-center flex-col relative bg-[#234755] py-12'>
+      <section className='min-h-[300px] h-auto w-full flex items-center flex-col relative bg-[#234755] py-12'>
 
          {/* Heading */}
          <h1 className="text-2xl font-Jost text-white font-bold">
@@ -199,15 +199,15 @@ const page = () => {
 
          {/* Content */}
 
-      </div>
+      </section>
 
-      <div className='h-auto w-full flex items-center flex-col relative bg-gray-800'>
+      <section className='h-auto w-full flex items-center flex-col relative bg-gray-800'>
           <footer className=" text-white py-4">
             <div className="container mx-auto text-center font-Jost text-sm">
               <p>&copy; 2014 - {currentYear} PT Alfath Teknologi Grup. All rights reserved.</p>
             </div>
           </footer>
-      </div>
+      </section>
 
       
 
