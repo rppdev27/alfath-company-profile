@@ -185,7 +185,10 @@ const page = () => {
                   i === 3 || i === 6 ? "col-span-2" : ""
                 }`}
                 style={{
-                  backgroundColor: data.color
+                  // backgroundColor: data.color,
+                  backgroundImage: `url("https://ik.imagekit.io/vtvggda66/shamin-haky-RIk-i9rXPao-unsplash-modified%202.jpg?updatedAt=1718856698441")`,
+                  backgroundSize: 'cover',
+                  color: data.color,
                 }}
               >
                 {data.name}
