@@ -215,7 +215,9 @@ const page = () => {
                   i === 2 || i === 3 ? "col-span-2" : ""
                 }`}
                 style={{
-                  backgroundColor: data.color
+                  backgroundColor: data.color,
+                  backgroundImage: `url("https://images.unsplash.com/photo-1632910121591-29e2484c0259?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGNvZGVyfGVufDB8fDB8fHww")`,
+                  backgroundSize: 'cover'
                 }}
               >
                 {data.name}
