@@ -43,6 +43,30 @@ const page = () => {
 
   ]
 
+  const dg_tools = [
+    {
+      name: 'Figma',
+      color: '#B6C7AA',
+      logo: '',
+    },
+    {
+      name: 'Zeplin',
+      color: '#E1AFD1',
+      logo: '',
+    },
+    {
+      name: 'FIGMA',
+      color: '#f7c75b',
+      logo: '',
+    },
+    {
+      name: 'Zeplin',
+      color: '#80C4E9',
+      logo: '',
+    },
+
+  ]
+
   const whatwedo = [
     {
       name: 'WebApp',
@@ -64,7 +88,6 @@ const page = () => {
     //   color: '#80C4E9',
     //   logo: '',
     // },
-
   ]
 
   return (
@@ -181,7 +204,7 @@ const page = () => {
             {tech_stack.map((data, i) => (
               <div
                 key={i}
-                className={`text-lg row-span-1 rounded-xl border-2 border-slate-400/10 bg-neutral-100 p-4 dark:bg-neutral-900 flex justify-center items-center font-bold text-[#4a4a4a] font-Jost ${
+                className={`text-2xl row-span-1 rounded-xl border-2 border-slate-400/10 bg-neutral-100 p-4 dark:bg-neutral-900 flex justify-center items-center font-extrabold text-[#4a4a4a] font-Jost ${
                   i === 3 || i === 6 ? "col-span-2" : ""
                 }`}
                 style={{
