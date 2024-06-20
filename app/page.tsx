@@ -211,12 +211,12 @@ const page = () => {
             {whatwedo.map((data, i) => (
               <div
                 key={i}
-                className={`text-lg row-span-1 rounded-xl border-2 border-slate-400/10 bg-neutral-100 p-4 dark:bg-neutral-900 flex justify-center items-center font-bold text-[#4a4a4a] font-Jost ${
+                className={`text-2xl row-span-1 rounded-xl border-2 border-slate-400/10 bg-neutral-100 p-4 dark:bg-neutral-900 flex justify-center items-center font-bold text-[#4a4a4a] font-Jost ${
                   i === 2 || i === 3 ? "col-span-2" : ""
                 }`}
                 style={{
                   backgroundColor: data.color,
-                  backgroundImage: `url("https://images.unsplash.com/photo-1632910121591-29e2484c0259?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGNvZGVyfGVufDB8fDB8fHww")`,
+                  backgroundImage: `url("https://ik.imagekit.io/vtvggda66/shamin-haky-RIk-i9rXPao-unsplash-modified%202.jpg?updatedAt=1718856698441")`,
                   backgroundSize: 'cover'
                 }}
               >
