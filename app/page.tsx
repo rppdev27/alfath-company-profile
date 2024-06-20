@@ -219,6 +219,35 @@ const page = () => {
             ))}
           </div>
 
+           {/* Heading */}
+         <h1 className="text-2xl font-Jost text-gray-600 font-bold">
+            Design Tools
+         </h1>
+
+         {/* Description */}
+         <div className="text-sm font-Jost text-gray-600 my-2">
+            Lorem Ipsum Dolot
+         </div>
+
+          <div className="grid auto-rows-[192px] grid-cols-3 gap-4 w-full">
+            {dg_tools.map((data, i) => (
+              <div
+                key={i}
+                className={`text-2xl row-span-1 rounded-xl border-2 border-slate-400/10 bg-neutral-100 p-4 dark:bg-neutral-900 flex justify-center items-center font-extrabold text-[#4a4a4a] font-Jost ${
+                  i === 3 || i === 6 ? "col-span-2" : ""
+                }`}
+                style={{
+                  // backgroundColor: data.color,
+                  backgroundImage: `url("https://ik.imagekit.io/vtvggda66/shamin-haky-RIk-i9rXPao-unsplash-modified%202.jpg?updatedAt=1718856698441")`,
+                  backgroundSize: 'cover',
+                  color: data.color,
+                }}
+              >
+                {data.name}
+              </div>
+            ))}
+          </div>
+
       </section>
 
       <section className='bg-slate-400 min-h-screen w-full flex items-center flex-col relative p-12 sm:p-32'>
