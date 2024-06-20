@@ -142,8 +142,6 @@ const page = () => {
           }}
         />
       </div>
-
-          
           <div className="container mx-auto px-12 pt-16 font-Jost pb-12 relative z-20">
             <div className="flex flex-wrap">
               <div className="w-full md:w-1/2 xl:w-1/2 p-4">
@@ -220,7 +218,7 @@ const page = () => {
           </div>
 
            {/* Heading */}
-         <h1 className="text-2xl font-Jost text-gray-600 font-bold">
+         <h1 className="text-2xl font-Jost text-gray-600 font-bold mt-5">
             Design Tools
          </h1>
 
@@ -324,8 +322,6 @@ const page = () => {
             </div>
           </footer>
       </section>
-
-      
 
     </>
   )
