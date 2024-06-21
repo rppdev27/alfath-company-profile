@@ -1,15 +1,26 @@
-import React from 'react';
+'use client'
 
-const App = () => {
+import React, { useState } from 'react';
+
+const App: React.FC = () => {
+
+    const [showSections, setShowSections] = useState(false);
+
+    const scrollToSection2 = () => {
+        setShowSections(true);
+        setTimeout(() => {
+            const section2 = document.getElementById('section2');
+            if (section2) {
+                section2.scrollIntoView({ behavior: 'smooth' });
+            }
+        }, 100); // Adding a slight delay to ensure the sections are rendered
+    };
   return (
 
     <div className="flex justify-center items-center bg-slate-200 relative">
-        {/* <div className="relative min-h-screen bg-fixed bg-contain bg-center w-[450px] bg-no-repeat" style={{ backgroundImage: 'url("https://terhubung.id/wp-content/uploads/01.-BG-FIXED.jpeg")' }}>
-         */}
         <div className="bg-cover sm:bg-contain bg-no-repeat min-h-screen flex justify-center items-center relative w-[450px] bg-center mx-auto z-10 overflow-x-hidden overflow-y-hidden" 
             style={{ 
             backgroundImage: `url(https://terhubung.id/wp-content/uploads/01.-BG-FIXED.jpeg)`,
-            // backgroundSize: 'contain',
             backgroundPosition: 'center',
             backgroundAttachment: 'fixed'
         }}>
@@ -18,21 +29,30 @@ const App = () => {
                 fontFamily: 'Londrina Solid'
             }}
         >
-            <div className="bg-transparent bg-opacity-80 max-w-xs w-full mx-auto rounded shadow-md">
-            <section className="mb-4 p-4 bg-transparent rounded shadow min-h-[400px]">
-                <h2 className="text-lg font-semibold"
-                >Section 1</h2>
+           <div className="bg-transparent bg-opacity-80 w-full mx-auto rounded shadow-md">
+            <section className="mb-4 p-4 bg-transparent rounded shadow h-screen flex flex-col justify-center">
+                <h2 className="text-lg font-semibold">Section 1</h2>
                 <p>This is the content of the first section.</p>
+                <button
+                    onClick={scrollToSection2}
+                    className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
+                >
+                    Go to Section 2
+                </button>
             </section>
-            <section className="mb-4 p-4 bg-transparent rounded shadow min-h-[400px]">
-                <h2 className="text-lg font-semibold">Section 2</h2>
-                <p>This is the content of the second section.</p>
-            </section>
-            <section className="mb-4 p-4 bg-transparent rounded shadow min-h-[400px]">
-                <h2 className="text-lg font-semibold">Section 3</h2>
-                <p>This is the content of the third section.</p>
-            </section>
-            </div>
+            {showSections && (
+                <>
+                    <section id="section2" className="mb-4 p-4 bg-transparent rounded shadow h-screen flex flex-col justify-center">
+                        <h2 className="text-lg font-semibold">Section 2</h2>
+                        <p>This is the content of the second section.</p>
+                    </section>
+                    <section className="mb-4 p-4 bg-transparent rounded shadow h-screen flex flex-col justify-center">
+                        <h2 className="text-lg font-semibold">Section 3</h2>
+                        <p>This is the content of the third section.</p>
+                    </section>
+                </>
+            )}
+        </div>
         </div>
         </div>
 
