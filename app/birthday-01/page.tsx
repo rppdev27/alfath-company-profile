@@ -6,7 +6,7 @@ const App = () => {
     <div className="flex justify-center items-center bg-slate-200 relative">
         {/* <div className="relative min-h-screen bg-fixed bg-contain bg-center w-[450px] bg-no-repeat" style={{ backgroundImage: 'url("https://terhubung.id/wp-content/uploads/01.-BG-FIXED.jpeg")' }}>
          */}
-        <div className="min-h-screen flex justify-center items-center relative w-[450px] bg-cover bg-center mx-auto z-10 overflow-x-hidden overflow-y-hidden" 
+        <div className="bg-no-repeat min-h-screen flex justify-center items-center relative w-[450px] bg-cover bg-center mx-auto z-10 overflow-x-hidden overflow-y-hidden" 
             style={{ 
             backgroundImage: `url(https://terhubung.id/wp-content/uploads/01.-BG-FIXED.jpeg)`,
             backgroundSize: 'contain',
