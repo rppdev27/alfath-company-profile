@@ -4,6 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  overscroll-behavior: none
+}
   .cssanimation,
   .cssanimation span {
     animation-duration: 2s;
