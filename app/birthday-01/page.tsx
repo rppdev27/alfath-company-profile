@@ -31,7 +31,7 @@ const App: React.FC = () => {
             }}
         >
            <div className="bg-transparent bg-opacity-80 w-full mx-auto shadow-md">
-            <section className="p-4 bg-transparent h-screen flex flex-col justify-center bg-blue-950 shadow-md bg-opacity-70 w-full rounded-lg mb-10">
+            <section className="p-4 bg-transparent h-screen flex flex-col justify-center bg-white shadow-md bg-opacity-70 w-full rounded-lg mb-10">
                 <h2 className="text-lg font-semibold">Section 1</h2>
                 <p>This is the content of the first section.</p>
                 <button
@@ -43,7 +43,7 @@ const App: React.FC = () => {
             </section>
             {showSections && (
                 <>
-                    <section id="section2" className="p-4 bg-transparent h-screen flex flex-col justify-center bg-blue-950 shadow-md bg-opacity-70 w-full rounded-lg  mb-10">
+                    <section id="section2" className="p-4 bg-transparent h-screen flex flex-col justify-center bg-white shadow-md bg-opacity-70 w-full rounded-lg  mb-10">
                         <h2 className="text-lg font-semibold">Section 2</h2>
                         <p>This is the content of the second section.</p>
                     </section>
