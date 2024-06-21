@@ -4,7 +4,14 @@ const App = () => {
   return (
 
     <div className="flex justify-center items-center bg-slate-200">
-        <div className="relative min-h-screen bg-fixed bg-contain bg-center w-[450px] bg-no-repeat" style={{ backgroundImage: 'url("https://terhubung.id/wp-content/uploads/01.-BG-FIXED.jpeg")' }}>
+        {/* <div className="relative min-h-screen bg-fixed bg-contain bg-center w-[450px] bg-no-repeat" style={{ backgroundImage: 'url("https://terhubung.id/wp-content/uploads/01.-BG-FIXED.jpeg")' }}>
+         */}
+        <div className="min-h-screen flex justify-center items-center relative w-[450px] bg-cover bg-center w-full mx-auto z-10 py-[80px] sm:py-[0px] overflow-x-hidden overflow-y-hidden" 
+        style={{ 
+          backgroundImage: `url(https://terhubung.id/wp-content/uploads/01.-BG-FIXED.jpeg)`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}>
         <div className="flex justify-center items-center min-h-screen">
             <div className="bg-white bg-opacity-80 max-w-xs w-full mx-auto rounded shadow-md">
             {/* <section className="mb-4 p-4 bg-white rounded shadow min-h-[400px]">
