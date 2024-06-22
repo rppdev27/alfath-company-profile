@@ -61,7 +61,7 @@ const App: React.FC = () => {
             }}
         >
         {
-            showSections && <div className="fixed right-0 top-1/2 transform -translate-y-1/2 flex items-start justify-center h-auto w-16 bg-transparent text-white flex-col z-30"
+            showSections && <div className="bg-black fixed right-1 shadow-lg bg-opacity-50 top-1/2 transform -translate-y-1/2 flex items-start justify-center h-auto w-16 text-white flex-col z-30 rounded-lg"
             style={{
                 fontFamily: 'Londrina Solid',
                 fontSize: '0.8rem'
