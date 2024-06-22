@@ -11,6 +11,8 @@ const App: React.FC = () => {
 
     const [showSections, setShowSections] = useState(false);
     const [currentSection, setCurrentSection] = useState('section1');
+    const sections = ['section1', 'section2', 'section3', 'section4', 'section5'];
+
 
     const scrollToSection = (sectionId: string) => {
         setShowSections(true);
@@ -50,6 +52,19 @@ const App: React.FC = () => {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
+    }, []);
+
+    useEffect(() => {
+        let currentSectionIndex = 0;
+
+        const autoplay = () => {
+            currentSectionIndex = (currentSectionIndex + 1) % sections.length;
+            scrollToSection(sections[currentSectionIndex]);
+        };
+
+        const intervalId = setInterval(autoplay, 3000); // Change 3000 to the desired interval (in milliseconds)
+
+        return () => clearInterval(intervalId); // Cleanup interval on component unmount
     }, []);
   return (
 
