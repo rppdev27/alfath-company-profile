@@ -87,7 +87,7 @@ const App: React.FC = () => {
                             marginBottom: '-50px'
                         }}
                     >
-                        <img src="https://terhubung.id/wp-content/uploads/03.-LITTLE-DINO-02.png" style={{
+                        <img src="https://terhubung.id/wp-content/uploads/04.-CUTE-PANDA-02.png" style={{
                             width: '50%',
                             height: 'auto'
                         }}/>
@@ -132,7 +132,7 @@ const App: React.FC = () => {
                             marginBottom: '-50px'
                         }}
                     >
-                        <img src="https://terhubung.id/wp-content/uploads/03.-LITTLE-DINO-02.png" style={{
+                        <img src="https://terhubung.id/wp-content/uploads/04.-CUTE-PANDA-02.png" style={{
                             width: '50%',
                             height: 'auto'
                         }}/>
@@ -152,7 +152,7 @@ const App: React.FC = () => {
                             marginBottom: '-50px'
                         }}
                     >
-                        <img src="https://terhubung.id/wp-content/uploads/03.-LITTLE-DINO-02.png" style={{
+                        <img src="https://terhubung.id/wp-content/uploads/04.-CUTE-PANDA-02.png" style={{
                             width: '50%',
                             height: 'auto'
                         }}/>
@@ -168,7 +168,7 @@ const App: React.FC = () => {
                     </section>
 
                     <section id="section5" className="p-4 min-h-[calc(100vh-80px)] h-auto flex flex-col justify-start shadow-md bg-[#33A792] bg-opacity-80 w-full rounded-lg mb-10">
-                        <img src="https://terhubung.id/wp-content/uploads/03.-LITTLE-DINO-01.png" alt="Astronaut" className="mx-auto"/>
+                        <img src="https://terhubung.id/wp-content/uploads/04.-CUTE-PANDA-01.png" alt="Astronaut" className="mx-auto"/>
                         <div className="text-[#FFDC5C] text-3xl text-center my-6 uppercase">
                             Terima Kasih
                         </div>
