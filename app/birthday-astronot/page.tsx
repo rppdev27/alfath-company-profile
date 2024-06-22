@@ -18,7 +18,7 @@ const App: React.FC = () => {
   return (
 
     <div className="flex justify-center items-center bg-slate-200 relative">
-        <div className="bg-cover sm:bg-contain bg-no-repeat min-h-screen flex justify-center items-center relative w-[450px] bg-center mx-auto z-10 overflow-x-hidden overflow-y-hidden" 
+        <div className="bg-cover sm:bg-contain bg-no-repeat min-h-screen flex justify-center items-center relative w-[450px] bg-center mx-auto z-10" 
             style={{ 
                 backgroundImage: `url(https://terhubung.id/wp-content/uploads/01.-BG-FIXED.jpeg)`,
                 backgroundPosition: 'center',
@@ -89,7 +89,7 @@ const App: React.FC = () => {
                     <div className="flex justify-center items-center"
                         style={{
                             marginTop: '-150px',
-                            marginLeft: '-200px',
+                            marginRight: '-200px',
                             marginBottom: '-50px'
                         }}
                     >
