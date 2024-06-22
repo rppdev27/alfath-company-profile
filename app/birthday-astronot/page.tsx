@@ -118,7 +118,7 @@ const App: React.FC = () => {
                                     </div>
                                     Jl. Margonda Raya No. 358, Kemiri Muka, Kecamatan Beji, Kota Depok, Jawa Barat 16423
                                 </div>
-                                <div className="p-2 bg-[#f6b772] text-white text-3xl w-2/3 rounded-md my-4 mx-auto flex justify-center items-center font-extrabold">
+                                <div className="p-2 bg-[#f6b772] text-white text-lg  sm:text-3xl w-2/3 rounded-md my-4 mx-auto flex justify-center items-center font-extrabold mb-10">
                                     <TbMapSearch size={25} className='mr-3'/> Google Map
                                 </div>
                         </div>
