@@ -170,7 +170,7 @@ const App: React.FC = () => {
                         }}/>
                     </div>
                     
-                    <section id="section3" className="p-4 h-auto sm:h-[calc(100vh-80px)] flex flex-col justify-start shadow-md bg-[#F0A038] bg-opacity-80 w-full rounded-lg mb-10">
+                    <section id="section3" className="p-4 h-auto sm:min-h-[calc(100vh-80px)] flex flex-col justify-start shadow-md bg-[#F0A038] bg-opacity-80 w-full rounded-lg mb-10">
                         
                         <div className="text-[#9B692C] text-3xl text-center my-6 uppercase">
                             Save The Date
@@ -220,7 +220,7 @@ const App: React.FC = () => {
                         }}/>
                     </div>
 
-                    <section id="section4" className="p-4 h-auto sm:h-[calc(100vh-80px)] flex flex-col justify-start shadow-md bg-[#F0A038] bg-opacity-80 w-full rounded-lg mb-10">
+                    <section id="section4" className="p-4 h-auto sm:min-h-[calc(100vh-80px)] flex flex-col justify-start shadow-md bg-[#F0A038] bg-opacity-80 w-full rounded-lg mb-10">
                         
                         <div className="text-[#9B692C] text-3xl text-center my-6 uppercase">
                             Galeri
@@ -247,7 +247,7 @@ const App: React.FC = () => {
 
 
 
-                    <section id="section4" className="p-4 h-auto sm:h-[calc(100vh-80px)] flex flex-col justify-start shadow-md bg-[#F0A038] bg-opacity-80 w-full rounded-lg mb-10">
+                    <section id="section4" className="p-4 h-auto sm:min-h-[calc(100vh-80px)] flex flex-col justify-start shadow-md bg-[#F0A038] bg-opacity-80 w-full rounded-lg mb-10">
                         
                         <div className="text-[#9B692C] text-3xl text-center my-6 uppercase">
                             Ucapan & Doa
@@ -260,7 +260,7 @@ const App: React.FC = () => {
 
                     </section>
 
-                    <section id="section5" className="p-4 h-auto sm:h-[calc(100vh-80px)] flex flex-col justify-start shadow-md bg-[#F0A038] bg-opacity-80 w-full rounded-lg mb-10">
+                    <section id="section5" className="p-4 h-auto sm:min-h-[calc(100vh-80px)] flex flex-col justify-start shadow-md bg-[#F0A038] bg-opacity-80 w-full rounded-lg mb-10">
                         <img src="https://terhubung.id/wp-content/uploads/05.-HONEY-BEE-03.png" alt="Astronaut" className="mx-auto"/>
                         <div className="text-[#9B692C] text-3xl text-center my-6 uppercase">
                             Terima Kasih
