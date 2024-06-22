@@ -38,11 +38,11 @@ const App: React.FC = () => {
                 </p>
                 <p className="text-center">1<sup>ST</sup> BIRTHDAY PARTY</p>
                 <img src="https://terhubung.id/wp-content/uploads/01.-ASTRONOT-01.png" alt="Astronaut" className="mx-auto"/>
-                <div className="p-3 border border-white font-extrabold text-white bg-[#182E4B] bg-opacity-80 rounded-md mt-2">
+                <div className="text-base text-center p-6 border border-white font-extrabold text-white bg-[#182E4B] bg-opacity-80 rounded-md mt-2">
                     <div>
                         Halo,
                     </div>
-                    <div className="cursor-pointer text-center transition-transform duration-300 ease-in-out transform hover:scale-105 p-2 font-extrabold text-white bg-[#F6B772]" onClick={()=> scrollToSection2()}>
+                    <div className="w/3-4 cursor-pointer text-center transition-transform duration-300 ease-in-out transform hover:scale-105 p-2 font-extrabold text-white bg-[#F6B772]" onClick={()=> scrollToSection2()}>
                         Buka Undangan
                     </div>
                 </div>
@@ -62,8 +62,11 @@ const App: React.FC = () => {
                         <p className="text-center">This is the content of the second section.</p>
                     </section>
 
-                    <div className="absolute">
-                        <img src="https://terhubung.id/wp-content/uploads/01.-ASTRONOT-02-e1718723313157.png"/>
+                    <div className="relative mx-auto">
+                        <img src="https://terhubung.id/wp-content/uploads/01.-ASTRONOT-02-e1718723313157.png" style={{
+                            width: '50%',
+                            height: 'auto'
+                        }}/>
                     </div>
                     
                     <section id="section3" className="p-4 bg-transparent h-[calc(100vh-80px)] flex flex-col justify-center bg-white shadow-md bg-opacity-70 w-full rounded-lg mb-10">
@@ -77,8 +80,11 @@ const App: React.FC = () => {
                         <p className="text-center">This is the content of the second section.</p>
                     </section>
 
-                    <div className="absolute">
-                        <img src="https://terhubung.id/wp-content/uploads/01.-ASTRONOT-02-e1718723313157.png"/>
+                    <div className="relative mx-auto">
+                        <img src="https://terhubung.id/wp-content/uploads/01.-ASTRONOT-02-e1718723313157.png" style={{
+                            width: '50%',
+                            height: 'auto'
+                        }}/>
                     </div>
 
                     <section id="section2" className="p-4 bg-transparent h-[calc(100vh-80px)] flex flex-col justify-center bg-white shadow-md bg-opacity-70 w-full rounded-lg mb-10">
