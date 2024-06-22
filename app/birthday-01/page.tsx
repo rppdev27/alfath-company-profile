@@ -43,11 +43,11 @@ const App: React.FC = () => {
             </section>
             {showSections && (
                 <>
-                    <section id="section2" className="p-4 bg-transparent h-screen flex flex-col justify-center bg-white shadow-md bg-opacity-70 w-full rounded-lg  mb-10">
+                    <section id="section2" className="p-4 bg-transparent h-[calc(100vh-80px)] flex flex-col justify-center bg-white shadow-md bg-opacity-70 w-full rounded-lg mb-10">
                         <h2 className="text-lg font-semibold">Section 2</h2>
                         <p>This is the content of the second section.</p>
                     </section>
-                    <section className="p-4 bg-transparent h-screen flex flex-col justify-center bg-white shadow-md bg-opacity-70 w-full rounded-lg  mb-10">
+                    <section className="p-4 bg-transparent h-[calc(100vh-80px)] flex flex-col justify-center bg-white shadow-md bg-opacity-70 w-full rounded-lg mb-10">
                         <h2 className="text-lg font-semibold">Section 3</h2>
                         <p>This is the content of the third section.</p>
                     </section>
