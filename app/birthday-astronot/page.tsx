@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState } from 'react';
+import { FaRegEnvelopeOpen } from "react-icons/fa6";
 
 const App: React.FC = () => {
 
@@ -43,7 +44,7 @@ const App: React.FC = () => {
                         Halo,
                     </div>
                     <div className="w/3-4 cursor-pointer text-center transition-transform duration-300 ease-in-out transform hover:scale-105 p-2 font-extrabold text-white bg-[#F6B772] text-2xl rounded-md mb-4" onClick={()=> scrollToSection2()}>
-                        Buka Undangan
+                        <FaRegEnvelopeOpen size={25} className='mr-1'/> Buka Undangan
                     </div>
                 </div>
                 
