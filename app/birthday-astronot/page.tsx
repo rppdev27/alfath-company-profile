@@ -42,7 +42,7 @@ const App: React.FC = () => {
                     <div className='mb-4'>
                         Halo,
                     </div>
-                    <div className="w/3-4 cursor-pointer text-center transition-transform duration-300 ease-in-out transform hover:scale-105 p-2 font-extrabold text-white bg-[#F6B772] text-lg rounded-md" onClick={()=> scrollToSection2()}>
+                    <div className="w/3-4 cursor-pointer text-center transition-transform duration-300 ease-in-out transform hover:scale-105 p-2 font-extrabold text-white bg-[#F6B772] text-2xl rounded-md mb-4" onClick={()=> scrollToSection2()}>
                         Buka Undangan
                     </div>
                 </div>
