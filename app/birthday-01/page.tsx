@@ -31,25 +31,27 @@ const App: React.FC = () => {
             }}
         >
            <div className="bg-transparent bg-opacity-80 w-full mx-auto shadow-md">
-            <section className="p-4 bg-transparent h-screen flex flex-col justify-center bg-white shadow-md bg-opacity-70 w-full rounded-lg mb-10">
-                <h2 className="text-lg font-semibold">Section 1</h2>
-                <p>This is the content of the first section.</p>
-                <button
-                    onClick={scrollToSection2}
-                    className="mt-4 px-4 py-2 bg-slate-300 text-blue-800 rounded hover:bg-slate-400"
-                >
-                    Go to Section 2
-                </button>
+           <section id="section2" className="p-4 bg-transparent h-[calc(100vh-80px)] flex flex-col justify-center bg-white shadow-md bg-opacity-70 w-full rounded-lg mb-10">
+                <h2 className="text-lg font-semibold text-center">Section 1</h2>
+                <p className="text-center">YOU ARE INVITED TO</p>
+                <p className="text-center text-[48px] font-bold leading-tight tracking-[1.5px] text-[#F6B772] font-['Londrina_Solid'] stroke-2 stroke-white">
+                    AZKA NAUFAL
+                </p>
+                <p className="text-center">1ST BIRTHDAY PARTY</p>
+                <img src="https://terhubung.id/wp-content/uploads/01.-ASTRONOT-01.png" alt="Astronaut" className="mx-auto">
+                <p className="text-center">This is the content of the second section.</p>
             </section>
             {showSections && (
                 <>
                     <section id="section2" className="p-4 bg-transparent h-[calc(100vh-80px)] flex flex-col justify-center bg-white shadow-md bg-opacity-70 w-full rounded-lg mb-10">
-                        <h2 className="text-lg font-semibold">Section 2</h2>
-                        <p>This is the content of the second section.</p>
-                    </section>
-                    <section className="p-4 bg-transparent h-[calc(100vh-80px)] flex flex-col justify-center bg-white shadow-md bg-opacity-70 w-full rounded-lg mb-10">
-                        <h2 className="text-lg font-semibold">Section 3</h2>
-                        <p>This is the content of the third section.</p>
+                        <h2 className="text-lg font-semibold text-center">Section 3</h2>
+                        <p className="text-center">YOU ARE INVITED TO</p>
+                        <p className="text-center text-[48px] font-bold leading-tight tracking-[1.5px] text-[#F6B772] font-['Londrina_Solid'] stroke-2 stroke-white">
+                            AZKA NAUFAL
+                        </p>
+                        <p className="text-center">1ST BIRTHDAY PARTY</p>
+                        <img src="https://terhubung.id/wp-content/uploads/01.-ASTRONOT-01.png" alt="Astronaut" className="mx-auto">
+                        <p className="text-center">This is the content of the second section.</p>
                     </section>
                 </>
             )}
