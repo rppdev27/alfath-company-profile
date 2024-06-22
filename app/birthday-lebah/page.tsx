@@ -4,6 +4,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaRegEnvelopeOpen } from "react-icons/fa6";
 import { TbMapSearch } from "react-icons/tb";
+import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 
 const App: React.FC = () => {
 
@@ -66,11 +67,26 @@ const App: React.FC = () => {
                 fontSize: '0.8rem'
             }}
         >
-            <button className={`py-2 px-4 mb-4 flex flex-col ${currentSection === 'section1' ? 'bg-gray-600' : ''}`} onClick={() => scrollToSection('section1')}>Beranda</button>
-            <button className={`transition-all duration-300 py-2 px-4 mb-4 ${currentSection === 'section2' ? 'bg-gray-600' : ''}`} onClick={() => scrollToSection('section2')}>Beranda</button>
-            <button className={`transition-all duration-300 py-2 px-4 mb-4 ${currentSection === 'section3' ? 'bg-gray-600' : ''}`} onClick={() => scrollToSection('section3')}>Beranda</button>
-            <button className={`transition-all duration-300 py-2 px-4 mb-4 ${currentSection === 'section4' ? 'bg-gray-600' : ''}`} onClick={() => scrollToSection('section4')}>Beranda</button>
-            <button className={`transition-all duration-300 py-2 px-4 mb-4 ${currentSection === 'section5' ? 'bg-gray-600' : ''}`} onClick={() => scrollToSection('section5')}>Beranda</button>
+            <button className={`rounded-r-lg text-[0.5rem] uppercase items-center py-2 px-4 mb-4 flex flex-col ${currentSection === 'section1' ? 'bg-gray-500' : ''}`} onClick={() => scrollToSection('section1')}>
+                <MdOutlineKeyboardDoubleArrowDown size={15}/>
+                Beranda
+            </button>
+            <button className={`rounded-r-lg text-[0.5rem] uppercase items-center flex flex-col transition-all duration-300 py-2 px-4 mb-4 ${currentSection === 'section2' ? 'bg-gray-500' : ''}`} onClick={() => scrollToSection('section2')}>
+                <MdOutlineKeyboardDoubleArrowDown size={15}/>
+                Beranda
+            </button>
+            <button className={`rounded-r-lg text-[0.5rem] uppercase flex items-center flex-col transition-all duration-300 py-2 px-4 mb-4 ${currentSection === 'section3' ? 'bg-gray-500' : ''}`} onClick={() => scrollToSection('section3')}>
+                <MdOutlineKeyboardDoubleArrowDown size={15}/>
+                Beranda
+            </button>
+            <button className={`rounded-r-lg text-[0.5rem] uppercase flex items-center flex-col transition-all duration-300 py-2 px-4 mb-4 ${currentSection === 'section4' ? 'bg-gray-500' : ''}`} onClick={() => scrollToSection('section4')}>
+                <MdOutlineKeyboardDoubleArrowDown size={15}/>
+                Beranda
+            </button>
+            <button className={`rounded-r-lg text-[0.5rem] uppercase flex items-center flex-col transition-all duration-300 py-2 px-4 mb-4 ${currentSection === 'section5' ? 'bg-gray-500' : ''}`} onClick={() => scrollToSection('section5')}>
+            <MdOutlineKeyboardDoubleArrowDown size={15}/>
+                Beranda
+            </button>
         </div>
         <div className="flex justify-center items-center min-h-screen text-white w-full p-6"
             
@@ -101,6 +117,11 @@ const App: React.FC = () => {
                     className="w/3-4 cursor-pointer text-center transition-transform duration-300 ease-in-out transform hover:scale-105 p-2 font-extrabold text-white bg-[#9B692C] text-3xl rounded-md mb-4 flex  items-center justify-center" onClick={() => scrollToSection('section2')}>
                         <FaRegEnvelopeOpen size={25} className='mr-3'/> Buka Undangan
                     </div>
+                    {/* <button
+                    className="bg-white/20 backdrop-filter backdrop-blur-md rounded-lg p-2 text-gray-600 hover:bg-white/30 hover:shadow-lg transition duration-300 ease-in-out"
+                    >
+                    Click Me!
+                    </button> */}
                 </div>
                 
             </section>
@@ -125,6 +146,13 @@ const App: React.FC = () => {
                     <div className="text-[#fff] text-3xl text-center my-6">
                     Putra dari Bapak Awan
                     & Ibu Pelangi
+                    </div>
+
+                    {/* floating circle button goto next section */}
+                    <div className="mx-auto flex items-center justify-center border-white border-solid border-2 h-12 w-12 bg-cyan-500 rounded-full shadow-lg cursor-pointer hover:bg-cyan-700 animate-bounce mt-4"
+                        onClick={()=> scrollToSection('section3')}
+                    >
+                        <MdOutlineKeyboardDoubleArrowDown size={25} className="h-6 w-6 text-white" />
                     </div>
                        
                     </section>
@@ -173,6 +201,11 @@ const App: React.FC = () => {
                                     <TbMapSearch size={25} className='mr-3'/> Google Map
                                 </div>
                         </div>
+                        <div className="mx-auto flex items-center justify-center border-white border-solid border-2 h-12 w-12 bg-cyan-500 rounded-full shadow-lg cursor-pointer hover:bg-cyan-700 animate-bounce mt-4"
+                            onClick={()=> scrollToSection('section4')}
+                        >
+                            <MdOutlineKeyboardDoubleArrowDown size={25} className="h-6 w-6 text-white" />
+                        </div>
                     </section>
 
                     <div className="flex justify-center items-center mt-[-50px] sm:mt-[-150px]"
@@ -192,6 +225,11 @@ const App: React.FC = () => {
                         <div className="text-[#9B692C] text-3xl text-center my-6 uppercase">
                             Galeri
                         </div>
+                        <div className="mx-auto flex items-center justify-center border-white border-solid border-2 h-12 w-12 bg-cyan-500 rounded-full shadow-lg cursor-pointer hover:bg-cyan-700 animate-bounce mt-4"
+                        onClick={()=> scrollToSection('section5')}
+                    >
+                        <MdOutlineKeyboardDoubleArrowDown size={25} className="h-6 w-6 text-white" />
+                    </div>
                     </section>
 
                     <div className="flex justify-center items-center"
@@ -214,6 +252,12 @@ const App: React.FC = () => {
                         <div className="text-[#9B692C] text-3xl text-center my-6 uppercase">
                             Ucapan & Doa
                         </div>
+                        <div className="mx-auto flex items-center justify-center border-white border-solid border-2 h-12 w-12 bg-cyan-500 rounded-full shadow-lg cursor-pointer hover:bg-cyan-700 animate-bounce mt-4"
+                        onClick={()=> scrollToSection('section6')}
+                    >
+                        <MdOutlineKeyboardDoubleArrowDown size={25} className="h-6 w-6 text-white" />
+                    </div>
+
                     </section>
 
                     <section id="section5" className="p-4 min-h-[calc(100vh-80px)] h-auto flex flex-col justify-start shadow-md bg-[#F0A038] bg-opacity-80 w-full rounded-lg mb-10">
