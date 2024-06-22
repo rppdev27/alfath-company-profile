@@ -43,14 +43,10 @@ const App: React.FC = () => {
                     <div>
                         Halo,
                     </div>
-                    <div className="p-2 font-extrabold text-white" onClick={()=> scrollToSection2()}>
+                    <div className="transition-transform duration-300 ease-in-out transform hover:scale-105 p-2 font-extrabold text-white" onClick={()=> scrollToSection2()}>
                         Buka Undangan
                     </div>
-                    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-                    <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded transition-transform duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-300">
-                        Hover Me
-                    </button>
-                    </div>
+                    
                 </div>
                 
             </section>
@@ -86,7 +82,7 @@ const App: React.FC = () => {
                     <div className="absolute">
                         <img src="https://terhubung.id/wp-content/uploads/01.-ASTRONOT-02-e1718723313157.png"/>
                     </div>
-                    
+
                     <section id="section2" className="p-4 bg-transparent h-[calc(100vh-80px)] flex flex-col justify-center bg-white shadow-md bg-opacity-70 w-full rounded-lg mb-10">
                         <h2 className="text-lg font-semibold text-center">Section 3</h2>
                         <p className="text-center">YOU ARE INVITED TO</p>
