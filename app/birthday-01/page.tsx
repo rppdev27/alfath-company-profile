@@ -124,9 +124,8 @@ const App: React.FC = () => {
                         </div>
                     </section>
 
-                    <div className="flex justify-center items-center"
+                    <div className="flex justify-center items-center mt-[-50px] sm:mt-[-150px]"
                         style={{
-                            marginTop: '-150px',
                             marginRight: '-200px',
                             marginBottom: '-50px'
                         }}
@@ -177,7 +176,7 @@ const App: React.FC = () => {
                         </div>
 
                         <img src="https://plus.unsplash.com/premium_photo-1683376196802-503c5a2ba30a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzd8fG1vbSUyMGRhZCUyMGtpZHxlbnwwfHwwfHx8MA%3D%3D
-                        " alt="Astronaut" className="rounded-md mt-6 mx-auto border-solid shadow-lg border-[10px] border-[#f6b772]"
+                        " alt="Astronaut" className="rounded-md mt-2 mx-auto border-solid shadow-lg border-[10px] border-[#f6b772]"
                             style={{
                                 width: '70%',
                                 height: 'auto'
