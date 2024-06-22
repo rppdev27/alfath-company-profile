@@ -56,6 +56,27 @@ const App: React.FC = () => {
                         <img src="https://terhubung.id/wp-content/uploads/01.-ASTRONOT-01.png" alt="Astronaut" className="mx-auto"/>
                         <p className="text-center">This is the content of the second section.</p>
                     </section>
+
+                    <section id="section2" className="p-4 bg-transparent h-[calc(100vh-80px)] flex flex-col justify-center bg-white shadow-md bg-opacity-70 w-full rounded-lg mb-10">
+                        <h2 className="text-lg font-semibold text-center">Section 3</h2>
+                        <p className="text-center">YOU ARE INVITED TO</p>
+                        <p className="text-center text-[48px] font-bold leading-tight tracking-[1.5px] text-[#F6B772] font-['Londrina_Solid'] stroke-2 stroke-white">
+                            AZKA NAUFAL
+                        </p>
+                        <p className="text-center">1ST BIRTHDAY PARTY</p>
+                        <img src="https://terhubung.id/wp-content/uploads/01.-ASTRONOT-01.png" alt="Astronaut" className="mx-auto"/>
+                        <p className="text-center">This is the content of the second section.</p>
+                    </section>
+                    <section id="section2" className="p-4 bg-transparent h-[calc(100vh-80px)] flex flex-col justify-center bg-white shadow-md bg-opacity-70 w-full rounded-lg mb-10">
+                        <h2 className="text-lg font-semibold text-center">Section 3</h2>
+                        <p className="text-center">YOU ARE INVITED TO</p>
+                        <p className="text-center text-[48px] font-bold leading-tight tracking-[1.5px] text-[#F6B772] font-['Londrina_Solid'] stroke-2 stroke-white">
+                            AZKA NAUFAL
+                        </p>
+                        <p className="text-center">1ST BIRTHDAY PARTY</p>
+                        <img src="https://terhubung.id/wp-content/uploads/01.-ASTRONOT-01.png" alt="Astronaut" className="mx-auto"/>
+                        <p className="text-center">This is the content of the second section.</p>
+                    </section>
                 </>
             )}
             </div>
