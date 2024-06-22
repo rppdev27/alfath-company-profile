@@ -38,8 +38,8 @@ const App: React.FC = () => {
                 </p>
                 <p className="text-center">1<sup>ST</sup> BIRTHDAY PARTY</p>
                 <img src="https://terhubung.id/wp-content/uploads/01.-ASTRONOT-01.png" alt="Astronaut" className="mx-auto"/>
-                <div className="text-lg text-center px-6 py-10 border border-white font-extrabold text-white bg-[#182E4B] bg-opacity-80 rounded-md mt-2">
-                    <div className='my-2'>
+                <div className="text-2xl text-center px-6 py-2 border border-white font-extrabold text-white bg-[#182E4B] bg-opacity-80 rounded-md mt-2">
+                    <div className='mb-4'>
                         Halo,
                     </div>
                     <div className="w/3-4 cursor-pointer text-center transition-transform duration-300 ease-in-out transform hover:scale-105 p-2 font-extrabold text-white bg-[#F6B772] text-lg rounded-md" onClick={()=> scrollToSection2()}>
@@ -51,7 +51,7 @@ const App: React.FC = () => {
             {showSections && (
                 <>
                     <div className="relative">
-                    <section id="section2" className="p-4 bg-transparent h-[calc(100vh-80px)] flex flex-col justify-center bg-white shadow-md bg-opacity-70 w-full rounded-lg mb-10">
+                    <section id="section2" className="p-4 bg-transparent h-[calc(100vh-80px)] flex flex-col justify-center bg-white shadow-md bg-opacity-70 w-full rounded-lg">
                         <h2 className="text-lg font-semibold text-center">Section 3</h2>
                         <p className="text-center">YOU ARE INVITED TO</p>
                         <p className="text-center text-[48px] font-bold leading-tight tracking-[1.5px] text-[#F6B772] font-['Londrina_Solid'] stroke-2 stroke-white">
@@ -62,7 +62,13 @@ const App: React.FC = () => {
                         <p className="text-center">This is the content of the second section.</p>
                     </section>
 
-                    <div className="flex justify-center items-center">
+                    <div className="flex justify-center items-center"
+                        style={{
+                            marginTop: '-150px',
+                            marginLeft: '-200px',
+                            marginBottom: '-50px'
+                        }}
+                    >
                         <img src="https://terhubung.id/wp-content/uploads/01.-ASTRONOT-02-e1718723313157.png" style={{
                             width: '50%',
                             height: 'auto'
@@ -80,7 +86,13 @@ const App: React.FC = () => {
                         <p className="text-center">This is the content of the second section.</p>
                     </section>
 
-                    <div className="flex justify-center items-center">
+                    <div className="flex justify-center items-center"
+                        style={{
+                            marginTop: '-150px',
+                            marginLeft: '-200px',
+                            marginBottom: '-50px'
+                        }}
+                    >
                         <img src="https://terhubung.id/wp-content/uploads/01.-ASTRONOT-02-e1718723313157.png" style={{
                             width: '50%',
                             height: 'auto'
