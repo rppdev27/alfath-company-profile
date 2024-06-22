@@ -56,6 +56,7 @@ const App: React.FC = () => {
             </section>
             {showSections && (
                 <>
+                    <div className="relative">
                     <section id="section2" className="p-4 bg-transparent h-[calc(100vh-80px)] flex flex-col justify-center bg-white shadow-md bg-opacity-70 w-full rounded-lg mb-10">
                         <h2 className="text-lg font-semibold text-center">Section 3</h2>
                         <p className="text-center">YOU ARE INVITED TO</p>
@@ -67,6 +68,10 @@ const App: React.FC = () => {
                         <p className="text-center">This is the content of the second section.</p>
                     </section>
 
+                    <div className="absolute">
+                        <img src="https://terhubung.id/wp-content/uploads/01.-ASTRONOT-02-e1718723313157.png"/>
+                    </div>
+                    
                     <section id="section3" className="p-4 bg-transparent h-[calc(100vh-80px)] flex flex-col justify-center bg-white shadow-md bg-opacity-70 w-full rounded-lg mb-10">
                         <h2 className="text-lg font-semibold text-center">Section 3</h2>
                         <p className="text-center">YOU ARE INVITED TO</p>
@@ -77,6 +82,11 @@ const App: React.FC = () => {
                         <img src="https://terhubung.id/wp-content/uploads/01.-ASTRONOT-01.png" alt="Astronaut" className="mx-auto"/>
                         <p className="text-center">This is the content of the second section.</p>
                     </section>
+
+                    <div className="absolute">
+                        <img src="https://terhubung.id/wp-content/uploads/01.-ASTRONOT-02-e1718723313157.png"/>
+                    </div>
+                    
                     <section id="section2" className="p-4 bg-transparent h-[calc(100vh-80px)] flex flex-col justify-center bg-white shadow-md bg-opacity-70 w-full rounded-lg mb-10">
                         <h2 className="text-lg font-semibold text-center">Section 3</h2>
                         <p className="text-center">YOU ARE INVITED TO</p>
@@ -87,6 +97,7 @@ const App: React.FC = () => {
                         <img src="https://terhubung.id/wp-content/uploads/01.-ASTRONOT-01.png" alt="Astronaut" className="mx-auto"/>
                         <p className="text-center">This is the content of the second section.</p>
                     </section>
+                    </div>
                 </>
             )}
             </div>
