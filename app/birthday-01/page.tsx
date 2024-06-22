@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState } from 'react';
+import { FaRegEnvelopeOpen } from "react-icons/fa6";
 
 const App: React.FC = () => {
 
@@ -99,7 +100,7 @@ const App: React.FC = () => {
                         }}/>
                     </div>
 
-                    <section id="section2" className="p-4 bg-transparent h-[calc(100vh-80px)] flex flex-col justify-center bg-white shadow-md bg-opacity-70 w-full rounded-lg mb-10">
+                    <section id="section4" className="p-4 h-[calc(100vh-80px)] flex flex-col justify-center shadow-md bg-[#182E4B] bg-opacity-80 w-full rounded-lg mb-10">
                         <h2 className="text-lg font-semibold text-center">Section 3</h2>
                         <p className="text-center">YOU ARE INVITED TO</p>
                         <p className="text-center text-[48px] font-bold leading-tight tracking-[1.5px] text-[#F6B772] font-['Londrina_Solid'] stroke-2 stroke-white">
