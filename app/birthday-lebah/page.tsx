@@ -1,13 +1,24 @@
 
 'use client'
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaRegEnvelopeOpen } from "react-icons/fa6";
 import { TbMapSearch } from "react-icons/tb";
 
 const App: React.FC = () => {
 
     const [showSections, setShowSections] = useState(false);
+    const [currentSection, setCurrentSection] = useState('section1');
+
+    const scrollToSection = (sectionId: string) => {
+        setShowSections(true);
+        setTimeout(() => {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }, 100); // Adding a slight delay to ensure the sections are rendered
+    };
 
     const scrollToSection2 = () => {
         setShowSections(true);
@@ -18,6 +29,26 @@ const App: React.FC = () => {
             }
         }, 100); // Adding a slight delay to ensure the sections are rendered
     };
+
+    const handleScroll = () => {
+        const sectionIds = ['section1', 'section2', 'section3', 'section4', 'section5'];
+        sectionIds.forEach(id => {
+            const section = document.getElementById(id);
+            if (section) {
+                const rect = section.getBoundingClientRect();
+                if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+                    setCurrentSection(id);
+                }
+            }
+        });
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
   return (
 
     <div className="flex justify-center items-center bg-slate-200 relative">
@@ -28,6 +59,13 @@ const App: React.FC = () => {
                 backgroundAttachment: 'fixed'
             }}
         >
+        <div className="fixed top-5 left-5 h-auto rounded-md w-auto p-5 bg-black bg-opacity-20 text-black flex flex-col items-center py-8 z-50">
+            <button className={`py-2 px-4 mb-4 flex flex-col ${currentSection === 'section1' ? 'bg-gray-600' : ''}`} onClick={() => scrollToSection('section1')}># 1</button>
+            <button className={`py-2 px-4 mb-4 ${currentSection === 'section2' ? 'bg-gray-600' : ''}`} onClick={() => scrollToSection('section2')}># 2</button>
+            <button className={`py-2 px-4 mb-4 ${currentSection === 'section3' ? 'bg-gray-600' : ''}`} onClick={() => scrollToSection('section3')}># 3</button>
+            <button className={`py-2 px-4 mb-4 ${currentSection === 'section4' ? 'bg-gray-600' : ''}`} onClick={() => scrollToSection('section4')}># 4</button>
+            <button className={`py-2 px-4 mb-4 ${currentSection === 'section5' ? 'bg-gray-600' : ''}`} onClick={() => scrollToSection('section5')}># 5</button>
+        </div>
         <div className="flex justify-center items-center min-h-screen text-white w-full p-6"
             
             style={{
