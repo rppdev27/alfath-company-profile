@@ -67,10 +67,10 @@ const App: React.FC = () => {
             }}
         >
             <button className={`py-2 px-4 mb-4 flex flex-col ${currentSection === 'section1' ? 'bg-gray-600' : ''}`} onClick={() => scrollToSection('section1')}>Beranda</button>
-            <button className={`py-2 px-4 mb-4 ${currentSection === 'section2' ? 'bg-gray-600' : ''}`} onClick={() => scrollToSection('section2')}>Beranda</button>
-            <button className={`py-2 px-4 mb-4 ${currentSection === 'section3' ? 'bg-gray-600' : ''}`} onClick={() => scrollToSection('section3')}>Beranda</button>
-            <button className={`py-2 px-4 mb-4 ${currentSection === 'section4' ? 'bg-gray-600' : ''}`} onClick={() => scrollToSection('section4')}>Beranda</button>
-            <button className={`py-2 px-4 mb-4 ${currentSection === 'section5' ? 'bg-gray-600' : ''}`} onClick={() => scrollToSection('section5')}>Beranda</button>
+            <button className={`transition-all duration-300 py-2 px-4 mb-4 ${currentSection === 'section2' ? 'bg-gray-600' : ''}`} onClick={() => scrollToSection('section2')}>Beranda</button>
+            <button className={`transition-all duration-300 py-2 px-4 mb-4 ${currentSection === 'section3' ? 'bg-gray-600' : ''}`} onClick={() => scrollToSection('section3')}>Beranda</button>
+            <button className={`transition-all duration-300 py-2 px-4 mb-4 ${currentSection === 'section4' ? 'bg-gray-600' : ''}`} onClick={() => scrollToSection('section4')}>Beranda</button>
+            <button className={`transition-all duration-300 py-2 px-4 mb-4 ${currentSection === 'section5' ? 'bg-gray-600' : ''}`} onClick={() => scrollToSection('section5')}>Beranda</button>
         </div>
         <div className="flex justify-center items-center min-h-screen text-white w-full p-6"
             
