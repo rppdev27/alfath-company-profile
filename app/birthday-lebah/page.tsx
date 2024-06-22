@@ -170,7 +170,7 @@ const App: React.FC = () => {
                         }}/>
                     </div>
                     
-                    <section id="section3" className="p-4 h-[calc(100vh-80px)] flex flex-col justify-start shadow-md bg-[#F0A038] bg-opacity-80 w-full rounded-lg mb-10">
+                    <section id="section3" className="p-4 h-auto sm:h-[calc(100vh-80px)] flex flex-col justify-start shadow-md bg-[#F0A038] bg-opacity-80 w-full rounded-lg mb-10">
                         
                         <div className="text-[#9B692C] text-3xl text-center my-6 uppercase">
                             Save The Date
@@ -253,7 +253,7 @@ const App: React.FC = () => {
                             Ucapan & Doa
                         </div>
                         <div className="mx-auto flex items-center justify-center border-white border-solid border-2 h-12 w-12 bg-cyan-500 rounded-full shadow-lg cursor-pointer hover:bg-cyan-700 animate-bounce mt-4"
-                        onClick={()=> scrollToSection('section6')}
+                        onClick={()=> scrollToSection('section6f')}
                     >
                         <MdOutlineKeyboardDoubleArrowDown size={25} className="h-6 w-6 text-white" />
                     </div>
