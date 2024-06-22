@@ -39,7 +39,7 @@ const App: React.FC = () => {
                 <p className="text-center">1ST BIRTHDAY PARTY</p>
                 <img src="https://terhubung.id/wp-content/uploads/01.-ASTRONOT-01.png" alt="Astronaut" className="mx-auto"/>
                 <p className="text-center">This is the content of the second section.</p>
-                <div className="p-3 border border-white font-extrabold text-white bg-[#182E4B] bg-opacity-80">
+                <div className="p-3 border border-white font-extrabold text-white bg-[#182E4B] bg-opacity-80 rounded-md">
                     <div>
                         Halo,
                     </div>
