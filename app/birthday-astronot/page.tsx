@@ -140,11 +140,33 @@ const App: React.FC = () => {
                     <section id="section4" className="p-4 h-[calc(100vh-80px)] flex flex-col justify-start shadow-md bg-[#182E4B] bg-opacity-80 w-full rounded-lg mb-10">
                         
                         <div className="text-[#f6b772] text-3xl text-center my-6 uppercase">
+                            Galeri
+                        </div>
+                    </section>
+
+                    <div className="flex justify-center items-center"
+                        style={{
+                            marginTop: '-150px',
+                            marginLeft: '-200px',
+                            marginBottom: '-50px'
+                        }}
+                    >
+                        <img src="https://terhubung.id/wp-content/uploads/01.-ASTRONOT-02-e1718723313157.png" style={{
+                            width: '50%',
+                            height: 'auto'
+                        }}/>
+                    </div>
+
+
+
+                    <section id="section4" className="p-4 min-h-[calc(100vh-80px)] h-auto flex flex-col justify-start shadow-md bg-[#182E4B] bg-opacity-80 w-full rounded-lg mb-10">
+                        
+                        <div className="text-[#f6b772] text-3xl text-center my-6 uppercase">
                             Ucapan & Doa
                         </div>
                     </section>
 
-                    <section id="section4" className="p-4 h-[calc(100vh-80px)] flex flex-col justify-start shadow-md bg-[#182E4B] bg-opacity-80 w-full rounded-lg mb-10">
+                    <section id="section5" className="p-4 min-h-[calc(100vh-80px)] h-auto flex flex-col justify-start shadow-md bg-[#182E4B] bg-opacity-80 w-full rounded-lg mb-10">
                         <img src="https://terhubung.id/wp-content/uploads/01.-ASTRONOT-01.png" alt="Astronaut" className="mx-auto"/>
                         <div className="text-[#f6b772] text-3xl text-center my-6 uppercase">
                             Terima Kasih
@@ -153,10 +175,20 @@ const App: React.FC = () => {
                             Aku Tunggu Kehadiran<br/>
                             Teman-Teman Yaa
                         </div>
+
+                        <img src="https://plus.unsplash.com/premium_photo-1683376196802-503c5a2ba30a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzd8fG1vbSUyMGRhZCUyMGtpZHxlbnwwfHwwfHx8MA%3D%3D
+                        " alt="Astronaut" className="rounded-md mt-10 mx-auto border-solid shadow-lg border-[10px] border-[#f6b772]"
+                            style={{
+                                width: '70%',
+                                height: 'auto'
+                            }}
+                        />
+
+                        
                         <div className="text-[#f6b772] text-lg text-center my-6">
                             Digital Invitation by
                         </div>
-                        <img src="https://ik.imagekit.io/vtvggda66/menicaid/webapp/menica_greenlogo.png?updatedAt=1708333173911" alt="Astronaut" className="mx-auto"
+                        <img src="https://ik.imagekit.io/vtvggda66/menicaid/webapp/menica_greenlogo.png?updatedAt=1708333173911" alt="Astronaut" className="mx-auto mb-10"
                             style={{
                                 width: '30%'
                             }}
