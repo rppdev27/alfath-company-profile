@@ -38,8 +38,8 @@ const App: React.FC = () => {
                 </p>
                 <p className="text-center">1<sup>ST</sup> BIRTHDAY PARTY</p>
                 <img src="https://terhubung.id/wp-content/uploads/01.-ASTRONOT-01.png" alt="Astronaut" className="mx-auto"/>
-                <div className="text-lg text-center px-6 py-10 border border-white font-extrabold text-white bg-[#182E4B] bg-opacity-80 rounded-md mt-2">
-                    <div className='my-2'>
+                <div className="text-lg text-center px-6 py-2 border border-white font-extrabold text-white bg-[#182E4B] bg-opacity-80 rounded-md mt-2">
+                    <div className='mb-4'>
                         Halo,
                     </div>
                     <div className="w/3-4 cursor-pointer text-center transition-transform duration-300 ease-in-out transform hover:scale-105 p-2 font-extrabold text-white bg-[#F6B772] text-lg rounded-md" onClick={()=> scrollToSection2()}>
