@@ -60,8 +60,8 @@ const App: React.FC = () => {
                 backgroundAttachment: 'fixed'
             }}
         >
-        {/* <div className="fixed top-5 left-5 h-auto rounded-md w-auto p-5 bg-black bg-opacity-20 text-black flex flex-col items-center py-8 z-50"> */}
-        <div className="fixed right-0 top-1/2 transform -translate-y-1/2 flex items-start justify-center h-auto w-16 bg-transparent text-white flex-col z-30"
+        {
+            showSections && <div className="fixed right-0 top-1/2 transform -translate-y-1/2 flex items-start justify-center h-auto w-16 bg-transparent text-white flex-col z-30"
             style={{
                 fontFamily: 'Londrina Solid',
                 fontSize: '0.8rem'
@@ -88,6 +88,8 @@ const App: React.FC = () => {
                 Beranda
             </button>
         </div>
+        }
+        
         <div className="flex justify-center items-center min-h-screen text-white w-full p-6"
             
             style={{
