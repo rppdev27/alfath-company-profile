@@ -9,7 +9,7 @@ const App: React.FC = () => {
     const scrollToSection2 = () => {
         setShowSections(true);
         setTimeout(() => {
-            const section2 = document.getElementById('section3');
+            const section2 = document.getElementById('section2');
             if (section2) {
                 section2.scrollIntoView({ behavior: 'smooth' });
             }
@@ -31,10 +31,9 @@ const App: React.FC = () => {
             }}
         >
            <div className="bg-transparent bg-opacity-80 w-full mx-auto shadow-md">
-           <section id="section2" className="p-4 bg-transparent h-[calc(100vh-80px)] flex flex-col justify-center shadow-md w-full rounded-lg mb-10">
-                <h2 className="text-lg font-semibold text-center">Section 1</h2>
-                <p className="text-center">YOU ARE INVITED TO</p>
-                <p className="text-center text-[48px] font-bold leading-tight tracking-[1.5px] text-[#F6B772] font-['Londrina_Solid'] stroke-2 stroke-white">
+           <section id="section1" className="p-4 bg-transparent h-[calc(100vh-80px)] flex flex-col justify-center shadow-md w-full rounded-lg mb-10">
+                <h2 className="text-lg font-semibold text-center uppercase">You Are Invited to</h2>
+                <p className="textstroke text-center text-[48px] font-bold leading-tight tracking-[1.5px] text-[#F6B772] font-['Londrina_Solid'] stroke-2 stroke-white">
                     AZKA NAUFAL
                 </p>
                 <p className="text-center">1ST BIRTHDAY PARTY</p>

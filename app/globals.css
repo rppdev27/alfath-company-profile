@@ -73,3 +73,11 @@ html{
   border-bottom: 15px solid transparent;
   border-top: 15px solid transparent;
 }
+
+
+.textstroke{
+  -webkit-text-stroke-width: 2px;
+  text-stroke-width: 2px;
+  -webkit-text-stroke-color: #FFFFFF;
+  text-stroke-color: #FFFFFF;
+}
