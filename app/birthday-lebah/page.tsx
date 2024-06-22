@@ -60,12 +60,17 @@ const App: React.FC = () => {
             }}
         >
         {/* <div className="fixed top-5 left-5 h-auto rounded-md w-auto p-5 bg-black bg-opacity-20 text-black flex flex-col items-center py-8 z-50"> */}
-        <div className="fixed inset-0 flex items-start justify-center h-auto w-16 bg-transparent text-white flex-col z-30">
-            <button className={`py-2 px-4 mb-4 flex flex-col ${currentSection === 'section1' ? 'bg-gray-600' : ''}`} onClick={() => scrollToSection('section1')}># 1</button>
-            <button className={`py-2 px-4 mb-4 ${currentSection === 'section2' ? 'bg-gray-600' : ''}`} onClick={() => scrollToSection('section2')}># 2</button>
-            <button className={`py-2 px-4 mb-4 ${currentSection === 'section3' ? 'bg-gray-600' : ''}`} onClick={() => scrollToSection('section3')}># 3</button>
-            <button className={`py-2 px-4 mb-4 ${currentSection === 'section4' ? 'bg-gray-600' : ''}`} onClick={() => scrollToSection('section4')}># 4</button>
-            <button className={`py-2 px-4 mb-4 ${currentSection === 'section5' ? 'bg-gray-600' : ''}`} onClick={() => scrollToSection('section5')}># 5</button>
+        <div className="fixed inset-0 flex items-start justify-center h-auto w-16 bg-transparent text-white flex-col z-30"
+            style={{
+                fontFamily: 'Londrina Solid',
+                fontSize: '0.8rem'
+            }}
+        >
+            <button className={`py-2 px-4 mb-4 flex flex-col ${currentSection === 'section1' ? 'bg-gray-600' : ''}`} onClick={() => scrollToSection('section1')}>Beranda</button>
+            <button className={`py-2 px-4 mb-4 ${currentSection === 'section2' ? 'bg-gray-600' : ''}`} onClick={() => scrollToSection('section2')}>Beranda</button>
+            <button className={`py-2 px-4 mb-4 ${currentSection === 'section3' ? 'bg-gray-600' : ''}`} onClick={() => scrollToSection('section3')}>Beranda</button>
+            <button className={`py-2 px-4 mb-4 ${currentSection === 'section4' ? 'bg-gray-600' : ''}`} onClick={() => scrollToSection('section4')}>Beranda</button>
+            <button className={`py-2 px-4 mb-4 ${currentSection === 'section5' ? 'bg-gray-600' : ''}`} onClick={() => scrollToSection('section5')}>Beranda</button>
         </div>
         <div className="flex justify-center items-center min-h-screen text-white w-full p-6"
             
