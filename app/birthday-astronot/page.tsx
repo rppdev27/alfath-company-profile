@@ -124,9 +124,8 @@ const App: React.FC = () => {
                         </div>
                     </section>
 
-                    <div className="flex justify-center items-center"
+                    <div className="flex justify-center items-center mt-[-50px] sm:mt-[-150px]"
                         style={{
-                            marginTop: '-150px',
                             marginRight: '-200px',
                             marginBottom: '-50px'
                         }}
