@@ -61,29 +61,29 @@ const App: React.FC = () => {
             }}
         >
         {
-            showSections && <div className="bg-black fixed right-1 shadow-lg bg-opacity-50 top-1/2 transform -translate-y-1/2 flex items-start justify-center h-auto w-16 text-white flex-col z-30 rounded-lg"
+            showSections && <div className="bg-black fixed right-1 rounded-lg shadow-lg bg-opacity-50 top-1/2 transform -translate-y-1/2 flex justify-center h-auto w-16 text-white flex-col z-30 p-0 items-center py-1 h-auto"
             style={{
                 fontFamily: 'Londrina Solid',
                 fontSize: '0.8rem'
             }}
         >
-            <button className={`rounded-l-lg text-[0.5rem] uppercase items-center py-2 px-4 mb-4 flex flex-col ${currentSection === 'section1' ? 'bg-[#9B692C]' : ''}`} onClick={() => scrollToSection('section1')}>
+            <button className={`text-[0.5rem] w-full uppercase items-center py-2 px-4 mb-4 flex flex-col ${currentSection === 'section1' ? 'bg-[#9B692C]' : ''}`} onClick={() => scrollToSection('section1')}>
                 <MdOutlineKeyboardDoubleArrowDown size={15}/>
                 Beranda
             </button>
-            <button className={`rounded-l-lg text-[0.5rem] uppercase items-center flex flex-col transition-all duration-300 py-2 px-4 mb-4 ${currentSection === 'section2' ? 'bg-[#9B692C]' : ''}`} onClick={() => scrollToSection('section2')}>
+            <button className={`text-[0.5rem] w-full uppercase items-center flex flex-col transition-all duration-300 py-2 px-4 mb-4 ${currentSection === 'section2' ? 'bg-[#9B692C]' : ''}`} onClick={() => scrollToSection('section2')}>
                 <MdOutlineKeyboardDoubleArrowDown size={15}/>
                 Beranda
             </button>
-            <button className={`rounded-l-lg text-[0.5rem] uppercase flex items-center flex-col transition-all duration-300 py-2 px-4 mb-4 ${currentSection === 'section3' ? 'bg-[#9B692C]' : ''}`} onClick={() => scrollToSection('section3')}>
+            <button className={`text-[0.5rem] w-full uppercase flex items-center flex-col transition-all duration-300 py-2 px-4 mb-4 ${currentSection === 'section3' ? 'bg-[#9B692C]' : ''}`} onClick={() => scrollToSection('section3')}>
                 <MdOutlineKeyboardDoubleArrowDown size={15}/>
                 Beranda
             </button>
-            <button className={`rounded-l-lg text-[0.5rem] uppercase flex items-center flex-col transition-all duration-300 py-2 px-4 mb-4 ${currentSection === 'section4' ? 'bg-[#9B692C]' : ''}`} onClick={() => scrollToSection('section4')}>
+            <button className={`text-[0.5rem] w-full uppercase flex items-center flex-col transition-all duration-300 py-2 px-4 mb-4 ${currentSection === 'section4' ? 'bg-[#9B692C]' : ''}`} onClick={() => scrollToSection('section4')}>
                 <MdOutlineKeyboardDoubleArrowDown size={15}/>
                 Beranda
             </button>
-            <button className={`rounded-l-lg text-[0.5rem] uppercase flex items-center flex-col transition-all duration-300 py-2 px-4 mb-4 ${currentSection === 'section5' ? 'bg-[#9B692C]' : ''}`} onClick={() => scrollToSection('section5')}>
+            <button className={`text-[0.5rem] w-full uppercase flex items-center flex-col transition-all duration-300 py-2 px-4 ${currentSection === 'section5' ? 'bg-[#9B692C]' : ''}`} onClick={() => scrollToSection('section5')}>
             <MdOutlineKeyboardDoubleArrowDown size={15}/>
                 Beranda
             </button>
