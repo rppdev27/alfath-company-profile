@@ -38,7 +38,7 @@ const App: React.FC = () => {
                     AZKA NAUFAL
                 </p>
                 <p className="text-center">1ST BIRTHDAY PARTY</p>
-                <img src="https://terhubung.id/wp-content/uploads/01.-ASTRONOT-01.png" alt="Astronaut" className="mx-auto">
+                <img src="https://terhubung.id/wp-content/uploads/01.-ASTRONOT-01.png" alt="Astronaut" className="mx-auto"/>
                 <p className="text-center">This is the content of the second section.</p>
             </section>
             {showSections && (
@@ -50,7 +50,7 @@ const App: React.FC = () => {
                             AZKA NAUFAL
                         </p>
                         <p className="text-center">1ST BIRTHDAY PARTY</p>
-                        <img src="https://terhubung.id/wp-content/uploads/01.-ASTRONOT-01.png" alt="Astronaut" className="mx-auto">
+                        <img src="https://terhubung.id/wp-content/uploads/01.-ASTRONOT-01.png" alt="Astronaut" className="mx-auto"/>
                         <p className="text-center">This is the content of the second section.</p>
                     </section>
                 </>
