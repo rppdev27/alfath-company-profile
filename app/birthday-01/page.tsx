@@ -38,11 +38,11 @@ const App: React.FC = () => {
                 </p>
                 <p className="text-center">1<sup>ST</sup> BIRTHDAY PARTY</p>
                 <img src="https://terhubung.id/wp-content/uploads/01.-ASTRONOT-01.png" alt="Astronaut" className="mx-auto"/>
-                <div className="text-base text-center p-6 border border-white font-extrabold text-white bg-[#182E4B] bg-opacity-80 rounded-md mt-2">
-                    <div>
+                <div className="text-lg text-center px-6 py-10 border border-white font-extrabold text-white bg-[#182E4B] bg-opacity-80 rounded-md mt-2">
+                    <div className='my-2'>
                         Halo,
                     </div>
-                    <div className="w/3-4 cursor-pointer text-center transition-transform duration-300 ease-in-out transform hover:scale-105 p-2 font-extrabold text-white bg-[#F6B772]" onClick={()=> scrollToSection2()}>
+                    <div className="w/3-4 cursor-pointer text-center transition-transform duration-300 ease-in-out transform hover:scale-105 p-2 font-extrabold text-white bg-[#F6B772] text-lg rounded-md" onClick={()=> scrollToSection2()}>
                         Buka Undangan
                     </div>
                 </div>
@@ -62,7 +62,7 @@ const App: React.FC = () => {
                         <p className="text-center">This is the content of the second section.</p>
                     </section>
 
-                    <div className="relative mx-auto">
+                    <div className="flex justify-center items-center">
                         <img src="https://terhubung.id/wp-content/uploads/01.-ASTRONOT-02-e1718723313157.png" style={{
                             width: '50%',
                             height: 'auto'
@@ -80,7 +80,7 @@ const App: React.FC = () => {
                         <p className="text-center">This is the content of the second section.</p>
                     </section>
 
-                    <div className="relative mx-auto">
+                    <div className="flex justify-center items-center">
                         <img src="https://terhubung.id/wp-content/uploads/01.-ASTRONOT-02-e1718723313157.png" style={{
                             width: '50%',
                             height: 'auto'
