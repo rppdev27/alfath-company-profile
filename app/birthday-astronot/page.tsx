@@ -20,7 +20,7 @@ const App: React.FC = () => {
   return (
 
     <div className="flex justify-center items-center bg-slate-200 relative">
-        <div className="bg-cover sm:bg-contain bg-no-repeat min-h-screen flex justify-center items-center relative w-[450px] bg-center mx-auto z-10" 
+        <div className="bg-cover sm:bg-contain bg-no-repeat min-h-screen flex justify-center items-center relative w-[450px] bg-center mx-auto z-10 overflow-x-hidden" 
             style={{ 
                 backgroundImage: `url(https://terhubung.id/wp-content/uploads/01.-BG-FIXED.jpeg)`,
                 backgroundPosition: 'center',
