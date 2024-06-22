@@ -31,7 +31,7 @@ const App: React.FC = () => {
             }}
         >
            <div className="bg-transparent bg-opacity-80 w-full mx-auto shadow-md">
-           <section id="section1" className="p-4 bg-transparent h-[calc(100vh-80px)] flex flex-col justify-center shadow-md w-full rounded-lg mb-10">
+           <section id="section1" className="p-4 bg-transparent h-[calc(100vh-80px)] flex flex-col justify-center w-full rounded-lg mb-10">
                 <h2 className="text-lg font-semibold text-center uppercase">You Are Invited to</h2>
                 <p className="textstroke text-center text-[48px] font-bold leading-tight tracking-[1.5px] text-[#F6B772] font-['Londrina_Solid'] stroke-2 stroke-white">
                     AZKA NAUFAL
@@ -39,9 +39,20 @@ const App: React.FC = () => {
                 <p className="text-center">1ST BIRTHDAY PARTY</p>
                 <img src="https://terhubung.id/wp-content/uploads/01.-ASTRONOT-01.png" alt="Astronaut" className="mx-auto"/>
                 <p className="text-center">This is the content of the second section.</p>
-                <div className="p-2 font-extrabold text-white" onClick={()=> scrollToSection2()}>
-                    Buka Undangan
+                <div className="p-3 border border-white font-extrabold text-white bg-[#182E4B] bg-opacity-80">
+                    <div>
+                        Halo,
+                    </div>
+                    <div className="p-2 font-extrabold text-white" onClick={()=> scrollToSection2()}>
+                        Buka Undangan
+                    </div>
+                    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+                    <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded transition-transform duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-300">
+                        Hover Me
+                    </button>
+                    </div>
                 </div>
+                
             </section>
             {showSections && (
                 <>
