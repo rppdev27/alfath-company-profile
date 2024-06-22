@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { FaRegEnvelopeOpen } from "react-icons/fa6";
+import { TbMapSearch } from "react-icons/tb";
 
 const App: React.FC = () => {
 
@@ -39,12 +40,15 @@ const App: React.FC = () => {
                 </p>
                 <p className="text-center">1<sup>ST</sup> BIRTHDAY PARTY</p>
                 <img src="https://terhubung.id/wp-content/uploads/01.-ASTRONOT-01.png" alt="Astronaut" className="mx-auto"/>
-                <div className="text-2xl text-center px-6 py-2 border border-white font-extrabold text-white bg-[#182E4B] bg-opacity-80 rounded-md mt-2">
-                    <div className='mb-4'>
+                <div className="text-center px-6 py-2 border border-white font-extrabold text-white bg-[#182E4B] bg-opacity-80 rounded-md mt-2">
+                    <div className='mb-4 text-3xl'>
                         Halo,
                     </div>
-                    <div className="w/3-4 cursor-pointer text-center transition-transform duration-300 ease-in-out transform hover:scale-105 p-2 font-extrabold text-white bg-[#F6B772] text-2xl rounded-md mb-4" onClick={()=> scrollToSection2()}>
-                        <FaRegEnvelopeOpen size={25} className='mr-1'/> Buka Undangan
+                    <div className='mb-4 text-3xl'>
+                        Nama Tamu
+                    </div>
+                    <div className="w/3-4 cursor-pointer text-center transition-transform duration-300 ease-in-out transform hover:scale-105 p-2 font-extrabold text-white bg-[#F6B772] text-3xl rounded-md mb-4 flex  items-center justify-center" onClick={()=> scrollToSection2()}>
+                        <FaRegEnvelopeOpen size={25} className='mr-3'/> Buka Undangan
                     </div>
                 </div>
                 
@@ -52,20 +56,31 @@ const App: React.FC = () => {
             {showSections && (
                 <>
                     <div className="relative">
-                    <section id="section2" className="p-4 h-[calc(100vh-80px)] flex flex-col justify-center bg-[#182E4B] bg-opacity-80 shadow-md w-full rounded-lg">
-                        <h2 className="text-lg font-semibold text-center">Section 3</h2>
-                        <p className="text-center">YOU ARE INVITED TO</p>
-                        <p className="text-center text-[48px] font-bold leading-tight tracking-[1.5px] text-[#F6B772] font-['Londrina_Solid'] stroke-2 stroke-white">
-                            AZKA NAUFAL
-                        </p>
-                        <p className="text-center">1ST BIRTHDAY PARTY</p>
-                        <img src="https://terhubung.id/wp-content/uploads/01.-ASTRONOT-01.png" alt="Astronaut" className="mx-auto"/>
-                        <p className="text-center">This is the content of the second section.</p>
+                    <section id="section2" className="px-4 min-h-[calc(70vh)] h-auto py-16 flex flex-col justify-start bg-[#182E4B] bg-opacity-80 shadow-md w-full rounded-lg">
+                       
+                    <p className="text-center text-3xl">Halo Teman Teman,</p>
+                    <p className="text-center text-3xl">Datang Yuk!</p>
+                    <p className="text-center text-3xl">Ke Acara Ulang Tahunku</p>
+                        <img src="https://images.unsplash.com/photo-1471286174890-9c112ffca5b4?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Astronaut" className="rounded-md mt-10 mx-auto border-solid shadow-lg border-[10px] border-[#f6b772]"
+                            style={{
+                                width: '70%',
+                                height: 'auto'
+                            }}
+                        />
+                    <div className="text-[#f6b772] text-3xl text-center my-6">
+                        AZKA NAUFAL PUTRA
+                    </div>
+
+                    <div className="text-[#fff] text-3xl text-center my-6">
+                    Putra dari Bapak Awan
+                    & Ibu Pelangi
+                    </div>
+                       
                     </section>
 
                     <div className="flex justify-center items-center"
                         style={{
-                            marginTop: '-150px',
+                            marginTop: '-80px',
                             marginLeft: '-200px',
                             marginBottom: '-50px'
                         }}
@@ -76,15 +91,37 @@ const App: React.FC = () => {
                         }}/>
                     </div>
                     
-                    <section id="section3" className="p-4 h-[calc(100vh-80px)] flex flex-col justify-center shadow-md bg-[#182E4B] bg-opacity-80 w-full rounded-lg mb-10">
-                        <h2 className="text-lg font-semibold text-center">Section 3</h2>
-                        <p className="text-center">YOU ARE INVITED TO</p>
-                        <p className="text-center text-[48px] font-bold leading-tight tracking-[1.5px] text-[#F6B772] font-['Londrina_Solid'] stroke-2 stroke-white">
-                            AZKA NAUFAL
-                        </p>
-                        <p className="text-center">1ST BIRTHDAY PARTY</p>
-                        <img src="https://terhubung.id/wp-content/uploads/01.-ASTRONOT-01.png" alt="Astronaut" className="mx-auto"/>
-                        <p className="text-center">This is the content of the second section.</p>
+                    <section id="section3" className="p-4 h-[calc(100vh-80px)] flex flex-col justify-start shadow-md bg-[#182E4B] bg-opacity-80 w-full rounded-lg mb-10">
+                        
+                        <div className="text-[#f6b772] text-3xl text-center my-6 uppercase">
+                            Save The Date
+                        </div>
+                        <div className="text-[#f6b772] text-3xl text-center my-6 uppercase">
+                           [09.09.09.09]
+                        </div>
+                        <div className="p-4 flex flex-col justify-center shadow-md bg-[#fff] w-full rounded-lg border-[#F6B772] border-4 text-center">
+                                <div className='text-[#182E4B] text-5xl font-extrabold uppercase'>
+                                    Minggu
+                                </div>
+                                <div className='text-[#f6b772] text-9xl font-extrabold'>
+                                    26
+                                </div>
+                                <div className='text-[#182E4B] text-5xl font-extrabold'>
+                                    DES 2024
+                                </div>
+                                <div className='text-[#182E4B] text-lg font-extrabold'>
+                                    13.00 WIB - 15.00 WIB
+                                </div>
+                                <div className='text-[#182E4B] text-xl font-extrabold mt-3'>
+                                    <div className='text-[#f6b772] text-5xl'>
+                                        MARGO CITY
+                                    </div>
+                                    Jl. Margonda Raya No. 358, Kemiri Muka, Kecamatan Beji, Kota Depok, Jawa Barat 16423
+                                </div>
+                                <div className="p-2 bg-[#f6b772] text-white text-3xl w-2/3 rounded-md my-4 mx-auto flex justify-center items-center font-extrabold">
+                                    <TbMapSearch size={25} className='mr-3'/> Google Map
+                                </div>
+                        </div>
                     </section>
 
                     <div className="flex justify-center items-center"
@@ -100,15 +137,31 @@ const App: React.FC = () => {
                         }}/>
                     </div>
 
-                    <section id="section2" className="p-4 bg-transparent h-[calc(100vh-80px)] flex flex-col justify-center bg-[#182E4B] shadow-md bg-opacity-80 w-full rounded-lg mb-10">
-                        <h2 className="text-lg font-semibold text-center">Section 3</h2>
-                        <p className="text-center">YOU ARE INVITED TO</p>
-                        <p className="text-center text-[48px] font-bold leading-tight tracking-[1.5px] text-[#F6B772] font-['Londrina_Solid'] stroke-2 stroke-white">
-                            AZKA NAUFAL
-                        </p>
-                        <p className="text-center">1ST BIRTHDAY PARTY</p>
+                    <section id="section4" className="p-4 h-[calc(100vh-80px)] flex flex-col justify-start shadow-md bg-[#182E4B] bg-opacity-80 w-full rounded-lg mb-10">
+                        
+                        <div className="text-[#f6b772] text-3xl text-center my-6 uppercase">
+                            Ucapan & Doa
+                        </div>
+                    </section>
+
+                    <section id="section4" className="p-4 h-[calc(100vh-80px)] flex flex-col justify-start shadow-md bg-[#182E4B] bg-opacity-80 w-full rounded-lg mb-10">
                         <img src="https://terhubung.id/wp-content/uploads/01.-ASTRONOT-01.png" alt="Astronaut" className="mx-auto"/>
-                        <p className="text-center">This is the content of the second section.</p>
+                        <div className="text-[#f6b772] text-3xl text-center my-6 uppercase">
+                            Terima Kasih
+                        </div>
+                        <div className="text-[#fff] text-3xl text-center my-6">
+                            Aku Tunggu Kehadiran<br/>
+                            Teman-Teman Yaa
+                        </div>
+                        <div className="text-[#f6b772] text-lg text-center my-6">
+                            Digital Invitation by
+                        </div>
+                        <img src="https://ik.imagekit.io/vtvggda66/menicaid/webapp/menica_greenlogo.png?updatedAt=1708333173911" alt="Astronaut" className="mx-auto"
+                            style={{
+                                width: '30%'
+                            }}
+                        />
+                        
                     </section>
                     </div>
                 </>
