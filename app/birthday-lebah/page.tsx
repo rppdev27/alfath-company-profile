@@ -59,7 +59,8 @@ const App: React.FC = () => {
                 backgroundAttachment: 'fixed'
             }}
         >
-        <div className="fixed top-5 left-5 h-auto rounded-md w-auto p-5 bg-black bg-opacity-20 text-black flex flex-col items-center py-8 z-50">
+        {/* <div className="fixed top-5 left-5 h-auto rounded-md w-auto p-5 bg-black bg-opacity-20 text-black flex flex-col items-center py-8 z-50"> */}
+        <div className="fixed inset-0 flex items-start justify-center h-auto w-16 bg-transparent text-white flex-col z-30">
             <button className={`py-2 px-4 mb-4 flex flex-col ${currentSection === 'section1' ? 'bg-gray-600' : ''}`} onClick={() => scrollToSection('section1')}># 1</button>
             <button className={`py-2 px-4 mb-4 ${currentSection === 'section2' ? 'bg-gray-600' : ''}`} onClick={() => scrollToSection('section2')}># 2</button>
             <button className={`py-2 px-4 mb-4 ${currentSection === 'section3' ? 'bg-gray-600' : ''}`} onClick={() => scrollToSection('section3')}># 3</button>
@@ -74,7 +75,7 @@ const App: React.FC = () => {
             
         >
            <div className="bg-transparent bg-opacity-80 w-full mx-auto">
-           <section id="section1" className="p-4 bg-transparent h-[calc(100vh-80px)] flex flex-col justify-center w-full rounded-lg mb-10">
+           <section id="section1" className="z-50 p-4 bg-transparent h-[calc(100vh-80px)] flex flex-col justify-center w-full rounded-lg mb-10">
                 <h2 className="text-lg font-semibold text-center uppercase text-[black]">You Are Invited to</h2>
                 <p className="textstroke text-center text-[48px] font-bold leading-tight tracking-[1.5px] text-[#9B692C] font-['Londrina_Solid'] stroke-2 stroke-white">
                     AZKA NAUFAL
@@ -88,7 +89,11 @@ const App: React.FC = () => {
                     <div className='mb-4 text-3xl'>
                         Nama Tamu
                     </div>
-                    <div className="w/3-4 cursor-pointer text-center transition-transform duration-300 ease-in-out transform hover:scale-105 p-2 font-extrabold text-white bg-[#9B692C] text-3xl rounded-md mb-4 flex  items-center justify-center" onClick={()=> scrollToSection2()}>
+                    <div 
+                        style={{
+                            zIndex: 9999
+                        }}
+                    className="w/3-4 cursor-pointer text-center transition-transform duration-300 ease-in-out transform hover:scale-105 p-2 font-extrabold text-white bg-[#9B692C] text-3xl rounded-md mb-4 flex  items-center justify-center" onClick={() => scrollToSection('section2')}>
                         <FaRegEnvelopeOpen size={25} className='mr-3'/> Buka Undangan
                     </div>
                 </div>
