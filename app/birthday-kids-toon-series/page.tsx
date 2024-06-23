@@ -8,6 +8,7 @@ import { Montserrat, Nunito, Palanquin } from "next/font/google";
 const nunito = Nunito({ subsets: ["latin"], display: 'swap', style: ['normal', 'italic'], })
 const montserrat = Montserrat({ subsets: ["latin"] })
 import { FcMms, FcCursor, FcParallelTasks, FcNightLandscape, FcVoicePresentation, FcApproval, FcCollaboration } from "react-icons/fc";
+import { PiWhatsappLogoDuotone } from "react-icons/pi";
 
 function Testi(){
 
@@ -95,6 +96,13 @@ function Testi(){
         
     }
 
+    const orderNow = () => {
+
+        console.log('call whatsapp');
+
+    }
+    
+
     return (
         <>
             <div className="flex flex-row justify-center items-center px-6 bg-[white] mt-[100px] sm:mt-[100px]">
@@ -122,7 +130,7 @@ function Testi(){
                             </div>
                         </div>
                 </div>
-                <div className="relative flex flex-row justify-center items-center bg-[white] mt-6">
+                <div className="relative flex flex-col justify-center items-center bg-[white] mt-6 mb-10">
                         <div className="bg-[#fff] w-[60%] mx-auto rounded-md py-6 grid grid-cols-1 sm:grid-cols-3 place-content-center gap-10" data-aos="fade-in">
                                 {
                                     testilist.map((item, index) =>(
@@ -158,6 +166,17 @@ function Testi(){
                                     ))
                                 }
                                 
+                        </div>
+
+                        {/* Order Now Button */}
+                        <div className="flex flex-row p-3 bg-green-700 text-white text-center shadow-xl rounded-md" 
+                            style={{
+                                fontFamily: 'Londrina Solid',
+                            }}
+                            onClick={()=> orderNow()}
+                        >
+                            <PiWhatsappLogoDuotone size={25} className="mr-2"/>
+                            Order Sekarang
                         </div>
                 </div>
         </>
