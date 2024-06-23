@@ -21,7 +21,7 @@ function Testi(){
             comment: 'Astronot',
             detail: 'Kepercayaan berawal dari pengalaman. Sejak 2014, kami telah menjadi mitra terpercaya ribuan pasangan dalam menciptakan undangan pernikahan online.',
             detail_id: 'Kepercayaan berawal dari pengalaman. Sejak 2014, kami telah menjadi mitra terpercaya ribuan pasangan dalam menciptakan undangan pernikahan online.',
-            color: '#1a2842',
+            color: '#0f223e',
             icon: <FcCursor size={35}/>,
             demo: 'https://menica.id',
         },
