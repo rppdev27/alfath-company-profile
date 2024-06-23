@@ -93,6 +93,26 @@ function Testi(){
             demo: 'https://menica.id',
 
         },
+        {
+            photo: 'https://asset.menica.pro/WhatsApp+Image+2024-06-23+at+10.30.51+AM(1).jpeg',
+            comment: 'Tentara',
+            detail: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap, template bervariasi!',
+            detail_id: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap dan tersedia banyak template!',
+            color: '#484927',
+            icon: <FcMms size={35}/>,
+            demo: 'https://menica.id',
+
+        },
+        {
+            photo: 'https://asset.menica.pro/WhatsApp+Image+2024-06-23+at+10.30.51+AM(1).jpeg',
+            comment: 'Spiderman',
+            detail: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap, template bervariasi!',
+            detail_id: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap dan tersedia banyak template!',
+            color: '#03418a',
+            icon: <FcMms size={35}/>,
+            demo: 'https://menica.id',
+
+        },
         
     ]
 
@@ -145,7 +165,7 @@ function Testi(){
                                                         </div>
                                                 </div>
                                                 
-                                                <p className={`text-3xl text-slate-600 font-bold mt-10 mb-5`} style={{ 
+                                                <p className={`text-3xl text-slate-600 font-bold mt-10 mb-10 text-center`} style={{ 
                                                     lineHeight: 0, 
                                                     color: item.color,
                                                     fontFamily: 'Londrina Solid',
@@ -154,9 +174,9 @@ function Testi(){
                                                     {item.comment}
                                                 </p>
 
-                                                <p className={`font-medium text-xs text-[#403F40] mb-2 italic ${nunito.className}`} style={ {marginTop : '20px' }}>
+                                                {/* <p className={`font-medium text-xs text-[#403F40] mb-2 italic ${nunito.className}`} style={ {marginTop : '20px' }}>
                                                     {item.detail}
-                                                </p>
+                                                </p> */}
 
                                                 <div 
                                                     onClick={()=> gotodemo(item.demo)}
