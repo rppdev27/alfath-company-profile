@@ -103,12 +103,6 @@ function Testi(){
         window.open(link, '_blank');
         
     }
-
-    const orderNow = () => {
-
-        console.log('call whatsapp');
-
-    }
     
 
     return (
