@@ -12,6 +12,14 @@ import { PiWhatsappLogoDuotone } from "react-icons/pi";
 
 function Testi(){
 
+    const phoneNumber = '+6281381593461'; // Phone number with country code
+    const message = 'Hello Admin, Can We Help You?';
+
+    const OrderNow = () => {
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        window.open(whatsappUrl, '_blank');
+    };
+
     useEffect(() => {
         AOS.init();
     }, [])
@@ -173,7 +181,7 @@ function Testi(){
                             style={{
                                 fontFamily: 'Londrina Solid',
                             }}
-                            onClick={()=> orderNow()}
+                            onClick={()=> OrderNow()}
                         >
                             <PiWhatsappLogoDuotone size={25} className="mr-2"/>
                             Order Sekarang
