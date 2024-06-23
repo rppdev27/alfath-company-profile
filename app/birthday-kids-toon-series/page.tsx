@@ -177,7 +177,7 @@ function Testi(){
                         </div>
 
                         {/* Order Now Button */}
-                        <div className="flex flex-row p-3 bg-green-700 text-white text-center shadow-xl rounded-md" 
+                        <div className="w-[60%] flex flex-row p-3 bg-green-700 text-white text-lg cursor-pointer hover:bg-green-900 text-center shadow-xl rounded-md my-10 items-center justify-center" 
                             style={{
                                 fontFamily: 'Londrina Solid',
                             }}
