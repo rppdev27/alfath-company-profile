@@ -127,8 +127,8 @@ function Testi(){
                                         fontFamily: 'Londrina Solid'
                                     }}
                                 >
-                                       Cocok untuk Undangan <span className="text-[#03a9f4]">Ultah</span>, <span className="text-[#4a8b8c]">Khitan</span>, 
-                                       <span className="text-[#ef6c00]">Aqiqah</span>
+                                       Cocok untuk Undangan <span className="text-[#522e65]">Ultah</span>, <span className="text-[#4a8b8c]">Khitan</span>, 
+                                       <span className="text-[#ef6c00]"> Aqiqah</span>
                                 </p>
                             </div>
                         </div>
