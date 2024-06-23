@@ -1,0 +1,167 @@
+'use client'
+
+import { useEffect } from "react";
+import Image from 'next/image'
+import AOS from 'aos'
+import 'aos/dist/aos.css';
+import { Montserrat, Nunito, Palanquin } from "next/font/google";
+const nunito = Nunito({ subsets: ["latin"], display: 'swap', style: ['normal', 'italic'], })
+const palanquin = Palanquin({ 
+    subsets: ["latin"], 
+    display: 'swap',
+    style: ['normal'],
+    weight: ['100', '200','300', '400','500', '600','700'],
+})
+const montserrat = Montserrat({ subsets: ["latin"] })
+import { FcMms, FcCursor, FcParallelTasks, FcNightLandscape, FcVoicePresentation, FcApproval, FcCollaboration } from "react-icons/fc";
+
+function Testi(){
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
+    const testilist = [
+        {
+            photo: 'https://asset.menica.pro/WhatsApp+Image+2024-06-23+at+10.30.54+AM.jpeg',
+            email: 'Astronot',
+            comment: 'Birthday Astronot',
+            detail: 'Kepercayaan berawal dari pengalaman. Sejak 2014, kami telah menjadi mitra terpercaya ribuan pasangan dalam menciptakan undangan pernikahan online.',
+            detail_id: 'Kepercayaan berawal dari pengalaman. Sejak 2014, kami telah menjadi mitra terpercaya ribuan pasangan dalam menciptakan undangan pernikahan online.',
+            color: '#9c27b0',
+            icon: <FcCursor size={35}/>
+        },
+        {
+            photo: 'https://asset.menica.pro/WhatsApp+Image+2024-06-23+at+10.30.53+AM(1).jpeg',
+            email: 'Astronot',
+            comment: 'Birthday Dragon',
+            detail: 'Menciptakan momen spesial tak harus mahal. Ciptkan undangan pernikahan yang terjangkau dengan fitur maksimal',
+            detail_id: 'Menciptakan momen spesial tak harus mahal. Ciptkan undangan pernikahan yang terjangkau dengan fitur maksimal',
+            color: '#03a9f4',
+            icon: <FcCollaboration size={35}/>
+
+        },
+        {
+            photo: 'https://asset.menica.pro/WhatsApp+Image+2024-06-23+at+10.30.53+AM.jpeg',
+            email: 'Astronot',
+            comment: 'Birthday Dino ',
+            detail: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap, template bervariasi!',
+            detail_id: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap dan tersedia banyak template!',
+            color: '#ef6c00',
+            icon: <FcMms size={35}/>
+
+        },
+        {
+            photo: 'https://asset.menica.pro/WhatsApp+Image+2024-06-23+at+10.30.52+AM(1).jpeg',
+            email: 'Astronot',
+            comment: 'Birthday Panda ',
+            detail: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap, template bervariasi!',
+            detail_id: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap dan tersedia banyak template!',
+            color: '#9c27b0',
+            icon: <FcMms size={35}/>
+
+        },
+        {
+            photo: 'https://asset.menica.pro/WhatsApp+Image+2024-06-23+at+10.30.52+AM.jpeg',
+            email: 'Astronot',
+            comment: 'Birthday Lebah ',
+            detail: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap, template bervariasi!',
+            detail_id: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap dan tersedia banyak template!',
+            color: '#ef6c00',
+            icon: <FcMms size={35}/>
+
+        },
+        {
+            photo: 'https://asset.menica.pro/WhatsApp+Image+2024-06-23+at+10.30.51+AM.jpeg',
+            email: 'Astronot',
+            comment: 'Birthday Penyu ',
+            detail: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap, template bervariasi!',
+            detail_id: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap dan tersedia banyak template!',
+            color: '#03a9f4',
+            icon: <FcMms size={35}/>
+
+        },
+        {
+            photo: 'https://asset.menica.pro/WhatsApp+Image+2024-06-23+at+10.30.51+AM(1).jpeg',
+            email: 'Astronot',
+            comment: 'Birthday Gajah',
+            detail: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap, template bervariasi!',
+            detail_id: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap dan tersedia banyak template!',
+            color: '#9c27b0',
+            icon: <FcMms size={35}/>
+
+        },
+        
+    ]
+    return (
+        <>
+            {/* Explore Harga Heading*/}
+            <div className="flex flex-row justify-center items-center px-6 bg-[white] mt-[100px] sm:mt-[100px]">
+                        <div className="flex flex-col justify-center">
+                            <div className="font-Nunito uppercase font-[600] text-slate-400 text-sm sm:text-base text-center mb-2 tracking-wide" style={nunito.style}>
+                                <p style={{
+                                    fontFamily: 'Londrina Solid'
+                                }}>
+                                    New Theme
+                                </p>
+                            </div>
+                            <div className="font-[700] text-[#403F40] text-[2rem] sm:text-[3.5rem] text-center leading-normal" style={nunito.style}>
+                                <p style={{
+                                    fontFamily: 'Londrina Solid'
+                                }}>
+                                    {/* 3 Kata <span className="text-[#3EA80C]">untuk Menica</span> */}
+                                    <span className="text-[#3EA80C] uppercase">Kids Toon</span> Series
+                                </p>
+                                <p className={`text-[1rem] sm:text-[1.2rem] text-slate-600 font-bold my-5 tracking-tigher font-DM`}
+                                    style={{
+                                        fontFamily: 'Londrina Solid'
+                                    }}
+                                >
+                                       Cocok untuk Undangan Ultah, Khitan, Aqiqah
+                                </p>
+                            </div>
+                        </div>
+                </div>
+                {/* Pelajari Harga Content */}
+                <div className="relative flex flex-row justify-center items-center bg-[white] mt-6">
+                        <div className="bg-[#fff] w-[60%] mx-auto rounded-md py-6 grid grid-cols-1 sm:grid-cols-3 place-content-center gap-10" data-aos="fade-in">
+                                {
+                                    testilist.map((item, index) =>(
+                                        <div className="shadow-lg rounded-md flex flex-col bg-[#fff] py-6 px-6 border-[#3EA80C] border-b-8 hover:bg-slate-100 transition-all">
+                                            <div className="flex flex-col text-left" style={nunito.style}>
+                                                <div className="flex flex-row items-center justify-between">
+                                                        <div className="font-bold text-sm text-[#fff] my-2 mt-0" style={nunito.style}>
+                                                            <img src={item.photo} alt='' className="rounded-md shadow-xl"/>
+                                                        </div>
+                                                </div>
+                                                
+                                                
+
+                                                <p className={`text-3xl text-slate-600 font-bold mt-10 mb-5`} style={{ 
+                                                    lineHeight: 0, 
+                                                    color: item.color,
+                                                    fontFamily: 'Londrina Solid',
+                                                    // letterSpacing: 'initial'
+                                                }}>
+                                                    {item.comment}
+                                                </p>
+
+
+                                                <p className={`font-medium text-xs text-[#403F40] mb-2 italic ${nunito.className}`} style={ {marginTop : '20px' }}>
+                                                    {item.detail}
+                                                </p>
+                                                <div className="text-green-700 font-extrabold underline my-2 cursor-pointer">
+                                                    Live Demo
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ))
+                                }
+                                
+                        </div>
+                </div>
+        </>
+    )
+}
+
+export default Testi;
