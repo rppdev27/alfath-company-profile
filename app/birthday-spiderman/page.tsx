@@ -83,19 +83,19 @@ const App: React.FC = () => {
                 fontSize: '0.8rem'
             }}
         >
-            <button className={`text-[0.5rem] w-full uppercase items-center py-2 mb-4 px-2 flex flex-col ${currentSection === 'section1' ? 'text-[#03418a]' : ''}`} onClick={() => scrollToSection('section1')}>
+            <button className={`text-[0.5rem] w-full uppercase items-center py-2 mb-4 px-2 flex flex-col ${currentSection === 'section1' ? 'text-[black]' : ''}`} onClick={() => scrollToSection('section1')}>
                 <FaRegCircleDot size={15}/>
                 {/* Beranda */}
             </button>
-            <button className={`text-[0.5rem] w-full uppercase items-center flex flex-col transition-all duration-300 py-2 mb-4 ${currentSection === 'section2' ? 'text-[#03418a]' : ''}`} onClick={() => scrollToSection('section2')}>
+            <button className={`text-[0.5rem] w-full uppercase items-center flex flex-col transition-all duration-300 py-2 mb-4 ${currentSection === 'section2' ? 'text-[black]' : ''}`} onClick={() => scrollToSection('section2')}>
                 <FaRegCircleDot size={15}/>
                 {/* Beranda */}
             </button>
-            <button className={`text-[0.5rem] w-full uppercase flex items-center flex-col transition-all duration-300 py-2 mb-4 ${currentSection === 'section3' ? 'text-[#03418a]' : ''}`} onClick={() => scrollToSection('section3')}>
+            <button className={`text-[0.5rem] w-full uppercase flex items-center flex-col transition-all duration-300 py-2 mb-4 ${currentSection === 'section3' ? 'text-[black]' : ''}`} onClick={() => scrollToSection('section3')}>
                 <FaRegCircleDot size={15}/>
                 {/* Beranda */}
             </button>
-            <button className={`text-[0.5rem] w-full uppercase flex items-center flex-col transition-all duration-300 py-2 mb-4 ${currentSection === 'section4' ? 'text-[#03418a]' : ''}`} onClick={() => scrollToSection('section4')}>
+            <button className={`text-[0.5rem] w-full uppercase flex items-center flex-col transition-all duration-300 py-2 mb-4 ${currentSection === 'section4' ? 'text-[black]' : ''}`} onClick={() => scrollToSection('section4')}>
                 <FaRegCircleDot size={15}/>
                 {/* Beranda */}
             </button>
