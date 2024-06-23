@@ -24,8 +24,7 @@ function Testi(){
     const testilist = [
         {
             photo: 'https://asset.menica.pro/WhatsApp+Image+2024-06-23+at+10.30.54+AM.jpeg',
-            email: 'Astronot',
-            comment: 'Birthday Astronot',
+            comment: 'Astronot',
             detail: 'Kepercayaan berawal dari pengalaman. Sejak 2014, kami telah menjadi mitra terpercaya ribuan pasangan dalam menciptakan undangan pernikahan online.',
             detail_id: 'Kepercayaan berawal dari pengalaman. Sejak 2014, kami telah menjadi mitra terpercaya ribuan pasangan dalam menciptakan undangan pernikahan online.',
             color: '#9c27b0',
@@ -34,8 +33,7 @@ function Testi(){
         },
         {
             photo: 'https://asset.menica.pro/WhatsApp+Image+2024-06-23+at+10.30.53+AM(1).jpeg',
-            email: 'Astronot',
-            comment: 'Birthday Dragon',
+            comment: 'Dragon',
             detail: 'Menciptakan momen spesial tak harus mahal. Ciptkan undangan pernikahan yang terjangkau dengan fitur maksimal',
             detail_id: 'Menciptakan momen spesial tak harus mahal. Ciptkan undangan pernikahan yang terjangkau dengan fitur maksimal',
             color: '#03a9f4',
@@ -45,8 +43,7 @@ function Testi(){
         },
         {
             photo: 'https://asset.menica.pro/WhatsApp+Image+2024-06-23+at+10.30.53+AM.jpeg',
-            email: 'Astronot',
-            comment: 'Birthday Dino ',
+            comment: ' Dino ',
             detail: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap, template bervariasi!',
             detail_id: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap dan tersedia banyak template!',
             color: '#ef6c00',
@@ -55,8 +52,7 @@ function Testi(){
         },
         {
             photo: 'https://asset.menica.pro/WhatsApp+Image+2024-06-23+at+10.30.52+AM(1).jpeg',
-            email: 'Astronot',
-            comment: 'Birthday Panda ',
+            comment: 'Panda ',
             detail: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap, template bervariasi!',
             detail_id: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap dan tersedia banyak template!',
             color: '#9c27b0',
@@ -66,8 +62,7 @@ function Testi(){
         },
         {
             photo: 'https://asset.menica.pro/WhatsApp+Image+2024-06-23+at+10.30.52+AM.jpeg',
-            email: 'Astronot',
-            comment: 'Birthday Lebah ',
+            comment: 'Lebah ',
             detail: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap, template bervariasi!',
             detail_id: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap dan tersedia banyak template!',
             color: '#ef6c00',
@@ -77,8 +72,7 @@ function Testi(){
         },
         {
             photo: 'https://asset.menica.pro/WhatsApp+Image+2024-06-23+at+10.30.51+AM.jpeg',
-            email: 'Astronot',
-            comment: 'Birthday Penyu ',
+            comment: 'Penyu ',
             detail: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap, template bervariasi!',
             detail_id: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap dan tersedia banyak template!',
             color: '#03a9f4',
@@ -88,8 +82,7 @@ function Testi(){
         },
         {
             photo: 'https://asset.menica.pro/WhatsApp+Image+2024-06-23+at+10.30.51+AM(1).jpeg',
-            email: 'Astronot',
-            comment: 'Birthday Gajah',
+            comment: 'Elephant',
             detail: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap, template bervariasi!',
             detail_id: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap dan tersedia banyak template!',
             color: '#9c27b0',
@@ -163,7 +156,7 @@ function Testi(){
                                                 </p>
                                                 <div 
                                                     onClick={()=> gotodemo(item.demo)}
-                                                    className="text-green-700 font-extrabold underline my-2 cursor-pointer">
+                                                    className="hover:bg-slate-200 sm:p-2 p-4 rounded-md text-center text-green-700 border border-green-700 font-extrabold underline my-2 cursor-pointer">
                                                     Live Demo
                                                 </div>
                                             </div>
