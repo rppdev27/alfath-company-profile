@@ -29,7 +29,8 @@ function Testi(){
             detail: 'Kepercayaan berawal dari pengalaman. Sejak 2014, kami telah menjadi mitra terpercaya ribuan pasangan dalam menciptakan undangan pernikahan online.',
             detail_id: 'Kepercayaan berawal dari pengalaman. Sejak 2014, kami telah menjadi mitra terpercaya ribuan pasangan dalam menciptakan undangan pernikahan online.',
             color: '#9c27b0',
-            icon: <FcCursor size={35}/>
+            icon: <FcCursor size={35}/>,
+            demo: 'https://menica.id',
         },
         {
             photo: 'https://asset.menica.pro/WhatsApp+Image+2024-06-23+at+10.30.53+AM(1).jpeg',
@@ -38,7 +39,8 @@ function Testi(){
             detail: 'Menciptakan momen spesial tak harus mahal. Ciptkan undangan pernikahan yang terjangkau dengan fitur maksimal',
             detail_id: 'Menciptakan momen spesial tak harus mahal. Ciptkan undangan pernikahan yang terjangkau dengan fitur maksimal',
             color: '#03a9f4',
-            icon: <FcCollaboration size={35}/>
+            icon: <FcCollaboration size={35}/>,
+            demo: 'https://menica.id',
 
         },
         {
@@ -58,7 +60,8 @@ function Testi(){
             detail: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap, template bervariasi!',
             detail_id: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap dan tersedia banyak template!',
             color: '#9c27b0',
-            icon: <FcMms size={35}/>
+            icon: <FcMms size={35}/>,
+            demo: 'https://menica.id',
 
         },
         {
@@ -68,7 +71,8 @@ function Testi(){
             detail: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap, template bervariasi!',
             detail_id: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap dan tersedia banyak template!',
             color: '#ef6c00',
-            icon: <FcMms size={35}/>
+            icon: <FcMms size={35}/>,
+            demo: 'https://menica.id',
 
         },
         {
@@ -78,7 +82,8 @@ function Testi(){
             detail: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap, template bervariasi!',
             detail_id: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap dan tersedia banyak template!',
             color: '#03a9f4',
-            icon: <FcMms size={35}/>
+            icon: <FcMms size={35}/>,
+            demo: 'https://menica.id',
 
         },
         {
@@ -88,11 +93,21 @@ function Testi(){
             detail: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap, template bervariasi!',
             detail_id: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap dan tersedia banyak template!',
             color: '#9c27b0',
-            icon: <FcMms size={35}/>
+            icon: <FcMms size={35}/>,
+            demo: 'https://menica.id',
 
         },
         
     ]
+
+    const gotodemo = (link: any) => {
+
+        console.log(link);
+
+        window.open(link, '_blank');
+        
+    }
+
     return (
         <>
             {/* Explore Harga Heading*/}
@@ -135,8 +150,6 @@ function Testi(){
                                                         </div>
                                                 </div>
                                                 
-                                                
-
                                                 <p className={`text-3xl text-slate-600 font-bold mt-10 mb-5`} style={{ 
                                                     lineHeight: 0, 
                                                     color: item.color,
@@ -145,12 +158,12 @@ function Testi(){
                                                 }}>
                                                     {item.comment}
                                                 </p>
-
-
                                                 <p className={`font-medium text-xs text-[#403F40] mb-2 italic ${nunito.className}`} style={ {marginTop : '20px' }}>
                                                     {item.detail}
                                                 </p>
-                                                <div className="text-green-700 font-extrabold underline my-2 cursor-pointer">
+                                                <div 
+                                                    onClick={()=> gotodemo(item.demo)}
+                                                    className="text-green-700 font-extrabold underline my-2 cursor-pointer">
                                                     Live Demo
                                                 </div>
                                             </div>
