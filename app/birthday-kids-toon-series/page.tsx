@@ -6,12 +6,6 @@ import AOS from 'aos'
 import 'aos/dist/aos.css';
 import { Montserrat, Nunito, Palanquin } from "next/font/google";
 const nunito = Nunito({ subsets: ["latin"], display: 'swap', style: ['normal', 'italic'], })
-const palanquin = Palanquin({ 
-    subsets: ["latin"], 
-    display: 'swap',
-    style: ['normal'],
-    weight: ['100', '200','300', '400','500', '600','700'],
-})
 const montserrat = Montserrat({ subsets: ["latin"] })
 import { FcMms, FcCursor, FcParallelTasks, FcNightLandscape, FcVoicePresentation, FcApproval, FcCollaboration } from "react-icons/fc";
 
@@ -27,7 +21,7 @@ function Testi(){
             comment: 'Astronot',
             detail: 'Kepercayaan berawal dari pengalaman. Sejak 2014, kami telah menjadi mitra terpercaya ribuan pasangan dalam menciptakan undangan pernikahan online.',
             detail_id: 'Kepercayaan berawal dari pengalaman. Sejak 2014, kami telah menjadi mitra terpercaya ribuan pasangan dalam menciptakan undangan pernikahan online.',
-            color: '#9c27b0',
+            color: '#1a2842',
             icon: <FcCursor size={35}/>,
             demo: 'https://menica.id',
         },
@@ -36,7 +30,7 @@ function Testi(){
             comment: 'Dragon',
             detail: 'Menciptakan momen spesial tak harus mahal. Ciptkan undangan pernikahan yang terjangkau dengan fitur maksimal',
             detail_id: 'Menciptakan momen spesial tak harus mahal. Ciptkan undangan pernikahan yang terjangkau dengan fitur maksimal',
-            color: '#03a9f4',
+            color: '#522e65',
             icon: <FcCollaboration size={35}/>,
             demo: 'https://menica.id',
 
@@ -46,7 +40,7 @@ function Testi(){
             comment: ' Dino ',
             detail: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap, template bervariasi!',
             detail_id: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap dan tersedia banyak template!',
-            color: '#ef6c00',
+            color: '#4a8b8c',
             icon: <FcMms size={35}/>
 
         },
@@ -55,7 +49,7 @@ function Testi(){
             comment: 'Panda ',
             detail: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap, template bervariasi!',
             detail_id: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap dan tersedia banyak template!',
-            color: '#9c27b0',
+            color: '#663',
             icon: <FcMms size={35}/>,
             demo: 'https://menica.id',
 
@@ -85,7 +79,7 @@ function Testi(){
             comment: 'Elephant',
             detail: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap, template bervariasi!',
             detail_id: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap dan tersedia banyak template!',
-            color: '#9c27b0',
+            color: '#fc7b89',
             icon: <FcMms size={35}/>,
             demo: 'https://menica.id',
 
@@ -103,7 +97,6 @@ function Testi(){
 
     return (
         <>
-            {/* Explore Harga Heading*/}
             <div className="flex flex-row justify-center items-center px-6 bg-[white] mt-[100px] sm:mt-[100px]">
                         <div className="flex flex-col justify-center">
                             <div className="font-Nunito uppercase font-[600] text-slate-400 text-sm sm:text-base text-center mb-2 tracking-wide" style={nunito.style}>
@@ -117,7 +110,6 @@ function Testi(){
                                 <p style={{
                                     fontFamily: 'Londrina Solid'
                                 }}>
-                                    {/* 3 Kata <span className="text-[#3EA80C]">untuk Menica</span> */}
                                     <span className="text-[#3EA80C] uppercase">Kids Toon</span> Series
                                 </p>
                                 <p className={`text-[1rem] sm:text-[1.2rem] text-slate-600 font-bold my-5 tracking-tigher font-DM`}
@@ -130,7 +122,6 @@ function Testi(){
                             </div>
                         </div>
                 </div>
-                {/* Pelajari Harga Content */}
                 <div className="relative flex flex-row justify-center items-center bg-[white] mt-6">
                         <div className="bg-[#fff] w-[60%] mx-auto rounded-md py-6 grid grid-cols-1 sm:grid-cols-3 place-content-center gap-10" data-aos="fade-in">
                                 {
@@ -151,14 +142,17 @@ function Testi(){
                                                 }}>
                                                     {item.comment}
                                                 </p>
+
                                                 <p className={`font-medium text-xs text-[#403F40] mb-2 italic ${nunito.className}`} style={ {marginTop : '20px' }}>
                                                     {item.detail}
                                                 </p>
+
                                                 <div 
                                                     onClick={()=> gotodemo(item.demo)}
                                                     className="hover:bg-slate-200 sm:p-2 p-4 rounded-md text-center text-green-700 border border-green-700 font-extrabold underline my-2 cursor-pointer">
                                                     Live Demo
                                                 </div>
+
                                             </div>
                                         </div>
                                     ))
