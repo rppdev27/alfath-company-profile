@@ -125,7 +125,7 @@ function Testi(){
 
         },
         {
-            photo: 'https://asset.menica.pro/WhatsApp+Image+2024-06-23+at+10.30.51+AM(1).jpeg',
+            photo: 'https://asset.menica.pro/thumbnail-kidseries-04.webp',
             comment: 'Kucing',
             detail: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap, template bervariasi!',
             detail_id: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap dan tersedia banyak template!',
@@ -136,7 +136,7 @@ function Testi(){
 
         },
         {
-            photo: 'https://asset.menica.pro/WhatsApp+Image+2024-06-23+at+10.30.51+AM(1).jpeg',
+            photo: 'https://asset.menica.pro/thumbnail-kidseries-03.webp',
             comment: 'Gundam',
             detail: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap, template bervariasi!',
             detail_id: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap dan tersedia banyak template!',
@@ -147,7 +147,7 @@ function Testi(){
 
         },
         {
-            photo: 'https://asset.menica.pro/WhatsApp+Image+2024-06-23+at+10.30.51+AM(1).jpeg',
+            photo: 'https://asset.menica.pro/thumbnail-kidseries-02.webp',
             comment: 'School Bus',
             detail: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap, template bervariasi!',
             detail_id: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap dan tersedia banyak template!',
@@ -158,7 +158,7 @@ function Testi(){
 
         },
         {
-            photo: 'https://asset.menica.pro/WhatsApp+Image+2024-06-23+at+10.30.51+AM(1).jpeg',
+            photo: 'https://asset.menica.pro/thumbnail-kidseries-01.webp',
             comment: 'Batman',
             detail: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap, template bervariasi!',
             detail_id: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap dan tersedia banyak template!',
