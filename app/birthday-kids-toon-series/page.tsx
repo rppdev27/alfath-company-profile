@@ -12,6 +12,8 @@ import { PiWhatsappLogoDuotone } from "react-icons/pi";
 
 function Testi(){
 
+    const base_url = 'https://alfath.co.id/'
+
     const phoneNumber = '+6281381593461'; // Phone number with country code
     const message = 'Hello Admin, Can We Help You?';
 
@@ -33,6 +35,7 @@ function Testi(){
             color: '#0f223e',
             icon: <FcCursor size={35}/>,
             demo: 'https://menica.id',
+            url: 'birtday-astronot',
         },
         {
             photo: 'https://asset.menica.pro/WhatsApp+Image+2024-06-23+at+10.30.53+AM(1).jpeg',
@@ -42,6 +45,7 @@ function Testi(){
             color: '#522e65',
             icon: <FcCollaboration size={35}/>,
             demo: 'https://menica.id',
+            url: 'birtday-astronot',
 
         },
         {
@@ -50,7 +54,8 @@ function Testi(){
             detail: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap, template bervariasi!',
             detail_id: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap dan tersedia banyak template!',
             color: '#4a8b8c',
-            icon: <FcMms size={35}/>
+            icon: <FcMms size={35}/>,
+            url: 'birtday-astronot',
 
         },
         {
@@ -61,6 +66,7 @@ function Testi(){
             color: '#663',
             icon: <FcMms size={35}/>,
             demo: 'https://menica.id',
+            url: 'birtday-astronot',
 
         },
         {
@@ -71,6 +77,7 @@ function Testi(){
             color: '#ef6c00',
             icon: <FcMms size={35}/>,
             demo: 'https://menica.id',
+            url: 'birtday-astronot',
 
         },
         {
@@ -81,6 +88,7 @@ function Testi(){
             color: '#03a9f4',
             icon: <FcMms size={35}/>,
             demo: 'https://menica.id',
+            url: 'birtday-astronot',
 
         },
         {
@@ -91,6 +99,7 @@ function Testi(){
             color: '#fc7b89',
             icon: <FcMms size={35}/>,
             demo: 'https://menica.id',
+            url: 'birtday-astronot',
 
         },
         {
@@ -101,6 +110,7 @@ function Testi(){
             color: '#484927',
             icon: <FcMms size={35}/>,
             demo: 'https://menica.id',
+            url: 'birtday-astronot',
 
         },
         {
@@ -111,6 +121,7 @@ function Testi(){
             color: '#03418a',
             icon: <FcMms size={35}/>,
             demo: 'https://menica.id',
+            url: 'birtday-astronot',
 
         },
         {
@@ -121,6 +132,7 @@ function Testi(){
             color: '#03418a',
             icon: <FcMms size={35}/>,
             demo: 'https://menica.id',
+            url: 'birtday-astronot',
 
         },
         {
@@ -131,6 +143,7 @@ function Testi(){
             color: '#03418a',
             icon: <FcMms size={35}/>,
             demo: 'https://menica.id',
+            url: 'birtday-astronot',
 
         },
         
@@ -138,9 +151,9 @@ function Testi(){
 
     const gotodemo = (link: any) => {
 
-        console.log(link);
+        console.log(base_url+link);
 
-        window.open(link, '_blank');
+        window.open(base_url+link, '_blank');
         
     }
     
@@ -199,7 +212,7 @@ function Testi(){
                                                 </p> */}
 
                                                 <div 
-                                                    onClick={()=> gotodemo(item.demo)}
+                                                    onClick={()=> gotodemo(item.url)}
                                                     className="hover:bg-slate-200 sm:p-2 p-4 rounded-md text-center text-green-700 border border-green-700 font-extrabold underline my-2 cursor-pointer">
                                                     Live Demo
                                                 </div>
