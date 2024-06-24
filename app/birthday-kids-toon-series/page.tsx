@@ -45,7 +45,7 @@ function Testi(){
             color: '#522e65',
             icon: <FcCollaboration size={35}/>,
             demo: 'https://menica.id',
-            url: 'birtday-astronot',
+            url: 'birtday-dragon',
 
         },
         {
@@ -55,7 +55,7 @@ function Testi(){
             detail_id: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap dan tersedia banyak template!',
             color: '#4a8b8c',
             icon: <FcMms size={35}/>,
-            url: 'birtday-astronot',
+            url: 'birtday-dino',
 
         },
         {
@@ -66,7 +66,7 @@ function Testi(){
             color: '#663',
             icon: <FcMms size={35}/>,
             demo: 'https://menica.id',
-            url: 'birtday-astronot',
+            url: 'birtday-panda',
 
         },
         {
@@ -77,7 +77,7 @@ function Testi(){
             color: '#ef6c00',
             icon: <FcMms size={35}/>,
             demo: 'https://menica.id',
-            url: 'birtday-astronot',
+            url: 'birtday-lebah',
 
         },
         {
@@ -88,7 +88,7 @@ function Testi(){
             color: '#03a9f4',
             icon: <FcMms size={35}/>,
             demo: 'https://menica.id',
-            url: 'birtday-astronot',
+            url: 'birtday-penyu',
 
         },
         {
@@ -99,7 +99,7 @@ function Testi(){
             color: '#fc7b89',
             icon: <FcMms size={35}/>,
             demo: 'https://menica.id',
-            url: 'birtday-astronot',
+            url: 'birtday-elephant',
 
         },
         {
@@ -110,7 +110,7 @@ function Testi(){
             color: '#484927',
             icon: <FcMms size={35}/>,
             demo: 'https://menica.id',
-            url: 'birtday-astronot',
+            url: 'birtday-soldier',
 
         },
         {
@@ -121,7 +121,7 @@ function Testi(){
             color: '#03418a',
             icon: <FcMms size={35}/>,
             demo: 'https://menica.id',
-            url: 'birtday-astronot',
+            url: 'birtday-spiderman',
 
         },
         {
@@ -132,7 +132,7 @@ function Testi(){
             color: '#03418a',
             icon: <FcMms size={35}/>,
             demo: 'https://menica.id',
-            url: 'birtday-astronot',
+            url: 'birtday-cat',
 
         },
         {
@@ -143,7 +143,7 @@ function Testi(){
             color: '#03418a',
             icon: <FcMms size={35}/>,
             demo: 'https://menica.id',
-            url: 'birtday-astronot',
+            url: 'birtday-gundam',
 
         },
         
