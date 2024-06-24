@@ -79,7 +79,7 @@ const App: React.FC = () => {
     <div className="flex justify-center items-center bg-slate-200 relative">
         <div className="bg-cover sm:bg-contain bg-no-repeat min-h-screen flex justify-center items-center relative w-[450px] bg-center mx-auto z-10 overflow-x-hidden" 
             style={{ 
-                backgroundImage: `url(https://asset.menica.pro/cc08f237-6bb2-44c3-97d7-41cadc638add-removebg-preview.png)`,
+                backgroundImage: `url(https://asset.menica.pro/poster-batman-dark-knight-returnsss.jpg)`,
                 backgroundPosition: 'center',
                 backgroundAttachment: 'fixed'
             }}
@@ -128,7 +128,7 @@ const App: React.FC = () => {
                     AZKA NAUFAL
                 </p>
                 <div className="text-center text-[#fff]" data-aos="fade-up">1<sup>ST</sup> BIRTHDAY PARTY</div>
-                <img data-aos="fade-up" src="https://asset.menica.pro/f9417f75-32e8-4b72-b68b-c721e6a566e3-removebg-preview.png" alt="Astronaut" className="mx-auto"/>
+                <img data-aos="fade-up" src="https://asset.menica.pro/cc08f237-6bb2-44c3-97d7-41cadc638add-removebg-preview.png" alt="Astronaut" className="mx-auto"/>
                 <div className="text-center px-6 py-2 border border-white font-extrabold text-white bg-[#0c1e1b] bg-opacity-80 rounded-md mt-2">
                     <div className='mb-4 text-3xl'>
                         Halo,
@@ -293,7 +293,7 @@ const App: React.FC = () => {
                     </section>
 
                     <section id="section5" className="p-4 h-auto sm:min-h-[calc(100vh-80px)] flex flex-col justify-start shadow-md bg-[#0c1e1b] bg-opacity-80  w-full rounded-lg mb-10">
-                        <img src="https://asset.menica.pro/poster-batman-dark-knight-returnsss.jpg" alt="Astronaut" className="mx-auto"/>
+                        <img src="https://asset.menica.pro/f9417f75-32e8-4b72-b68b-c721e6a566e3-removebg-preview.png" alt="Astronaut" className="mx-auto"/>
                         <div className="text-[#F0A038] text-3xl text-center my-6 uppercase">
                             Terima Kasih
                         </div>
