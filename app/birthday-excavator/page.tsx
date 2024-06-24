@@ -132,7 +132,7 @@ const App: React.FC = () => {
                 <img data-aos="fade-up" src="https://asset.menica.pro/yellow-excavator-is-being-used-work-piece-equipment.png" alt="Astronaut" className="mx-auto"/>
                 
 
-                <div className="text-center px-6 py-2 border border-white font-extrabold text-white bg-[#533625] bg-opacity-80 rounded-md mt-2">
+                <div className="text-center px-6 py-2 border border-white font-extrabold text-white bg-[#533625] bg-opacity-70 rounded-md mt-2">
                     <div className='mb-4 text-3xl'>
                         Halo,
                     </div>
