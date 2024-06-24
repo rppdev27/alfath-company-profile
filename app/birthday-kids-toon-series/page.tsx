@@ -103,7 +103,7 @@ function Testi(){
 
         },
         {
-            photo: 'https://asset.menica.pro/WhatsApp+Image+2024-06-23+at+10.30.51+AM(1).jpeg',
+            photo: 'https://asset.menica.pro/thumbnail-kidseries-06.webp',
             comment: 'Tentara',
             detail: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap, template bervariasi!',
             detail_id: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap dan tersedia banyak template!',
@@ -114,7 +114,7 @@ function Testi(){
 
         },
         {
-            photo: 'https://asset.menica.pro/WhatsApp+Image+2024-06-23+at+10.30.51+AM(1).jpeg',
+            photo: 'https://asset.menica.pro/thumbnail-kidseries-05.webp',
             comment: 'Spiderman',
             detail: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap, template bervariasi!',
             detail_id: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap dan tersedia banyak template!',
