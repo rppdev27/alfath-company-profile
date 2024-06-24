@@ -196,7 +196,7 @@ const App: React.FC = () => {
                         }}
                         data-aos="fade-up"
                     >
-                        <img src="https://asset.menica.pro/innovative-3d-cartoon-design-batman-infant-character(1).png" style={{
+                        <img src="https://asset.menica.pro/innovative-3d-cartoon-design-batman-infant-character---(1)(1).png" style={{
                             width: '50%',
                             height: 'auto'
                         }}/>
@@ -248,7 +248,7 @@ const App: React.FC = () => {
                         data-aos="fade-up"
                     >
                         
-                        <img src="https://asset.menica.pro/innovative-3d-cartoon-design-batman-infant-character(1).png" style={{
+                        <img src="https://asset.menica.pro/innovative-3d-cartoon-design-batman-infant-character---(1)(1).png" style={{
                             width: '50%',
                             height: 'auto'
                         }}/>
@@ -274,7 +274,7 @@ const App: React.FC = () => {
                         }}
                         data-aos="fade-up"
                     >
-                        <img src="https://asset.menica.pro/innovative-3d-cartoon-design-batman-infant-character(1).png" style={{
+                        <img src="https://asset.menica.pro/innovative-3d-cartoon-design-batman-infant-character---(1)(1).png" style={{
                             width: '50%',
                             height: 'auto'
                         }}/>
