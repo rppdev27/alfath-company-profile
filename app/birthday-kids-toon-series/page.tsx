@@ -148,7 +148,7 @@ function Testi(){
         },
         {
             photo: 'https://asset.menica.pro/WhatsApp+Image+2024-06-23+at+10.30.51+AM(1).jpeg',
-            comment: 'Gundam',
+            comment: 'School Bus',
             detail: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap, template bervariasi!',
             detail_id: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap dan tersedia banyak template!',
             color: '#03418a',
