@@ -7,11 +7,19 @@ import { TbMapSearch } from "react-icons/tb";
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 import { FaRegCircleDot } from "react-icons/fa6";
 
+import AOS from 'aos'
+import 'aos/dist/aos.css';
+
+
 const App: React.FC = () => {
 
     const [showSections, setShowSections] = useState(false);
     const [currentSection, setCurrentSection] = useState('section1');
     const sections = ['section1', 'section2', 'section3', 'section4', 'section5'];
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
 
 
     const scrollToSection = (sectionId: string) => {
@@ -115,12 +123,12 @@ const App: React.FC = () => {
         >
            <div className="bg-transparent bg-opacity-80 w-full mx-auto">
            <section id="section1" className="z-50 p-4 bg-transparent h-[calc(100vh-80px)] flex flex-col justify-center w-full rounded-lg mb-10">
-                <h2 className="text-lg font-semibold text-center uppercase text-[#fff]">You Are Invited to</h2>
-                <p className="textstroke text-center text-[48px] font-bold leading-tight tracking-[1.5px] text-[#484927] font-['Londrina_Solid'] stroke-2 stroke-white">
+                <h2 className="text-lg font-semibold text-center uppercase text-[#fff]" data-aos="fade-up">You Are Invited to</h2>
+                <p data-aos="fade-up" className="textstroke text-center text-[48px] font-bold leading-tight tracking-[1.5px] text-[#484927] font-['Londrina_Solid'] stroke-2 stroke-white">
                     AZKA NAUFAL
                 </p>
-                <div className="text-center text-[#fff]">1<sup>ST</sup> BIRTHDAY PARTY</div>
-                <img src="https://asset.menica.pro/Default_spiderman_3d_cartoon_0.png" alt="Astronaut" className="mx-auto animate-bounce"/>
+                <div className="text-center text-[#fff]" data-aos="fade-up">1<sup>ST</sup> BIRTHDAY PARTY</div>
+                <img data-aos="fade-up" src="https://asset.menica.pro/Default_spiderman_3d_cartoon_0.png" alt="Astronaut" className="mx-auto animate-bounce"/>
                 <div className="text-center px-6 py-2 border border-white font-extrabold text-white bg-[#bd2b2b] bg-opacity-80 rounded-md mt-2">
                     <div className='mb-4 text-3xl'>
                         Halo,
@@ -132,6 +140,7 @@ const App: React.FC = () => {
                         style={{
                             zIndex: 9999
                         }}
+                        data-aos="fade-up"
                     className="w/3-4 cursor-pointer text-center transition-transform duration-300 ease-in-out transform hover:scale-105 p-2 font-extrabold text-white bg-[#03418a] text-3xl rounded-md mb-4 flex  items-center justify-center" onClick={() => scrollToSection('section2')}>
                         <FaRegEnvelopeOpen size={25} className='mr-3'/> Buka Undangan
                     </div>
@@ -148,20 +157,21 @@ const App: React.FC = () => {
                     <div className="relative">
                     <section id="section2" className="px-4 min-h-[calc(70vh)] h-auto py-16 flex flex-col justify-start bg-[#03418a] bg-opacity-80  shadow-md w-full rounded-lg">
                        
-                    <p className="text-center text-3xl">Halo Teman Teman,</p>
-                    <p className="text-center text-3xl">Datang Yuk!</p>
-                    <p className="text-center text-3xl">Ke Acara Ulang Tahunku</p>
+                    <p className="text-center text-3xl" data-aos="fade-up">Halo Teman Teman,</p>
+                    <p className="text-center text-3xl" data-aos="fade-up">Datang Yuk!</p>
+                    <p className="text-center text-3xl" data-aos="fade-up">Ke Acara Ulang Tahunku</p>
                         <img src="https://images.unsplash.com/photo-1471286174890-9c112ffca5b4?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Astronaut" className="rounded-md mt-10 mx-auto border-solid shadow-lg border-[10px] border-[#F0A038]"
                             style={{
                                 width: '70%',
                                 height: 'auto'
                             }}
+                            data-aos="fade-up"
                         />
-                    <div className="text-[#F0A038] text-3xl text-center my-6">
+                    <div className="text-[#F0A038] text-3xl text-center my-6" data-aos="fade-up">
                         AZKA NAUFAL PUTRA
                     </div>
 
-                    <div className="text-[#fff] text-3xl text-center my-6">
+                    <div className="text-[#fff] text-3xl text-center my-6" data-aos="fade-up">
                     Putra dari Bapak Awan
                     & Ibu Pelangi
                     </div>
@@ -181,6 +191,7 @@ const App: React.FC = () => {
                             marginLeft: '-200px',
                             marginBottom: '-50px'
                         }}
+                        data-aos="fade-up"
                     >
                         <img src="https://asset.menica.pro/Default_spiderman_3d_cartoon_1.png" style={{
                             width: '50%',
@@ -231,6 +242,7 @@ const App: React.FC = () => {
                             marginRight: '-200px',
                             marginBottom: '-50px'
                         }}
+                        data-aos="fade-up"
                     >
                         <img src="https://asset.menica.pro/Default_spiderman_3d_cartoon_1.png" style={{
                             width: '50%',
@@ -256,6 +268,7 @@ const App: React.FC = () => {
                             marginLeft: '-200px',
                             marginBottom: '-50px'
                         }}
+                        data-aos="fade-up"
                     >
                         <img src="https://asset.menica.pro/Default_spiderman_3d_cartoon_1.png" style={{
                             width: '50%',
