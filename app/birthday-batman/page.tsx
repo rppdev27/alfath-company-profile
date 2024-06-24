@@ -128,7 +128,10 @@ const App: React.FC = () => {
                     AZKA NAUFAL
                 </p>
                 <div className="text-center text-[#fff]" data-aos="fade-up">1<sup>ST</sup> BIRTHDAY PARTY</div>
-                <img data-aos="fade-up" src="https://asset.menica.pro/cc08f237-6bb2-44c3-97d7-41cadc638add-removebg-preview.png" alt="Astronaut" className="mx-auto"/>
+                {/* <img data-aos="fade-up" src="https://asset.menica.pro/cc08f237-6bb2-44c3-97d7-41cadc638add-removebg-preview.png" alt="Astronaut" className="mx-auto"/> */}
+                <img data-aos="fade-up" src="https://asset.menica.pro/b05e4862-8d12-4f7b-a026-d42fb1db401f.png" alt="Astronaut" className="mx-auto"/>
+                
+
                 <div className="text-center px-6 py-2 border border-white font-extrabold text-white bg-[#0c1e1b] bg-opacity-80 rounded-md mt-2">
                     <div className='mb-4 text-3xl'>
                         Halo,
