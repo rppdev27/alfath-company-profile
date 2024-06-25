@@ -212,6 +212,17 @@ function Testi(){
             url: 'birthday-pemadam',
 
         },
+        {
+            photo: 'https://asset.menica.pro/thumbnail-kidseries-01.webp',
+            comment: 'Pemadam Kebakaran',
+            detail: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap, template bervariasi!',
+            detail_id: 'Ciptakan undangan pernikahan digital dengan mudah di Menica: fitur lengkap dan tersedia banyak template!',
+            color: '#03418a',
+            icon: <FcMms size={35}/>,
+            demo: 'https://menica.id',
+            url: 'birthday-iron-man',
+
+        },
         
     ]
 
