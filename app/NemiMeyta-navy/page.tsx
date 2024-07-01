@@ -430,6 +430,12 @@ const Cover: React.FC = () => {
             </div>
 
             <div className="flex justify-around items-center mt-8 mb-32 flex-col">    
+
+                <img 
+                  src="https://ik.imagekit.io/vtvggda66/White%20Minimalist%20Wedding%20Thankyou%20PostCard%20(1).png?updatedAt=1719858216065" 
+                  alt="Rounded Shadow Image" 
+                  className="rounded-lg shadow-lg"
+                />
                 
             </div>
 
