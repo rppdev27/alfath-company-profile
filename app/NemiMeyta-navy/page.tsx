@@ -267,10 +267,10 @@ const Cover: React.FC = () => {
                     <div className="flex flex-col">
 
                     <div className="text-3xl sm:text-4xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
-                        Mahanaim Purba, S.Sn
+                        Wedding Ceremony
                     </div>
                     <div className="text-xs text-[#fff] mt-2 ml-4 tracking-normal" style={{ fontFamily: 'Prata' }}>
-                        Anak pertama dari bapak Pdt. Demu Purba & ibu Cynthia Grace, S.Pd
+                        Sabtu, 17 Agustus 2024
                     </div>
                     </div>
                     
@@ -284,10 +284,10 @@ const Cover: React.FC = () => {
                     <div className="flex flex-col">
 
                     <div className="text-3xl sm:text-4xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
-                        dr. Agnes Meyta Arpinda Tampubolon
+                      Wedding Reception
                     </div>
                     <div className="text-xs text-[#fff] mt-2 ml-4" style={{ fontFamily: 'Prata' }}>
-                        Anak kedua dari bapak Arnold Tampubolon dan Hevrida br Barus
+                      Sabtu, 17 Agustus 2024
                     </div>
 
                     </div>
