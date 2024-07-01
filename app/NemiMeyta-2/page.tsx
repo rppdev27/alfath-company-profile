@@ -75,7 +75,7 @@ const Cover: React.FC = () => {
             }}>
                 The Wedding Of
             </div>
-            <div className="text-5xl font-bold text-[#2B6F51] mt-8 tracking-tight" style={{
+            <div className="text-5xl font-semibold text-[#2B6F51] mt-8 tracking-tight" style={{
                 fontFamily: 'Prata'
                 // fontFamily: 'Metrophobic'
             }}>
