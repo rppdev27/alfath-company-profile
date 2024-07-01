@@ -66,16 +66,16 @@ const Cover: React.FC = () => {
   };
   
   const comments = [
-    "This is comment one.",
-    "This is comment two.",
-    "This is comment three.",
-    "This is comment four.",
-    "This is comment five.",
-    "This is comment six.",
-    "This is comment seven.",
-    "This is comment eight.",
-    "This is comment nine.",
-    "This is comment ten.",
+    { text: "This is comment one.", avatar: "https://via.placeholder.com/50" },
+    { text: "This is comment two.", avatar: "https://via.placeholder.com/50" },
+    { text: "This is comment three.", avatar: "https://via.placeholder.com/50" },
+    { text: "This is comment four.", avatar: "https://via.placeholder.com/50" },
+    { text: "This is comment five.", avatar: "https://via.placeholder.com/50" },
+    { text: "This is comment six.", avatar: "https://via.placeholder.com/50" },
+    { text: "This is comment seven.", avatar: "https://via.placeholder.com/50" },
+    { text: "This is comment eight.", avatar: "https://via.placeholder.com/50" },
+    { text: "This is comment nine.", avatar: "https://via.placeholder.com/50" },
+    { text: "This is comment ten.", avatar: "https://via.placeholder.com/50" },
   ];
 
   return (
@@ -381,16 +381,23 @@ const Cover: React.FC = () => {
 
             <div className="flex justify-around items-center mt-7 flex-col">  
 
-              <div className="flex overflow-x-scroll space-x-4 p-4 bg-gray-100">
+            <div className="flex overflow-x-scroll space-x-4 p-4 bg-gray-100">
               {comments.map((comment, index) => (
                 <div 
                   key={index} 
-                  className={`min-w-[200px] p-4 bg-white rounded-lg shadow-lg font-bold ${getRandomRotation()}`}
+                  className={`relative min-w-[200px] p-4 bg-white rounded-lg shadow-lg font-bold ${getRandomRotation()}`}
                 >
-                  {comment}
+                  <img 
+                    src={comment.avatar} 
+                    alt={`Avatar ${index + 1}`} 
+                    className="w-8 h-8 rounded-full absolute top-2 left-2"
+                  />
+                  <p className="mt-12">
+                    {comment.text}
+                  </p>
                 </div>
               ))}
-            </div>  
+            </div>
                 
             </div>
 
