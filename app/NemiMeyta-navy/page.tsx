@@ -168,7 +168,7 @@ const Cover: React.FC = () => {
                     <div className="text-3xl sm:text-4xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }} data-aos="fade-in">
                         Mahanaim Purba, S.Sn
                     </div>
-                    <div className="text-xs text-[#fff] mt-2 ml-4 tracking-normal" style={{ fontFamily: 'Prata' }}>
+                    <div className="text-xs text-[#fff] mt-2 ml-4 tracking-normal" style={{ fontFamily: 'Prata' }}  data-aos="fade-down">
                         Anak pertama dari bapak Pdt. Demu Purba & ibu Cynthia Grace, S.Pd
                     </div>
                     </div>
@@ -185,7 +185,7 @@ const Cover: React.FC = () => {
                     <div className="text-3xl sm:text-4xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }} data-aos="fade-in">
                         dr. Agnes Meyta Arpinda Tampubolon
                     </div>
-                    <div className="text-xs text-[#fff] mt-2 ml-4" style={{ fontFamily: 'Prata' }}>
+                    <div className="text-xs text-[#fff] mt-2 ml-4" style={{ fontFamily: 'Prata' }} data-aos="fade-down">
                         Anak kedua dari bapak Arnold Tampubolon dan Hevrida br Barus
                     </div>
 
@@ -321,7 +321,7 @@ const Cover: React.FC = () => {
                 Hadiah
             </div>
 
-            <div className="flex justify-around items-center mt-8 flex-col font-semibold" style={{ fontFamily: 'Prata' }}>  
+            <div className="flex justify-around items-center mt-8 flex-col font-semibold gap-y-4" style={{ fontFamily: 'Prata' }}>  
 
             <div className="gradient-border rounded-lg shadow-lg" data-aos="fade-left">
               <div className="bg-white p-6 rotate-6 rounded-lg shadow-lg text-center">
@@ -334,7 +334,7 @@ const Cover: React.FC = () => {
             </div>
 
             <div className="gradient-border rounded-lg shadow-lg mt-5"  data-aos="fade-right">
-              <div className="bg-white p-6 rotate-6 rounded-lg shadow-lg">
+              <div className="bg-white p-6 rotate-6 rounded-lg shadow-lg text-sm">
                   Bank BCA
                   <br/>
                   Lorem Ipsum
@@ -362,41 +362,7 @@ const Cover: React.FC = () => {
             </div>
 
             <div className="flex justify-around items-center mt-7 flex-col">    
-                <div className="text-left flex flex-row">
-                    <img src="https://ik.imagekit.io/vtvggda66/menicaid6_tKdAiCowm.png" alt="Nemi Photo" className="w-32 h-auto shadow-md mx-auto"
-                        style={{
-                            height: 'fit-content'
-                        }}
-                    />
-                    <div className="flex flex-col">
-
-                    <div className="text-2xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
-                        Mahanaim Purba, S.Sn
-                    </div>
-                    <div className="text-xs text-[#fff] mt-2 ml-4" style={{ fontFamily: 'Montserrat' }}>
-                        Anak pertama dari bapak Pdt. Demu Purba & ibu Cynthia Grace, S.Pd
-                    </div>
-                    </div>
-                    
-                </div>
-
-                <div className="text-left flex flex-row mt-5">
-                    <img src="https://ik.imagekit.io/vtvggda66/menicaid6_MLweMltp-.png" alt="Meyta Photo" className="w-32 h-auto shadow-md mx-auto"
-                        style={{
-                            height: 'fit-content'
-                        }}
-                    />
-                    <div className="flex flex-col">
-
-                    <div className="text-2xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
-                        dr. Agnes Meyta Arpinda Tampubolon
-                    </div>
-                    <div className="text-xs text-[#fff] mt-2 ml-4" style={{ fontFamily: 'Montserrat' }}>
-                        Anak kedua dari bapak Arnold Tampubolon dan Hevrida br Barus
-                    </div>
-
-                    </div>
-                </div>
+                
             </div>
 
         </div>
@@ -428,7 +394,7 @@ const Cover: React.FC = () => {
                 src="https://ik.imagekit.io/vtvggda66/Elegant%20Photo%20Collage%20White%20Save%20The%20Date%20Wedding%20Invitation.png?updatedAt=1719858590321" 
                 alt="Rounded Shadow Image" 
                 className="rounded-lg shadow-lg"
-                data-aos="fade-left"
+                data-aos="fade-down"
                 style={{
                   transform: 'rotate(6deg)'
                 }}
