@@ -271,7 +271,7 @@ const Cover: React.FC = () => {
                     />
                     <div className="flex flex-col">
 
-                    <div className="text-2xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
+                    <div className="text-3xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
                         Mahanaim Purba, S.Sn
                     </div>
                     <div className="text-xs text-[#fff] mt-2 ml-4" style={{ fontFamily: 'Montserrat' }}>
@@ -289,7 +289,7 @@ const Cover: React.FC = () => {
                     />
                     <div className="flex flex-col">
 
-                    <div className="text-2xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
+                    <div className="text-3xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
                         dr. Agnes Meyta Arpinda Tampubolon
                     </div>
                     <div className="text-xs text-[#fff] mt-2 ml-4" style={{ fontFamily: 'Montserrat' }}>
