@@ -131,7 +131,7 @@ const Cover: React.FC = () => {
         
         {/* Invitation Content */}
         <div className="w-[75%] z-50 text-center mx-auto my-10" ref={section2Ref}>
-            <div className="text-3xl font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Prata' }}>
+            <div className="text-3xl font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Prata' }}  data-aos="fade-down">
                 Mempelai
             </div>
             <div className="flex items-center mt-7 flex-row justify-between">
@@ -205,7 +205,7 @@ const Cover: React.FC = () => {
         
         {/* Invitation Content */}
         <div className="w-[70%] z-50 text-center mx-auto mt-10 mb-16" ref={section3Ref}>
-            <div className="text-3xl font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Prata' }}>
+            <div className="text-3xl font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Prata' }}  data-aos="fade-down">
                 Galeri
             </div>
 
@@ -267,7 +267,7 @@ const Cover: React.FC = () => {
         
         {/* Invitation Content */}
         <div className="w-[70%] z-50 text-center mx-auto my-10">
-            <div className="text-3xl font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Prata' }}>
+            <div className="text-3xl font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Prata' }}  data-aos="fade-down">
                 Acara
             </div>
 
@@ -317,7 +317,7 @@ const Cover: React.FC = () => {
         
         {/* Invitation Content */}
         <div className="w-[70%] z-50 text-center mx-auto my-10">
-            <div className="text-3xl font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Prata' }}>
+            <div className="text-3xl font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Prata' }}  data-aos="fade-down">
                 Hadiah
             </div>
 
@@ -371,7 +371,7 @@ const Cover: React.FC = () => {
         
         {/* Invitation Content */}
         <div className="w-[70%] z-50 text-center mx-auto my-10">
-            <div className="text-3xl font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Prata' }}>
+            <div className="text-3xl font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Prata' }}  data-aos="fade-down">
                 Buku Tamu
             </div>
 
@@ -425,7 +425,7 @@ const Cover: React.FC = () => {
         
         {/* Invitation Content */}
         <div className="w-[70%] z-50 text-center mx-auto my-10">
-            <div className="text-3xl font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Prata' }}>
+            <div className="text-3xl font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Prata' }} data-aos="fade-down">
                 Save The Date
             </div>
 
