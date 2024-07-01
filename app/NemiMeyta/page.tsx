@@ -68,7 +68,7 @@ const Cover: React.FC = () => {
           
         </div>
 
-        <div className="w-[70%] z-50 flex flex-col mx-auto text-center sm:mt-[42%] mt-[50%]">
+        <div className="w-[70%] z-50 flex flex-col mx-auto text-center sm:mt-[42%] mt-[52%]">
 
             <div className="text-lg text-white" style={{
                 fontFamily: 'Metrophobic'
