@@ -374,13 +374,13 @@ const Cover: React.FC = () => {
         </div>
         
         {/* Invitation Content */}
-            <div className="w-[70%] z-50 text-center mx-auto my-10">
+            <div className="w-[90%] z-50 text-center mx-auto my-10">
           <div className="text-3xl font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Prata' }} data-aos="fade-down">
             Buku Tamu
           </div>
 
           <div className="flex justify-center items-center mt-7">
-            <div className="flex overflow-x-auto space-x-4 p-4 bg-transparent w-full">
+            <div className="flex overflow-x-auto space-x-6 p-4 bg-transparent w-full">
               {comments.map((comment, index) => (
                 <div 
                   key={index} 
