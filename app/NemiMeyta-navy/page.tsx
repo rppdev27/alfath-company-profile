@@ -137,7 +137,7 @@ const Cover: React.FC = () => {
               }} 
             />
             
-            <div>
+            <div className='mx-3'>
               <GiOppositeHearts className='text-red-700' size={25} />
             </div>
 
