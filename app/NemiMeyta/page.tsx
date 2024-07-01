@@ -113,6 +113,49 @@ const Cover: React.FC = () => {
             />
           </video>
         </div>
+        
+        <div className="w-[70%] z-50 text-center">
+            <div className="text-lg text-white" style={{ fontFamily: 'Metrophobic' }}>
+                Mempelai
+            </div>
+            
+            {/* <div className="text-6xl font-extrabold text-white mt-5" style={{ fontFamily: 'Lily Script One' }}>
+                Nemi <br/>
+                Meyta
+            </div> */}
+
+            <div className="flex justify-around items-center mt-5 flex-col">
+                <div className="text-left flex flex-row">
+                    <img src="https://ik.imagekit.io/vtvggda66/menicaid6_MLweMltp-.png" alt="Nemi Photo" className="w-32 h-auto rounded-lg shadow-md mx-auto"/>
+                    <div className="flex flex-col">
+
+                    <div className="text-xl text-white mt-3 ml-4" style={{ fontFamily: 'Lily Script One' }}>
+                        Mahanaim Purba, S.Sn
+                    </div>
+                    <div className="text-sm text-white mt-2 ml-4" style={{ fontFamily: 'Metrophobic' }}>
+                        Anak pertama dari bapak Pdt. Demu Purba & ibu Cynthia Grace, S.Pd
+                    </div>
+                    </div>
+                    
+                </div>
+
+                <div className="text-left flex flex-row mt-5">
+                    <img src="https://ik.imagekit.io/vtvggda66/menicaid6_tKdAiCowm.png" alt="Meyta Photo" className="w-32 h-auto rounded-lg shadow-md mx-auto"/>
+                    <div className="flex flex-col">
+
+                    <div className="text-xl text-white mt-3 ml-4" style={{ fontFamily: 'Lily Script One' }}>
+                        dr. Agnes Meyta Arpinda Tampubolon
+                    </div>
+                    <div className="text-sm text-white mt-2 ml-4" style={{ fontFamily: 'Metrophobic' }}>
+                        Anak kedua dari bapak Arnold Tampubolon dan Hevrida br Barus
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
       </div>
       <div className="relative flex items-center justify-center max-w-[451px] h-screen whitespace-pre-line mx-auto">
         <div className="absolute inset-0 w-full h-full" ref={section3Ref}>
