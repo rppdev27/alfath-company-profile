@@ -394,8 +394,8 @@ const Cover: React.FC = () => {
           </div>
 
           <div className="flex justify-center items-center mt-7">
-            <button onClick={scrollLeft} className="p-2 bg-gray-300 rounded-full mx-2">Left</button>
-            <div ref={scrollContainerRef} className="flex overflow-x-auto space-x-4 p-4 bg-gray-100 w-full">
+        
+            <div ref={scrollContainerRef} className="flex overflow-x-auto space-x-4 p-4 bg-transparent w-full">
               {comments.map((comment, index) => (
                 <div 
                   key={index} 
@@ -412,6 +412,9 @@ const Cover: React.FC = () => {
                 </div>
               ))}
             </div>
+          </div>
+          <div className="flex flex-row">
+            <button onClick={scrollLeft} className="p-2 bg-gray-300 rounded-full mx-2">Left</button>
             <button onClick={scrollRight} className="p-2 bg-gray-300 rounded-full mx-2">Right</button>
           </div>
         </div>
