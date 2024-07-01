@@ -431,13 +431,24 @@ const Cover: React.FC = () => {
 
             <div className="flex justify-around items-center mt-8 flex-col">    
 
-                <img 
+                {/* <img 
                   src="https://ik.imagekit.io/vtvggda66/Elegant%20Photo%20Collage%20White%20Save%20The%20Date%20Wedding%20Invitation.png?updatedAt=1719858590321" 
                   alt="Rounded Shadow Image" 
-                  className="rounded-lg shadow-lg"
-                />
+                  className="rounded-lg shadow-lg rotate-6"
+                /> */}
+
+            <div className="gradient-border rounded-lg shadow-lg">
+              <img 
+                src="https://ik.imagekit.io/vtvggda66/Elegant%20Photo%20Collage%20White%20Save%20The%20Date%20Wedding%20Invitation.png?updatedAt=1719858590321" 
+                alt="Rounded Shadow Image" 
+                className="rounded-lg shadow-lg rotate-6"
+              />
+            </div>
+                
                 
             </div>
+
+            
 
 
 

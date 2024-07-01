@@ -88,3 +88,25 @@ html{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.gradient-border {
+  position: relative;
+  width: fit-content;
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  background: linear-gradient(to right, #F9BD5D, #D2852D);
+  border-radius: inherit;
+  padding: 2px;
+}
+
+.gradient-border img {
+  border-radius: inherit;
+}
