@@ -54,40 +54,41 @@ const Cover: React.FC = () => {
         
       >
         {/* Top Decoration Image */}
-        <div className="mx-auto">
-          <img src="https://ik.imagekit.io/vtvggda66/mandala-navy1-T.svg?updatedAt=1719848542468" alt="Top Decoration" />
+        <div className="mx-auto mt-[-112px] w-1/2">
+          <img src="https://asset.menica.pro/menicav4/mandala-navy1-B.svg" alt="Top Decoration" className='animate-spin-slow'/>
         </div>
         
         {/* Invitation Content */}
         <div className="flex flex-col flex-grow justify-between w-[70%] mx-auto text-center">
           {/* Invitation Title and Names */}
           <div>
-            <div className="text-sm text-black uppercase tracking-widest mt-[42%] sm:mt-[52%]" style={{ fontFamily: 'Prata' }}>
+            <div className="text-md text-white uppercase tracking-widest mt-[30%] font-light" style={{ fontFamily: 'Prata' }}>
               The Wedding Of
             </div>
-            <div className="text-5xl font-semibold text-[#B6695E] mt-8 tracking-tight" style={{ fontFamily: 'Prata' }}>
+            <div className="text-8xl font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}>
               Nemi <br />
               Meyta
             </div>
-            <div className="text-sm text-black uppercase mt-8 tracking-widest" style={{ fontFamily: 'Prata' }}>
-              17.08.2024
+            <div className="text-md text-white uppercase mt-4 tracking-widest font-light" style={{ fontFamily: 'Prata' }}>
+              17 . 08 . 2024
+            </div>
+            {/* Guest Name Section at the Bottom */}
+            <div className="font-normal mt-8" >
+              <div className="text-xs text-[#AE843C] tracking-widest" style={{ fontFamily: 'Montserrat' }}>
+                Kepada Yth :
+              </div>
+              <div className="text-white font-light tracking-tighter text-xl mt-5" style={{ fontFamily: 'Prata' }}>
+                Nama Tamu
+              </div>
             </div>
           </div>
           
-          {/* Guest Name Section at the Bottom */}
-          <div className="font-light mt-32" style={{ fontFamily: 'Prata' }}>
-            <div className="text-xs text-[#B6695E]">
-              Kepada Yth :
-            </div>
-            <div className="text-black font-light tracking-tighter text-xl mt-5">
-              Nama Tamu
-            </div>
-          </div>
+          
         </div>
         
         {/* Bottom Decoration Image */}
-        <div className="mx-auto">
-          <img src="https://ik.imagekit.io/vtvggda66/mandala-navy1-T.svg?updatedAt=1719848542468" alt="Bottom Decoration" className="rotate-180" />
+        <div className="mx-auto mb-[-112px] w-1/2">
+          <img src="https://asset.menica.pro/menicav4/mandala-navy1-B.svg" alt="Bottom Decoration" className="rotate-180 animate-spin-slow" />
         </div>
       </div>
       <div className="relative flex items-center justify-center max-w-[451px] h-screen whitespace-pre-line mx-auto">
@@ -312,20 +313,23 @@ const Cover: React.FC = () => {
 
         </div>
       </div>
-      <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2">
+      <div className="fixed bottom-36 left-1/2 transform -translate-x-1/2">
       {
-        isPlaying ? <></> : <button
-        onClick={handlePlayPause}
-        className="bg-transparent border border-white text-[#B6695E] px-6 py-3 rounded-full backdrop-filter backdrop-blur-md bg-opacity-20 hover:bg-opacity-40 transition-all duration-300 font-bold"
-        style={{
-          fontFamily: 'Metrophobic'
-        }}
-      >
-        {isPlaying ? 'Pause' : 'Open Invitation'}
-      </button>
+        isPlaying ? <></> : (
+          <button
+            onClick={handlePlayPause}
+            className="bg-transparent text-black px-6 py-3 rounded-full backdrop-filter backdrop-blur-md bg-opacity-20 hover:bg-opacity-40 transition-all duration-500 font-bold"
+            style={{
+              fontFamily: 'Prata',
+              backgroundImage: 'linear-gradient(180deg, #F9BD5D 0%, #D2852D 100%)',
+              backgroundClip: 'padding-box', // Ensures the gradient covers the padding area
+            }}
+          >
+            {isPlaying ? 'Pause' : 'Open Invitation'}
+          </button>
+        )
       }
-        
-      </div>
+    </div>
     </>
   );
 };
