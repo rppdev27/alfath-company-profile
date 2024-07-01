@@ -114,7 +114,7 @@ const Cover: React.FC = () => {
         </div>
       </div>
       
-      <div className="h-screen-minus-40 sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
+      <div className="h-auto sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
         
       >
         {/* Top Decoration Image */}
@@ -147,7 +147,7 @@ const Cover: React.FC = () => {
 
             </div>
 
-            <div className="flex justify-around items-center my-8 flex-col">    
+            <div className="flex justify-around items-center mt-8 mb-32 flex-col">    
                 <div className="text-center flex flex-row">
                     <div className="flex flex-col">
 
@@ -171,7 +171,7 @@ const Cover: React.FC = () => {
                     <div className="text-4xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
                         dr. Agnes Meyta Arpinda Tampubolon
                     </div>
-                    <div className="text-xs text-[#fff] mt-2 ml-4" style={{ fontFamily: 'Montserrat' }}>
+                    <div className="text-xs text-[#fff] mt-2 ml-4" style={{ fontFamily: 'Prata' }}>
                         Anak kedua dari bapak Arnold Tampubolon dan Hevrida br Barus
                     </div>
 
@@ -185,7 +185,7 @@ const Cover: React.FC = () => {
         
       >
         {/* Top Decoration Image */}
-        <div className="mx-auto w-1/2">
+        <div className="mx-auto mt-[-112px] w-1/2">
           <img src="https://asset.menica.pro/menicav4/mandala-navy1-B.svg" alt="Top Decoration" className='animate-spin-slow'/>
         </div>
         
