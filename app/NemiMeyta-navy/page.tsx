@@ -3,7 +3,14 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { GiOppositeHearts } from "react-icons/gi";
 
+import AOS from 'aos'
+import 'aos/dist/aos.css';
+
 const Cover: React.FC = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   const videoRef1 = useRef<HTMLVideoElement>(null);
   const videoRef2 = useRef<HTMLVideoElement>(null);
   const videoRef3 = useRef<HTMLVideoElement>(null);
@@ -67,22 +74,22 @@ const Cover: React.FC = () => {
         <div className="flex flex-col flex-grow justify-between w-[70%] mx-auto text-center">
           {/* Invitation Title and Names */}
           <div>
-            <div className="text-md text-white uppercase tracking-widest mt-[30%] font-light" style={{ fontFamily: 'Prata' }}>
+            <div className="text-md text-white uppercase tracking-widest mt-[30%] font-light" style={{ fontFamily: 'Prata' }} data-aos="fade-in">
               The Wedding Of
             </div>
-            <div className="text-8xl font-normal sm:font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}>
+            <div className="text-8xl font-normal sm:font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-in">
               Nemi <br />
               Meyta
             </div>
-            <div className="text-md text-white uppercase mt-4 tracking-widest font-light" style={{ fontFamily: 'Prata' }}>
+            <div className="text-md text-white uppercase mt-4 tracking-widest font-light" style={{ fontFamily: 'Prata' }}  data-aos="fade-in">
               17 . 08 . 2024
             </div>
             {/* Guest Name Section at the Bottom */}
             <div className="font-normal mt-8" >
-              <div className="text-xs text-[#AE843C] tracking-widest" style={{ fontFamily: 'Montserrat' }}>
+              <div className="text-xs text-[#AE843C] tracking-widest" style={{ fontFamily: 'Montserrat' }}  data-aos="fade-in">
                 Kepada Yth :
               </div>
-              <div className="text-white font-light tracking-tighter text-xl mt-5" style={{ fontFamily: 'Prata' }}>
+              <div className="text-white font-light tracking-tighter text-xl mt-5" style={{ fontFamily: 'Prata' }}  data-aos="fade-in">
                 Nama Tamu
               </div>
               <div className="mt-4 mx-auto">
@@ -403,6 +410,28 @@ const Cover: React.FC = () => {
                     </div>
                 </div>
             </div>
+
+        </div>
+      </div>
+      <div className="h-screen-minus-40 sm:h-screen relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
+        
+      >
+        {/* Top Decoration Image */}
+        <div className="mx-auto mt-[-112px] w-1/2">
+          <img src="https://asset.menica.pro/menicav4/mandala-navy1-B.svg" alt="Top Decoration" className='animate-spin-slow'/>
+        </div>
+        
+        {/* Invitation Content */}
+        <div className="w-[70%] z-50 text-center mx-auto my-10">
+            <div className="text-3xl font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Prata' }}>
+                Save The Date
+            </div>
+
+            <div className="flex justify-around items-center mt-8 mb-32 flex-col">    
+                
+            </div>
+
+
 
         </div>
       </div>
