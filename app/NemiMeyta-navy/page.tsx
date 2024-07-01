@@ -195,7 +195,7 @@ const Cover: React.FC = () => {
         </div>
         
         {/* Invitation Content */}
-        <div className="w-[70%] z-50 text-center mx-auto my-10" ref={section3Ref}>
+        <div className="w-[70%] z-50 text-center mx-auto mt-10 mb-16" ref={section3Ref}>
             <div className="text-3xl font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Prata' }}>
                 Galeri
             </div>
@@ -206,7 +206,7 @@ const Cover: React.FC = () => {
                   src="https://ik.imagekit.io/vtvggda66/menicaid6_kKPg4qjo8.png?updatedAt=1719819011595" 
                   alt="" 
                   loading="lazy" 
-                  className="rounded border-4 border-white shadow-lg"
+                  className="border-4 border-white shadow-lg"
                 />
               </div>
               <div className="col-start-3 transform scale-75 rotate-6 translate-x-2 translate-y-15">
@@ -214,7 +214,7 @@ const Cover: React.FC = () => {
                   src="https://ik.imagekit.io/vtvggda66/menicaid6_fCBOfyS-Y.png?updatedAt=1719819007743" 
                   alt="" 
                   loading="lazy" 
-                  className="rounded border-4 border-white shadow-lg"
+                  className="border-4 border-white shadow-lg"
                 />
               </div>
               <div className="transform scale-150 translate-y-11">
@@ -222,7 +222,7 @@ const Cover: React.FC = () => {
                   src="https://ik.imagekit.io/vtvggda66/menicaid6_KDeRGtWBR.png?updatedAt=1719819004269" 
                   alt="" 
                   loading="lazy" 
-                  className="rounded border-4 border-white shadow-lg"
+                  className="border-4 border-white shadow-lg"
                 />
               </div>
               <div className="transform translate-y-24">
@@ -230,7 +230,7 @@ const Cover: React.FC = () => {
                   src="https://ik.imagekit.io/vtvggda66/menicaid6_6k7fNNyhm.png?updatedAt=1719819000408" 
                   alt="" 
                   loading="lazy" 
-                  className="rounded border-4 border-white shadow-lg"
+                  className="border-4 border-white shadow-lg"
                 />
               </div>
               <div className="row-start-1 col-start-2 col-span-2 transform translate-x-10 translate-y-4">
@@ -238,7 +238,7 @@ const Cover: React.FC = () => {
                   src="https://ik.imagekit.io/vtvggda66/menicaid6_ogOCt64bZ.png?updatedAt=1719818997426" 
                   alt="" 
                   loading="lazy" 
-                  className="rounded border-4 border-white shadow-lg"
+                  className="border-4 border-white shadow-lg"
                 />
               </div>
             </div>
