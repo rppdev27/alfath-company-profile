@@ -323,15 +323,23 @@ const Cover: React.FC = () => {
 
             <div className="flex justify-around items-center mt-8 flex-col font-semibold" style={{ fontFamily: 'Prata' }}>  
 
-            <div className="gradient-border rounded-lg shadow-lg">
-              <div className="bg-white p-6 rotate-6">
+            <div className="gradient-border rounded-lg shadow-lg" data-aos="fade-left">
+              <div className="bg-white p-6 rotate-6 rounded-lg shadow-lg text-center">
                   Bank Mandiri
+                  <br/>
+                  Lorem Ipsum
+                  <br/>
+                  4411xxxxx
               </div>
             </div>
 
             <div className="gradient-border rounded-lg shadow-lg mt-5"  data-aos="fade-right">
-              <div className="bg-white p-6 rotate-6">
+              <div className="bg-white p-6 rotate-6 rounded-lg shadow-lg">
                   Bank BCA
+                  <br/>
+                  Lorem Ipsum
+                  <br/>
+                  4411xxxxx
               </div>
             </div>
                 
