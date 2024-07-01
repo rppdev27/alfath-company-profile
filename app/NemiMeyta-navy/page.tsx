@@ -186,7 +186,7 @@ const Cover: React.FC = () => {
 
         </div>
       </div>
-      <div className="h-screen-minus-40 sm:h-screen relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
+      <div className="h-screen-minus-40 sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
         
       >
         {/* Top Decoration Image */}
@@ -200,7 +200,7 @@ const Cover: React.FC = () => {
                 Galeri
             </div>
 
-            <div className="grid grid-flow-col grid-rows-2 grid-cols-3 gap-4">
+            <div className="grid grid-flow-col grid-rows-2 grid-cols-3 gap-4 mt-8">
               <div className="transform scale-110 -rotate-6">
                 <img 
                   src="https://ik.imagekit.io/vtvggda66/menicaid6_kKPg4qjo8.png?updatedAt=1719819011595" 
@@ -262,43 +262,39 @@ const Cover: React.FC = () => {
                 Acara
             </div>
 
-            <div className="flex justify-around items-center mt-7 flex-col">    
-                <div className="text-left flex flex-row">
-                    <img src="https://ik.imagekit.io/vtvggda66/menicaid6_tKdAiCowm.png" alt="Nemi Photo" className="w-32 h-auto shadow-md mx-auto"
-                        style={{
-                            height: 'fit-content'
-                        }}
-                    />
+            <div className="flex justify-around items-center mt-8 mb-32 flex-col">    
+                <div className="text-center flex flex-row">
                     <div className="flex flex-col">
 
-                    <div className="text-3xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
+                    <div className="text-3xl sm:text-4xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
                         Mahanaim Purba, S.Sn
                     </div>
-                    <div className="text-xs text-[#fff] mt-2 ml-4" style={{ fontFamily: 'Montserrat' }}>
+                    <div className="text-xs text-[#fff] mt-2 ml-4 tracking-normal" style={{ fontFamily: 'Prata' }}>
                         Anak pertama dari bapak Pdt. Demu Purba & ibu Cynthia Grace, S.Pd
                     </div>
                     </div>
                     
                 </div>
 
-                <div className="text-left flex flex-row mt-5">
-                    <img src="https://ik.imagekit.io/vtvggda66/menicaid6_MLweMltp-.png" alt="Meyta Photo" className="w-32 h-auto shadow-md mx-auto"
-                        style={{
-                            height: 'fit-content'
-                        }}
-                    />
+                <div className='text-gradient mt-5 font-semibold text-xl'  style={{ fontFamily: 'Alex Brush' }}>
+                  &
+                </div>
+
+                <div className="text-center flex flex-row">
                     <div className="flex flex-col">
 
-                    <div className="text-3xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
+                    <div className="text-3xl sm:text-4xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
                         dr. Agnes Meyta Arpinda Tampubolon
                     </div>
-                    <div className="text-xs text-[#fff] mt-2 ml-4" style={{ fontFamily: 'Montserrat' }}>
+                    <div className="text-xs text-[#fff] mt-2 ml-4" style={{ fontFamily: 'Prata' }}>
                         Anak kedua dari bapak Arnold Tampubolon dan Hevrida br Barus
                     </div>
 
                     </div>
                 </div>
             </div>
+
+           
 
         </div>
       </div>
