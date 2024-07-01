@@ -50,7 +50,9 @@ const Cover: React.FC = () => {
 
   return (
     <>
-      <div className="relative flex justify-start max-w-[451px] h-screen whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]">
+      <div className="h-screen-minus-80 sm:h-screen relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
+        
+      >
         {/* Top Decoration Image */}
         <div className="mx-auto">
           <img src="https://ik.imagekit.io/vtvggda66/mandala-navy1-T.svg?updatedAt=1719848542468" alt="Top Decoration" />

@@ -19,6 +19,9 @@ const config = {
       },
     },
     extend: {
+      height: {
+        'screen-minus-80': 'calc(100vh - 80px)', // Custom height utility
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
