@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useRef, useState, useEffect } from 'react';
+import { GiOppositeHearts } from "react-icons/gi";
 
 const Cover: React.FC = () => {
   const videoRef1 = useRef<HTMLVideoElement>(null);
@@ -113,7 +114,7 @@ const Cover: React.FC = () => {
         </div>
       </div>
       
-      <div className="h-screen-minus-40 sm:h-screen relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
+      <div className="h-screen-minus-40 sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
         
       >
         {/* Top Decoration Image */}
@@ -122,39 +123,52 @@ const Cover: React.FC = () => {
         </div>
         
         {/* Invitation Content */}
-        <div className="w-[70%] z-50 text-center mx-auto my-10" ref={section2Ref}>
+        <div className="w-[75%] z-50 text-center mx-auto my-10" ref={section2Ref}>
             <div className="text-3xl font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Prata' }}>
                 Mempelai
             </div>
+            <div className="flex items-center mt-7 flex-row justify-between"> 
 
-            <div className="flex justify-around items-center mt-7 flex-col">    
-                <div className="text-left flex flex-row">
-                    <img src="https://ik.imagekit.io/vtvggda66/menicaid6_tKdAiCowm.png" alt="Nemi Photo" className="w-32 h-auto shadow-md mx-auto"
+            <img src="https://ik.imagekit.io/vtvggda66/menicaid6_tKdAiCowm.png" alt="Nemi Photo" className="w-32 h-auto shadow-md mx-auto"
                         style={{
                             height: 'fit-content'
                         }}
                     />
+
+            <div>
+              <GiOppositeHearts className='text-white' size={25}/>
+            </div>
+
+            <img src="https://ik.imagekit.io/vtvggda66/menicaid6_MLweMltp-.png" alt="Meyta Photo" className="w-32 h-auto shadow-md mx-auto"
+                        style={{
+                            height: 'fit-content'
+                        }}
+                    />
+
+            </div>
+
+            <div className="flex justify-around items-center my-8 flex-col">    
+                <div className="text-center flex flex-row">
                     <div className="flex flex-col">
 
-                    <div className="text-2xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
+                    <div className="text-4xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
                         Mahanaim Purba, S.Sn
                     </div>
-                    <div className="text-xs text-[#fff] mt-2 ml-4" style={{ fontFamily: 'Montserrat' }}>
+                    <div className="text-xs text-[#fff] mt-2 ml-4 tracking-normal" style={{ fontFamily: 'Prata' }}>
                         Anak pertama dari bapak Pdt. Demu Purba & ibu Cynthia Grace, S.Pd
                     </div>
                     </div>
                     
                 </div>
 
-                <div className="text-left flex flex-row mt-5">
-                    <img src="https://ik.imagekit.io/vtvggda66/menicaid6_MLweMltp-.png" alt="Meyta Photo" className="w-32 h-auto shadow-md mx-auto"
-                        style={{
-                            height: 'fit-content'
-                        }}
-                    />
+                <div className='text-gradient mt-5 font-semibold text-xl'  style={{ fontFamily: 'Alex Brush' }}>
+                  &
+                </div>
+
+                <div className="text-center flex flex-row">
                     <div className="flex flex-col">
 
-                    <div className="text-2xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
+                    <div className="text-4xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
                         dr. Agnes Meyta Arpinda Tampubolon
                     </div>
                     <div className="text-xs text-[#fff] mt-2 ml-4" style={{ fontFamily: 'Montserrat' }}>
@@ -171,7 +185,7 @@ const Cover: React.FC = () => {
         
       >
         {/* Top Decoration Image */}
-        <div className="mx-auto mt-[-112px] w-1/2">
+        <div className="mx-auto w-1/2">
           <img src="https://asset.menica.pro/menicav4/mandala-navy1-B.svg" alt="Top Decoration" className='animate-spin-slow'/>
         </div>
         
