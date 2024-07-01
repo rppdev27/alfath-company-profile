@@ -115,11 +115,11 @@ const Cover: React.FC = () => {
         </div>
         
         <div className="w-[70%] z-50 text-center">
-            <div className="text-lg text-white" style={{ fontFamily: 'Metrophobic' }}>
+            <div className="text-4xl text-white" style={{ fontFamily: 'Lily Script One' }}>
                 Mempelai
             </div>
 
-            <div className="flex justify-around items-center mt-5 flex-col">
+            <div className="flex justify-around items-center mt-7 flex-col">    
                 <div className="text-left flex flex-row">
                     <img src="https://ik.imagekit.io/vtvggda66/menicaid6_MLweMltp-.png" alt="Nemi Photo" className="w-32 h-auto rounded-lg shadow-md mx-auto"/>
                     <div className="flex flex-col">
@@ -169,11 +169,11 @@ const Cover: React.FC = () => {
           </video>
         </div>
         <div className="w-[70%] z-50 text-center">
-            <div className="text-lg text-white" style={{ fontFamily: 'Metrophobic' }}>
+            <div className="text-4xl text-white" style={{ fontFamily: 'Lily Script One' }}>
                 Acara
             </div>
 
-            <div className="flex justify-around items-center mt-5 flex-col">
+            <div className="flex justify-around items-center mt-7 flex-col">
                 <div className="text-left flex flex-row">
                     <img src="https://ik.imagekit.io/vtvggda66/menicaid6_MLweMltp-.png" alt="Nemi Photo" className="w-32 h-auto rounded-lg shadow-md mx-auto"/>
                     <div className="flex flex-col">
@@ -222,11 +222,11 @@ const Cover: React.FC = () => {
           </video>
         </div>
         <div className="w-[70%] z-50 text-center">
-            <div className="text-lg text-white" style={{ fontFamily: 'Metrophobic' }}>
+            <div className="text-4xl text-white" style={{ fontFamily: 'Lily Script One' }}>
                 Galeri
             </div>
 
-            <div className="flex justify-around items-center mt-5 flex-col">
+            <div className="flex justify-around items-center mt-7 flex-col">
                 <div className="text-left flex flex-row">
                     <img src="https://ik.imagekit.io/vtvggda66/menicaid6_MLweMltp-.png" alt="Nemi Photo" className="w-32 h-auto rounded-lg shadow-md mx-auto"/>
                     <div className="flex flex-col">
@@ -275,11 +275,11 @@ const Cover: React.FC = () => {
           </video>
         </div>
         <div className="w-[70%] z-50 text-center">
-            <div className="text-lg text-white" style={{ fontFamily: 'Metrophobic' }}>
+            <div className="text-4xl text-white" style={{ fontFamily: 'Lily Script One' }}>
                 Mempelai
             </div>
 
-            <div className="flex justify-around items-center mt-5 flex-col">
+            <div className="flex justify-around items-center mt-7 flex-col">
                 <div className="text-left flex flex-row">
                     <img src="https://ik.imagekit.io/vtvggda66/menicaid6_MLweMltp-.png" alt="Nemi Photo" className="w-32 h-auto rounded-lg shadow-md mx-auto"/>
                     <div className="flex flex-col">
