@@ -69,7 +69,7 @@ const Cover: React.FC = () => {
             <div className="text-md text-white uppercase tracking-widest mt-[30%] font-light" style={{ fontFamily: 'Prata' }}>
               The Wedding Of
             </div>
-            <div className="text-8xl font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}>
+            <div className="text-8xl font-normal sm:font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}>
               Nemi <br />
               Meyta
             </div>

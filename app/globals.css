@@ -83,7 +83,7 @@ html{
 }
 
 .text-gradient {
-  font-weight: bold; /* Adjust the font weight as needed */
+  /* font-weight: bold;  */
   background: linear-gradient(180deg, #F9BD5D 0%, #D2852D 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
