@@ -374,14 +374,13 @@ const Cover: React.FC = () => {
         </div>
         
         {/* Invitation Content */}
-        <div className="w-[70%] z-50 text-center mx-auto my-10">
-            <div className="text-3xl font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Prata' }}  data-aos="fade-down">
-                Buku Tamu
-            </div>
+            <div className="w-[70%] z-50 text-center mx-auto my-10">
+          <div className="text-3xl font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Prata' }} data-aos="fade-down">
+            Buku Tamu
+          </div>
 
-            <div className="flex justify-around items-center mt-7 flex-col">  
-
-            <div className="flex overflow-x-scroll space-x-4 p-4 bg-gray-100">
+          <div className="flex justify-center items-center mt-7">
+            <div className="flex overflow-x-auto space-x-4 p-4 bg-transparent w-full">
               {comments.map((comment, index) => (
                 <div 
                   key={index} 
@@ -398,9 +397,7 @@ const Cover: React.FC = () => {
                 </div>
               ))}
             </div>
-                
-            </div>
-
+          </div>
         </div>
       </div>
       <div className="h-screen-minus-40 sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
