@@ -66,7 +66,7 @@ const Cover: React.FC = () => {
         
       >
         {/* Top Decoration Image */}
-        <div className="mx-auto mt-[-112px] w-1/2">
+        <div className="mx-auto mt-[-112px] w-1/2" data-aos="fade-in">
           <img src="https://asset.menica.pro/menicav4/mandala-navy1-B.svg" alt="Top Decoration" className='animate-spin-slow'/>
         </div>
         
@@ -116,7 +116,7 @@ const Cover: React.FC = () => {
         </div>
         
         {/* Bottom Decoration Image */}
-        <div className="mx-auto mb-[-112px] w-1/2">
+        <div className="mx-auto mb-[-112px] w-1/2" data-aos="fade-in">
           <img src="https://asset.menica.pro/menicav4/mandala-navy1-B.svg" alt="Bottom Decoration" className="rotate-180 animate-spin-slow" />
         </div>
       </div>
@@ -142,9 +142,10 @@ const Cover: React.FC = () => {
               style={{
                 objectFit: 'cover'
               }} 
+              data-aos="fade-left"
             />
             
-            <div className='mx-3'>
+            <div className='mx-3' data-aos="fade-in">
               <GiOppositeHearts className='text-red-700' size={25} />
             </div>
 
@@ -155,6 +156,7 @@ const Cover: React.FC = () => {
               style={{
                 objectFit: 'cover'
               }} 
+              data-aos="fade-right"
             />
           </div>
 
@@ -163,7 +165,7 @@ const Cover: React.FC = () => {
                 <div className="text-center flex flex-row">
                     <div className="flex flex-col">
 
-                    <div className="text-3xl sm:text-4xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
+                    <div className="text-3xl sm:text-4xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }} data-aos="fade-in">
                         Mahanaim Purba, S.Sn
                     </div>
                     <div className="text-xs text-[#fff] mt-2 ml-4 tracking-normal" style={{ fontFamily: 'Prata' }}>
@@ -180,7 +182,7 @@ const Cover: React.FC = () => {
                 <div className="text-center flex flex-row">
                     <div className="flex flex-col">
 
-                    <div className="text-3xl sm:text-4xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
+                    <div className="text-3xl sm:text-4xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }} data-aos="fade-in">
                         dr. Agnes Meyta Arpinda Tampubolon
                     </div>
                     <div className="text-xs text-[#fff] mt-2 ml-4" style={{ fontFamily: 'Prata' }}>
