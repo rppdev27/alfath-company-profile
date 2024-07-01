@@ -91,25 +91,18 @@ const Cover: React.FC = () => {
           <img src="https://asset.menica.pro/menicav4/mandala-navy1-B.svg" alt="Bottom Decoration" className="rotate-180 animate-spin-slow" />
         </div>
       </div>
-      <div className="relative flex items-center justify-center max-w-[451px] h-screen whitespace-pre-line mx-auto">
-        <div className="absolute inset-0 w-full h-full" ref={section2Ref}>
-          <video
-            ref={videoRef2}
-            loop
-            playsInline
-            preload="metadata"
-            className="object-cover w-full h-full"
-            style={{ opacity: 1 }}
-          >
-            <source
-              src="https://asset.menica.pro/menicav4/botanic-WARM-bg1.mp4"
-              type="video/mp4"
-            />
-          </video>
+      
+      <div className="h-screen-minus-40 sm:h-screen relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
+        
+      >
+        {/* Top Decoration Image */}
+        <div className="mx-auto mt-[-112px] w-1/2">
+          <img src="https://asset.menica.pro/menicav4/mandala-navy1-B.svg" alt="Top Decoration" className='animate-spin-slow'/>
         </div>
         
-        <div className="w-[70%] z-50 text-center">
-            <div className="text-4xl text-[#B6695E]" style={{ fontFamily: 'Prata' }}>
+        {/* Invitation Content */}
+        <div className="w-[70%] z-50 text-center mx-auto my-10">
+            <div className="text-3xl font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Prata' }}>
                 Mempelai
             </div>
 
@@ -122,10 +115,10 @@ const Cover: React.FC = () => {
                     />
                     <div className="flex flex-col">
 
-                    <div className="text-lg text-[#B6695E] mt-3 ml-4" style={{ fontFamily: 'Prata' }}>
+                    <div className="text-2xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
                         Mahanaim Purba, S.Sn
                     </div>
-                    <div className="text-xs text-[#1f1f1f] mt-2 ml-4" style={{ fontFamily: 'Montserrat' }}>
+                    <div className="text-xs text-[#fff] mt-2 ml-4" style={{ fontFamily: 'Montserrat' }}>
                         Anak pertama dari bapak Pdt. Demu Purba & ibu Cynthia Grace, S.Pd
                     </div>
                     </div>
@@ -140,64 +133,10 @@ const Cover: React.FC = () => {
                     />
                     <div className="flex flex-col">
 
-                    <div className="text-xl text-[#B6695E] mt-3 ml-4" style={{ fontFamily: 'Prata' }}>
+                    <div className="text-2xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
                         dr. Agnes Meyta Arpinda Tampubolon
                     </div>
-                    <div className="text-xs text-[#1f1f1f] mt-2 ml-4" style={{ fontFamily: 'Montserrat' }}>
-                        Anak kedua dari bapak Arnold Tampubolon dan Hevrida br Barus
-                    </div>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-      </div>
-      <div className="relative flex items-center justify-center max-w-[451px] h-screen whitespace-pre-line mx-auto">
-        <div className="absolute inset-0 w-full h-full" ref={section3Ref}>
-          <video
-            ref={videoRef3}
-            loop
-            playsInline
-            preload="metadata"
-            className="object-cover w-full h-full"
-            style={{ opacity: 1 }}
-          >
-            <source
-              src="https://asset.menica.pro/menicav4/botanic-WARM-bg2.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
-        <div className="w-[70%] z-50 text-center">
-            <div className="text-4xl text-[#B6695E]" style={{ fontFamily: 'Prata' }}>
-                Acara
-            </div>
-
-            <div className="flex justify-around items-center mt-7 flex-col">
-                <div className="text-left flex flex-row">
-                    <img src="https://ik.imagekit.io/vtvggda66/menicaid6_MLweMltp-.png" alt="Nemi Photo" className="w-32 h-auto rounded-lg shadow-md mx-auto"/>
-                    <div className="flex flex-col">
-
-                    <div className="text-xl text-[#B6695E] mt-3 ml-4" style={{ fontFamily: 'Prata' }}>
-                        Mahanaim Purba, S.Sn
-                    </div>
-                    <div className="text-sm text-[#B6695E] mt-2 ml-4" style={{ fontFamily: 'Metrophobic' }}>
-                        Anak pertama dari bapak Pdt. Demu Purba & ibu Cynthia Grace, S.Pd
-                    </div>
-                    </div>
-                    
-                </div>
-
-                <div className="text-left flex flex-row mt-5">
-                    <img src="https://ik.imagekit.io/vtvggda66/menicaid6_tKdAiCowm.png" alt="Meyta Photo" className="w-32 h-auto rounded-lg shadow-md mx-auto"/>
-                    <div className="flex flex-col">
-
-                    <div className="text-xl text-[#B6695E] mt-3 ml-4" style={{ fontFamily: 'Prata' }}>
-                        dr. Agnes Meyta Arpinda Tampubolon
-                    </div>
-                    <div className="text-sm text-[#B6695E] mt-2 ml-4" style={{ fontFamily: 'Metrophobic' }}>
+                    <div className="text-xs text-[#fff] mt-2 ml-4" style={{ fontFamily: 'Montserrat' }}>
                         Anak kedua dari bapak Arnold Tampubolon dan Hevrida br Barus
                     </div>
 
@@ -207,36 +146,33 @@ const Cover: React.FC = () => {
 
         </div>
       </div>
-      <div className="relative flex items-center justify-center max-w-[451px] h-screen whitespace-pre-line mx-auto">
-        <div className="absolute inset-0 w-full h-full" ref={section4Ref}>
-          <video
-            ref={videoRef4}
-            loop
-            playsInline
-            preload="metadata"
-            className="object-cover w-full h-full"
-            style={{ opacity: 1 }}
-          >
-            <source
-              src="https://asset.menica.pro/menicav4/botanic-WARM-bg3.mp4"
-              type="video/mp4"
-            />
-          </video>
+      <div className="h-screen-minus-40 sm:h-screen relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
+        
+      >
+        {/* Top Decoration Image */}
+        <div className="mx-auto mt-[-112px] w-1/2">
+          <img src="https://asset.menica.pro/menicav4/mandala-navy1-B.svg" alt="Top Decoration" className='animate-spin-slow'/>
         </div>
-        <div className="w-[70%] z-50 text-center">
-            <div className="text-4xl text-[#B6695E]" style={{ fontFamily: 'Prata' }}>
+        
+        {/* Invitation Content */}
+        <div className="w-[70%] z-50 text-center mx-auto my-10">
+            <div className="text-3xl font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Prata' }}>
                 Galeri
             </div>
 
-            <div className="flex justify-around items-center mt-7 flex-col">
+            <div className="flex justify-around items-center mt-7 flex-col">    
                 <div className="text-left flex flex-row">
-                    <img src="https://ik.imagekit.io/vtvggda66/menicaid6_MLweMltp-.png" alt="Nemi Photo" className="w-32 h-auto rounded-lg shadow-md mx-auto"/>
+                    <img src="https://ik.imagekit.io/vtvggda66/menicaid6_tKdAiCowm.png" alt="Nemi Photo" className="w-32 h-auto shadow-md mx-auto"
+                        style={{
+                            height: 'fit-content'
+                        }}
+                    />
                     <div className="flex flex-col">
 
-                    <div className="text-xl text-[#B6695E] mt-3 ml-4" style={{ fontFamily: 'Prata' }}>
+                    <div className="text-2xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
                         Mahanaim Purba, S.Sn
                     </div>
-                    <div className="text-sm text-[#B6695E] mt-2 ml-4" style={{ fontFamily: 'Metrophobic' }}>
+                    <div className="text-xs text-[#fff] mt-2 ml-4" style={{ fontFamily: 'Montserrat' }}>
                         Anak pertama dari bapak Pdt. Demu Purba & ibu Cynthia Grace, S.Pd
                     </div>
                     </div>
@@ -244,13 +180,17 @@ const Cover: React.FC = () => {
                 </div>
 
                 <div className="text-left flex flex-row mt-5">
-                    <img src="https://ik.imagekit.io/vtvggda66/menicaid6_tKdAiCowm.png" alt="Meyta Photo" className="w-32 h-auto rounded-lg shadow-md mx-auto"/>
+                    <img src="https://ik.imagekit.io/vtvggda66/menicaid6_MLweMltp-.png" alt="Meyta Photo" className="w-32 h-auto shadow-md mx-auto"
+                        style={{
+                            height: 'fit-content'
+                        }}
+                    />
                     <div className="flex flex-col">
 
-                    <div className="text-xl text-[#B6695E] mt-3 ml-4" style={{ fontFamily: 'Prata' }}>
+                    <div className="text-2xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
                         dr. Agnes Meyta Arpinda Tampubolon
                     </div>
-                    <div className="text-sm text-[#B6695E] mt-2 ml-4" style={{ fontFamily: 'Metrophobic' }}>
+                    <div className="text-xs text-[#fff] mt-2 ml-4" style={{ fontFamily: 'Montserrat' }}>
                         Anak kedua dari bapak Arnold Tampubolon dan Hevrida br Barus
                     </div>
 
@@ -260,36 +200,33 @@ const Cover: React.FC = () => {
 
         </div>
       </div>
-      <div className="relative flex items-center justify-center max-w-[451px] h-screen whitespace-pre-line mx-auto">
-        <div className="absolute inset-0 w-full h-full" ref={section5Ref}>
-          <video
-            ref={videoRef5}
-            loop
-            playsInline
-            preload="metadata"
-            className="object-cover w-full h-full"
-            style={{ opacity: 1 }}
-          >
-            <source
-              src="https://asset.menica.pro/menicav4/botanic-WARM-bg3.mp4"
-              type="video/mp4"
-            />
-          </video>
+      <div className="h-screen-minus-40 sm:h-screen relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
+        
+      >
+        {/* Top Decoration Image */}
+        <div className="mx-auto mt-[-112px] w-1/2">
+          <img src="https://asset.menica.pro/menicav4/mandala-navy1-B.svg" alt="Top Decoration" className='animate-spin-slow'/>
         </div>
-        <div className="w-[70%] z-50 text-center">
-            <div className="text-4xl text-[#B6695E]" style={{ fontFamily: 'Prata' }}>
-                Buku Tamu
+        
+        {/* Invitation Content */}
+        <div className="w-[70%] z-50 text-center mx-auto my-10">
+            <div className="text-3xl font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Prata' }}>
+                Acara
             </div>
 
-            <div className="flex justify-around items-center mt-7 flex-col">
+            <div className="flex justify-around items-center mt-7 flex-col">    
                 <div className="text-left flex flex-row">
-                    <img src="https://ik.imagekit.io/vtvggda66/menicaid6_MLweMltp-.png" alt="Nemi Photo" className="w-32 h-auto rounded-lg shadow-md mx-auto"/>
+                    <img src="https://ik.imagekit.io/vtvggda66/menicaid6_tKdAiCowm.png" alt="Nemi Photo" className="w-32 h-auto shadow-md mx-auto"
+                        style={{
+                            height: 'fit-content'
+                        }}
+                    />
                     <div className="flex flex-col">
 
-                    <div className="text-xl text-[#B6695E] mt-3 ml-4" style={{ fontFamily: 'Prata' }}>
+                    <div className="text-2xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
                         Mahanaim Purba, S.Sn
                     </div>
-                    <div className="text-sm text-[#B6695E] mt-2 ml-4" style={{ fontFamily: 'Metrophobic' }}>
+                    <div className="text-xs text-[#fff] mt-2 ml-4" style={{ fontFamily: 'Montserrat' }}>
                         Anak pertama dari bapak Pdt. Demu Purba & ibu Cynthia Grace, S.Pd
                     </div>
                     </div>
@@ -297,13 +234,125 @@ const Cover: React.FC = () => {
                 </div>
 
                 <div className="text-left flex flex-row mt-5">
-                    <img src="https://ik.imagekit.io/vtvggda66/menicaid6_tKdAiCowm.png" alt="Meyta Photo" className="w-32 h-auto rounded-lg shadow-md mx-auto"/>
+                    <img src="https://ik.imagekit.io/vtvggda66/menicaid6_MLweMltp-.png" alt="Meyta Photo" className="w-32 h-auto shadow-md mx-auto"
+                        style={{
+                            height: 'fit-content'
+                        }}
+                    />
                     <div className="flex flex-col">
 
-                    <div className="text-xl text-[#B6695E] mt-3 ml-4" style={{ fontFamily: 'Prata' }}>
+                    <div className="text-2xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
                         dr. Agnes Meyta Arpinda Tampubolon
                     </div>
-                    <div className="text-sm text-[#B6695E] mt-2 ml-4" style={{ fontFamily: 'Metrophobic' }}>
+                    <div className="text-xs text-[#fff] mt-2 ml-4" style={{ fontFamily: 'Montserrat' }}>
+                        Anak kedua dari bapak Arnold Tampubolon dan Hevrida br Barus
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+      </div>
+      <div className="h-screen-minus-40 sm:h-screen relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
+        
+      >
+        {/* Top Decoration Image */}
+        <div className="mx-auto mt-[-112px] w-1/2">
+          <img src="https://asset.menica.pro/menicav4/mandala-navy1-B.svg" alt="Top Decoration" className='animate-spin-slow'/>
+        </div>
+        
+        {/* Invitation Content */}
+        <div className="w-[70%] z-50 text-center mx-auto my-10">
+            <div className="text-3xl font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Prata' }}>
+                Hadiah
+            </div>
+
+            <div className="flex justify-around items-center mt-7 flex-col">    
+                <div className="text-left flex flex-row">
+                    <img src="https://ik.imagekit.io/vtvggda66/menicaid6_tKdAiCowm.png" alt="Nemi Photo" className="w-32 h-auto shadow-md mx-auto"
+                        style={{
+                            height: 'fit-content'
+                        }}
+                    />
+                    <div className="flex flex-col">
+
+                    <div className="text-2xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
+                        Mahanaim Purba, S.Sn
+                    </div>
+                    <div className="text-xs text-[#fff] mt-2 ml-4" style={{ fontFamily: 'Montserrat' }}>
+                        Anak pertama dari bapak Pdt. Demu Purba & ibu Cynthia Grace, S.Pd
+                    </div>
+                    </div>
+                    
+                </div>
+
+                <div className="text-left flex flex-row mt-5">
+                    <img src="https://ik.imagekit.io/vtvggda66/menicaid6_MLweMltp-.png" alt="Meyta Photo" className="w-32 h-auto shadow-md mx-auto"
+                        style={{
+                            height: 'fit-content'
+                        }}
+                    />
+                    <div className="flex flex-col">
+
+                    <div className="text-2xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
+                        dr. Agnes Meyta Arpinda Tampubolon
+                    </div>
+                    <div className="text-xs text-[#fff] mt-2 ml-4" style={{ fontFamily: 'Montserrat' }}>
+                        Anak kedua dari bapak Arnold Tampubolon dan Hevrida br Barus
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+      </div>
+      <div className="h-screen-minus-40 sm:h-screen relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
+        
+      >
+        {/* Top Decoration Image */}
+        <div className="mx-auto mt-[-112px] w-1/2">
+          <img src="https://asset.menica.pro/menicav4/mandala-navy1-B.svg" alt="Top Decoration" className='animate-spin-slow'/>
+        </div>
+        
+        {/* Invitation Content */}
+        <div className="w-[70%] z-50 text-center mx-auto my-10">
+            <div className="text-3xl font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Prata' }}>
+                Buku Tamu
+            </div>
+
+            <div className="flex justify-around items-center mt-7 flex-col">    
+                <div className="text-left flex flex-row">
+                    <img src="https://ik.imagekit.io/vtvggda66/menicaid6_tKdAiCowm.png" alt="Nemi Photo" className="w-32 h-auto shadow-md mx-auto"
+                        style={{
+                            height: 'fit-content'
+                        }}
+                    />
+                    <div className="flex flex-col">
+
+                    <div className="text-2xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
+                        Mahanaim Purba, S.Sn
+                    </div>
+                    <div className="text-xs text-[#fff] mt-2 ml-4" style={{ fontFamily: 'Montserrat' }}>
+                        Anak pertama dari bapak Pdt. Demu Purba & ibu Cynthia Grace, S.Pd
+                    </div>
+                    </div>
+                    
+                </div>
+
+                <div className="text-left flex flex-row mt-5">
+                    <img src="https://ik.imagekit.io/vtvggda66/menicaid6_MLweMltp-.png" alt="Meyta Photo" className="w-32 h-auto shadow-md mx-auto"
+                        style={{
+                            height: 'fit-content'
+                        }}
+                    />
+                    <div className="flex flex-col">
+
+                    <div className="text-2xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
+                        dr. Agnes Meyta Arpinda Tampubolon
+                    </div>
+                    <div className="text-xs text-[#fff] mt-2 ml-4" style={{ fontFamily: 'Montserrat' }}>
                         Anak kedua dari bapak Arnold Tampubolon dan Hevrida br Barus
                     </div>
 
