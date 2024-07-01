@@ -132,7 +132,7 @@ const Cover: React.FC = () => {
                     <div className="text-xl text-[#2B6F51] mt-3 ml-4" style={{ fontFamily: 'Prata' }}>
                         Mahanaim Purba, S.Sn
                     </div>
-                    <div className="text-sm text-[#2B6F51] mt-2 ml-4" style={{ fontFamily: 'Metrophobic' }}>
+                    <div className="text-xs text-[#1f1f1f] mt-2 ml-4" style={{ fontFamily: 'Montserrat' }}>
                         Anak pertama dari bapak Pdt. Demu Purba & ibu Cynthia Grace, S.Pd
                     </div>
                     </div>
@@ -146,7 +146,7 @@ const Cover: React.FC = () => {
                     <div className="text-xl text-[#2B6F51] mt-3 ml-4" style={{ fontFamily: 'Prata' }}>
                         dr. Agnes Meyta Arpinda Tampubolon
                     </div>
-                    <div className="text-sm text-[#2B6F51] mt-2 ml-4" style={{ fontFamily: 'Metrophobic' }}>
+                    <div className="text-xs text-[#1f1f1f] mt-2 ml-4" style={{ fontFamily: 'Montserrat' }}>
                         Anak kedua dari bapak Arnold Tampubolon dan Hevrida br Barus
                     </div>
 
