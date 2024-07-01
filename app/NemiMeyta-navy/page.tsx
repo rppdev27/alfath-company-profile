@@ -61,7 +61,7 @@ const Cover: React.FC = () => {
   };
 
   const getRandomRotation = () => {
-    const rotations = ['rotate-6', 'rotate-3', '-rotate-6'];
+    const rotations = ['-rotate-6', 'rotate-3', 'rotate-6', '-rotate-3'];
     return rotations[Math.floor(Math.random() * rotations.length)];
   };
   
