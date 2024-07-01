@@ -415,7 +415,7 @@ const Cover: React.FC = () => {
 
         </div>
       </div>
-      <div className="h-screen-minus-40 sm:h-screen relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
+      <div className="h-screen-minus-40 sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
         
       >
         {/* Top Decoration Image */}
@@ -429,10 +429,10 @@ const Cover: React.FC = () => {
                 Save The Date
             </div>
 
-            <div className="flex justify-around items-center mt-8 mb-32 flex-col">    
+            <div className="flex justify-around items-center mt-8 flex-col">    
 
                 <img 
-                  src="https://ik.imagekit.io/vtvggda66/White%20Minimalist%20Wedding%20Thankyou%20PostCard%20(1).png?updatedAt=1719858216065" 
+                  src="https://ik.imagekit.io/vtvggda66/Elegant%20Photo%20Collage%20White%20Save%20The%20Date%20Wedding%20Invitation.png?updatedAt=1719858590321" 
                   alt="Rounded Shadow Image" 
                   className="rounded-lg shadow-lg"
                 />
