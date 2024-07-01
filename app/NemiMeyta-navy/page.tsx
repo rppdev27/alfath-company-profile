@@ -127,31 +127,36 @@ const Cover: React.FC = () => {
             <div className="text-3xl font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Prata' }}>
                 Mempelai
             </div>
-            <div className="flex items-center mt-7 flex-row justify-between"> 
-
-            <img src="https://ik.imagekit.io/vtvggda66/menicaid6_tKdAiCowm.png" alt="Nemi Photo" className="w-32 h-auto shadow-md mx-auto"
-                        style={{
-                            height: 'fit-content'
-                        }}
-                    />
-
+            <div className="flex items-center mt-7 flex-row justify-between">
+            <img 
+              src="https://ik.imagekit.io/vtvggda66/menicaid6_tKdAiCowm.png" 
+              alt="Nemi Photo" 
+              className="w-32 h-32 border-4 border-white shadow-lg rotate-6" 
+              style={{
+                objectFit: 'cover'
+              }} 
+            />
+            
             <div>
-              <GiOppositeHearts className='text-red-700' size={25}/>
+              <GiOppositeHearts className='text-red-700' size={25} />
             </div>
 
-            <img src="https://ik.imagekit.io/vtvggda66/menicaid6_MLweMltp-.png" alt="Meyta Photo" className="w-32 h-auto shadow-md mx-auto"
-                        style={{
-                            height: 'fit-content'
-                        }}
-                    />
+            <img 
+              src="https://ik.imagekit.io/vtvggda66/menicaid6_MLweMltp-.png" 
+              alt="Meyta Photo" 
+              className="w-32 h-32 border-4 border-white shadow-lg -rotate-6"  
+              style={{
+                objectFit: 'cover'
+              }} 
+            />
+          </div>
 
-            </div>
 
             <div className="flex justify-around items-center mt-8 mb-32 flex-col">    
                 <div className="text-center flex flex-row">
                     <div className="flex flex-col">
 
-                    <div className="text-xl sm:text-4xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
+                    <div className="text-2xl sm:text-4xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
                         Mahanaim Purba, S.Sn
                     </div>
                     <div className="text-xs text-[#fff] mt-2 ml-4 tracking-normal" style={{ fontFamily: 'Prata' }}>
@@ -168,7 +173,7 @@ const Cover: React.FC = () => {
                 <div className="text-center flex flex-row">
                     <div className="flex flex-col">
 
-                    <div className="text-xl sm:text-4xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
+                    <div className="text-2xl sm:text-4xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
                         dr. Agnes Meyta Arpinda Tampubolon
                     </div>
                     <div className="text-xs text-[#fff] mt-2 ml-4" style={{ fontFamily: 'Prata' }}>
@@ -195,43 +200,51 @@ const Cover: React.FC = () => {
                 Galeri
             </div>
 
-            <div className="flex justify-around items-center mt-7 flex-col">    
-                <div className="text-left flex flex-row">
-                    <img src="https://ik.imagekit.io/vtvggda66/menicaid6_tKdAiCowm.png" alt="Nemi Photo" className="w-32 h-auto shadow-md mx-auto"
-                        style={{
-                            height: 'fit-content'
-                        }}
-                    />
-                    <div className="flex flex-col">
-
-                    <div className="text-2xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
-                        Mahanaim Purba, S.Sn
-                    </div>
-                    <div className="text-xs text-[#fff] mt-2 ml-4" style={{ fontFamily: 'Montserrat' }}>
-                        Anak pertama dari bapak Pdt. Demu Purba & ibu Cynthia Grace, S.Pd
-                    </div>
-                    </div>
-                    
-                </div>
-
-                <div className="text-left flex flex-row mt-5">
-                    <img src="https://ik.imagekit.io/vtvggda66/menicaid6_MLweMltp-.png" alt="Meyta Photo" className="w-32 h-auto shadow-md mx-auto"
-                        style={{
-                            height: 'fit-content'
-                        }}
-                    />
-                    <div className="flex flex-col">
-
-                    <div className="text-2xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
-                        dr. Agnes Meyta Arpinda Tampubolon
-                    </div>
-                    <div className="text-xs text-[#fff] mt-2 ml-4" style={{ fontFamily: 'Montserrat' }}>
-                        Anak kedua dari bapak Arnold Tampubolon dan Hevrida br Barus
-                    </div>
-
-                    </div>
-                </div>
+            <div className="grid grid-flow-col grid-rows-2 grid-cols-3 gap-4">
+              <div className="transform scale-110 -rotate-6">
+                <img 
+                  src="https://ik.imagekit.io/vtvggda66/menicaid6_kKPg4qjo8.png?updatedAt=1719819011595" 
+                  alt="" 
+                  loading="lazy" 
+                  className="rounded border-4 border-white shadow-lg"
+                />
+              </div>
+              <div className="col-start-3 transform scale-75 rotate-6 translate-x-2 translate-y-15">
+                <img 
+                  src="https://ik.imagekit.io/vtvggda66/menicaid6_fCBOfyS-Y.png?updatedAt=1719819007743" 
+                  alt="" 
+                  loading="lazy" 
+                  className="rounded border-4 border-white shadow-lg"
+                />
+              </div>
+              <div className="transform scale-150 translate-y-11">
+                <img 
+                  src="https://ik.imagekit.io/vtvggda66/menicaid6_KDeRGtWBR.png?updatedAt=1719819004269" 
+                  alt="" 
+                  loading="lazy" 
+                  className="rounded border-4 border-white shadow-lg"
+                />
+              </div>
+              <div className="transform translate-y-24">
+                <img 
+                  src="https://ik.imagekit.io/vtvggda66/menicaid6_6k7fNNyhm.png?updatedAt=1719819000408" 
+                  alt="" 
+                  loading="lazy" 
+                  className="rounded border-4 border-white shadow-lg"
+                />
+              </div>
+              <div className="row-start-1 col-start-2 col-span-2 transform translate-x-10 translate-y-4">
+                <img 
+                  src="https://ik.imagekit.io/vtvggda66/menicaid6_ogOCt64bZ.png?updatedAt=1719818997426" 
+                  alt="" 
+                  loading="lazy" 
+                  className="rounded border-4 border-white shadow-lg"
+                />
+              </div>
             </div>
+
+
+
 
         </div>
       </div>
