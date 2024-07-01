@@ -136,7 +136,7 @@ const Cover: React.FC = () => {
                     />
 
             <div>
-              <GiOppositeHearts className='text-white' size={25}/>
+              <GiOppositeHearts className='text-red-700' size={25}/>
             </div>
 
             <img src="https://ik.imagekit.io/vtvggda66/menicaid6_MLweMltp-.png" alt="Meyta Photo" className="w-32 h-auto shadow-md mx-auto"
