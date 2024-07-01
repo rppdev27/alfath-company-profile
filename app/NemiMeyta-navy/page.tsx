@@ -210,7 +210,7 @@ const Cover: React.FC = () => {
             </div>
 
             <div className="grid grid-flow-col grid-rows-2 grid-cols-3 gap-4 mt-8">
-              <div className="transform scale-110 -rotate-6">
+              <div className="transform scale-150 -rotate-6">
                 <img 
                   src="https://ik.imagekit.io/vtvggda66/menicaid6_kKPg4qjo8.png?updatedAt=1719819011595" 
                   alt="" 
