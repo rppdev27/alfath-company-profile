@@ -45,7 +45,11 @@ const Cover: React.FC = () => {
         section2Ref.current?.scrollIntoView({ behavior: 'smooth' });
       }, 500);
     }
-    setIsPlaying(!isPlaying);
+    setTimeout(() => {
+      // section2Ref.current?.scrollIntoView({ behavior: 'smooth' });
+      setIsPlaying(!isPlaying);
+    }, 2000);
+    
   };
 
   return (
@@ -80,6 +84,23 @@ const Cover: React.FC = () => {
               <div className="text-white font-light tracking-tighter text-xl mt-5" style={{ fontFamily: 'Prata' }}>
                 Nama Tamu
               </div>
+              <div className="mt-4 mx-auto">
+                {
+                  isPlaying ? <></> : (
+                    <button
+                      onClick={handlePlayPause}
+                      className="bg-transparent text-black px-6 py-3 rounded-full backdrop-filter backdrop-blur-md bg-opacity-20 hover:bg-opacity-40 transition-all duration-500 font-bold"
+                      style={{
+                        fontFamily: 'Prata',
+                        backgroundImage: 'linear-gradient(180deg, #F9BD5D 0%, #D2852D 100%)',
+                        backgroundClip: 'padding-box', // Ensures the gradient covers the padding area
+                      }}
+                    >
+                      {isPlaying ? 'Pause' : 'Open Invitation'}
+                    </button>
+                  )
+                }
+            </div>
             </div>
           </div>
           
@@ -362,23 +383,23 @@ const Cover: React.FC = () => {
 
         </div>
       </div>
-      <div className="fixed bottom-36 left-1/2 transform -translate-x-1/2">
-      {
-        isPlaying ? <></> : (
-          <button
-            onClick={handlePlayPause}
-            className="bg-transparent text-black px-6 py-3 rounded-full backdrop-filter backdrop-blur-md bg-opacity-20 hover:bg-opacity-40 transition-all duration-500 font-bold"
-            style={{
-              fontFamily: 'Prata',
-              backgroundImage: 'linear-gradient(180deg, #F9BD5D 0%, #D2852D 100%)',
-              backgroundClip: 'padding-box', // Ensures the gradient covers the padding area
-            }}
-          >
-            {isPlaying ? 'Pause' : 'Open Invitation'}
-          </button>
-        )
-      }
-    </div>
+      {/* <div className="fixed bottom-36 left-1/2 transform -translate-x-1/2">
+        {
+          isPlaying ? <></> : (
+            <button
+              onClick={handlePlayPause}
+              className="bg-transparent text-black px-6 py-3 rounded-full backdrop-filter backdrop-blur-md bg-opacity-20 hover:bg-opacity-40 transition-all duration-500 font-bold"
+              style={{
+                fontFamily: 'Prata',
+                backgroundImage: 'linear-gradient(180deg, #F9BD5D 0%, #D2852D 100%)',
+                backgroundClip: 'padding-box', // Ensures the gradient covers the padding area
+              }}
+            >
+              {isPlaying ? 'Pause' : 'Open Invitation'}
+            </button>
+          )
+        }
+      </div> */}
     </>
   );
 };
