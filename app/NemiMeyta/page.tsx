@@ -5,7 +5,13 @@ import React, { useRef, useState, useEffect } from 'react';
 const Cover: React.FC = () => {
   const videoRef1 = useRef<HTMLVideoElement>(null);
   const videoRef2 = useRef<HTMLVideoElement>(null);
+  const videoRef3 = useRef<HTMLVideoElement>(null);
+  const videoRef4 = useRef<HTMLVideoElement>(null);
+  const videoRef5 = useRef<HTMLVideoElement>(null);
   const section2Ref = useRef<HTMLDivElement>(null);
+  const section3Ref = useRef<HTMLDivElement>(null);
+  const section4Ref = useRef<HTMLDivElement>(null);
+  const section5Ref = useRef<HTMLDivElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
@@ -22,9 +28,15 @@ const Cover: React.FC = () => {
     if (isPlaying) {
       videoRef1.current?.pause();
       videoRef2.current?.pause();
+      videoRef3.current?.pause();
+      videoRef4.current?.pause();
+      videoRef5.current?.pause();
     } else {
       videoRef1.current?.play();
       videoRef2.current?.play();
+      videoRef3.current?.play();
+      videoRef4.current?.play();
+      videoRef5.current?.play();
       // Unlock scroll
       document.body.style.overflow = 'unset';
       
@@ -92,6 +104,57 @@ const Cover: React.FC = () => {
           </video>
         </div>
       </div>
+      <div className="relative flex items-center justify-center max-w-[451px] h-screen whitespace-pre-line mx-auto">
+        <div className="absolute inset-0 w-full h-full" ref={section3Ref}>
+          <video
+            ref={videoRef3}
+            loop
+            playsInline
+            preload="metadata"
+            className="object-cover w-full h-full"
+            style={{ opacity: 1 }}
+          >
+            <source
+              src="https://asset.menica.pro/menicav4/summer-NIGHT-bg2.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </div>
+      <div className="relative flex items-center justify-center max-w-[451px] h-screen whitespace-pre-line mx-auto">
+        <div className="absolute inset-0 w-full h-full" ref={section4Ref}>
+          <video
+            ref={videoRef4}
+            loop
+            playsInline
+            preload="metadata"
+            className="object-cover w-full h-full"
+            style={{ opacity: 1 }}
+          >
+            <source
+              src="https://asset.menica.pro/menicav4/summer-NIGHT-bg3.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </div>
+      <div className="relative flex items-center justify-center max-w-[451px] h-screen whitespace-pre-line mx-auto">
+        <div className="absolute inset-0 w-full h-full" ref={section5Ref}>
+          <video
+            ref={videoRef5}
+            loop
+            playsInline
+            preload="metadata"
+            className="object-cover w-full h-full"
+            style={{ opacity: 1 }}
+          >
+            <source
+              src="https://asset.menica.pro/menicav4/summer-NIGHT-bg3.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </div>
       <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2">
       {
         isPlaying ? <></> : <button
@@ -111,4 +174,3 @@ const Cover: React.FC = () => {
 };
 
 export default Cover;
-
