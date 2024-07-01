@@ -151,7 +151,7 @@ const Cover: React.FC = () => {
                 <div className="text-center flex flex-row">
                     <div className="flex flex-col">
 
-                    <div className="text-4xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
+                    <div className="text-xl sm:text-4xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
                         Mahanaim Purba, S.Sn
                     </div>
                     <div className="text-xs text-[#fff] mt-2 ml-4 tracking-normal" style={{ fontFamily: 'Prata' }}>
@@ -168,7 +168,7 @@ const Cover: React.FC = () => {
                 <div className="text-center flex flex-row">
                     <div className="flex flex-col">
 
-                    <div className="text-4xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
+                    <div className="text-xl sm:text-4xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
                         dr. Agnes Meyta Arpinda Tampubolon
                     </div>
                     <div className="text-xs text-[#fff] mt-2 ml-4" style={{ fontFamily: 'Prata' }}>
