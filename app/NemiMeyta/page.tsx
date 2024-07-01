@@ -38,7 +38,7 @@ const Cover: React.FC = () => {
 
   return (
     <>
-      <div className="relative flex items-start justify-center max-w-[451px] h-screen whitespace-pre-line mx-auto">
+      <div className="relative flex justify-start max-w-[451px] h-screen whitespace-pre-line mx-auto flex-col">
         <div className="absolute inset-0 w-full h-full">
           <video
             ref={videoRef1}
@@ -55,18 +55,24 @@ const Cover: React.FC = () => {
           </video>
           
         </div>
+
+        <div className="w-[70%] z-50 flex flex-col mx-auto text-center mt-[42%]">
+
+            <div className="text-base text-white" style={{
+                fontFamily: 'Metrophobic'
+            }}>
+                The Wedding Of
+            </div>
+            <div className="text-6xl font-extrabold text-white tracking-wider mt-5" style={{
+                fontFamily: 'Lily Script One'
+            }}>
+                Nemi <br/>
+                Meyta
+            </div>
+
+        </div>
         
-        <div className="text-base" style={{
-            fontFamily: 'Metrophobic'
-          }}>
-            The Wedding Of
-        </div>
-        <div className="text-2xl font-bold" style={{
-            fontFamily: 'Lily Script One'
-          }}>
-            Nemi <br/>
-            Meyta
-        </div>
+        
       </div>
       <div className="relative flex items-center justify-center max-w-[451px] h-screen whitespace-pre-line mx-auto">
         <div className="absolute inset-0 w-full h-full" ref={section2Ref}>
