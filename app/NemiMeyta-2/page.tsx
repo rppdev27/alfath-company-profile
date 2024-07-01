@@ -289,7 +289,7 @@ const Cover: React.FC = () => {
         </div>
         <div className="w-[70%] z-50 text-center">
             <div className="text-4xl text-[#2B6F51]" style={{ fontFamily: 'Prata' }}>
-                Mempelai
+                Buku Tamu
             </div>
 
             <div className="flex justify-around items-center mt-7 flex-col">

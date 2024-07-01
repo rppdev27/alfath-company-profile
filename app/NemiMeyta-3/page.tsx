@@ -61,7 +61,7 @@ const Cover: React.FC = () => {
             style={{ opacity: 1 }}
           >
             <source
-              src="https://asset.menica.pro/menicav4/summer-NIGHT-motion.mp4"
+              src="https://asset.menica.pro/menicav4/summer-DAY-motion.mp4"
               type="video/mp4"
             />
           </video>
@@ -82,7 +82,7 @@ const Cover: React.FC = () => {
                 Nemi <br/>
                 Meyta
             </div>
-            <div className="text-base text-white mt-32 font-semibold" style={{
+            <div className="text-base text-[#126F55] mt-32 font-semibold" style={{
                 fontFamily: 'Metrophobic'
             }}>
                 <div>
@@ -108,14 +108,14 @@ const Cover: React.FC = () => {
             style={{ opacity: 1 }}
           >
             <source
-              src="https://asset.menica.pro/menicav4/summer-NIGHT-bg1.mp4"
+              src="https://asset.menica.pro/menicav4/summer-DAY-bg1.mp4"
               type="video/mp4"
             />
           </video>
         </div>
         
         <div className="w-[70%] z-50 text-center">
-            <div className="text-4xl text-white" style={{ fontFamily: 'Lily Script One' }}>
+            <div className="text-4xl text-[#D06A25]" style={{ fontFamily: 'Lily Script One' }}>
                 Mempelai
             </div>
 
@@ -128,7 +128,7 @@ const Cover: React.FC = () => {
                     />
                     <div className="flex flex-col">
 
-                    <div className="text-xl text-white mt-3 ml-4" style={{ fontFamily: 'Lily Script One' }}>
+                    <div className="text-xl text-[#D06A25] mt-3 ml-4" style={{ fontFamily: 'Lily Script One' }}>
                         Mahanaim Purba, S.Sn
                     </div>
                     <div className="text-sm text-white mt-2 ml-4" style={{ fontFamily: 'Metrophobic' }}>
@@ -146,7 +146,7 @@ const Cover: React.FC = () => {
                     />
                     <div className="flex flex-col">
 
-                    <div className="text-xl text-white mt-3 ml-4" style={{ fontFamily: 'Lily Script One' }}>
+                    <div className="text-xl text-[#D06A25] mt-3 ml-4" style={{ fontFamily: 'Lily Script One' }}>
                         dr. Agnes Meyta Arpinda Tampubolon
                     </div>
                     <div className="text-sm text-white mt-2 ml-4" style={{ fontFamily: 'Metrophobic' }}>
@@ -171,13 +171,13 @@ const Cover: React.FC = () => {
             style={{ opacity: 1 }}
           >
             <source
-              src="https://asset.menica.pro/menicav4/summer-NIGHT-bg2.mp4"
+              src="https://asset.menica.pro/menicav4/summer-DAY-bg2.mp4"
               type="video/mp4"
             />
           </video>
         </div>
         <div className="w-[70%] z-50 text-center">
-            <div className="text-4xl text-white" style={{ fontFamily: 'Lily Script One' }}>
+            <div className="text-4xl text-[#D06A25]" style={{ fontFamily: 'Lily Script One' }}>
                 Acara
             </div>
 
@@ -224,13 +224,13 @@ const Cover: React.FC = () => {
             style={{ opacity: 1 }}
           >
             <source
-              src="https://asset.menica.pro/menicav4/summer-NIGHT-bg3.mp4"
+              src="https://asset.menica.pro/menicav4/summer-DAY-bg3.mp4"
               type="video/mp4"
             />
           </video>
         </div>
         <div className="w-[70%] z-50 text-center">
-            <div className="text-4xl text-white" style={{ fontFamily: 'Lily Script One' }}>
+            <div className="text-4xl text-[#D06A25]" style={{ fontFamily: 'Lily Script One' }}>
                 Galeri
             </div>
 
@@ -277,13 +277,13 @@ const Cover: React.FC = () => {
             style={{ opacity: 1 }}
           >
             <source
-              src="https://asset.menica.pro/menicav4/summer-NIGHT-bg3.mp4"
+              src="https://asset.menica.pro/menicav4/summer-DAY-bg3.mp4"
               type="video/mp4"
             />
           </video>
         </div>
         <div className="w-[70%] z-50 text-center">
-            <div className="text-4xl text-white" style={{ fontFamily: 'Lily Script One' }}>
+            <div className="text-4xl text-[#D06A25]" style={{ fontFamily: 'Lily Script One' }}>
                 Buku Tamu
             </div>
 
