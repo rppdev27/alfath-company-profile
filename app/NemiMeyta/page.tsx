@@ -1,11 +1,22 @@
 'use client'
 
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 
 const Cover: React.FC = () => {
   const videoRef1 = useRef<HTMLVideoElement>(null);
   const videoRef2 = useRef<HTMLVideoElement>(null);
+  const section2Ref = useRef<HTMLDivElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
+
+  useEffect(() => {
+    // Lock scroll
+    document.body.style.overflow = 'hidden';
+    
+    return () => {
+      // Ensure to unlock scroll if component unmounts
+      document.body.style.overflow = 'unset';
+    };
+  }, []);
 
   const handlePlayPause = () => {
     if (isPlaying) {
@@ -14,13 +25,20 @@ const Cover: React.FC = () => {
     } else {
       videoRef1.current?.play();
       videoRef2.current?.play();
+      // Unlock scroll
+      document.body.style.overflow = 'unset';
+      
+      // Scroll to the second section after 2 seconds
+      setTimeout(() => {
+        section2Ref.current?.scrollIntoView({ behavior: 'smooth' });
+      }, 2000);
     }
     setIsPlaying(!isPlaying);
   };
 
   return (
     <>
-      <div className="relative flex items-center justify-center max-w-[451px] h-screen whitespace-pre-line mx-auto">
+      <div className="relative flex items-start justify-center max-w-[451px] h-screen whitespace-pre-line mx-auto">
         <div className="absolute inset-0 w-full h-full">
           <video
             ref={videoRef1}
@@ -35,10 +53,23 @@ const Cover: React.FC = () => {
               type="video/mp4"
             />
           </video>
+          
+        </div>
+        
+        <div className="text-base" style={{
+            fontFamily: 'Metrophobic'
+          }}>
+            The Wedding Of
+        </div>
+        <div className="text-2xl font-bold" style={{
+            fontFamily: 'Lily Script One'
+          }}>
+            Nemi <br/>
+            Meyta
         </div>
       </div>
       <div className="relative flex items-center justify-center max-w-[451px] h-screen whitespace-pre-line mx-auto">
-        <div className="absolute inset-0 w-full h-full">
+        <div className="absolute inset-0 w-full h-full" ref={section2Ref}>
           <video
             ref={videoRef2}
             loop
@@ -59,7 +90,7 @@ const Cover: React.FC = () => {
           onClick={handlePlayPause}
           className="bg-blue-500 text-white px-4 py-2 rounded"
         >
-          {isPlaying ? 'Pause' : 'Play'}
+          {isPlaying ? 'Pause' : 'Open Invitation'}
         </button>
       </div>
     </>
@@ -67,3 +98,4 @@ const Cover: React.FC = () => {
 };
 
 export default Cover;
+
