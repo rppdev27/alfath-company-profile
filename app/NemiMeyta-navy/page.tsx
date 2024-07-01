@@ -60,6 +60,24 @@ const Cover: React.FC = () => {
     
   };
 
+  const getRandomRotation = () => {
+    const rotations = ['rotate-6', 'rotate-3', '-rotate-6'];
+    return rotations[Math.floor(Math.random() * rotations.length)];
+  };
+  
+  const comments = [
+    "This is comment one.",
+    "This is comment two.",
+    "This is comment three.",
+    "This is comment four.",
+    "This is comment five.",
+    "This is comment six.",
+    "This is comment seven.",
+    "This is comment eight.",
+    "This is comment nine.",
+    "This is comment ten.",
+  ];
+
   return (
     <>
       <div className="h-screen-minus-40 sm:h-screen relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
@@ -361,7 +379,18 @@ const Cover: React.FC = () => {
                 Buku Tamu
             </div>
 
-            <div className="flex justify-around items-center mt-7 flex-col">    
+            <div className="flex justify-around items-center mt-7 flex-col">  
+
+              <div className="flex overflow-x-scroll space-x-4 p-4 bg-gray-100">
+              {comments.map((comment, index) => (
+                <div 
+                  key={index} 
+                  className={`min-w-[200px] p-4 bg-white rounded-lg shadow-lg font-bold ${getRandomRotation()}`}
+                >
+                  {comment}
+                </div>
+              ))}
+            </div>  
                 
             </div>
 
