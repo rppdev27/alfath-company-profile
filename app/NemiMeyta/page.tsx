@@ -31,7 +31,7 @@ const Cover: React.FC = () => {
       // Scroll to the second section after 2 seconds
       setTimeout(() => {
         section2Ref.current?.scrollIntoView({ behavior: 'smooth' });
-      }, 2000);
+      }, 500);
     }
     setIsPlaying(!isPlaying);
   };
@@ -58,13 +58,14 @@ const Cover: React.FC = () => {
 
         <div className="w-[70%] z-50 flex flex-col mx-auto text-center mt-[42%]">
 
-            <div className="text-base text-white" style={{
+            <div className="text-lg text-white" style={{
                 fontFamily: 'Metrophobic'
             }}>
                 The Wedding Of
             </div>
-            <div className="text-6xl font-extrabold text-white tracking-wider mt-5" style={{
+            <div className="text-6xl font-extrabold text-white mt-5" style={{
                 fontFamily: 'Lily Script One'
+                // fontFamily: 'Metrophobic'
             }}>
                 Nemi <br/>
                 Meyta
@@ -92,12 +93,18 @@ const Cover: React.FC = () => {
         </div>
       </div>
       <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2">
-        <button
-          onClick={handlePlayPause}
-          className="bg-blue-500 text-white px-4 py-2 rounded"
-        >
-          {isPlaying ? 'Pause' : 'Open Invitation'}
-        </button>
+      {
+        isPlaying ? <></> : <button
+        onClick={handlePlayPause}
+        className="bg-transparent border border-white text-white px-6 py-3 rounded-full backdrop-filter backdrop-blur-md bg-opacity-20 hover:bg-opacity-40 transition-all duration-300 font-bold"
+        style={{
+          fontFamily: 'Metrophobic'
+        }}
+      >
+        {isPlaying ? 'Pause' : 'Open Invitation'}
+      </button>
+      }
+        
       </div>
     </>
   );
