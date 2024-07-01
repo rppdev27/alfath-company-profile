@@ -93,7 +93,7 @@ const Cover: React.FC = () => {
                 <div className='text-xs text-[#2B6F51]'>
                     Kepada Yth :
                 </div>
-                <div className='text-[#000] font-bold tracking-light text-xl mt-5'>
+                <div className='text-[#000] font-semibold tracking-light text-xl mt-5'>
                     Nama Tamu
                 </div>
             </div>
