@@ -78,6 +78,20 @@ const Cover: React.FC = () => {
     { text: "This is comment ten.", avatar: "https://via.placeholder.com/50" },
   ];
 
+  const scrollContainerRef: any = useRef(null);
+
+  const scrollLeft = () => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollBy({ left: -200, behavior: 'smooth' });
+    }
+  };
+
+  const scrollRight = () => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollBy({ left: 200, behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
       <div className="h-screen-minus-40 sm:h-screen relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
@@ -380,7 +394,8 @@ const Cover: React.FC = () => {
           </div>
 
           <div className="flex justify-center items-center mt-7">
-            <div className="flex overflow-x-auto space-x-6 p-4 bg-transparent w-full">
+            <button onClick={scrollLeft} className="p-2 bg-gray-300 rounded-full mx-2">Left</button>
+            <div ref={scrollContainerRef} className="flex overflow-x-auto space-x-4 p-4 bg-gray-100 w-full">
               {comments.map((comment, index) => (
                 <div 
                   key={index} 
@@ -397,6 +412,7 @@ const Cover: React.FC = () => {
                 </div>
               ))}
             </div>
+            <button onClick={scrollRight} className="p-2 bg-gray-300 rounded-full mx-2">Right</button>
           </div>
         </div>
       </div>
