@@ -21,6 +21,7 @@ const config = {
     extend: {
       height: {
         'screen-minus-80': 'calc(100vh - 80px)', // Custom height utility
+        'screen-minus-40': 'calc(100vh - 40px)'
       },
       keyframes: {
         "accordion-down": {
