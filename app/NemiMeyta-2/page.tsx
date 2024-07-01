@@ -126,7 +126,7 @@ const Cover: React.FC = () => {
 
             <div className="flex justify-around items-center mt-7 flex-col">    
                 <div className="text-left flex flex-row">
-                    <img src="https://ik.imagekit.io/vtvggda66/menicaid6_MLweMltp-.png" alt="Nemi Photo" className="w-32 h-auto shadow-md mx-auto"
+                    <img src="https://ik.imagekit.io/vtvggda66/menicaid6_tKdAiCowm.png" alt="Nemi Photo" className="w-32 h-auto shadow-md mx-auto"
                         style={{
                             height: 'fit-content'
                         }}
@@ -144,7 +144,7 @@ const Cover: React.FC = () => {
                 </div>
 
                 <div className="text-left flex flex-row mt-5">
-                    <img src="https://ik.imagekit.io/vtvggda66/menicaid6_tKdAiCowm.png" alt="Meyta Photo" className="w-32 h-auto shadow-md mx-auto"
+                    <img src="https://ik.imagekit.io/vtvggda66/menicaid6_MLweMltp-.png" alt="Meyta Photo" className="w-32 h-auto shadow-md mx-auto"
                         style={{
                             height: 'fit-content'
                         }}
