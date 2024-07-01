@@ -82,6 +82,16 @@ const Cover: React.FC = () => {
                 Nemi <br/>
                 Meyta
             </div>
+            <div className="text-base text-white mt-32 font-semibold" style={{
+                fontFamily: 'Metrophobic'
+            }}>
+                <div>
+                    Kepada Yth :
+                </div>
+                <div className='underline font-extrabold tracking-wider'>
+                    President Indonesia
+                </div>
+            </div>
 
         </div>
         
