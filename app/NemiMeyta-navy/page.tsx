@@ -321,42 +321,20 @@ const Cover: React.FC = () => {
                 Hadiah
             </div>
 
-            <div className="flex justify-around items-center mt-7 flex-col">    
-                <div className="text-left flex flex-row">
-                    <img src="https://ik.imagekit.io/vtvggda66/menicaid6_tKdAiCowm.png" alt="Nemi Photo" className="w-32 h-auto shadow-md mx-auto"
-                        style={{
-                            height: 'fit-content'
-                        }}
-                    />
-                    <div className="flex flex-col">
+            <div className="flex justify-around items-center mt-8 flex-col">  
 
-                    <div className="text-2xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
-                        Mahanaim Purba, S.Sn
-                    </div>
-                    <div className="text-xs text-[#fff] mt-2 ml-4" style={{ fontFamily: 'Montserrat' }}>
-                        Anak pertama dari bapak Pdt. Demu Purba & ibu Cynthia Grace, S.Pd
-                    </div>
-                    </div>
-                    
-                </div>
+            <div className="gradient-border rounded-lg shadow-lg" data-aos="fade-left">
+              <div className="bg-white p-6">
+                  Bank Mandiri
+              </div>
+            </div>
 
-                <div className="text-left flex flex-row mt-5">
-                    <img src="https://ik.imagekit.io/vtvggda66/menicaid6_MLweMltp-.png" alt="Meyta Photo" className="w-32 h-auto shadow-md mx-auto"
-                        style={{
-                            height: 'fit-content'
-                        }}
-                    />
-                    <div className="flex flex-col">
-
-                    <div className="text-2xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
-                        dr. Agnes Meyta Arpinda Tampubolon
-                    </div>
-                    <div className="text-xs text-[#fff] mt-2 ml-4" style={{ fontFamily: 'Montserrat' }}>
-                        Anak kedua dari bapak Arnold Tampubolon dan Hevrida br Barus
-                    </div>
-
-                    </div>
-                </div>
+            <div className="gradient-border rounded-lg shadow-lg"  data-aos="fade-right">
+              <div className="bg-white p-6">
+                  Bank BCA
+              </div>
+            </div>
+                
             </div>
 
         </div>
@@ -437,11 +415,12 @@ const Cover: React.FC = () => {
                   className="rounded-lg shadow-lg rotate-6"
                 /> */}
 
-            <div className="gradient-border rounded-lg shadow-lg">
+            <div className="gradient-border rounded-lg shadow-lg" >
               <img 
                 src="https://ik.imagekit.io/vtvggda66/Elegant%20Photo%20Collage%20White%20Save%20The%20Date%20Wedding%20Invitation.png?updatedAt=1719858590321" 
                 alt="Rounded Shadow Image" 
                 className="rounded-lg shadow-lg rotate-6"
+                data-aos="fade-left"
               />
             </div>
                 
