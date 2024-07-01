@@ -321,16 +321,16 @@ const Cover: React.FC = () => {
                 Hadiah
             </div>
 
-            <div className="flex justify-around items-center mt-8 flex-col">  
+            <div className="flex justify-around items-center mt-8 flex-col font-semibold" style={{ fontFamily: 'Prata' }}>  
 
-            <div className="gradient-border rounded-lg shadow-lg" data-aos="fade-left">
-              <div className="bg-white p-6">
+            <div className="gradient-border rounded-lg shadow-lg">
+              <div className="bg-white p-6 rotate-6">
                   Bank Mandiri
               </div>
             </div>
 
-            <div className="gradient-border rounded-lg shadow-lg"  data-aos="fade-right">
-              <div className="bg-white p-6">
+            <div className="gradient-border rounded-lg shadow-lg mt-5"  data-aos="fade-right">
+              <div className="bg-white p-6 rotate-6">
                   Bank BCA
               </div>
             </div>
@@ -420,7 +420,7 @@ const Cover: React.FC = () => {
                 src="https://ik.imagekit.io/vtvggda66/Elegant%20Photo%20Collage%20White%20Save%20The%20Date%20Wedding%20Invitation.png?updatedAt=1719858590321" 
                 alt="Rounded Shadow Image" 
                 className="rounded-lg shadow-lg rotate-6"
-                data-aos="fade-left"
+                // data-aos="fade-left"
               />
             </div>
                 
