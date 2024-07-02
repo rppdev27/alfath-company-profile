@@ -1765,7 +1765,7 @@ const Cover: React.FC = () => {
             {dataKado.map((comment, index) => (
               <div 
                 key={index} 
-                className={`min-w-[200px] p-2 bg-white rounded-md shadow-lg font-bold mx-2 h-auto ${getRandomRotation()}`}
+                className={`min-w-[200px] p-2 bg-[#202f51] rounded-md shadow-lg font-bold mx-2 h-auto ${getRandomRotation()}`}
               >
                 <img 
                   src={comment.thumbnail} 
@@ -1773,7 +1773,7 @@ const Cover: React.FC = () => {
                   className="w-full h-auto rounded-sm"
                 />
 
-                <div className="mt-1 text-[0.8rem]"
+                <div className="my-2 text-[0.8rem] text-white"
                   style={{
                     fontFamily: 'Prata'
                   }}
@@ -1781,7 +1781,7 @@ const Cover: React.FC = () => {
                   {comment.title}
                 </div>
 
-                <div className="text-[0.8rem] mt-1 text-slate-500"
+                <div className="text-[0.8rem] mt-1 text-white my-1 flex-1"
                   style={{
                     fontFamily: 'Prata'
                   }}
@@ -1789,12 +1789,8 @@ const Cover: React.FC = () => {
                   {comment.price_text}
                 </div>
 
-                <div className="text-sm mt-1 text-slate-700 underline"
-                  style={{
-                    fontFamily: 'Prata'
-                  }}
-                >
-                  Detail
+                <div className="text-xs text-center bg-gradient-to-r from-[#F6B859] to-[#DB9238] p-2 rounded-md my-3 text-[#202f51] cursor-pointer font-semibold" style={{ fontFamily: 'Prata' }}>
+                      Detail
                 </div>
 
               </div>
