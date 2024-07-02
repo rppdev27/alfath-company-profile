@@ -647,6 +647,51 @@ const Cover: React.FC = () => {
 
         </div>
       </div>
+      <div className="h-auto sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
+        
+      >
+        {/* Top Decoration Image */}
+        <div className="mx-auto mt-[-112px] w-1/2">
+          <img src="https://asset.menica.pro/menicav4/mandala-navy1-B.svg" alt="Top Decoration" className='animate-spin-slow'/>
+        </div>
+        
+        {/* Invitation Content */}
+        <div className="w-[70%] z-50 text-center mx-auto my-10">
+          <img src={'https://asset.menica.pro/menicav4/galeri-mandala-icon.svg'} className='mx-auto' alt='undangan digital menica'/>
+            <div className="text-2xl font-semibold mt-4 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
+                Exlusive Wedding Invitation
+            </div>
+            <img src={'https://menicapro.s3.ap-southeast-1.amazonaws.com/mandala-navy1-divider.svg'} className='mx-auto mt-1' alt='undangan digital menica'/>
+
+            <div className="flex justify-around items-center mt-8 flex-col">    
+
+                {/* <img 
+                  src="https://ik.imagekit.io/vtvggda66/Elegant%20Photo%20Collage%20White%20Save%20The%20Date%20Wedding%20Invitation.png?updatedAt=1719858590321" 
+                  alt="Rounded Shadow Image" 
+                  className="rounded-lg shadow-lg rotate-6"
+                /> */}
+
+            {/* <div className="gradient-border rounded-lg shadow-lg" >
+              <img 
+                src="https://ik.imagekit.io/vtvggda66/Elegant%20Photo%20Collage%20White%20Save%20The%20Date%20Wedding%20Invitation.png?updatedAt=1719858590321" 
+                alt="Rounded Shadow Image" 
+                className="rounded-lg shadow-lg"
+                data-aos="fade-down"
+                style={{
+                  transform: 'rotate(6deg)'
+                }}
+              />
+            </div> */}
+                
+                
+            </div>
+
+            
+
+
+
+        </div>
+      </div>
       {/* <div className="fixed bottom-36 left-1/2 transform -translate-x-1/2">
         {
           isPlaying ? <></> : (
