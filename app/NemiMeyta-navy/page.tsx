@@ -1552,7 +1552,7 @@ const Cover: React.FC = () => {
             <img src={'https://menicapro.s3.ap-southeast-1.amazonaws.com/mandala-navy1-divider.svg'} className='mx-auto mt-1' alt='undangan digital menica'/>
 
             <div className="flex justify-around items-center mt-8 mb-32 flex-col">    
-            <div className="relative text-center flex flex-row w-full">
+            <div className="relative text-center flex flex-row w-full" data-aos='fade-down'>
                     <div className="absolute top-1 left-1 z-40 w-[20%]">
                         <img src="https://asset.menica.pro/menicav4/corner-mandala.svg" className="w-[100%] h-auto object-contain rotate-180" />
                     </div>
@@ -1604,11 +1604,11 @@ const Cover: React.FC = () => {
             </div>
 
 
-                <div className='text-gradient my-5 font-semibold text-xl'  style={{ fontFamily: 'Alex Brush' }}>
+                <div className='text-gradient my-5 font-semibold text-xl'  style={{ fontFamily: 'Alex Brush' }}  data-aos='fade-up'>
                   &
                 </div>
 
-                <div className="relative text-center flex flex-row w-full">
+                <div className="relative text-center flex flex-row w-full"  data-aos='fade-down'>
                     <div className="absolute top-1 left-1 z-40 w-[20%]">
                         <img src="https://asset.menica.pro/menicav4/corner-mandala.svg" className="w-[100%] h-auto object-contain rotate-180" />
                     </div>
