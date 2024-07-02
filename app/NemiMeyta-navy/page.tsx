@@ -1735,7 +1735,7 @@ const Cover: React.FC = () => {
                   className="w-full h-auto rounded-sm"
                 />
 
-                <div className="text-lg mt-1"
+                <div className="mt-1 text-[0.8rem]"
                   style={{
                     fontFamily: 'Prata'
                   }}
@@ -1743,7 +1743,7 @@ const Cover: React.FC = () => {
                   {comment.title}
                 </div>
 
-                <div className="text-sm mt-1 text-slate-500"
+                <div className="text-[0.8rem] mt-1 text-slate-500"
                   style={{
                     fontFamily: 'Prata'
                   }}
