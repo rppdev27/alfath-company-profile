@@ -246,16 +246,19 @@ const Cover: React.FC = () => {
         
         {/* Invitation Content */}
         <div className="w-[75%] z-50 text-center mx-auto my-10" ref={section2Ref}>
-            <div className="text-3xl font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Prata' }}  data-aos="fade-down">
+            <img src={'https://asset.menica.pro/menicav4/galeri-mandala-icon.svg'} className='mx-auto' alt='undangan digital menica'/>
+            <div className="text-5xl font-semibold mt-4 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
                 Mempelai
             </div>
+            <img src={'https://menicapro.s3.ap-southeast-1.amazonaws.com/mandala-navy1-divider.svg'} className='mx-auto mt-1' alt='undangan digital menica'/>
             <div className="flex items-center mt-7 flex-row justify-between">
             <img 
               src="https://ik.imagekit.io/vtvggda66/menicaid6_tKdAiCowm.png" 
               alt="Nemi Photo" 
-              className="w-32 h-32 border-4 border-white shadow-lg rotate-6" 
+              className="w-32 h-32 border-4 border-white shadow-lg" 
               style={{
-                objectFit: 'cover'
+                objectFit: 'cover',
+                transform: 'rotate(6deg)'
               }} 
               data-aos="fade-left"
             />
@@ -267,9 +270,10 @@ const Cover: React.FC = () => {
             <img 
               src="https://ik.imagekit.io/vtvggda66/menicaid6_MLweMltp-.png" 
               alt="Meyta Photo" 
-              className="w-32 h-32 border-4 border-white shadow-lg -rotate-6"  
+              className="w-32 h-32 border-4 border-white shadow-lg"  
               style={{
-                objectFit: 'cover'
+                objectFit: 'cover',
+                transform: 'rotate(-6deg)'
               }} 
               data-aos="fade-right"
             />
