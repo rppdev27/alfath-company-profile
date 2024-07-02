@@ -1110,66 +1110,67 @@ const Cover: React.FC = () => {
   
   const comments = [
     {
-      text: "This is comment one.",
+      text: "Congratulations on your new life together!",
       avatar: "https://via.placeholder.com/50",
       fullname: "John Doe",
       date: "2024-07-01"
     },
     {
-      text: "This is comment two.",
+      text: "Wishing you a lifetime of love and happiness!",
       avatar: "https://via.placeholder.com/50",
       fullname: "Jane Smith",
       date: "2024-07-02"
     },
     {
-      text: "This is comment three.",
+      text: "May your love continue to grow stronger with each passing day!",
       avatar: "https://via.placeholder.com/50",
       fullname: "Bob Johnson",
       date: "2024-07-03"
     },
     {
-      text: "This is comment four.",
+      text: "May your marriage be filled with laughter, adventure, and joy!",
       avatar: "https://via.placeholder.com/50",
       fullname: "Alice Brown",
       date: "2024-07-04"
     },
     {
-      text: "This is comment five.",
+      text: "Wishing you a lifetime of happiness, love, and adventure together!",
       avatar: "https://via.placeholder.com/50",
       fullname: "Mike Davis",
       date: "2024-07-05"
     },
     {
-      text: "This is comment six.",
+      text: "May your love continue to be the foundation of your life together!",
       avatar: "https://via.placeholder.com/50",
       fullname: "Emily Lee",
       date: "2024-07-06"
     },
     {
-      text: "This is comment seven.",
+      text: "Congratulations on your new life together!",
       avatar: "https://via.placeholder.com/50",
       fullname: "David Kim",
       date: "2024-07-07"
     },
     {
-      text: "This is comment eight.",
+      text: "Wishing you a lifetime of love, happiness, and adventure together!",
       avatar: "https://via.placeholder.com/50",
       fullname: "Sarah Taylor",
       date: "2024-07-08"
     },
     {
-      text: "This is comment nine.",
+      text: "May your love continue to grow stronger with each passing day!",
       avatar: "https://via.placeholder.com/50",
       fullname: "Kevin White",
       date: "2024-07-09"
     },
     {
-      text: "This is comment ten.",
+      text: "Congratulations on your new life together!",
       avatar: "https://via.placeholder.com/50",
       fullname: "Lisa Nguyen",
       date: "2024-07-10"
     }
   ];
+  
   
 
   const scrollContainerRef: any = useRef(null);
@@ -1605,7 +1606,7 @@ const Cover: React.FC = () => {
                     
 
 
-                    <div className="bg-gradient-to-r from-[#F6B859] to-[#DB9238] p-2 rounded-md my-3 text-white cursor-pointer font-semibold" style={{ fontFamily: 'Prata' }}>
+                    <div className="bg-gradient-to-r from-[#F6B859] to-[#DB9238] p-2 rounded-md my-3 text-[#202f51] cursor-pointer font-semibold" style={{ fontFamily: 'Prata' }}>
                         Google Maps
                     </div>
 
