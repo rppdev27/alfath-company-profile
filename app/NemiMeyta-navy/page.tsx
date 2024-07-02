@@ -1474,7 +1474,7 @@ const Cover: React.FC = () => {
             <img src={'https://menicapro.s3.ap-southeast-1.amazonaws.com/mandala-navy1-divider.svg'} className='mx-auto mt-1' alt='undangan digital menica'/>
 
             <div className="grid grid-flow-col grid-rows-2 grid-cols-3 gap-4 mt-8">
-              <div className="transform scale-150 -rotate-6">
+              <div className="transform scale-150 -rotate-6 translate-y-10 mt-[80px]">
                 <img 
                   src="https://ik.imagekit.io/vtvggda66/menicaid6_kKPg4qjo8.png?updatedAt=1719819011595" 
                   alt="" 
@@ -1482,7 +1482,7 @@ const Cover: React.FC = () => {
                   className="border-4 border-white shadow-lg"
                 />
               </div>
-              <div className="col-start-3 transform scale-75 rotate-6 translate-x-2 translate-y-15">
+              <div className="col-start-3 transform scale-150 rotate-6 translate-x-2 translate-y-15 z-30">
                 <img 
                   src="https://ik.imagekit.io/vtvggda66/menicaid6_fCBOfyS-Y.png?updatedAt=1719819007743" 
                   alt="" 
@@ -1498,7 +1498,7 @@ const Cover: React.FC = () => {
                   className="border-4 border-white shadow-lg"
                 />
               </div>
-              <div className="transform translate-y-24">
+              <div className="transform translate-y-24 scale-150">
                 <img 
                   src="https://ik.imagekit.io/vtvggda66/menicaid6_6k7fNNyhm.png?updatedAt=1719819000408" 
                   alt="" 
@@ -1506,7 +1506,7 @@ const Cover: React.FC = () => {
                   className="border-4 border-white shadow-lg"
                 />
               </div>
-              <div className="row-start-1 col-start-2 col-span-2 transform translate-x-10 translate-y-4">
+              <div className="row-start-1 col-start-2 col-span-2 transform translate-x-5 translate-y-4 scale-100">
                 <img 
                   src="https://ik.imagekit.io/vtvggda66/menicaid6_ogOCt64bZ.png?updatedAt=1719818997426" 
                   alt="" 
@@ -1873,7 +1873,7 @@ const Cover: React.FC = () => {
 
 
           </div>
-          <div className="flex flex-row justify-center w-full items-center mx-auto mt-4">
+          <div className="flex flex-row justify-center w-full items-center mx-auto my-5">
             <button onClick={scrollLeft} className="p-2 bg-gray-300 rounded-md shadow-lg mx-2">
               <IoIosArrowForward className='rotate-180'/>
             </button>
@@ -1881,7 +1881,7 @@ const Cover: React.FC = () => {
                 <IoIosArrowForward/>
             </button>
           </div>
-          <div className="bg-gradient-to-r from-[#F6B859] to-[#DB9238] p-2 rounded-md my-3 text-[#202f51] cursor-pointer font-semibold" style={{ fontFamily: 'Prata' }}>
+          <div className="bg-gradient-to-r from-[#F6B859] to-[#DB9238] p-2 rounded-md my-3 text-[#202f51] cursor-pointer font-semibold mt-3" style={{ fontFamily: 'Prata' }}>
               Kirim Ucapan 
           </div>
         </div>
