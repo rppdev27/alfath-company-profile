@@ -1478,44 +1478,49 @@ const Cover: React.FC = () => {
             <img src={'https://menicapro.s3.ap-southeast-1.amazonaws.com/mandala-navy1-divider.svg'} className='mx-auto mt-1' alt='undangan digital menica'/>
 
             <div className="grid grid-flow-col grid-rows-2 grid-cols-3 gap-4 mt-8">
-              <div className="transform scale-150 -rotate-6 translate-y-10 mt-[80px]" data-aos="fade-left">
+              <div className="transform scale-150 -rotate-6 translate-y-10 mt-[80px]">
                 <img 
                   src="https://ik.imagekit.io/vtvggda66/menicaid6_kKPg4qjo8.png?updatedAt=1719819011595" 
                   alt="" 
                   loading="lazy" 
                   className="border-4 border-white shadow-lg"
+                  data-aos="fade-left"
                 />
               </div>
-              <div className="col-start-3 transform scale-150 rotate-6 translate-x-2 translate-y-15 z-30"  data-aos="fade-right">
+              <div className="col-start-3 transform scale-150 rotate-6 translate-x-2 translate-y-15 z-30">
                 <img 
                   src="https://ik.imagekit.io/vtvggda66/menicaid6_fCBOfyS-Y.png?updatedAt=1719819007743" 
                   alt="" 
                   loading="lazy" 
                   className="border-4 border-white shadow-lg"
+                   data-aos="fade-right"
                 />
               </div>
-              <div className="transform scale-150 translate-y-11"  data-aos="fade-down">
+              <div className="transform scale-150 translate-y-11" >
                 <img 
                   src="https://ik.imagekit.io/vtvggda66/menicaid6_KDeRGtWBR.png?updatedAt=1719819004269" 
                   alt="" 
                   loading="lazy" 
                   className="border-4 border-white shadow-lg"
+                   data-aos="fade-down"
                 />
               </div>
-              <div className="transform translate-y-24 scale-150"  data-aos="fade-left">
+              <div className="transform translate-y-24 scale-150" >
                 <img 
                   src="https://ik.imagekit.io/vtvggda66/menicaid6_6k7fNNyhm.png?updatedAt=1719819000408" 
                   alt="" 
                   loading="lazy" 
                   className="border-4 border-white shadow-lg"
+                   data-aos="fade-left"
                 />
               </div>
-              <div className="row-start-1 col-start-2 col-span-2 transform translate-x-5 translate-y-4 scale-100"  data-aos="fade-right">
+              <div className="row-start-1 col-start-2 col-span-2 transform translate-x-5 translate-y-4 scale-100" >
                 <img 
                   src="https://ik.imagekit.io/vtvggda66/menicaid6_ogOCt64bZ.png?updatedAt=1719818997426" 
                   alt="" 
                   loading="lazy" 
                   className="border-4 border-white shadow-lg"
+                   data-aos="fade-right"
                 />
               </div>
             </div>
