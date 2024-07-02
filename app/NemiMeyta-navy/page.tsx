@@ -324,9 +324,11 @@ const Cover: React.FC = () => {
         
         {/* Invitation Content */}
         <div className="w-[70%] z-50 text-center mx-auto mt-10 mb-16" ref={section3Ref}>
-            <div className="text-3xl font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Prata' }}  data-aos="fade-down">
+            <img src={'https://asset.menica.pro/menicav4/galeri-mandala-icon.svg'} className='mx-auto' alt='undangan digital menica'/>
+            <div className="text-5xl font-semibold mt-4 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
                 Galeri
             </div>
+            <img src={'https://menicapro.s3.ap-southeast-1.amazonaws.com/mandala-navy1-divider.svg'} className='mx-auto mt-1' alt='undangan digital menica'/>
 
             <div className="grid grid-flow-col grid-rows-2 grid-cols-3 gap-4 mt-8">
               <div className="transform scale-150 -rotate-6">
@@ -376,7 +378,7 @@ const Cover: React.FC = () => {
 
         </div>
       </div>
-      <div className="h-screen-minus-40 sm:h-screen relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
+      <div className="h-screen-minus-40 sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
         
       >
         {/* Top Decoration Image */}
@@ -386,40 +388,117 @@ const Cover: React.FC = () => {
         
         {/* Invitation Content */}
         <div className="w-[70%] z-50 text-center mx-auto my-10">
-            <div className="text-3xl font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Prata' }}  data-aos="fade-down">
+            <img src={'https://asset.menica.pro/menicav4/galeri-mandala-icon.svg'} className='mx-auto' alt='undangan digital menica'/>
+            <div className="text-5xl font-semibold mt-4 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
                 Acara
             </div>
+            <img src={'https://menicapro.s3.ap-southeast-1.amazonaws.com/mandala-navy1-divider.svg'} className='mx-auto mt-1' alt='undangan digital menica'/>
 
             <div className="flex justify-around items-center mt-8 mb-32 flex-col">    
-                <div className="text-center flex flex-row">
-                    <div className="flex flex-col">
+            <div className="relative text-center flex flex-row w-full">
+                    <div className="absolute top-1 left-1 z-40 w-[20%]">
+                        <img src="https://asset.menica.pro/menicav4/corner-mandala.svg" className="w-[100%] h-auto object-contain rotate-180" />
+                    </div>
+                    <div className="absolute top-1 right-1 z-40 w-[20%]">
+                        <img src="https://asset.menica.pro/menicav4/corner-mandala.svg" className="w-[100%] h-auto object-contain -rotate-90" />
+                    </div>
+                    <div className="absolute bottom-1 left-1 z-40 w-[20%]">
+                        <img src="https://asset.menica.pro/menicav4/corner-mandala.svg" className="w-[100%] h-auto object-contain rotate-90" />
+                    </div>
+                    <div className="absolute bottom-1 right-1  z-40 w-[20%]">
+                        <img src="https://asset.menica.pro/menicav4/corner-mandala.svg" className="w-[100%] h-auto object-contain" />
+                    </div>
+                <div className="relative flex flex-col shadow-2xl rounded-lg p-8 bg-[#202f51] w-full">
+                    
 
-                    <div className="text-3xl sm:text-4xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
+                    <div className="text-3xl sm:text-4xl text-gradient mt-3" style={{ fontFamily: 'Alex Brush' }}>
                         Wedding Ceremony
                     </div>
-                    <div className="text-xs text-[#fff] mt-2 ml-4 tracking-normal" style={{ fontFamily: 'Prata' }}>
-                        Sabtu, 17 Agustus 2024
+                    <div className="flex flex-col items-center justify-center">
+                      <div className="flex-grow text-base text-[#fff] mt-2" style={{ fontFamily: 'Prata' }}>
+                        Agustus
+                      </div>
+                      <div className="flex-grow text-6xl text-[#fff] mt-2 text-gradient font-extrabold" style={{ fontFamily: 'Prata' }}>
+                        17
+                      </div>
+                      <div className="flex-grow text-base text-[#fff] mt-2" style={{ fontFamily: 'Prata' }}>
+                        2024
+                      </div>
                     </div>
-                    </div>
-                    
-                </div>
 
-                <div className='text-gradient mt-5 font-semibold text-xl'  style={{ fontFamily: 'Alex Brush' }}>
+                    <div className="flex-grow text-sm text-[#fff] mt-2 text-gradient font-extrabold" style={{ fontFamily: 'Prata' }}>
+                        Pukul 13.00 - Selesai
+                    </div>
+
+                    
+                    
+                    <div className="text-base text-[#fff] mt-2 tracking-normal" style={{ fontFamily: 'Prata' }}>
+                        Hotel IBIS, Jakarta Pusat
+                    </div>
+                    <div className="bg-gradient-to-r from-[#F6B859] to-[#DB9238] p-2 rounded-md my-3 text-[#202f51] cursor-pointer font-semibold" style={{ fontFamily: 'Prata' }}>
+                        Google Maps
+                    </div>
+
+                </div>
+                
+            </div>
+
+
+                <div className='text-gradient my-5 font-semibold text-xl'  style={{ fontFamily: 'Alex Brush' }}>
                   &
                 </div>
 
-                <div className="text-center flex flex-row">
-                    <div className="flex flex-col">
+                <div className="relative text-center flex flex-row w-full">
+                    <div className="absolute top-1 left-1 z-40 w-[20%]">
+                        <img src="https://asset.menica.pro/menicav4/corner-mandala.svg" className="w-[100%] h-auto object-contain rotate-180" />
+                    </div>
+                    <div className="absolute top-1 right-1 z-40 w-[20%]">
+                        <img src="https://asset.menica.pro/menicav4/corner-mandala.svg" className="w-[100%] h-auto object-contain -rotate-90" />
+                    </div>
+                    <div className="absolute bottom-1 left-1 z-40 w-[20%]">
+                        <img src="https://asset.menica.pro/menicav4/corner-mandala.svg" className="w-[100%] h-auto object-contain rotate-90" />
+                    </div>
+                    <div className="absolute bottom-1 right-1  z-40 w-[20%]">
+                        <img src="https://asset.menica.pro/menicav4/corner-mandala.svg" className="w-[100%] h-auto object-contain" />
+                    </div>
+                <div className="relative flex flex-col shadow-2xl rounded-lg p-8 bg-[#202f51] w-full">
+                    
 
-                    <div className="text-3xl sm:text-4xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }}>
-                      Wedding Reception
+                    <div className="text-3xl sm:text-4xl text-gradient mt-3" style={{ fontFamily: 'Alex Brush' }}>
+                        Wedding Reception
                     </div>
-                    <div className="text-xs text-[#fff] mt-2 ml-4" style={{ fontFamily: 'Prata' }}>
-                      Sabtu, 17 Agustus 2024
+                    <div className="flex flex-col items-center justify-center">
+                      <div className="flex-grow text-base text-[#fff] mt-2" style={{ fontFamily: 'Prata' }}>
+                        Agustus
+                      </div>
+                      <div className="flex-grow text-6xl text-[#fff] mt-2 text-gradient font-extrabold" style={{ fontFamily: 'Prata' }}>
+                        17
+                      </div>
+                      <div className="flex-grow text-base text-[#fff] mt-2" style={{ fontFamily: 'Prata' }}>
+                        2024
+                      </div>
                     </div>
 
+
+
+                    <div className="flex-grow text-sm text-[#fff] mt-2 text-gradient font-extrabold" style={{ fontFamily: 'Prata' }}>
+                        Pukul 19.00 - Selesai
                     </div>
+                    
+                    <div className="text-base text-[#fff] mt-2 tracking-normal" style={{ fontFamily: 'Prata' }}>
+                        Hotel IBIS, Jakarta Pusat
+                    </div>
+
+                    
+
+
+                    <div className="bg-gradient-to-r from-[#F6B859] to-[#DB9238] p-2 rounded-md my-3 text-white cursor-pointer font-semibold" style={{ fontFamily: 'Prata' }}>
+                        Google Maps
+                    </div>
+
                 </div>
+                
+            </div>
             </div>
 
            
@@ -436,9 +515,11 @@ const Cover: React.FC = () => {
         
         {/* Invitation Content */}
         <div className="w-[70%] z-50 text-center mx-auto my-10">
-            <div className="text-3xl font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Prata' }}  data-aos="fade-down">
+        <img src={'https://asset.menica.pro/weddinggift-mandala-icon.svg'} className='mx-auto' alt='undangan digital menica'/>
+            <div className="text-5xl font-semibold mt-4 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
                 Hadiah
             </div>
+            <img src={'https://menicapro.s3.ap-southeast-1.amazonaws.com/mandala-navy1-divider.svg'} className='mx-auto mt-1' alt='undangan digital menica'/>
 
             <div className="flex justify-around items-center mt-8 flex-col font-semibold gap-y-4" style={{ fontFamily: 'Prata' }}>  
 
@@ -476,9 +557,11 @@ const Cover: React.FC = () => {
         
         {/* Invitation Content */}
             <div className="w-[90%] z-50 text-center mx-auto my-10">
-          <div className="text-3xl font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Prata' }} data-aos="fade-down">
-            Buku Tamu
-          </div>
+            <img src={'https://asset.menica.pro/menicav4/guestbook-mandala-icon.svg'} className='mx-auto' alt='undangan digital menica'/>
+            <div className="text-5xl font-semibold mt-4 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
+                Buku Tamu
+            </div>
+            <img src={'https://menicapro.s3.ap-southeast-1.amazonaws.com/mandala-navy1-divider.svg'} className='mx-auto mt-1' alt='undangan digital menica'/>
 
           <div className="flex justify-center items-center mt-7">
         
@@ -524,9 +607,11 @@ const Cover: React.FC = () => {
         
         {/* Invitation Content */}
         <div className="w-[70%] z-50 text-center mx-auto my-10">
-            <div className="text-3xl font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Prata' }} data-aos="fade-down">
+          <img src={'https://asset.menica.pro/menicav4/galeri-mandala-icon.svg'} className='mx-auto' alt='undangan digital menica'/>
+            <div className="text-5xl font-semibold mt-4 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
                 Save The Date
             </div>
+            <img src={'https://menicapro.s3.ap-southeast-1.amazonaws.com/mandala-navy1-divider.svg'} className='mx-auto mt-1' alt='undangan digital menica'/>
 
             <Countdown date={targetDate} renderer={renderer} />
 
