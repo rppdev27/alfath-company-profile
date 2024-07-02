@@ -23,6 +23,8 @@ const Cover: React.FC = () => {
   const section4Ref = useRef<HTMLDivElement>(null);
   const section5Ref = useRef<HTMLDivElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [musicPlaying, setMusicPlaying] = useState(false);
+  const [audio, setAudio]: any = useState(null);
 
   useEffect(() => {
     // Lock scroll
@@ -47,10 +49,10 @@ const Cover: React.FC = () => {
       videoRef3.current?.play();
       videoRef4.current?.play();
       videoRef5.current?.play();
+      audio.play();
+      setMusicPlaying(true);
       // Unlock scroll
       document.body.style.overflow = 'unset';
-
-      setMusicPlaying(true);
       
       // Scroll to the second section after 2 seconds
       setTimeout(() => {
@@ -1271,9 +1273,6 @@ const Cover: React.FC = () => {
     }
 };
 
-    const [musicPlaying, setMusicPlaying] = useState(false);
-    const [audio, setAudio]: any = useState(null);
-
     const handlePlay = () => {
         if (!musicPlaying) {
             audio.play();
@@ -1325,7 +1324,7 @@ const Cover: React.FC = () => {
         <div className="flex flex-col flex-grow justify-between w-[70%] mx-auto text-center">
           {/* Invitation Title and Names */}
           <div>
-            <div className="text-md text-white uppercase tracking-widest sm:mt-[30%] mt-[20%] font-light" style={{ fontFamily: 'Prata' }} data-aos="fade-up">
+            <div className="text-md text-white uppercase tracking-widest sm:mt-[30%] mt-[18%] font-light" style={{ fontFamily: 'Prata' }} data-aos="fade-up">
               The Wedding Of
             </div>
             <div className="text-8xl font-normal sm:font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
