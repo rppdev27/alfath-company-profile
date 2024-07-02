@@ -1271,7 +1271,7 @@ const Cover: React.FC = () => {
     <>
       <div className="h-screen-minus-40 sm:h-screen relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
          style={{
-          backgroundImage: `url('https://asset.menica.pro/menicav4/bg-mandala-2.png')`,
+          backgroundImage: `url('https://asset.menica.pro/menicav4/bg-mandala-3.png')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -1335,7 +1335,7 @@ const Cover: React.FC = () => {
       
       <div className="h-auto sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
         style={{
-          backgroundImage: `url('https://asset.menica.pro/menicav4/bg-mandala-2.png')`,
+          backgroundImage: `url('https://asset.menica.pro/menicav4/bg-mandala-3.png')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
