@@ -1269,6 +1269,19 @@ const Cover: React.FC = () => {
     }
 };
 
+const [musicPlaying, setMusicPlaying] = useState(false);
+    const [audio, setAudio]: any = useState(null);
+
+    const handlePlay = () => {
+        if (!musicPlaying) {
+            audio.play();
+            setMusicPlaying(true);
+        } else {
+            audio.pause();
+            setMusicPlaying(false);
+        }
+    };
+
   return (
     <>
       <div className="h-screen-minus-40 sm:h-screen relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
@@ -1278,7 +1291,25 @@ const Cover: React.FC = () => {
           backgroundPosition: 'center',
         }}
       >
-      
+
+          <audio
+                src="https://asset.menica.pro/Worthy-NemiMeyta.mp3"
+                ref={(audio) => setAudio(audio)}
+                onPlay={() => setMusicPlaying(true)}
+                onPause={() => setMusicPlaying(false)}
+            />
+
+          <button
+                className="fixed bottom-0 left-0 text-white font-bold py-2 px-4 rounded"
+                onClick={handlePlay}
+            >
+                <img
+                    src="https://asset.menica.pro/menicav4/playblue5.svg"
+                    alt="Play Button"
+                    className={`${musicPlaying ? 'animate-spin-slow' : ''}`}
+                />
+            </button>
+          
         {/* Top Decoration Image */}
         <div className="mx-auto mt-[-112px] w-1/2" data-aos="fade-in">
           <img src="https://asset.menica.pro/menicav4/mandala-navy1-B.svg" alt="Top Decoration" className='animate-spin-slow'/>
