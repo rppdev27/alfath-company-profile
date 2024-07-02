@@ -49,6 +49,8 @@ const Cover: React.FC = () => {
       videoRef5.current?.play();
       // Unlock scroll
       document.body.style.overflow = 'unset';
+
+      setMusicPlaying(true);
       
       // Scroll to the second section after 2 seconds
       setTimeout(() => {
@@ -1269,7 +1271,7 @@ const Cover: React.FC = () => {
     }
 };
 
-const [musicPlaying, setMusicPlaying] = useState(false);
+    const [musicPlaying, setMusicPlaying] = useState(false);
     const [audio, setAudio]: any = useState(null);
 
     const handlePlay = () => {
@@ -1297,18 +1299,22 @@ const [musicPlaying, setMusicPlaying] = useState(false);
                 ref={(audio) => setAudio(audio)}
                 onPlay={() => setMusicPlaying(true)}
                 onPause={() => setMusicPlaying(false)}
-            />
+          />
 
-          <button
-                className="fixed bottom-0 left-0 text-white font-bold py-2 px-4 rounded z-50"
-                onClick={handlePlay}
-            >
-                <img
-                    src="https://asset.menica.pro/menicav4/playblue5.svg"
-                    alt="Play Button"
-                    className={`${musicPlaying ? 'animate-spin-slow' : ''}`}
-                />
-            </button>
+          {  isPlaying ? <></> : 
+              <button
+                  className="fixed bottom-1 left-1 text-white font-bold py-2 px-4 rounded z-50 w-24 h-24 sm:w-32 sm:h-32"
+                  onClick={handlePlay}
+              >
+                  <img
+                      src="https://asset.menica.pro/menicav4/playblue5.svg"
+                      alt="Play Button"
+                      className={`${musicPlaying ? 'animate-spin-slow' : ''}`}
+                  />
+              </button>
+          }
+
+          
           
         {/* Top Decoration Image */}
         <div className="mx-auto mt-[-112px] w-1/2" data-aos="fade-in">
