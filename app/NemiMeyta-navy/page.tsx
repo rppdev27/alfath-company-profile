@@ -1300,7 +1300,7 @@ const [musicPlaying, setMusicPlaying] = useState(false);
             />
 
           <button
-                className="fixed bottom-0 left-0 text-white font-bold py-2 px-4 rounded"
+                className="fixed bottom-0 left-0 text-white font-bold py-2 px-4 rounded z-50"
                 onClick={handlePlay}
             >
                 <img
