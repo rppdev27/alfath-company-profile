@@ -2,6 +2,8 @@
 
 import React, { useRef, useState, useEffect } from 'react';
 import { GiOppositeHearts } from "react-icons/gi";
+import Countdown from 'react-countdown';
+import { IoIosArrowForward } from "react-icons/io";
 
 import AOS from 'aos'
 import 'aos/dist/aos.css';
@@ -61,7 +63,7 @@ const Cover: React.FC = () => {
   };
 
   const getRandomRotation = () => {
-    const rotations = ['-rotate-6', 'rotate-3', 'rotate-6', '-rotate-3'];
+    const rotations = ['-rotate-2', 'rotate-3', 'rotate-2', '-rotate-3'];
     return rotations[Math.floor(Math.random() * rotations.length)];
   };
   
@@ -91,6 +93,87 @@ const Cover: React.FC = () => {
       scrollContainerRef.current.scrollBy({ left: 200, behavior: 'smooth' });
     }
   };
+
+  const targetDate = new Date('2024-08-17T00:00:00');  
+
+  const renderer = ({ days, hours, minutes, seconds, completed }: any) => {
+    if (completed) {
+      // If countdown is completed, render this
+      return <span>Event has started!</span>;
+    } else {
+      // If countdown is still ongoing, render the time remaining
+      return (
+        <div className="flex justify-center p-4 text-center" style={{
+          fontFamily: 'Playwrite AU SA'
+        }}>
+          <div className="flex items-center flex-col justify-center p-2 m-2 text-[#152443] bg-gradient-to-r from-[#F6B859] to-[#DB9238] rounded-sm bg-opacity-30 font-DM rotate-2">
+            <div className="text-xs font-extrabold" 
+              style={{
+                fontFamily: 'Playwrite AU SA'
+              }}
+            >
+              {days}
+            </div>
+            <div className="text-[0.5rem] font-semibold mt-1" 
+              style={{
+                fontFamily: 'Playwrite AU SA'
+              }}
+            >
+              Hari
+            </div>
+          </div>
+          <div className="flex items-center flex-col justify-center p-2 m-2 text-[#152443] bg-black rounded-sm bg-opacity-30 font-DM -rotate-2 bg-gradient-to-r from-[#F6B859] to-[#DB9238]">
+            <div className={`text-xs font-bold`}
+              style={{
+                fontFamily: 'Playwrite AU SA'
+              }}
+            >
+                {hours} 
+            </div>
+            <div className='text-[0.5rem] font-semibold mt-1'
+              style={{
+                fontFamily: 'Playwrite AU SA'
+              }}
+            >
+                Jam
+            </div>
+        </div>
+          <div className="flex items-center flex-col justify-center p-2 m-2 text-[#152443] bg-black rounded-sm bg-opacity-30 font-DM rotate-2 bg-gradient-to-r from-[#F6B859] to-[#DB9238]">
+            <div className={`text-xs font-bold`}
+              style={{
+                fontFamily: 'Playwrite AU SA'
+              }}
+            >
+                {minutes} 
+            </div>
+            <div className='text-[0.5rem] font-semibold mt-1'
+              style={{
+                fontFamily: 'Playwrite AU SA'
+              }}
+            >
+                Menit
+            </div>
+        </div>
+          <div className="flex items-center flex-col justify-center p-2 m-2 text-[#152443] bg-black rounded-sm bg-opacity-30 font-DM -rotate-2 bg-gradient-to-r from-[#F6B859] to-[#DB9238]">
+            <div className={`text-xs font-bold`}
+              style={{
+                fontFamily: 'Playwrite AU SA'
+              }}
+            >
+            {seconds} 
+            </div>
+            <div className='text-[0.5rem] font-semibold mt-1'
+              style={{
+                fontFamily: 'Playwrite AU SA'
+              }}
+            >
+                Detik
+            </div>
+          </div>
+        </div>
+      );
+    }
+};
 
   return (
     <>
@@ -406,16 +489,24 @@ const Cover: React.FC = () => {
                     alt={`Avatar ${index + 1}`} 
                     className="w-8 h-8 rounded-full absolute top-2 left-2"
                   />
-                  <p className="mt-12">
+                  <p className="mt-12 tracking-wider text-xs"
+                    style={{
+                      fontFamily: 'Playwrite AU SA'
+                    }}
+                  >
                     {comment.text}
                   </p>
                 </div>
               ))}
             </div>
           </div>
-          <div className="flex flex-row">
-            <button onClick={scrollLeft} className="p-2 bg-gray-300 rounded-full mx-2">Left</button>
-            <button onClick={scrollRight} className="p-2 bg-gray-300 rounded-full mx-2">Right</button>
+          <div className="flex flex-row justify-center w-full items-center mx-auto mt-4">
+            <button onClick={scrollLeft} className="p-2 bg-gray-300 rounded-md shadow-lg mx-2">
+              <IoIosArrowForward className='rotate-180'/>
+            </button>
+            <button onClick={scrollRight} className="p-2 bg-gray-300 rounded-md shadow-lg mx-2">
+                <IoIosArrowForward/>
+            </button>
           </div>
         </div>
       </div>
@@ -432,6 +523,8 @@ const Cover: React.FC = () => {
             <div className="text-3xl font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Prata' }} data-aos="fade-down">
                 Save The Date
             </div>
+
+            <Countdown date={targetDate} renderer={renderer} />
 
             <div className="flex justify-around items-center mt-8 flex-col">    
 
