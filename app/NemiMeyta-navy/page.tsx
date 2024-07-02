@@ -8,6 +8,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 import { PiPencilLineDuotone } from "react-icons/pi";
+import { GrCopy } from "react-icons/gr";
 
 const Cover: React.FC = () => {
   useEffect(() => {
@@ -1714,8 +1715,8 @@ const Cover: React.FC = () => {
                         <div className="text-lg text-[#fff] mt-2 tracking-normal" style={{ fontFamily: 'Prata' }}>
                           6871435631
                         </div>
-                        <div className="text-xs bg-gradient-to-r from-[#F6B859] to-[#DB9238] p-2 rounded-md my-3 text-[#202f51] cursor-pointer font-semibold" style={{ fontFamily: 'Prata' }}>
-                            Copy
+                        <div className="flex flex-row items-center justify-center text-xs bg-gradient-to-r from-[#F6B859] to-[#DB9238] p-2 rounded-md my-3 text-[#202f51] cursor-pointer font-semibold" style={{ fontFamily: 'Prata' }}>
+                            <GrCopy className="mr-1" size={20}/> Copy
                         </div>
 
                     </div>
@@ -1749,8 +1750,8 @@ const Cover: React.FC = () => {
                         <div className="text-lg text-[#fff] mt-2 tracking-normal" style={{ fontFamily: 'Prata' }}>
                         0948033235
                         </div>
-                        <div className="text-xs bg-gradient-to-r from-[#F6B859] to-[#DB9238] p-2 rounded-md my-3 text-[#202f51] cursor-pointer font-semibold" style={{ fontFamily: 'Prata' }}>
-                            Copy
+                        <div className="flex flex-row items-center justify-center text-xs bg-gradient-to-r from-[#F6B859] to-[#DB9238] p-2 rounded-md my-3 text-[#202f51] cursor-pointer font-semibold" style={{ fontFamily: 'Prata' }}>
+                            <GrCopy className="mr-1" size={20}/> Copy
                         </div>
 
                     </div>
