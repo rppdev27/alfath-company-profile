@@ -1301,8 +1301,7 @@ const Cover: React.FC = () => {
                 onPause={() => setMusicPlaying(false)}
           />
 
-          {  isPlaying ? <></> : 
-              <button
+          {  isPlaying ? <button
                   className="fixed bottom-1 left-1 text-white font-bold py-2 px-4 rounded z-50 w-24 h-24 sm:w-32 sm:h-32"
                   onClick={handlePlay}
               >
@@ -1311,7 +1310,8 @@ const Cover: React.FC = () => {
                       alt="Play Button"
                       className={`${musicPlaying ? 'animate-spin-slow' : ''}`}
                   />
-              </button>
+              </button> : <></>
+              
           }
 
           
