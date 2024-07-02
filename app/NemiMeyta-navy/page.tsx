@@ -7,6 +7,7 @@ import { IoIosArrowForward } from "react-icons/io";
 
 import AOS from 'aos'
 import 'aos/dist/aos.css';
+import { PiPencilLineDuotone } from "react-icons/pi";
 
 const Cover: React.FC = () => {
   useEffect(() => {
@@ -1877,8 +1878,8 @@ const Cover: React.FC = () => {
                 <IoIosArrowForward/>
             </button>
           </div>
-          <div className="bg-gradient-to-r from-[#F6B859] to-[#DB9238] p-2 rounded-md my-3 text-[#202f51] cursor-pointer font-semibold mt-3" style={{ fontFamily: 'Prata' }}>
-              Kirim Ucapan 
+          <div className="flex flex-row bg-gradient-to-r from-[#F6B859] to-[#DB9238] p-2 rounded-md my-3 text-[#202f51] cursor-pointer font-semibold mt-3" style={{ fontFamily: 'Prata' }}>
+              <PiPencilLineDuotone size={20} className="mr-1"/> Kirim Ucapan 
           </div>
         </div>
       </div>
