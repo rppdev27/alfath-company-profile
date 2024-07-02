@@ -378,7 +378,7 @@ const Cover: React.FC = () => {
 
         </div>
       </div>
-      <div className="h-screen-minus-40 sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
+      <div className="sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
         
       >
         {/* Top Decoration Image */}
@@ -526,7 +526,7 @@ const Cover: React.FC = () => {
 
             <div className="flex justify-around items-center mt-8 flex-col font-semibold gap-y-4" style={{ fontFamily: 'Prata' }}>  
 
-            <div className="gradient-border rounded-lg shadow-lg" data-aos="fade-left">
+            {/* <div className="gradient-border rounded-lg shadow-lg" data-aos="fade-left">
               <div className="bg-white p-6 rotate-6 rounded-lg shadow-lg text-center">
                   Bank Mandiri
                   <br/>
@@ -544,7 +544,77 @@ const Cover: React.FC = () => {
                   <br/>
                   4411xxxxx
               </div>
-            </div>
+            </div> */}
+
+                <div className="relative text-center flex flex-row w-full">
+                        <div className="absolute top-1 left-1 z-40 w-[20%]">
+                            <img src="https://asset.menica.pro/menicav4/corner-mandala.svg" className="w-[100%] h-auto object-contain rotate-180" />
+                        </div>
+                        <div className="absolute top-1 right-1 z-40 w-[20%]">
+                            <img src="https://asset.menica.pro/menicav4/corner-mandala.svg" className="w-[100%] h-auto object-contain -rotate-90" />
+                        </div>
+                        <div className="absolute bottom-1 left-1 z-40 w-[20%]">
+                            <img src="https://asset.menica.pro/menicav4/corner-mandala.svg" className="w-[100%] h-auto object-contain rotate-90" />
+                        </div>
+                        <div className="absolute bottom-1 right-1  z-40 w-[20%]">
+                            <img src="https://asset.menica.pro/menicav4/corner-mandala.svg" className="w-[100%] h-auto object-contain" />
+                        </div>
+                    <div className="relative flex flex-col shadow-2xl rounded-lg p-8 bg-[#202f51] w-full">
+                        
+
+                        <div className="flex-grow text-xl text-[#fff] mt-2 text-gradient font-extrabold" style={{ fontFamily: 'Prata' }}>
+                          Agnes Meyta
+                        </div>
+
+                        <div className="text-lg text-[#fff] mt-2 tracking-normal" style={{ fontFamily: 'Prata' }}>
+                          Bank BCA
+                        </div>
+                        
+                        <div className="text-lg text-[#fff] mt-2 tracking-normal" style={{ fontFamily: 'Prata' }}>
+                          6871435631
+                        </div>
+                        <div className="bg-gradient-to-r from-[#F6B859] to-[#DB9238] p-2 rounded-md my-3 text-[#202f51] cursor-pointer font-semibold" style={{ fontFamily: 'Prata' }}>
+                            Copy
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+                <div className="relative text-center flex flex-row w-full">
+                        <div className="absolute top-1 left-1 z-40 w-[20%]">
+                            <img src="https://asset.menica.pro/menicav4/corner-mandala.svg" className="w-[100%] h-auto object-contain rotate-180" />
+                        </div>
+                        <div className="absolute top-1 right-1 z-40 w-[20%]">
+                            <img src="https://asset.menica.pro/menicav4/corner-mandala.svg" className="w-[100%] h-auto object-contain -rotate-90" />
+                        </div>
+                        <div className="absolute bottom-1 left-1 z-40 w-[20%]">
+                            <img src="https://asset.menica.pro/menicav4/corner-mandala.svg" className="w-[100%] h-auto object-contain rotate-90" />
+                        </div>
+                        <div className="absolute bottom-1 right-1  z-40 w-[20%]">
+                            <img src="https://asset.menica.pro/menicav4/corner-mandala.svg" className="w-[100%] h-auto object-contain" />
+                        </div>
+                    <div className="relative flex flex-col shadow-2xl rounded-lg p-8 bg-[#202f51] w-full">
+                        
+
+                        <div className="flex-grow text-xl text-[#fff] mt-2 text-gradient font-extrabold" style={{ fontFamily: 'Prata' }}>
+                          Mahanaim Purba
+                        </div>
+
+                        <div className="text-lg text-[#fff] mt-2 tracking-normal" style={{ fontFamily: 'Prata' }}>
+                          Bank BRI
+                        </div>
+                        
+                        <div className="text-lg text-[#fff] mt-2 tracking-normal" style={{ fontFamily: 'Prata' }}>
+                        0948033235
+                        </div>
+                        <div className="bg-gradient-to-r from-[#F6B859] to-[#DB9238] p-2 rounded-md my-3 text-[#202f51] cursor-pointer font-semibold" style={{ fontFamily: 'Prata' }}>
+                            Copy
+                        </div>
+
+                    </div>
+                    
+                </div>
                 
             </div>
 
@@ -598,6 +668,9 @@ const Cover: React.FC = () => {
                 <IoIosArrowForward/>
             </button>
           </div>
+          <div className="bg-gradient-to-r from-[#F6B859] to-[#DB9238] p-2 rounded-md my-3 text-[#202f51] cursor-pointer font-semibold" style={{ fontFamily: 'Prata' }}>
+              Kirim Ucapan 
+          </div>
         </div>
       </div>
       <div className="h-screen-minus-40 sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
@@ -647,7 +720,7 @@ const Cover: React.FC = () => {
 
         </div>
       </div>
-      <div className="h-auto sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
+      <div className="h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
         
       >
         {/* Top Decoration Image */}
@@ -657,9 +730,9 @@ const Cover: React.FC = () => {
         
         {/* Invitation Content */}
         <div className="w-[70%] z-50 text-center mx-auto my-10">
-          <img src={'https://asset.menica.pro/menicav4/galeri-mandala-icon.svg'} className='mx-auto' alt='undangan digital menica'/>
-            <div className="text-2xl font-semibold mt-4 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
-                Exlusive Wedding Invitation
+            <img src={'https://asset.menica.pro/menicav4/galeri-mandala-icon.svg'} className='mx-auto' alt='undangan digital menica'/>
+            <div className="text-base font-semibold mt-4 tracking-tight text-gradient" style={{ fontFamily: 'Prata' }}  data-aos="fade-down">
+                Luxury Wedding Invitation
             </div>
             <img src={'https://menicapro.s3.ap-southeast-1.amazonaws.com/mandala-navy1-divider.svg'} className='mx-auto mt-1' alt='undangan digital menica'/>
 
@@ -671,17 +744,20 @@ const Cover: React.FC = () => {
                   className="rounded-lg shadow-lg rotate-6"
                 /> */}
 
-            {/* <div className="gradient-border rounded-lg shadow-lg" >
+            <div>
               <img 
-                src="https://ik.imagekit.io/vtvggda66/Elegant%20Photo%20Collage%20White%20Save%20The%20Date%20Wedding%20Invitation.png?updatedAt=1719858590321" 
-                alt="Rounded Shadow Image" 
-                className="rounded-lg shadow-lg"
-                data-aos="fade-down"
+                src="https://ik.imagekit.io/vtvggda66/test-upload_FweOOgNyL.png" 
+                alt="Rounded Shadow Image"
+                className='mx-auto'
                 style={{
-                  transform: 'rotate(6deg)'
+                  transform: 'rotate(6deg)',
+                  width: '60%'
                 }}
               />
-            </div> */}
+            </div>
+            <div className="text-base font-semibold mt-4 tracking-tight text-gradient cursor-pointer" onClick={()=>{ alert('...') }} style={{ fontFamily: 'Prata' }}>
+                https://menica.id
+            </div>
                 
                 
             </div>
