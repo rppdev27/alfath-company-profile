@@ -1594,7 +1594,7 @@ const Cover: React.FC = () => {
                     
                     
                     <div className="text-base text-[#fff] mt-2 tracking-normal" style={{ fontFamily: 'Prata' }}>
-                    Jagat Office Building
+                    Ibis Style Hotel Gajah Mada
 
                     </div>
                     <div className="bg-gradient-to-r from-[#F6B859] to-[#DB9238] p-2 rounded-md my-3 text-[#202f51] cursor-pointer font-semibold" style={{ fontFamily: 'Prata' }}>
