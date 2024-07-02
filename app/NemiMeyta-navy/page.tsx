@@ -247,7 +247,7 @@ const Cover: React.FC = () => {
         {/* Invitation Content */}
         <div className="w-[75%] z-50 text-center mx-auto my-10" ref={section2Ref}>
             <img src={'https://asset.menica.pro/menicav4/galeri-mandala-icon.svg'} className='mx-auto' alt='undangan digital menica'/>
-            <div className="text-5xl font-semibold mt-4 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
+            <div className="text-3xl sm:text-5xl font-semibold mt-4 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
                 Mempelai
             </div>
             <img src={'https://menicapro.s3.ap-southeast-1.amazonaws.com/mandala-navy1-divider.svg'} className='mx-auto mt-1' alt='undangan digital menica'/>
@@ -389,7 +389,7 @@ const Cover: React.FC = () => {
         {/* Invitation Content */}
         <div className="w-[70%] z-50 text-center mx-auto my-10">
             <img src={'https://asset.menica.pro/menicav4/galeri-mandala-icon.svg'} className='mx-auto' alt='undangan digital menica'/>
-            <div className="text-5xl font-semibold mt-4 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
+            <div className="text-3xl sm:text-5xl font-semibold mt-4 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
                 Acara
             </div>
             <img src={'https://menicapro.s3.ap-southeast-1.amazonaws.com/mandala-navy1-divider.svg'} className='mx-auto mt-1' alt='undangan digital menica'/>
@@ -519,7 +519,7 @@ const Cover: React.FC = () => {
         {/* Invitation Content */}
         <div className="w-[70%] z-50 text-center mx-auto my-10">
         <img src={'https://asset.menica.pro/weddinggift-mandala-icon.svg'} className='mx-auto' alt='undangan digital menica'/>
-            <div className="text-5xl font-semibold mt-4 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
+            <div className="text-3xl sm:text-5xl font-semibold mt-4 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
                 Hadiah
             </div>
             <img src={'https://menicapro.s3.ap-southeast-1.amazonaws.com/mandala-navy1-divider.svg'} className='mx-auto mt-1' alt='undangan digital menica'/>
@@ -631,7 +631,7 @@ const Cover: React.FC = () => {
         {/* Invitation Content */}
             <div className="w-[90%] z-50 text-center mx-auto my-10">
             <img src={'https://asset.menica.pro/menicav4/guestbook-mandala-icon.svg'} className='mx-auto' alt='undangan digital menica'/>
-            <div className="text-5xl font-semibold mt-4 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
+            <div className="text-3xl sm:text-5xlfont-semibold mt-4 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
                 Buku Tamu
             </div>
             <img src={'https://menicapro.s3.ap-southeast-1.amazonaws.com/mandala-navy1-divider.svg'} className='mx-auto mt-1' alt='undangan digital menica'/>
@@ -684,7 +684,7 @@ const Cover: React.FC = () => {
         {/* Invitation Content */}
         <div className="w-[70%] z-50 text-center mx-auto my-10">
           <img src={'https://asset.menica.pro/menicav4/galeri-mandala-icon.svg'} className='mx-auto' alt='undangan digital menica'/>
-            <div className="text-5xl font-semibold mt-4 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
+            <div className="text-3xl sm:text-5xl font-semibold mt-4 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
                 Save The Date
             </div>
             <img src={'https://menicapro.s3.ap-southeast-1.amazonaws.com/mandala-navy1-divider.svg'} className='mx-auto mt-1' alt='undangan digital menica'/>
