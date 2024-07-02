@@ -1471,7 +1471,7 @@ const Cover: React.FC = () => {
         </div>
         
         {/* Invitation Content */}
-        <div className="w-[70%] z-50 text-center mx-auto mt-10 mb-16" ref={section3Ref}>
+        <div className="w-[70%] z-50 text-center mx-auto mt-10 sm:mb-16 mb-32" ref={section3Ref}>
             <img src={'https://asset.menica.pro/menicav4/galeri-mandala-icon.svg'} className='mx-auto' alt='undangan digital menica'/>
             <div className="text-3xl sm:text-5xl font-semibold mt-4 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
                 Galeri
