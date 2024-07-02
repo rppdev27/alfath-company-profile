@@ -1375,6 +1375,89 @@ const Cover: React.FC = () => {
           <img src="https://asset.menica.pro/menicav4/mandala-navy1-B.svg" alt="Bottom Decoration" className="rotate-180 animate-spin-slow" />
         </div>
       </div>
+
+      <div className="h-auto sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
+        style={{
+          backgroundImage: `url('https://asset.menica.pro/menicav4/bg-mandala-2.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        {/* Top Decoration Image */}
+        <div className="mx-auto mt-[-112px] w-1/2">
+          <img src="https://asset.menica.pro/menicav4/mandala-navy1-B.svg" alt="Top Decoration" className='animate-spin-slow'/>
+        </div>
+        
+        {/* Invitation Content */}
+        <div className="w-[75%] z-50 text-center mx-auto my-10" ref={section2Ref}>
+            {/* <img src={'https://asset.menica.pro/menicav4/galeri-mandala-icon.svg'} className='mx-auto' alt='undangan digital menica'/> */}
+            <div className="text-3xl sm:text-5xl font-semibold mt-4 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
+                Opening
+            </div>
+
+            <img src={'https://menicapro.s3.ap-southeast-1.amazonaws.com/mandala-navy1-divider.svg'} className='mx-auto mt-1' alt='undangan digital menica'/>
+            {/* <div className="flex items-center mt-7 flex-row justify-between">
+            <img 
+              src="https://ik.imagekit.io/vtvggda66/menicaid6_tKdAiCowm.png" 
+              alt="Nemi Photo" 
+              className="w-32 h-32 border-4 border-white shadow-lg" 
+              style={{
+                objectFit: 'cover',
+                transform: 'rotate(6deg)'
+              }} 
+              data-aos="fade-left"
+            />
+            
+            <div className='mx-3' data-aos="fade-in">
+              <GiOppositeHearts className='text-red-700' size={25} />
+            </div>
+
+            <img 
+              src="https://ik.imagekit.io/vtvggda66/menicaid6_MLweMltp-.png" 
+              alt="Meyta Photo" 
+              className="w-32 h-32 border-4 border-white shadow-lg"  
+              style={{
+                objectFit: 'cover',
+                transform: 'rotate(-6deg)'
+              }} 
+              data-aos="fade-right"
+            />
+          </div> */}
+
+
+            <div className="flex justify-around items-center mt-8 mb-32 flex-col">    
+                <div className="text-center flex flex-col">
+                    <div className="flex flex-col">
+
+                    <div className="text-sm text-[#fff] mt-2 ml-4 tracking-normal italic" style={{ fontFamily: 'Prata' }}  data-aos="fade-down">
+                        TUHAN Allah berfirman: "Tidak baik, kalau manusia itu seorang diri saja. Aku akan menjadikan penolong baginya, yang sepadan dengan dia."
+                    </div>
+
+                    <div className="text-xl sm:text-2xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }} data-aos="fade-in">
+                        Kejadian 2:18
+                    </div>
+                    
+                    </div>
+
+                    <img src={'https://asset.menica.pro/menicav4/galeri-mandala-icon.svg'} className='mx-auto my-6' alt='undangan digital menica'/>
+
+                    <div className="flex flex-col">
+
+                    <div className="text-sm text-[#fff] mt-2 ml-4 tracking-normal" style={{ fontFamily: 'Prata' }}  data-aos="fade-down">
+                    Inilah perintah-Ku, yaitu supaya kamu saling mengasihi, seperti Aku telah mengasihi kamu.
+                    </div>
+
+                    <div className="text-xl sm:text-2xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }} data-aos="fade-in">
+                        Yohanes 15:12
+                    </div>
+                    
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+      </div>
       
       <div className="h-auto sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
         style={{
@@ -1570,7 +1653,7 @@ const Cover: React.FC = () => {
                     
 
                     <div className="text-3xl sm:text-4xl text-gradient mt-3" style={{ fontFamily: 'Alex Brush' }}>
-                        Wedding Ceremony
+                      Holy Matrimony
                     </div>
                     <div className="flex flex-col items-center justify-center">
                       <div className="flex-grow text-base text-[#fff] mt-2" style={{ fontFamily: 'Prata' }}>
@@ -1585,7 +1668,7 @@ const Cover: React.FC = () => {
                     </div>
 
                     <div className="flex-grow text-sm text-[#fff] mt-2 text-gradient font-extrabold" style={{ fontFamily: 'Prata' }}>
-                        Pukul 13.00 - Selesai
+                        Pukul 13.00 - 14:30 WIB
                     </div>
                     <div className="flex-grow text-xs text-[#fff] mt-2 text-gradient font-extrabold" style={{ fontFamily: 'Prata' }}>
                         *Hanya Keluarga
@@ -1712,11 +1795,11 @@ const Cover: React.FC = () => {
                         </div>
 
                         <div className="text-lg text-[#fff] mt-2 tracking-normal" style={{ fontFamily: 'Prata' }}>
-                          Bank BCA
+                          Bank Mandiri
                         </div>
                         
                         <div className="text-lg text-[#fff] mt-2 tracking-normal" style={{ fontFamily: 'Prata' }}>
-                          6871435631
+                        1240010709534
                         </div>
                         <div className="flex flex-row items-center justify-center text-xs bg-gradient-to-r from-[#F6B859] to-[#DB9238] p-2 rounded-md my-3 text-[#202f51] cursor-pointer font-semibold" style={{ fontFamily: 'Prata' }}>
                             <GrCopy className="mr-1" size={14}/> Copy
@@ -1747,7 +1830,7 @@ const Cover: React.FC = () => {
                         </div>
 
                         <div className="text-lg text-[#fff] mt-2 tracking-normal" style={{ fontFamily: 'Prata' }}>
-                          Bank BRI
+                          Bank BCA
                         </div>
                         
                         <div className="text-lg text-[#fff] mt-2 tracking-normal" style={{ fontFamily: 'Prata' }}>
@@ -1770,10 +1853,10 @@ const Cover: React.FC = () => {
 
 
         </div>
-        <div className="text-3xl font-semibold my-10 tracking-tight text-gradient mx-auto" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
+        {/* <div className="text-3xl font-semibold my-10 tracking-tight text-gradient mx-auto" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
                 Katalog Kado
-        </div>
-        <div className="min-h-[400px] h-auto w-full pb-32">
+        </div> */}
+        {/* <div className="min-h-[400px] h-auto w-full pb-32">
         <div ref={scrollContainerRef} className="flex overflow-x-auto space-x-4 p-4 bg-transparent w-full">
             {dataKado.map((comment, index) => (
               <div 
@@ -1811,7 +1894,7 @@ const Cover: React.FC = () => {
           </div>
 
 
-            </div>
+        </div> */}
       </div>
       <div className="h-screen-minus-40 sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
          style={{
