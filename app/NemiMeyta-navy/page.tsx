@@ -292,8 +292,13 @@ const Cover: React.FC = () => {
   return (
     <>
       <div className="h-screen-minus-40 sm:h-screen relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
-        
+         style={{
+          backgroundImage: `url('https://asset.menica.pro/menicav4/bg-mandala-2.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
       >
+      
         {/* Top Decoration Image */}
         <div className="mx-auto mt-[-112px] w-1/2" data-aos="fade-in">
           <img src="https://asset.menica.pro/menicav4/mandala-navy1-B.svg" alt="Top Decoration" className='animate-spin-slow'/>
@@ -351,7 +356,11 @@ const Cover: React.FC = () => {
       </div>
       
       <div className="h-auto sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
-        
+        style={{
+          backgroundImage: `url('https://asset.menica.pro/menicav4/bg-mandala-2.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
       >
         {/* Top Decoration Image */}
         <div className="mx-auto mt-[-112px] w-1/2">
@@ -429,7 +438,11 @@ const Cover: React.FC = () => {
         </div>
       </div>
       <div className="h-screen-minus-40 sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
-        
+         style={{
+          backgroundImage: `url('https://asset.menica.pro/menicav4/bg-mandala-2.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
       >
         {/* Top Decoration Image */}
         <div className="mx-auto mt-[-112px] w-1/2">
@@ -493,7 +506,12 @@ const Cover: React.FC = () => {
         </div>
       </div>
       <div className="sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
-        
+         style={{
+          backgroundImage: `url('https://asset.menica.pro/menicav4/bg-mandala-2.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      
       >
         {/* Top Decoration Image */}
         <div className="mx-auto mt-[-112px] w-1/2">
@@ -623,7 +641,11 @@ const Cover: React.FC = () => {
         </div>
       </div>
       <div className="sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
-        
+         style={{
+          backgroundImage: `url('https://asset.menica.pro/menicav4/bg-mandala-2.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
       >
         {/* Top Decoration Image */}
         <div className="mx-auto mt-[-112px] w-1/2">
@@ -767,7 +789,11 @@ const Cover: React.FC = () => {
             </div>
       </div>
       <div className="h-screen-minus-40 sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
-        
+         style={{
+          backgroundImage: `url('https://asset.menica.pro/menicav4/bg-mandala-2.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}  
       >
         {/* Top Decoration Image */}
         <div className="mx-auto mt-[-112px] w-1/2">
@@ -845,7 +871,11 @@ const Cover: React.FC = () => {
         </div>
       </div>
       <div className="h-screen-minus-40 sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
-        
+         style={{
+          backgroundImage: `url('https://asset.menica.pro/menicav4/bg-mandala-2.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
       >
         {/* Top Decoration Image */}
         <div className="mx-auto mt-[-112px] w-1/2">
@@ -892,7 +922,11 @@ const Cover: React.FC = () => {
         </div>
       </div>
       <div className="h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
-        
+         style={{
+          backgroundImage: `url('https://asset.menica.pro/menicav4/bg-mandala-2.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
       >
         {/* Top Decoration Image */}
         <div className="mx-auto mt-[-112px] w-1/2">
