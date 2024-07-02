@@ -1594,7 +1594,8 @@ const Cover: React.FC = () => {
                     
                     
                     <div className="text-base text-[#fff] mt-2 tracking-normal" style={{ fontFamily: 'Prata' }}>
-                        Hotel IBIS, Jakarta Pusat
+                    Jagat Office Building
+
                     </div>
                     <div className="bg-gradient-to-r from-[#F6B859] to-[#DB9238] p-2 rounded-md my-3 text-[#202f51] cursor-pointer font-semibold" style={{ fontFamily: 'Prata' }}>
                         Google Maps
@@ -1647,7 +1648,9 @@ const Cover: React.FC = () => {
                     </div>
                     
                     <div className="text-base text-[#fff] mt-2 tracking-normal" style={{ fontFamily: 'Prata' }}>
-                        Hotel IBIS, Jakarta Pusat
+                    
+                      Jagat Office Building
+
                     </div>
 
                     
