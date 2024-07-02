@@ -1111,65 +1111,66 @@ const Cover: React.FC = () => {
   const comments = [
     {
       text: "Congratulations on your new life together!",
-      avatar: "https://via.placeholder.com/50",
+      avatar: "https://img.freepik.com/premium-photo/happy-woman_68067-541.jpg?w=1380",
       fullname: "John Doe",
       date: "2024-07-01"
     },
     {
       text: "Wishing you a lifetime of love and happiness!",
-      avatar: "https://via.placeholder.com/50",
+      avatar: "https://img.freepik.com/premium-photo/happy-woman_68067-541.jpg?w=1380",
       fullname: "Jane Smith",
       date: "2024-07-02"
     },
     {
       text: "May your love continue to grow stronger with each passing day!",
-      avatar: "https://via.placeholder.com/50",
+      avatar: "https://img.freepik.com/premium-photo/happy-woman_68067-541.jpg?w=1380",
       fullname: "Bob Johnson",
       date: "2024-07-03"
     },
     {
       text: "May your marriage be filled with laughter, adventure, and joy!",
-      avatar: "https://via.placeholder.com/50",
+      avatar: "https://img.freepik.com/premium-photo/happy-woman_68067-541.jpg?w=1380",
       fullname: "Alice Brown",
       date: "2024-07-04"
     },
     {
       text: "Wishing you a lifetime of happiness, love, and adventure together!",
-      avatar: "https://via.placeholder.com/50",
+      avatar: "https://img.freepik.com/premium-photo/happy-woman_68067-541.jpg?w=1380",
       fullname: "Mike Davis",
       date: "2024-07-05"
     },
     {
       text: "May your love continue to be the foundation of your life together!",
-      avatar: "https://via.placeholder.com/50",
+      avatar: "https://img.freepik.com/premium-photo/happy-woman_68067-541.jpg?w=1380",
       fullname: "Emily Lee",
       date: "2024-07-06"
     },
     {
       text: "Congratulations on your new life together!",
-      avatar: "https://via.placeholder.com/50",
+      avatar: "https://img.freepik.com/premium-photo/happy-woman_68067-541.jpg?w=1380",
       fullname: "David Kim",
       date: "2024-07-07"
     },
     {
       text: "Wishing you a lifetime of love, happiness, and adventure together!",
-      avatar: "https://via.placeholder.com/50",
+      avatar: "https://img.freepik.com/premium-photo/happy-woman_68067-541.jpg?w=1380",
       fullname: "Sarah Taylor",
       date: "2024-07-08"
     },
     {
       text: "May your love continue to grow stronger with each passing day!",
-      avatar: "https://via.placeholder.com/50",
+      avatar: "https://img.freepik.com/premium-photo/happy-woman_68067-541.jpg?w=1380",
       fullname: "Kevin White",
       date: "2024-07-09"
     },
     {
       text: "Congratulations on your new life together!",
-      avatar: "https://via.placeholder.com/50",
+      avatar: "https://img.freepik.com/premium-photo/happy-woman_68067-541.jpg?w=1380",
       fullname: "Lisa Nguyen",
       date: "2024-07-10"
     }
   ];
+  
   
   
 
