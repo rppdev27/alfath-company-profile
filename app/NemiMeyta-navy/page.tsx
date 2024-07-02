@@ -66,19 +66,133 @@ const Cover: React.FC = () => {
     const rotations = ['-rotate-2', 'rotate-3', 'rotate-2', '-rotate-3'];
     return rotations[Math.floor(Math.random() * rotations.length)];
   };
+
+  const products = [
+    {
+      text: "This is comment one.",
+      avatar: "https://via.placeholder.com/50",
+      fullname: "John Doe",
+      date: "2024-07-01"
+    },
+    {
+      text: "This is comment two.",
+      avatar: "https://via.placeholder.com/50",
+      fullname: "Jane Smith",
+      date: "2024-07-02"
+    },
+    {
+      text: "This is comment three.",
+      avatar: "https://via.placeholder.com/50",
+      fullname: "Bob Johnson",
+      date: "2024-07-03"
+    },
+    {
+      text: "This is comment four.",
+      avatar: "https://via.placeholder.com/50",
+      fullname: "Alice Brown",
+      date: "2024-07-04"
+    },
+    {
+      text: "This is comment five.",
+      avatar: "https://via.placeholder.com/50",
+      fullname: "Mike Davis",
+      date: "2024-07-05"
+    },
+    {
+      text: "This is comment six.",
+      avatar: "https://via.placeholder.com/50",
+      fullname: "Emily Lee",
+      date: "2024-07-06"
+    },
+    {
+      text: "This is comment seven.",
+      avatar: "https://via.placeholder.com/50",
+      fullname: "David Kim",
+      date: "2024-07-07"
+    },
+    {
+      text: "This is comment eight.",
+      avatar: "https://via.placeholder.com/50",
+      fullname: "Sarah Taylor",
+      date: "2024-07-08"
+    },
+    {
+      text: "This is comment nine.",
+      avatar: "https://via.placeholder.com/50",
+      fullname: "Kevin White",
+      date: "2024-07-09"
+    },
+    {
+      text: "This is comment ten.",
+      avatar: "https://via.placeholder.com/50",
+      fullname: "Lisa Nguyen",
+      date: "2024-07-10"
+    }
+  ];
   
   const comments = [
-    { text: "This is comment one.", avatar: "https://via.placeholder.com/50" },
-    { text: "This is comment two.", avatar: "https://via.placeholder.com/50" },
-    { text: "This is comment three.", avatar: "https://via.placeholder.com/50" },
-    { text: "This is comment four.", avatar: "https://via.placeholder.com/50" },
-    { text: "This is comment five.", avatar: "https://via.placeholder.com/50" },
-    { text: "This is comment six.", avatar: "https://via.placeholder.com/50" },
-    { text: "This is comment seven.", avatar: "https://via.placeholder.com/50" },
-    { text: "This is comment eight.", avatar: "https://via.placeholder.com/50" },
-    { text: "This is comment nine.", avatar: "https://via.placeholder.com/50" },
-    { text: "This is comment ten.", avatar: "https://via.placeholder.com/50" },
+    {
+      text: "This is comment one.",
+      avatar: "https://via.placeholder.com/50",
+      fullname: "John Doe",
+      date: "2024-07-01"
+    },
+    {
+      text: "This is comment two.",
+      avatar: "https://via.placeholder.com/50",
+      fullname: "Jane Smith",
+      date: "2024-07-02"
+    },
+    {
+      text: "This is comment three.",
+      avatar: "https://via.placeholder.com/50",
+      fullname: "Bob Johnson",
+      date: "2024-07-03"
+    },
+    {
+      text: "This is comment four.",
+      avatar: "https://via.placeholder.com/50",
+      fullname: "Alice Brown",
+      date: "2024-07-04"
+    },
+    {
+      text: "This is comment five.",
+      avatar: "https://via.placeholder.com/50",
+      fullname: "Mike Davis",
+      date: "2024-07-05"
+    },
+    {
+      text: "This is comment six.",
+      avatar: "https://via.placeholder.com/50",
+      fullname: "Emily Lee",
+      date: "2024-07-06"
+    },
+    {
+      text: "This is comment seven.",
+      avatar: "https://via.placeholder.com/50",
+      fullname: "David Kim",
+      date: "2024-07-07"
+    },
+    {
+      text: "This is comment eight.",
+      avatar: "https://via.placeholder.com/50",
+      fullname: "Sarah Taylor",
+      date: "2024-07-08"
+    },
+    {
+      text: "This is comment nine.",
+      avatar: "https://via.placeholder.com/50",
+      fullname: "Kevin White",
+      date: "2024-07-09"
+    },
+    {
+      text: "This is comment ten.",
+      avatar: "https://via.placeholder.com/50",
+      fullname: "Lisa Nguyen",
+      date: "2024-07-10"
+    }
   ];
+  
 
   const scrollContainerRef: any = useRef(null);
 
@@ -325,7 +439,7 @@ const Cover: React.FC = () => {
         {/* Invitation Content */}
         <div className="w-[70%] z-50 text-center mx-auto mt-10 mb-16" ref={section3Ref}>
             <img src={'https://asset.menica.pro/menicav4/galeri-mandala-icon.svg'} className='mx-auto' alt='undangan digital menica'/>
-            <div className="text-5xl font-semibold mt-4 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
+            <div className="text-3xl sm:text-5xl font-semibold mt-4 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
                 Galeri
             </div>
             <img src={'https://menicapro.s3.ap-southeast-1.amazonaws.com/mandala-navy1-divider.svg'} className='mx-auto mt-1' alt='undangan digital menica'/>
@@ -508,7 +622,7 @@ const Cover: React.FC = () => {
 
         </div>
       </div>
-      <div className="h-screen-minus-40 sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
+      <div className="sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
         
       >
         {/* Top Decoration Image */}
@@ -524,27 +638,7 @@ const Cover: React.FC = () => {
             </div>
             <img src={'https://menicapro.s3.ap-southeast-1.amazonaws.com/mandala-navy1-divider.svg'} className='mx-auto mt-1' alt='undangan digital menica'/>
 
-            <div className="flex justify-around items-center mt-8 flex-col font-semibold gap-y-4" style={{ fontFamily: 'Prata' }}>  
-
-            {/* <div className="gradient-border rounded-lg shadow-lg" data-aos="fade-left">
-              <div className="bg-white p-6 rotate-6 rounded-lg shadow-lg text-center">
-                  Bank Mandiri
-                  <br/>
-                  Lorem Ipsum
-                  <br/>
-                  4411xxxxx
-              </div>
-            </div>
-
-            <div className="gradient-border rounded-lg shadow-lg mt-5"  data-aos="fade-right">
-              <div className="bg-white p-6 rotate-6 rounded-lg shadow-lg text-sm">
-                  Bank BCA
-                  <br/>
-                  Lorem Ipsum
-                  <br/>
-                  4411xxxxx
-              </div>
-            </div> */}
+            <div className="flex justify-around items-center my-8 flex-col font-semibold gap-y-4" style={{ fontFamily: 'Prata' }}>  
 
                 <div className="relative text-center flex flex-row w-full">
                         <div className="absolute top-1 left-1 z-40 w-[20%]">
@@ -573,7 +667,7 @@ const Cover: React.FC = () => {
                         <div className="text-lg text-[#fff] mt-2 tracking-normal" style={{ fontFamily: 'Prata' }}>
                           6871435631
                         </div>
-                        <div className="bg-gradient-to-r from-[#F6B859] to-[#DB9238] p-2 rounded-md my-3 text-[#202f51] cursor-pointer font-semibold" style={{ fontFamily: 'Prata' }}>
+                        <div className="text-xs bg-gradient-to-r from-[#F6B859] to-[#DB9238] p-2 rounded-md my-3 text-[#202f51] cursor-pointer font-semibold" style={{ fontFamily: 'Prata' }}>
                             Copy
                         </div>
 
@@ -608,7 +702,7 @@ const Cover: React.FC = () => {
                         <div className="text-lg text-[#fff] mt-2 tracking-normal" style={{ fontFamily: 'Prata' }}>
                         0948033235
                         </div>
-                        <div className="bg-gradient-to-r from-[#F6B859] to-[#DB9238] p-2 rounded-md my-3 text-[#202f51] cursor-pointer font-semibold" style={{ fontFamily: 'Prata' }}>
+                        <div className="text-xs bg-gradient-to-r from-[#F6B859] to-[#DB9238] p-2 rounded-md my-3 text-[#202f51] cursor-pointer font-semibold" style={{ fontFamily: 'Prata' }}>
                             Copy
                         </div>
 
@@ -618,7 +712,59 @@ const Cover: React.FC = () => {
                 
             </div>
 
+            
+
+            
+
+
+
         </div>
+        <div className="text-3xl font-semibold my-10 tracking-tight text-gradient mx-auto" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
+                Katalog Kado
+        </div>
+        <div className="min-h-[400px] w-full pb-10">
+              <div ref={scrollContainerRef} className="flex overflow-x-auto space-x-4 p-4 bg-transparent w-full">
+                {products.map((comment, index) => (
+                  <div 
+                    key={index} 
+                    className={`relative min-w-[200px] min-h-[150px] p-2 bg-white rounded-md shadow-lg font-bold mx-2 ${getRandomRotation()}`}
+                  >
+
+                      <img 
+                        src={comment.avatar} 
+                        alt={`Avatar ${index + 1}`} 
+                        className="w-full h-auto rounded-sm"
+                      />
+
+                      <div className="text-lg mt-1"
+                        style={{
+                          fontFamily: 'Prata'
+                        }}
+                      >
+                      {comment.fullname}
+                      </div>
+
+                      <div className="text-sm mt-1 text-slate-500"
+                        style={{
+                          fontFamily: 'Prata'
+                        }}
+                      >
+                      {comment.fullname}
+                      </div>
+
+                      <div className="text-sm mt-1 text-slate-700 underline"
+                        style={{
+                          fontFamily: 'Prata'
+                        }}
+                      >
+                      Detail
+                      </div>
+                    
+
+                  </div>
+                ))}
+              </div>
+            </div>
       </div>
       <div className="h-screen-minus-40 sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
         
@@ -638,27 +784,52 @@ const Cover: React.FC = () => {
 
           <div className="flex justify-center items-center mt-7">
         
-            <div ref={scrollContainerRef} className="flex overflow-x-auto space-x-4 p-4 bg-transparent w-full">
-              {comments.map((comment, index) => (
-                <div 
-                  key={index} 
-                  className={`relative min-w-[200px] p-4 bg-white rounded-lg shadow-lg font-bold ${getRandomRotation()}`}
+          <div ref={scrollContainerRef} className="flex overflow-x-auto space-x-4 p-4 bg-transparent w-full">
+            {comments.map((comment, index) => (
+              <div 
+                key={index} 
+                className={`relative min-w-[200px] p-4 bg-white rounded-lg shadow-lg font-bold ${getRandomRotation()}`}
+              >
+                <div className="flex flex-row justify-between">
+                <img 
+                  src={comment.avatar} 
+                  alt={`Avatar ${index + 1}`} 
+                  className="w-8 h-8 rounded-full"
+                />
+
+                <div className="flex-flex-col">
+                <p className="text-[1rem] text-slate-500 mt-2"
+                  style={{
+                    fontFamily: 'Prata'
+                  }}
                 >
-                  <img 
-                    src={comment.avatar} 
-                    alt={`Avatar ${index + 1}`} 
-                    className="w-8 h-8 rounded-full absolute top-2 left-2"
-                  />
-                  <p className="mt-12 tracking-wider text-xs"
-                    style={{
-                      fontFamily: 'Playwrite AU SA'
-                    }}
-                  >
-                    {comment.text}
-                  </p>
+                  {comment.fullname}
+                </p>
+                <p className="text-[0.4rem] text-gray-500 mt-2"
+                  style={{
+                    fontFamily: 'Playwrite AU SA'
+                  }}
+                >
+                  {comment.date}
+                </p>
+
                 </div>
-              ))}
-            </div>
+                
+
+                </div>
+                
+                <p className="mt-4 tracking-wider text-xs text-[#152443]"
+                  style={{
+                    fontFamily: 'Playwrite AU SA'
+                  }}
+                >
+                  {comment.text}
+                </p>
+              </div>
+            ))}
+          </div>
+
+
           </div>
           <div className="flex flex-row justify-center w-full items-center mx-auto mt-4">
             <button onClick={scrollLeft} className="p-2 bg-gray-300 rounded-md shadow-lg mx-2">
