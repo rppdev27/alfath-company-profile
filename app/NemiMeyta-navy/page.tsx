@@ -1301,7 +1301,7 @@ const Cover: React.FC = () => {
           />
 
           {  isPlaying ? <button
-                  className="fixed bottom-1 left-1 text-white font-bold py-2 px-4 rounded z-50 w-24 h-24 sm:w-32 sm:h-32"
+                  className="fixed bottom-1 left-1 text-white font-bold py-2 px-4 rounded z-50 w-24 h-24 sm:w-32 sm:h-32 z-50"
                   onClick={handlePlay}
               >
                   <img
