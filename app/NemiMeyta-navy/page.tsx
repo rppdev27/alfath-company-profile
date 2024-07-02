@@ -1302,8 +1302,11 @@ const Cover: React.FC = () => {
           />
 
           {  isPlaying ? <button
-                  className="fixed bottom-1 left-1 text-white font-bold py-2 px-4 rounded z-50 w-24 h-24 sm:w-32 sm:h-32 z-50"
+                  className="fixed bottom-1 left-1 text-white font-bold py-2 px-4 rounded w-20 h-20 sm:w-32 sm:h-32 z-50"
                   onClick={handlePlay}
+                  style={{
+                    zIndex: '9999'
+                  }}
               >
                   <img
                       src="https://asset.menica.pro/menicav4/playblue5.svg"
@@ -1878,7 +1881,7 @@ const Cover: React.FC = () => {
                 <IoIosArrowForward/>
             </button>
           </div>
-          <div className="flex flex-row bg-gradient-to-r from-[#F6B859] to-[#DB9238] p-2 rounded-md my-3 text-[#202f51] cursor-pointer font-semibold mt-3" style={{ fontFamily: 'Prata' }}>
+          <div className="flex flex-row items-center justify-center bg-gradient-to-r from-[#F6B859] to-[#DB9238] p-2 rounded-md my-3 text-[#202f51] cursor-pointer font-semibold mt-3" style={{ fontFamily: 'Prata' }}>
               <PiPencilLineDuotone size={20} className="mr-1"/> Kirim Ucapan 
           </div>
         </div>
