@@ -1560,8 +1560,8 @@ const Cover: React.FC = () => {
                 Galeri
             </div>
             <img src={'https://menicapro.s3.ap-southeast-1.amazonaws.com/mandala-navy1-divider.svg'} className='mx-auto mt-1' alt='undangan digital menica'/>
-
             <div className="grid grid-flow-col grid-rows-2 grid-cols-3 gap-4 mt-8">
+              {/* addition */}
               <div className="transform scale-150 -rotate-6 translate-y-10 mt-[80px]">
                 <img 
                   src="https://ik.imagekit.io/vtvggda66/menicaid6_kKPg4qjo8.png?updatedAt=1719819011595" 
@@ -1607,7 +1607,34 @@ const Cover: React.FC = () => {
                    data-aos="fade-right"
                 />
               </div>
-            </div>
+            
+              {/* addition */}
+              {/* <div>
+                <img 
+                  src="https://ik.imagekit.io/vtvggda66/WhatsApp%20Image%202024-07-02%20at%204.35.20%20PM.jpeg?updatedAt=1719924074694" 
+                  alt="" 
+                  loading="lazy" 
+                  className="border-4 border-white shadow-lg"
+                  data-aos="fade-left"
+                  style={{
+                    width: '20%'
+                  }}
+                />
+              </div>
+              <div>
+                <img 
+                  src="https://ik.imagekit.io/vtvggda66/WhatsApp%20Image%202024-07-02%20at%204.35.17%20PM.jpeg?updatedAt=1719924074279" 
+                  alt="" 
+                  loading="lazy" 
+                  className="border-4 border-white shadow-lg"
+                   data-aos="fade-down"
+                   style={{
+                    width: '20%'
+                  }}
+                />
+              </div> */}
+
+              </div>
 
 
 
