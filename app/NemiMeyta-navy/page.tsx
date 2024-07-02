@@ -1458,7 +1458,7 @@ const Cover: React.FC = () => {
 
         </div>
       </div>
-      <div className="h-screen-minus-40 sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
+      <div className="sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
          style={{
           backgroundImage: `url('https://asset.menica.pro/menicav4/bg-mandala-2.png')`,
           backgroundSize: 'cover',
