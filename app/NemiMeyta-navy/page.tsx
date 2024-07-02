@@ -1311,7 +1311,7 @@ const Cover: React.FC = () => {
                   <img
                       src="https://asset.menica.pro/menicav4/music-mandala-icon.svg"
                       alt="Play Button"
-                      className={`${musicPlaying ? 'animate-spin-slow' : ''}`}
+                      className={`${musicPlaying ? 'animate-spin-medum' : ''}`}
                   />
               </button> : <></>
               
