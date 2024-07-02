@@ -429,6 +429,9 @@ const Cover: React.FC = () => {
                     <div className="flex-grow text-sm text-[#fff] mt-2 text-gradient font-extrabold" style={{ fontFamily: 'Prata' }}>
                         Pukul 13.00 - Selesai
                     </div>
+                    <div className="flex-grow text-xs text-[#fff] mt-2 text-gradient font-extrabold" style={{ fontFamily: 'Prata' }}>
+                        *Hanya Keluarga
+                    </div>
 
                     
                     
