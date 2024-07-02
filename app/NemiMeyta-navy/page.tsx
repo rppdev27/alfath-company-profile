@@ -1443,7 +1443,7 @@ const Cover: React.FC = () => {
 
                     <div className="flex flex-col">
 
-                    <div className="text-sm text-[#fff] mt-2 ml-4 tracking-normal" style={{ fontFamily: 'Prata' }}  data-aos="fade-down">
+                    <div className="text-sm text-[#fff] mt-2 ml-4 tracking-normal italics" style={{ fontFamily: 'Prata' }}  data-aos="fade-down">
                     Inilah perintah-Ku, yaitu supaya kamu saling mengasihi, seperti Aku telah mengasihi kamu.
                     </div>
 
@@ -1472,7 +1472,7 @@ const Cover: React.FC = () => {
         </div>
         
         {/* Invitation Content */}
-        <div className="w-[75%] z-50 text-center mx-auto my-10" ref={section2Ref}>
+        <div className="w-[75%] z-50 text-center mx-auto my-10">
             <img src={'https://asset.menica.pro/menicav4/galeri-mandala-icon.svg'} className='mx-auto' alt='undangan digital menica'/>
             <div className="text-3xl sm:text-5xl font-semibold mt-4 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
                 Mempelai
