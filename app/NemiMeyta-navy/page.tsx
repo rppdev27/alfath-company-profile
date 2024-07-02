@@ -1687,7 +1687,7 @@ const Cover: React.FC = () => {
 
             <div className="flex justify-around items-center my-8 flex-col font-semibold gap-y-4" style={{ fontFamily: 'Prata' }}>  
 
-                <div className="relative text-center flex flex-row w-full">
+                <div className="relative text-center flex flex-row w-full"  data-aos='fade-down'>
                         <div className="absolute top-1 left-1 z-40 w-[20%]">
                             <img src="https://asset.menica.pro/menicav4/corner-mandala.svg" className="w-[100%] h-auto object-contain rotate-180" />
                         </div>
@@ -1722,7 +1722,7 @@ const Cover: React.FC = () => {
                     
                 </div>
 
-                <div className="relative text-center flex flex-row w-full">
+                <div className="relative text-center flex flex-row w-full"  data-aos='fade-down'>
                         <div className="absolute top-1 left-1 z-40 w-[20%]">
                             <img src="https://asset.menica.pro/menicav4/corner-mandala.svg" className="w-[100%] h-auto object-contain rotate-180" />
                         </div>
