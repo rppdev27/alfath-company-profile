@@ -206,20 +206,20 @@ const Desain = () => {
   return (
     <div className='relative'>
 
-<div className="fixed bottom-2 left-1/2 transform -translate-x-1/2 w-1/2 bg-white p-2 flex rounded-md justify-around items-center shadow-[rgba(0,0,0,0.4)_0px_30px_90px] text-[0.3rem] tracking-tight"
+<div className="fixed bottom-2 left-1/2 transform -translate-x-1/2 w-1/2 bg-white p-2 flex rounded-md justify-around items-center shadow-[rgba(0,0,0,0.4)_0px_30px_90px] text-[0.7rem] tracking-tight"
       style={{
         zIndex: '999'
       }}
     >
 
-    <div className="flex flex-col justify-center items-center">
-      <CgTemplate/>
+    <div className="flex flex-col justify-center items-center p-2 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] text-slate-700">
+      <CgTemplate size={15}/>
       <div>
         Template
       </div>
     </div>
-    <div className="flex flex-col justify-center items-center">
-    <CgTemplate/>
+    <div className="flex flex-col justify-center items-center p-2 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] text-slate-700">
+     <CgTemplate size={15}/>
       <div>
         Warna
       </div>
