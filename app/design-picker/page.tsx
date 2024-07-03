@@ -5,6 +5,7 @@ import Mandala1 from '../../components/template-design/mandala-01'
 import Mandala2 from '../../components/template-design/mandala-02'
 import Mandala3 from '../../components/template-design/mandala-01'
 import Mandala4 from '../../components/template-design/mandala-02'
+import { FaSquareCheck } from "react-icons/fa6";
 
 const Desain = () => {
 
@@ -226,12 +227,17 @@ const Desain = () => {
                                   // onClick={()=> changeColor(idx)}
                                   onClick={() => updateColorStatus(template_.id, idx)}
                                   key={idx}
-                                  className='w-[100px] h-auto p-5 rounded-md shadow-md mb-1 mr-3 box-border transition-all duration-100'
+                                  className='w-[100px] h-auto p-5 rounded-md shadow-md mb-1 mr-3 box-border transition-all duration-100 flex justify-center items-center'
                                   style={{
                                     backgroundColor: item.hex,
                                     border: item.status ? '2px solid #d8d8d8' : ''
                                   }}
-                                />
+                                >
+
+                                  <FaSquareCheck size={12} className='text-green-700'/>
+                                  
+
+                                </div>
                               ))}
                             </div>
                           </div>
