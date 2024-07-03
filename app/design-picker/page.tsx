@@ -114,7 +114,7 @@ const Desain = () => {
     //       publicity: false },
   ]);
 
-  const updateColorStatus = (templateId, index) => {
+  const updateColorStatus = (templateId: any, index: any) => {
     console.log(templateId);
     console.log(index);
     setTemplateList(prevTemplates => {
@@ -171,7 +171,7 @@ const Desain = () => {
         {isOpen ? 'Close' : 'Template'}
       </button>
             {/* this is collapsible menu */}
-            <div className={`fixed z-50 flex flex-col items-center text-[0.6rem] p-3 transition-all duration-500 bg-white rounded-lg top-8 right-0 h-screen-minus-80 overflow-scroll my-4 pb-12
+            <div className={`fixed z-50 flex flex-col items-center text-[0.6rem] p-3 transition-all duration-500 bg-white rounded-sm top-8 right-0 h-screen-minus-80 overflow-scroll my-4
               transform ${
                 isOpen ? 'translate-x-0' : 'translate-x-full'
               } transition-transform duration-300 ease-in-out`}
@@ -214,16 +214,17 @@ const Desain = () => {
                               {template_.name}
                             </div>
 
+
                             <div className="mb-1">
                               Warna
                             </div>
 
                             {/* Scrollable section for the template list */}
                             <div className="flex flex-row w-auto p-2 overflow-x-auto">
-                              {template_.color.map((item: any, idx: any) => (
+                              {template_.color.map((item, idx) => (
                                 <div
                                   // onClick={()=> changeColor(idx)}
-                                  onClick={() => updateColorStatus(template_.id, !item.status)}
+                                  onClick={() => updateColorStatus(template_.id, idx, !item.status)}
                                   key={idx}
                                   className='w-[100px] h-auto p-5 rounded-md shadow-md mb-1 mr-3 box-border transition-all duration-100'
                                   style={{
