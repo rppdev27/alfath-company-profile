@@ -152,11 +152,11 @@ const Desain = () => {
     { name: 'Pastel Teal', hex: '#B3D9D9' },
   ];
 
-  const changeColor = (index) => {
+  const changeColor = (index: any) => {
     setActiveColor(index);
   }
 
-  const changeTemplate = (id, index) => {
+  const changeTemplate = (id: any, index: any) => {
     setTemplate(id);
     setActiveTemplate(index)
   }
@@ -224,7 +224,7 @@ const Desain = () => {
                               {template_.color.map((item, idx) => (
                                 <div
                                   // onClick={()=> changeColor(idx)}
-                                  onClick={() => updateColorStatus(template_.id, idx, !item.status)}
+                                  onClick={() => updateColorStatus(template_.id, idx)}
                                   key={idx}
                                   className='w-[100px] h-auto p-5 rounded-md shadow-md mb-1 mr-3 box-border transition-all duration-100'
                                   style={{
