@@ -225,14 +225,14 @@ const Desain = () => {
                                   <div
                                     onClick={() => updateColorStatus(template_.id, idx)}
                                     key={idx}
-                                    className="w-[100px] h-[100px] p-2 rounded-md shadow-md mb-1 mr-3 box-border transition-all duration-100 flex justify-center items-center"
+                                    className="w-[50px] h-[50px] p-2 rounded-md shadow-md mb-1 mr-3 box-border transition-all duration-100 flex justify-center items-center"
                                     style={{
                                       backgroundColor: item.hex,
                                       border: item.status ? '2px solid #d8d8d8' : '',
-                                      minWidth: '100px',
-                                      minHeight: '100px',
-                                      maxWidth: '100px',
-                                      maxHeight: '100px'
+                                      minWidth: '50px',
+                                      minHeight: '50px',
+                                      maxWidth: '50px',
+                                      maxHeight: '50px'
                                     }}
                                   >
                                     {item.status ? <FaSquareCheck size={15} className="text-green-700" /> : null}
