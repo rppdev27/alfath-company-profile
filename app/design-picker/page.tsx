@@ -139,7 +139,7 @@ const Desain = () => {
     setActiveColor(index);
   }
 
-  const updateColorStatus = (templateId, index) => {
+  const updateColorStatus = (templateId: any, index: any) => {
     console.log(templateId);
     console.log(index);
     setTemplateList(prevTemplates => {
@@ -221,10 +221,10 @@ const Desain = () => {
 
                             {/* Scrollable section for the template list */}
                             <div className="flex flex-row w-auto p-2 overflow-x-auto">
-                              {template_.color.map((item, idx) => (
+                              {template_.color.map((item: any, idx: any) => (
                                 <div
                                   // onClick={()=> changeColor(idx)}
-                                  onClick={() => updateColorStatus(template_.id, idx, !item.status)}
+                                  onClick={() => updateColorStatus(template_.id, !item.status)}
                                   key={idx}
                                   className='w-[100px] h-auto p-5 rounded-md shadow-md mb-1 mr-3 box-border transition-all duration-100'
                                   style={{
