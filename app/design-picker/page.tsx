@@ -20,6 +20,12 @@ const Desain = () => {
       thumbnail: 'https://via.placeholder.com/150', 
       publicity: true, 
       color: [
+        {
+          name: 'Navy', hex: '#152443', status: true,
+        },
+        {
+          name: 'Maroon', hex: '#650808', status: false,
+        },
         { name: 'Pastel Pink', hex: '#FADADD', status: false },
         { name: 'Pastel Blue', hex: '#A2C2E3', status: false },
         { name: 'Pastel Green', hex: '#B3E5C6', status: false },
@@ -40,6 +46,12 @@ const Desain = () => {
       thumbnail: 'https://via.placeholder.com/150', 
       publicity: true, 
       color: [
+        {
+          name: 'Navy', hex: '#152443', status: true,
+        },
+        {
+          name: 'Maroon', hex: '#650808', status: false,
+        },
         { name: 'Pastel Pink', hex: '#FADADD', status: false },
         { name: 'Pastel Blue', hex: '#A2C2E3', status: false },
         { name: 'Pastel Green', hex: '#B3E5C6', status: false },

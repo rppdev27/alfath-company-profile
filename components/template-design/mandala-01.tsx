@@ -1290,21 +1290,25 @@ const Cover : React.FC<any> = ({ currentColor }: any) => {
   return (
     <>
 
-        <div className="relative flex flex-col min-h-screen bg-[#152443] overflow-hidden"
+        <div className={`relative flex flex-col min-h-screen overflow-hidden`}
           // style={{
           //   backgroundImage: `url('https://asset.menica.pro/menicav4/bg-mandala-2.png')`,
           //   backgroundSize: 'unset',
           //   backgroundPosition: 'center center',
           //   backgroundRepeat: 'space'
           // }}
+          style={{
+            backgroundColor: (currentColor === '') ? '#152443' : currentColor
+          }}
         >
             <div className="fixed inset-0 w-full h-screen bg-no-repeat bg-contain bg-center animate-spin-slow" style={{ backgroundImage: 'url("https://ik.imagekit.io/vtvggda66/mandala-navy1-big.png?updatedAt=1719847550283")' }}></div>
             <div className="relative z-10 w-full">
-                <div className="h-screen-minus-40 sm:h-screen relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
+                <div className="h-screen-minus-40 sm:h-screen relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
                     style={{
                     backgroundImage: `url('https://asset.menica.pro/menicav4/bg-mandala-2.png')`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
+                    backgroundColor: (currentColor === '') ? '#152443' : currentColor
                     }}
                 >
 
@@ -1347,7 +1351,7 @@ const Cover : React.FC<any> = ({ currentColor }: any) => {
                         </div>
                         <div className="text-8xl font-normal sm:font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
                         Mei <br />
-                        { currentColor }
+                        Roni
                         </div>
                         <div className="text-md text-white uppercase mt-4 tracking-widest font-light" style={{ fontFamily: 'Prata' }}  data-aos="fade-up">
                         17 . 08 . 2024
@@ -1389,11 +1393,12 @@ const Cover : React.FC<any> = ({ currentColor }: any) => {
                     </div>
                 </div>
 
-                <div className="h-auto sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
+                <div className="h-auto sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
                     style={{
                     backgroundImage: `url('https://asset.menica.pro/menicav4/bg-mandala-2.png')`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
+                    backgroundColor: (currentColor === '') ? '#152443' : currentColor
                     }}
                 >
                     {/* Top Decoration Image */}
