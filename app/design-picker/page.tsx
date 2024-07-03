@@ -9,6 +9,8 @@ import Mandala4 from '../../components/template-design/mandala-02'
 const Desain = () => {
 
   const [template_id, setTemplate] = useState('template1');
+  const [isActiveTemplate, setActiveTemplate] = useState(0);
+  const [isActiveColor, setActiveColor] = useState(0);
   
   const [template_list, setTemplateList] = useState([
     { id: 'template1', 
@@ -112,9 +114,24 @@ const Desain = () => {
     //       publicity: false },
   ]);
 
+  const updateColorStatus = (templateId, index) => {
+    console.log(templateId);
+    console.log(index);
+    setTemplateList(prevTemplates => {
+        return prevTemplates.map(template => {
+            if (template.id === templateId) {
+                const updatedColors = template.color.map((color, i) =>
+                    i === index ? { ...color, status: true } : { ...color, status: false }
+                );
+                return { ...template, color: updatedColors };
+            }
+            return template;
+        });
+    });
+    console.log(template_list)
+};
+
   const [isOpen, setIsOpen] = useState(false);
-  const [isActiveTemplate, setActiveTemplate] = useState(0);
-  const [isActiveColor, setActiveColor] = useState(0);
 
   const togglePanel = () => {
     setIsOpen(prev => !prev);
@@ -135,28 +152,11 @@ const Desain = () => {
     { name: 'Pastel Teal', hex: '#B3D9D9' },
   ];
 
-  const changeColor = (index: any) => {
+  const changeColor = (index) => {
     setActiveColor(index);
   }
 
-  const updateColorStatus = (templateId: any, index: any) => {
-    console.log(templateId);
-    console.log(index);
-    setTemplateList(prevTemplates => {
-        return prevTemplates.map(template => {
-            if (template.id === templateId) {
-                const updatedColors = template.color.map((color, i) =>
-                    i === index ? { ...color, status: true } : { ...color, status: false }
-                );
-                return { ...template, color: updatedColors };
-            }
-            return template;
-        });
-    });
-    console.log(template_list)
-};
-
-  const changeTemplate = (id: any, index: any) => {
+  const changeTemplate = (id, index) => {
     setTemplate(id);
     setActiveTemplate(index)
   }
@@ -213,7 +213,6 @@ const Desain = () => {
                             <div className="p-1">
                               {template_.name}
                             </div>
-
 
                             <div className="mb-1">
                               Warna
