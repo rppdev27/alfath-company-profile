@@ -41,7 +41,7 @@ const Cover : React.FC<any> = ({ currentColor, backgroundSection }: any) => {
 
   useEffect(() => {
     // Lock scroll
-    document.body.style.overflow = 'hidden';
+    // document.body.style.overflow = 'hidden';
     
     return () => {
       // Ensure to unlock scroll if component unmounts
