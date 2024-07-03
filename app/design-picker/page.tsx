@@ -79,6 +79,8 @@ const Desain = () => {
   ];
 
   const [isOpen, setIsOpen] = useState(false);
+  const [isActiveTemplate, setActiveTemplate] = useState(0);
+  const [isActiveColor, setActiveColor] = useState(0);
 
   const togglePanel = () => {
     setIsOpen(prev => !prev);
@@ -99,6 +101,15 @@ const Desain = () => {
     { name: 'Pastel Teal', hex: '#B3D9D9' },
   ];
 
+  const changeColor = (index: any) => {
+    setActiveColor(index);
+  }
+
+  const changeTemplate = (id: any, ndex: any) => {
+    setTemplate(id);
+    setActiveTemplate(index)
+  }
+
   return (
     <div className='relative'>
 
@@ -109,7 +120,7 @@ const Desain = () => {
         {isOpen ? 'Close' : 'Template'}
       </button>
             {/* this is collapsible menu */}
-            <div className={`fixed z-50 flex flex-col items-center text-[0.6rem] p-3 transition-all duration-500 bg-white rounded-sm top-8 right-0 h-screen-minus-80 overflow-scroll my-4
+            <div className={`fixed z-50 flex flex-col items-center text-[0.6rem] p-3 transition-all duration-500 bg-white rounded-lg top-8 right-0 h-screen-minus-80 overflow-scroll my-4 pb-12
               transform ${
                 isOpen ? 'translate-x-0' : 'translate-x-full'
               } transition-transform duration-300 ease-in-out`}
@@ -129,7 +140,8 @@ const Desain = () => {
                           {/* Container div for the template item */}
                           <div 
                             key={index}
-                            onClick={() => setTemplate(template_.id)} 
+                            // onClick={() => setTemplate(template_.id)} 
+                            onClick={()=> changeTemplate(template_.id, index)}
                             className='max-w-[150px] 
                             h-auto 
                             z-50 
@@ -141,6 +153,9 @@ const Desain = () => {
                             cursor-pointer
                             mb-4
                             '
+                            style={{
+                              backgroundColor: index === isActiveTemplate ? 'grey' : 'white'
+                            }}
                           >
                             <img src={template_.thumbnail} alt='undangan digital'/>
                             
@@ -157,10 +172,12 @@ const Desain = () => {
                             <div className="flex flex-row w-auto p-2 overflow-x-auto">
                               {pastelColors.map((item, idx) => (
                                 <div
+                                  onClick={()=> changeColor(idx)}
                                   key={idx}
                                   className='w-[100px] h-auto p-4 rounded-md shadow-md mb-1 mr-3'
                                   style={{
                                     backgroundColor: item.hex,
+                                    border: index === isActiveColor ? '2px solid black' : ''
                                   }}
                                 />
                               ))}
