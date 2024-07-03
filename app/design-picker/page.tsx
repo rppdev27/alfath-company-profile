@@ -206,15 +206,14 @@ const Desain = () => {
   return (
     <div className='relative'>
 
-<div className="fixed bottom-0 left-0 right-0 bg-white p-4 flex rounded-md justify-around items-center flex-row shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
+<div className="fixed bottom-2 left-2 right-2 bg-white p-2 text-xs flex rounded-md justify-around items-center flex-row shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
   style={{
     zIndex: '999'
   }}
-
 >
 
-<div className="">Template</div>
-<div className="">Warna</div>
+    <div className="">Template</div>
+    <div className="">Warna</div>
 
     
 </div>
