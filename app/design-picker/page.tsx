@@ -96,7 +96,7 @@ const Desain = () => {
     { id: 'template2', 
       name: 'Luxury 2', 
       description: 'This is the first template', 
-      thumbnail: 'https://via.placeholder.com/150', 
+      thumbnail: 'https://img.freepik.com/free-vector/lovely-wedding-invitation-template-with-colorful-mandala_23-2147884397.jpg?uid=R8509531&ga=GA1.1.1663214348.1704683280&semt=ais_user-customized', 
       publicity: true, 
       color: [
         {
