@@ -1289,13 +1289,16 @@ const Cover : React.FC<any> = ({ currentColor }: any) => {
   return (
     <>
 
-        <div className="relative flex flex-col min-h-screen bg-[#152443] overflow-hidden"
+        <div className="relative flex flex-col min-h-screen overflow-hidden"
           // style={{
           //   backgroundImage: `url('https://asset.menica.pro/menicav4/bg-mandala-2.png')`,
           //   backgroundSize: 'unset',
           //   backgroundPosition: 'center center',
           //   backgroundRepeat: 'space'
           // }}
+          style={{
+            backgroundColor: currentColor
+          }}
         >
             <div className="fixed inset-0 w-full h-screen bg-no-repeat bg-contain bg-center animate-spin-slow" style={{ backgroundImage: 'url("https://ik.imagekit.io/vtvggda66/mandala-navy1-big.png?updatedAt=1719847550283")' }}></div>
             <div className="relative z-10 w-full">
