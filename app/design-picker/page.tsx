@@ -214,24 +214,24 @@ const Desain = () => {
       }}
     >
 
-    <div className="flex flex-row justify-center items-center p-1 text-slate-700 mx-2 cursor-pointer hover:bg-slate-400">
-      <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-2 rounded-md">
+    <div className="flex flex-row justify-center items-center p-1 text-slate-700 mx-2 cursor-pointe">
+      <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-2 rounded-md hover:bg-slate-400">
           <CgTemplate size={15}/>
       </div>
       <div className='font-semibold mt-1 ml-2'>
         Template
       </div>
     </div>
-    <div className="flex flex-row justify-center items-center p-1 text-slate-700 mx-2 cursor-pointer hover:bg-slate-400">
-      <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-2 rounded-md">
+    <div className="flex flex-row justify-center items-center p-1 text-slate-700 mx-2 cursor-pointer ">
+      <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-2 rounded-md hover:bg-slate-400">
           <VscSymbolColor size={15}/>
       </div>
      <div className='font-semibold mt-1 ml-2'>
         Warna
       </div>
     </div>
-    <div className="flex flex-row justify-center items-center p-1 text-slate-700 mx-2 cursor-pointer hover:bg-slate-400">
-      <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-2 rounded-md">
+    <div className="flex flex-row justify-center items-center p-1 text-slate-700 mx-2 cursor-pointer">
+      <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-2 rounded-md hover:bg-slate-400">
           <FaWhatsapp size={15}/>
       </div>
      <div className='font-semibold mt-1 ml-2'>
