@@ -143,6 +143,7 @@ const Desain = () => {
   const [imageBG, setBackgroundAsset] = useState('');
 
   const updateColorStatus = (templateId: any, index: any, color: any, imageBGs: any) => {
+    console.log(imageBGs);
     setColorCurrent(color);
     setBackgroundAsset(imageBGs);
     setTemplateList(prevTemplates => {
