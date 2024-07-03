@@ -1363,7 +1363,6 @@ const Cover : React.FC<any> = ({ currentColor, backgroundSection }: any) => {
                         <div className="text-8xl font-normal sm:font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
                         Mei <br />
                         Doni
-                        {backgroundSection}
                         </div>
                         <div className="text-md text-white uppercase mt-4 tracking-widest font-light" style={{ fontFamily: 'Prata' }}  data-aos="fade-up">
                         17 . 08 . 2024
