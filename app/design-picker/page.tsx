@@ -264,7 +264,7 @@ const Desain = () => {
                   case 'template3':
                     return <Mandala3 currentColor={currentColorData}/>;
                   default:
-                    return <Mandala4 currentColor={currentColorData}>;
+                    return <Mandala4 currentColor={currentColorData}/>;
                     
                 }
 
