@@ -20,7 +20,7 @@ const Desain = () => {
     { id: 'template1', 
       name: 'Luxury 1', 
       description: 'This is the first template', 
-      thumbnail: 'https://via.placeholder.com/150', 
+      thumbnail: 'https://img.freepik.com/free-vector/dark-wedding-invitation-with-fantastic-mandala_23-2147637452.jpg?uid=R8509531&ga=GA1.1.1663214348.1704683280&semt=ais_user-customized', 
       publicity: true, 
       color: [
         {
@@ -64,7 +64,7 @@ const Desain = () => {
     { id: 'template2', 
       name: 'Luxury 2', 
       description: 'This is the first template', 
-      thumbnail: 'https://via.placeholder.com/150', 
+      thumbnail: 'https://img.freepik.com/premium-vector/beautiful-ornamental-wedding-invitation_606364-1512.jpg?uid=R8509531&ga=GA1.1.1663214348.1704683280&semt=ais_user-customized', 
       publicity: true, 
       color: [
         {
@@ -128,7 +128,7 @@ const Desain = () => {
     { id: 'template2', 
       name: 'Luxury 2', 
       description: 'This is the first template', 
-      thumbnail: 'https://via.placeholder.com/150', 
+      thumbnail: 'https://img.freepik.com/free-vector/purple-wedding-card-with-golden-mandala_23-2147639115.jpg?uid=R8509531&ga=GA1.1.1663214348.1704683280&semt=ais_user-customized', 
       publicity: true, 
       color: [
         {
@@ -160,7 +160,7 @@ const Desain = () => {
     { id: 'template2', 
       name: 'Luxury 2', 
       description: 'This is the first template', 
-      thumbnail: 'https://via.placeholder.com/150', 
+      thumbnail: 'https://img.freepik.com/premium-vector/luxury-ornamental-mandala-wedding-invitation-card-with-golden-arabesque-arabic-islamic-background_492681-398.jpg?uid=R8509531&ga=GA1.1.1663214348.1704683280&semt=ais_user-customized', 
       publicity: true, 
       color: [
         {
