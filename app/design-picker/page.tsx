@@ -206,14 +206,24 @@ const Desain = () => {
   return (
     <div className='relative'>
 
-<div className="fixed bottom-2 left-1/2 transform -translate-x-1/2 w-1/2 bg-white p-2 flex rounded-md justify-around items-center shadow-[rgba(0,0,0,0.4)_0px_30px_90px]"
+<div className="fixed bottom-2 left-1/2 transform -translate-x-1/2 w-1/2 bg-white p-2 flex rounded-md justify-around items-center shadow-[rgba(0,0,0,0.4)_0px_30px_90px] text-[0.3rem] tracking-tight"
       style={{
         zIndex: '999'
       }}
     >
 
-    <div className="">Template</div>
-    <div className="">Warna</div>
+    <div className="flex flex-col justify-center items-center">
+      <CgTemplate/>
+      <div>
+        Template
+      </div>
+    </div>
+    <div className="flex flex-col justify-center items-center">
+    <CgTemplate/>
+      <div>
+        Warna
+      </div>
+    </div>
 
     
 </div>
@@ -233,7 +243,7 @@ const Desain = () => {
       
 
             {/* this is collapsible menu */}
-            <div className={`fixed z-50 flex flex-col items-center text-[0.6rem] p-3 transition-all duration-500 bg-white rounded-sm top-2 right-0 h-screen-minus-80 overflow-scroll my-4
+            <div className={`fixed z-50 flex flex-col items-center text-[0.6rem] p-3 transition-all duration-500 bg-white rounded-sm top-2 right-0 h-screen-minus-80 overflow-scroll
               transform ${
                 isOpen ? 'translate-x-0' : 'translate-x-full'
               } transition-transform duration-300 ease-in-out`}
