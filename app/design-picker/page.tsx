@@ -177,7 +177,7 @@ const Desain = () => {
                                   className='w-[100px] h-auto p-4 rounded-md shadow-md mb-1 mr-3'
                                   style={{
                                     backgroundColor: item.hex,
-                                    border: index === isActiveColor ? '2px solid black' : ''
+                                    border: idx === isActiveColor ? '2px solid black' : ''
                                   }}
                                 />
                               ))}
