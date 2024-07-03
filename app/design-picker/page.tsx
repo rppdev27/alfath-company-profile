@@ -333,7 +333,7 @@ const Desain = () => {
           <FaWhatsapp size={15}/>
       </div>
      <div className='font-semibold mt-1 ml-2'>
-        Order  / Tanya
+        Order/Tanya
       </div>
     </div>
 
