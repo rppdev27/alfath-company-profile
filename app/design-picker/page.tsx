@@ -10,73 +10,107 @@ const Desain = () => {
 
   const [template_id, setTemplate] = useState('template1');
   
-  const template_list = [
+  const [template_list, setTemplateList] = useState([
     { id: 'template1', 
       name: 'Luxury 1', 
       description: 'This is the first template', 
       thumbnail: 'https://via.placeholder.com/150', 
-      publicity: true 
+      publicity: true, 
+      color: [
+        { name: 'Pastel Pink', hex: '#FADADD', status: false },
+        { name: 'Pastel Blue', hex: '#A2C2E3', status: false },
+        { name: 'Pastel Green', hex: '#B3E5C6', status: false },
+        { name: 'Pastel Yellow', hex: '#FCE5A9', status: false },
+        { name: 'Pastel Purple', hex: '#D9B6F0', status: false },
+        { name: 'Pastel Orange', hex: '#F5B3A1', status: false },
+        { name: 'Pastel Peach', hex: '#F7C6C7', status: false },
+        { name: 'Pastel Mint', hex: '#A9D6E5', status: false },
+        { name: 'Pastel Lavender', hex: '#E6C6E7', status: false },
+        { name: 'Pastel Coral', hex: '#F5A9A2', status: false },
+        { name: 'Pastel Gray', hex: '#D0D0D0', status: false },
+        { name: 'Pastel Teal', hex: '#B3D9D9', status: false }
+    ]
     },
     { id: 'template2', 
       name: 'Luxury 2', 
-      description: 'This is the second template', 
-      thumbnail: 'https://via.placeholder.com/150',
-      publicity: true 
-    },
-    { id: 'template3', 
-      name: 'Luxury 3', 
-      description: 'This is the third template', 
+      description: 'This is the first template', 
       thumbnail: 'https://via.placeholder.com/150', 
-      publicity: true 
+      publicity: true, 
+      color: [
+        { name: 'Pastel Pink', hex: '#FADADD', status: false },
+        { name: 'Pastel Blue', hex: '#A2C2E3', status: false },
+        { name: 'Pastel Green', hex: '#B3E5C6', status: false },
+        { name: 'Pastel Yellow', hex: '#FCE5A9', status: false },
+        { name: 'Pastel Purple', hex: '#D9B6F0', status: false },
+        { name: 'Pastel Orange', hex: '#F5B3A1', status: false },
+        { name: 'Pastel Peach', hex: '#F7C6C7', status: false },
+        { name: 'Pastel Mint', hex: '#A9D6E5', status: false },
+        { name: 'Pastel Lavender', hex: '#E6C6E7', status: false },
+        { name: 'Pastel Coral', hex: '#F5A9A2', status: false },
+        { name: 'Pastel Gray', hex: '#D0D0D0', status: false },
+        { name: 'Pastel Teal', hex: '#B3D9D9', status: false }
+    ]
     },
-    { id: 'template4', 
-      name: 'Luxury 4', 
-      description: 'This is a non-public template', 
-      thumbnail: 'https://via.placeholder.com/150', 
-      publicity: false 
-    },
-      { id: 'template1', 
-        name: 'Luxury 1', 
-        description: 'This is the first template', 
-        thumbnail: 'https://via.placeholder.com/150', 
-        publicity: true, 
-      },
-      { id: 'template2', 
-        name: 'Luxury 2', 
-        description: 'This is the second template', 
-        thumbnail: 'https://via.placeholder.com/150',
-        publicity: true },
-      { id: 'template3', 
-        name: 'Luxury 3', 
-        description: 'This is the third template', 
-        thumbnail: 'https://via.placeholder.com/150', 
-        publicity: true },
-      { id: 'template4', 
-        name: 'Luxury 4', 
-        description: 'This is a non-public template', 
-        thumbnail: 'https://via.placeholder.com/150', 
-        publicity: false },
-        { id: 'template1', 
-          name: 'Luxury 1', 
-          description: 'This is the first template', 
-          thumbnail: 'https://via.placeholder.com/150', 
-          publicity: true },
-        { id: 'template2', 
-          name: 'Luxury 2', 
-          description: 'This is the second template', 
-          thumbnail: 'https://via.placeholder.com/150',
-          publicity: true },
-        { id: 'template3', 
-          name: 'Luxury 3', 
-          description: 'This is the third template', 
-          thumbnail: 'https://via.placeholder.com/150', 
-          publicity: true },
-        { id: 'template4', 
-          name: 'Luxury 4', 
-          description: 'This is a non-public template', 
-          thumbnail: 'https://via.placeholder.com/150', 
-          publicity: false },
-  ];
+    // { id: 'template2', 
+    //   name: 'Luxury 2', 
+    //   description: 'This is the second template', 
+    //   thumbnail: 'https://via.placeholder.com/150',
+    //   publicity: true 
+    // },
+    // { id: 'template3', 
+    //   name: 'Luxury 3', 
+    //   description: 'This is the third template', 
+    //   thumbnail: 'https://via.placeholder.com/150', 
+    //   publicity: true 
+    // },
+    // { id: 'template4', 
+    //   name: 'Luxury 4', 
+    //   description: 'This is a non-public template', 
+    //   thumbnail: 'https://via.placeholder.com/150', 
+    //   publicity: false 
+    // },
+    //   { id: 'template1', 
+    //     name: 'Luxury 1', 
+    //     description: 'This is the first template', 
+    //     thumbnail: 'https://via.placeholder.com/150', 
+    //     publicity: true, 
+    //   },
+    //   { id: 'template2', 
+    //     name: 'Luxury 2', 
+    //     description: 'This is the second template', 
+    //     thumbnail: 'https://via.placeholder.com/150',
+    //     publicity: true },
+    //   { id: 'template3', 
+    //     name: 'Luxury 3', 
+    //     description: 'This is the third template', 
+    //     thumbnail: 'https://via.placeholder.com/150', 
+    //     publicity: true },
+    //   { id: 'template4', 
+    //     name: 'Luxury 4', 
+    //     description: 'This is a non-public template', 
+    //     thumbnail: 'https://via.placeholder.com/150', 
+    //     publicity: false },
+    //     { id: 'template1', 
+    //       name: 'Luxury 1', 
+    //       description: 'This is the first template', 
+    //       thumbnail: 'https://via.placeholder.com/150', 
+    //       publicity: true },
+    //     { id: 'template2', 
+    //       name: 'Luxury 2', 
+    //       description: 'This is the second template', 
+    //       thumbnail: 'https://via.placeholder.com/150',
+    //       publicity: true },
+    //     { id: 'template3', 
+    //       name: 'Luxury 3', 
+    //       description: 'This is the third template', 
+    //       thumbnail: 'https://via.placeholder.com/150', 
+    //       publicity: true },
+    //     { id: 'template4', 
+    //       name: 'Luxury 4', 
+    //       description: 'This is a non-public template', 
+    //       thumbnail: 'https://via.placeholder.com/150', 
+    //       publicity: false },
+  ]);
 
   const [isOpen, setIsOpen] = useState(false);
   const [isActiveTemplate, setActiveTemplate] = useState(0);
@@ -104,6 +138,23 @@ const Desain = () => {
   const changeColor = (index: any) => {
     setActiveColor(index);
   }
+
+  const updateColorStatus = (templateId, index) => {
+    console.log(templateId);
+    console.log(index);
+    setTemplateList(prevTemplates => {
+        return prevTemplates.map(template => {
+            if (template.id === templateId) {
+                const updatedColors = template.color.map((color, i) =>
+                    i === index ? { ...color, status: true } : { ...color, status: false }
+                );
+                return { ...template, color: updatedColors };
+            }
+            return template;
+        });
+    });
+    console.log(template_list)
+};
 
   const changeTemplate = (id: any, index: any) => {
     setTemplate(id);
@@ -170,14 +221,15 @@ const Desain = () => {
 
                             {/* Scrollable section for the template list */}
                             <div className="flex flex-row w-auto p-2 overflow-x-auto">
-                              {pastelColors.map((item, idx) => (
+                              {template_.color.map((item, idx) => (
                                 <div
-                                  onClick={()=> changeColor(idx)}
+                                  // onClick={()=> changeColor(idx)}
+                                  onClick={() => updateColorStatus(template_.id, idx, !item.status)}
                                   key={idx}
-                                  className='w-[100px] h-auto p-4 rounded-md shadow-md mb-1 mr-3'
+                                  className='w-[100px] h-auto p-5 rounded-md shadow-md mb-1 mr-3 box-border transition-all duration-100'
                                   style={{
                                     backgroundColor: item.hex,
-                                    border: idx === isActiveColor ? '2px solid black' : ''
+                                    border: item.status ? '2px solid #d8d8d8' : ''
                                   }}
                                 />
                               ))}
