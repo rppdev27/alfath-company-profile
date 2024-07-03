@@ -1339,7 +1339,7 @@ const Cover : React.FC<any> = ({ currentColor, backgroundSection }: any) => {
                     
                     {/* Top Decoration Image */}
                     <div className="mx-auto mt-[-112px] w-1/2" data-aos="fade-in">
-                    <img src="https://asset.menica.pro/menicav4/mandala-navy1-B.svg" alt="Top Decoration" className='animate-spin-slow'/>
+                    <img src="https://asset.menica.pro/menicav4/mandala-navy1_B.svg" alt="Top Decoration" className='animate-spin-slow'/>
                     </div>
                     
                     {/* Invitation Content */}
@@ -1351,7 +1351,7 @@ const Cover : React.FC<any> = ({ currentColor, backgroundSection }: any) => {
                         </div>
                         <div className="text-8xl font-normal sm:font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
                         Mei <br />
-                        { currentColor }
+                        Doni
                         </div>
                         <div className="text-md text-white uppercase mt-4 tracking-widest font-light" style={{ fontFamily: 'Prata' }}  data-aos="fade-up">
                         17 . 08 . 2024
@@ -1389,7 +1389,7 @@ const Cover : React.FC<any> = ({ currentColor, backgroundSection }: any) => {
                     
                     {/* Bottom Decoration Image */}
                     <div className="mx-auto mb-[-112px] w-1/2" data-aos="fade-in">
-                    <img src="https://asset.menica.pro/menicav4/mandala-navy1-B.svg" alt="Bottom Decoration" className="rotate-180 animate-spin-slow" />
+                    <img src="https://asset.menica.pro/menicav4/mandala-navy1_B.svg" alt="Bottom Decoration" className="rotate-180 animate-spin-slow" />
                     </div>
                 </div>
 
