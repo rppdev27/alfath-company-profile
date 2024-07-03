@@ -30,7 +30,19 @@ const Desain = () => {
           name: "Maroon",
           hex: "#5B1A27",
           status: false,
-          background_section: "https://asset.menica.pro/menicav4/bg-mandala-2.png"
+          background_section: "https://asset.menica.pro/menicav4/bg-mandala-red.png"
+        },
+        {
+          name: "Green",
+          hex: "#2A3F3F",
+          status: false,
+          background_section: "https://asset.menica.pro/menicav4/bg-mandala-green.png"
+        },
+        {
+          name: "Brown",
+          hex: "#4D4035",
+          status: false,
+          background_section: "https://asset.menica.pro/menicav4/bg-mandala-brown.png"
         },
         // { name: 'Pastel Pink', hex: '#FADADD', status: false },
         // { name: 'Pastel Blue', hex: '#A2C2E3', status: false },
