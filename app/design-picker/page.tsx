@@ -194,7 +194,7 @@ const Desain = () => {
                             key={index}
                             // onClick={() => setTemplate(template_.id)} 
                             onClick={()=> changeTemplate(template_.id, index)}
-                            className='max-w-[150px] 
+                            className='max-w-[140px] 
                             h-auto 
                             z-50 
                             hover:bg-slate-200 
@@ -225,14 +225,14 @@ const Desain = () => {
                                   <div
                                     onClick={() => updateColorStatus(template_.id, idx)}
                                     key={idx}
-                                    className="w-[50px] h-[50px] p-2 rounded-md shadow-md mb-1 mr-3 box-border transition-all duration-100 flex justify-center items-center"
+                                    className="w-[40px] h-[40px] p-2 rounded-md shadow-md mb-1 mr-3 box-border transition-all duration-100 flex justify-center items-center"
                                     style={{
                                       backgroundColor: item.hex,
                                       border: item.status ? '2px solid #d8d8d8' : '',
-                                      minWidth: '50px',
-                                      minHeight: '50px',
-                                      maxWidth: '50px',
-                                      maxHeight: '50px'
+                                      minWidth: '40px',
+                                      minHeight: '40px',
+                                      maxWidth: '40px',
+                                      maxHeight: '40px'
                                     }}
                                   >
                                     {item.status ? <FaSquareCheck size={15} className="text-green-700" /> : null}
