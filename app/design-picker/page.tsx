@@ -212,15 +212,19 @@ const Desain = () => {
       }}
     >
 
-    <div className="flex flex-col justify-center items-center p-2 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] text-slate-700  rounded-md">
-      <CgTemplate size={15}/>
-      <div>
+    <div className="flex flex-col justify-center items-center p-2 text-slate-700">
+      <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-2 rounded-md">
+          <CgTemplate size={15}/>
+      </div>
+      <div className='font-semibold'>
         Template
       </div>
     </div>
-    <div className="flex flex-col justify-center items-center p-2 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] text-slate-700 rounded-md">
-     <CgTemplate size={15}/>
-      <div>
+    <div className="flex flex-col justify-center items-center p-2 text-slate-700">
+      <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-2 rounded-md">
+          <CgTemplate size={15}/>
+      </div>
+     <div className='font-semibold'>
         Warna
       </div>
     </div>
