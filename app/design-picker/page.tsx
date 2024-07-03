@@ -228,6 +228,14 @@ const Desain = () => {
         Warna
       </div>
     </div>
+    <div className="flex flex-row justify-center items-center p-1 text-slate-700 mx-2 cursor-pointer hover:bg-slate-400">
+      <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-2 rounded-md">
+          <CgTemplate size={15}/>
+      </div>
+     <div className='font-semibold mt-1 ml-2'>
+        Order
+      </div>
+    </div>
 
     
 </div>
