@@ -127,7 +127,7 @@ const Desain = () => {
     //       publicity: false },
   ]);
 
-  const [currentColorData, setColorCurrent] = useState('#fff');
+  const [currentColorData, setColorCurrent] = useState('');
 
   const updateColorStatus = (templateId: any, index: any, color: any) => {
     console.log(templateId);
