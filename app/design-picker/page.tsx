@@ -84,14 +84,29 @@ const Desain = () => {
     setIsOpen(prev => !prev);
   };
 
+  const pastelColors = [
+    { name: 'Pastel Pink', hex: '#FADADD' },
+    { name: 'Pastel Blue', hex: '#A2C2E3' },
+    { name: 'Pastel Green', hex: '#B3E5C6' },
+    { name: 'Pastel Yellow', hex: '#FCE5A9' },
+    { name: 'Pastel Purple', hex: '#D9B6F0' },
+    { name: 'Pastel Orange', hex: '#F5B3A1' },
+    { name: 'Pastel Peach', hex: '#F7C6C7' },
+    { name: 'Pastel Mint', hex: '#A9D6E5' },
+    { name: 'Pastel Lavender', hex: '#E6C6E7' },
+    { name: 'Pastel Coral', hex: '#F5A9A2' },
+    { name: 'Pastel Gray', hex: '#D0D0D0' },
+    { name: 'Pastel Teal', hex: '#B3D9D9' },
+  ];
+
   return (
     <div className='relative'>
 
       <button
         onClick={togglePanel}
-        className="fixed z-50 p-3 text-xs text-white bg-blue-500 rounded-full shadow-lg top-1 right-4 hover:bg-blue-600 focus:outline-none"
+        className="fixed z-50 p-3 text-xs text-white bg-green-700 rounded-md shadow-lg top-1 right-4 hover:bg-green-600 focus:outline-none"
       >
-        {isOpen ? 'Close' : 'Open'}
+        {isOpen ? 'Close' : 'Template'}
       </button>
             {/* this is collapsible menu */}
             <button
