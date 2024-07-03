@@ -93,6 +93,102 @@ const Desain = () => {
         // { name: 'Pastel Teal', hex: '#B3D9D9', status: false }
     ]
     },
+    { id: 'template2', 
+      name: 'Luxury 2', 
+      description: 'This is the first template', 
+      thumbnail: 'https://via.placeholder.com/150', 
+      publicity: true, 
+      color: [
+        {
+          name: "Navy",
+          hex: "#152443",
+          status: true,
+          background_section: "https://asset.menica.pro/menicav4/bg-mandala-2.png"
+        },
+        {
+          name: "Maroon",
+          hex: "#5B1A27",
+          status: false,
+          background_section: "https://asset.menica.pro/menicav4/bg-mandala-2.png"
+        },
+        // { name: 'Pastel Pink', hex: '#FADADD', status: false },
+        // { name: 'Pastel Blue', hex: '#A2C2E3', status: false },
+        // { name: 'Pastel Green', hex: '#B3E5C6', status: false },
+        // { name: 'Pastel Yellow', hex: '#FCE5A9', status: false },
+        // { name: 'Pastel Purple', hex: '#D9B6F0', status: false },
+        // { name: 'Pastel Orange', hex: '#F5B3A1', status: false },
+        // { name: 'Pastel Peach', hex: '#F7C6C7', status: false },
+        // { name: 'Pastel Mint', hex: '#A9D6E5', status: false },
+        // { name: 'Pastel Lavender', hex: '#E6C6E7', status: false },
+        // { name: 'Pastel Coral', hex: '#F5A9A2', status: false },
+        // { name: 'Pastel Gray', hex: '#D0D0D0', status: false },
+        // { name: 'Pastel Teal', hex: '#B3D9D9', status: false }
+    ]
+    },
+    { id: 'template2', 
+      name: 'Luxury 2', 
+      description: 'This is the first template', 
+      thumbnail: 'https://via.placeholder.com/150', 
+      publicity: true, 
+      color: [
+        {
+          name: "Navy",
+          hex: "#152443",
+          status: true,
+          background_section: "https://asset.menica.pro/menicav4/bg-mandala-2.png"
+        },
+        {
+          name: "Maroon",
+          hex: "#5B1A27",
+          status: false,
+          background_section: "https://asset.menica.pro/menicav4/bg-mandala-2.png"
+        },
+        // { name: 'Pastel Pink', hex: '#FADADD', status: false },
+        // { name: 'Pastel Blue', hex: '#A2C2E3', status: false },
+        // { name: 'Pastel Green', hex: '#B3E5C6', status: false },
+        // { name: 'Pastel Yellow', hex: '#FCE5A9', status: false },
+        // { name: 'Pastel Purple', hex: '#D9B6F0', status: false },
+        // { name: 'Pastel Orange', hex: '#F5B3A1', status: false },
+        // { name: 'Pastel Peach', hex: '#F7C6C7', status: false },
+        // { name: 'Pastel Mint', hex: '#A9D6E5', status: false },
+        // { name: 'Pastel Lavender', hex: '#E6C6E7', status: false },
+        // { name: 'Pastel Coral', hex: '#F5A9A2', status: false },
+        // { name: 'Pastel Gray', hex: '#D0D0D0', status: false },
+        // { name: 'Pastel Teal', hex: '#B3D9D9', status: false }
+    ]
+    },
+    { id: 'template2', 
+      name: 'Luxury 2', 
+      description: 'This is the first template', 
+      thumbnail: 'https://via.placeholder.com/150', 
+      publicity: true, 
+      color: [
+        {
+          name: "Navy",
+          hex: "#152443",
+          status: true,
+          background_section: "https://asset.menica.pro/menicav4/bg-mandala-2.png"
+        },
+        {
+          name: "Maroon",
+          hex: "#5B1A27",
+          status: false,
+          background_section: "https://asset.menica.pro/menicav4/bg-mandala-2.png"
+        },
+        // { name: 'Pastel Pink', hex: '#FADADD', status: false },
+        // { name: 'Pastel Blue', hex: '#A2C2E3', status: false },
+        // { name: 'Pastel Green', hex: '#B3E5C6', status: false },
+        // { name: 'Pastel Yellow', hex: '#FCE5A9', status: false },
+        // { name: 'Pastel Purple', hex: '#D9B6F0', status: false },
+        // { name: 'Pastel Orange', hex: '#F5B3A1', status: false },
+        // { name: 'Pastel Peach', hex: '#F7C6C7', status: false },
+        // { name: 'Pastel Mint', hex: '#A9D6E5', status: false },
+        // { name: 'Pastel Lavender', hex: '#E6C6E7', status: false },
+        // { name: 'Pastel Coral', hex: '#F5A9A2', status: false },
+        // { name: 'Pastel Gray', hex: '#D0D0D0', status: false },
+        // { name: 'Pastel Teal', hex: '#B3D9D9', status: false }
+    ]
+    },
     // { id: 'template2', 
     //   name: 'Luxury 2', 
     //   description: 'This is the second template', 
