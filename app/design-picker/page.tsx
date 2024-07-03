@@ -115,9 +115,12 @@ const Desain = () => {
     //       publicity: false },
   ]);
 
-  const updateColorStatus = (templateId: any, index: any) => {
+  const [currentColorData, setColorCurrent] = useState('#fff');
+
+  const updateColorStatus = (templateId: any, index: any, color: any) => {
     console.log(templateId);
     console.log(index);
+    setColorCurrent(color);
     setTemplateList(prevTemplates => {
         return prevTemplates.map(template => {
             if (template.id === templateId) {
@@ -223,7 +226,7 @@ const Desain = () => {
                             <div className="flex flex-row w-auto p-2 overflow-x-auto">
                                 {template_.color.map((item, idx) => (
                                   <div
-                                    onClick={() => updateColorStatus(template_.id, idx)}
+                                    onClick={() => updateColorStatus(template_.id, idx, item.hex)}
                                     key={idx}
                                     className="w-[30px] h-[30px] p-2 rounded-md shadow-md mb-1 mr-3 box-border transition-all duration-100 flex justify-center items-center"
                                     style={{
@@ -255,13 +258,13 @@ const Desain = () => {
                 switch (template_id) {
 
                   case 'template1':
-                    return <Mandala1/>;
+                    return <Mandala1 currentColor={currentColorData}/>;
                   case 'template2':
-                    return <Mandala2/>;
+                    return <Mandala2 currentColor={currentColorData}/>;
                   case 'template3':
-                    return <Mandala3/>;
+                    return <Mandala3 currentColor={currentColorData}/>;
                   default:
-                    return <Mandala4/>;
+                    return <Mandala4 currentColor={currentColorData}>;
                     
                 }
 

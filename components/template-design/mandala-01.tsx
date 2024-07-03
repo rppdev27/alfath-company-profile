@@ -10,7 +10,9 @@ import 'aos/dist/aos.css';
 import { PiPencilLineDuotone } from "react-icons/pi";
 import { GrCopy } from "react-icons/gr";
 
-const Cover: React.FC = () => {
+const Cover : React.FC<any> = ({ currentColor }: any) => {
+
+// const Cover: React.FC = ({ currentColor }: any) => {
   useEffect(() => {
     AOS.init();
   }, [])
@@ -1345,7 +1347,7 @@ const Cover: React.FC = () => {
                         </div>
                         <div className="text-8xl font-normal sm:font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
                         Mei <br />
-                        Juni
+                        { currentColor }
                         </div>
                         <div className="text-md text-white uppercase mt-4 tracking-widest font-light" style={{ fontFamily: 'Prata' }}  data-aos="fade-up">
                         17 . 08 . 2024
