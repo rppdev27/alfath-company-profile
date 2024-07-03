@@ -206,13 +206,19 @@ const Desain = () => {
   return (
     <div className='relative'>
 
-      <button
+      {
+
+        isOpen ? <></> : <button
         onClick={togglePanel}
         className="fixed z-50 p-2 text-[0.4rem] text-white bg-white rounded-md top-2 right-2 hover:bg-slate-300 focus:outline-none shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
       >
-        {/* {isOpen ? 'Close' : 'Template'} */}
         <CgTemplate size={15} className='text-slate-500'/>
       </button>
+
+      }
+
+      
+
             {/* this is collapsible menu */}
             <div className={`fixed z-50 flex flex-col items-center text-[0.6rem] p-3 transition-all duration-500 bg-white rounded-sm top-8 right-0 h-screen-minus-80 overflow-scroll my-4
               transform ${
@@ -220,9 +226,9 @@ const Desain = () => {
               } transition-transform duration-300 ease-in-out`}
             >
 
-                {/* <div className='w-full p-2 my-2 text-white rounded-md bg-slate-600'>
-                  Close Menu
-                </div> */}
+                <div className='w-full p-2 my-2 text-white rounded-md bg-slate-600 shadow-lg' onClick={togglePanel}>
+                  Close
+                </div>
 
                 <div className='my-2'>
                   Template List
