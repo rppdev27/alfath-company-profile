@@ -11,7 +11,7 @@ import { PiPencilLineDuotone } from "react-icons/pi";
 import { GrCopy } from "react-icons/gr";
 
 // const Cover: React.FC = ({ currentColor }:any) => {
-const Cover : React.FC<any> = ({ currentColor }: any) => {
+const Cover : React.FC<any> = ({ currentColor, backgroundSection }: any) => {
   useEffect(() => {
     AOS.init();
   }, [])

@@ -21,23 +21,29 @@ const Desain = () => {
       publicity: true, 
       color: [
         {
-          name: 'Navy', hex: '#152443', status: true,
+          name: "Navy",
+          hex: "#152443",
+          status: true,
+          background_section: "https://asset.menica.pro/menicav4/bg-mandala-2.png"
         },
         {
-          name: 'Maroon', hex: '#650808', status: false,
+          name: "Maroon",
+          hex: "#5B1A27",
+          status: false,
+          background_section: "https://asset.menica.pro/menicav4/bg-mandala-2.png"
         },
-        { name: 'Pastel Pink', hex: '#FADADD', status: false },
-        { name: 'Pastel Blue', hex: '#A2C2E3', status: false },
-        { name: 'Pastel Green', hex: '#B3E5C6', status: false },
-        { name: 'Pastel Yellow', hex: '#FCE5A9', status: false },
-        { name: 'Pastel Purple', hex: '#D9B6F0', status: false },
-        { name: 'Pastel Orange', hex: '#F5B3A1', status: false },
-        { name: 'Pastel Peach', hex: '#F7C6C7', status: false },
-        { name: 'Pastel Mint', hex: '#A9D6E5', status: false },
-        { name: 'Pastel Lavender', hex: '#E6C6E7', status: false },
-        { name: 'Pastel Coral', hex: '#F5A9A2', status: false },
-        { name: 'Pastel Gray', hex: '#D0D0D0', status: false },
-        { name: 'Pastel Teal', hex: '#B3D9D9', status: false }
+        // { name: 'Pastel Pink', hex: '#FADADD', status: false },
+        // { name: 'Pastel Blue', hex: '#A2C2E3', status: false },
+        // { name: 'Pastel Green', hex: '#B3E5C6', status: false },
+        // { name: 'Pastel Yellow', hex: '#FCE5A9', status: false },
+        // { name: 'Pastel Purple', hex: '#D9B6F0', status: false },
+        // { name: 'Pastel Orange', hex: '#F5B3A1', status: false },
+        // { name: 'Pastel Peach', hex: '#F7C6C7', status: false },
+        // { name: 'Pastel Mint', hex: '#A9D6E5', status: false },
+        // { name: 'Pastel Lavender', hex: '#E6C6E7', status: false },
+        // { name: 'Pastel Coral', hex: '#F5A9A2', status: false },
+        // { name: 'Pastel Gray', hex: '#D0D0D0', status: false },
+        // { name: 'Pastel Teal', hex: '#B3D9D9', status: false }
     ]
     },
     { id: 'template2', 
@@ -47,23 +53,29 @@ const Desain = () => {
       publicity: true, 
       color: [
         {
-          name: 'Navy', hex: '#152443', status: true,
+          name: "Navy",
+          hex: "#152443",
+          status: true,
+          background_section: "https://asset.menica.pro/menicav4/bg-mandala-2.png"
         },
         {
-          name: 'Maroon', hex: '#650808', status: false,
+          name: "Maroon",
+          hex: "#5B1A27",
+          status: false,
+          background_section: "https://asset.menica.pro/menicav4/bg-mandala-2.png"
         },
-        { name: 'Pastel Pink', hex: '#FADADD', status: false },
-        { name: 'Pastel Blue', hex: '#A2C2E3', status: false },
-        { name: 'Pastel Green', hex: '#B3E5C6', status: false },
-        { name: 'Pastel Yellow', hex: '#FCE5A9', status: false },
-        { name: 'Pastel Purple', hex: '#D9B6F0', status: false },
-        { name: 'Pastel Orange', hex: '#F5B3A1', status: false },
-        { name: 'Pastel Peach', hex: '#F7C6C7', status: false },
-        { name: 'Pastel Mint', hex: '#A9D6E5', status: false },
-        { name: 'Pastel Lavender', hex: '#E6C6E7', status: false },
-        { name: 'Pastel Coral', hex: '#F5A9A2', status: false },
-        { name: 'Pastel Gray', hex: '#D0D0D0', status: false },
-        { name: 'Pastel Teal', hex: '#B3D9D9', status: false }
+        // { name: 'Pastel Pink', hex: '#FADADD', status: false },
+        // { name: 'Pastel Blue', hex: '#A2C2E3', status: false },
+        // { name: 'Pastel Green', hex: '#B3E5C6', status: false },
+        // { name: 'Pastel Yellow', hex: '#FCE5A9', status: false },
+        // { name: 'Pastel Purple', hex: '#D9B6F0', status: false },
+        // { name: 'Pastel Orange', hex: '#F5B3A1', status: false },
+        // { name: 'Pastel Peach', hex: '#F7C6C7', status: false },
+        // { name: 'Pastel Mint', hex: '#A9D6E5', status: false },
+        // { name: 'Pastel Lavender', hex: '#E6C6E7', status: false },
+        // { name: 'Pastel Coral', hex: '#F5A9A2', status: false },
+        // { name: 'Pastel Gray', hex: '#D0D0D0', status: false },
+        // { name: 'Pastel Teal', hex: '#B3D9D9', status: false }
     ]
     },
     // { id: 'template2', 
@@ -128,11 +140,11 @@ const Desain = () => {
   ]);
 
   const [currentColorData, setColorCurrent] = useState('');
+  const [imageBG, setBackgroundAsset] = useState('');
 
-  const updateColorStatus = (templateId: any, index: any, color: any) => {
-    console.log(templateId);
-    console.log(index);
+  const updateColorStatus = (templateId: any, index: any, color: any, imageBGs: any) => {
     setColorCurrent(color);
+    setBackgroundAsset(imageBGs);
     setTemplateList(prevTemplates => {
         return prevTemplates.map(template => {
             if (template.id === templateId) {
@@ -238,7 +250,7 @@ const Desain = () => {
                             <div className="flex flex-row w-auto p-2 overflow-x-auto">
                                 {template_.color.map((item, idx) => (
                                   <div
-                                    onClick={() => updateColorStatus(template_.id, idx, item.hex)}
+                                    onClick={() => updateColorStatus(template_.id, idx, item.hex, item.background_section)}
                                     key={idx}
                                     className="w-[30px] h-[30px] p-2 rounded-md shadow-md mb-1 mr-3 box-border transition-all duration-100 flex justify-center items-center"
                                     style={{
@@ -270,13 +282,13 @@ const Desain = () => {
                 switch (template_id) {
 
                   case 'template1':
-                    return <Mandala1 currentColor={currentColorData}/>;
+                    return <Mandala1 currentColor={currentColorData} backgroundSection={imageBG}/>;
                   case 'template2':
-                    return <Mandala2 currentColor={currentColorData}/>;
+                    return <Mandala2 currentColor={currentColorData} backgroundSection={imageBG}/>;
                   case 'template3':
-                    return <Mandala3 currentColor={currentColorData}/>;
+                    return <Mandala3 currentColor={currentColorData} backgroundSection={imageBG}/>;
                   default:
-                    return <Mandala4 currentColor={currentColorData}/>;
+                    return <Mandala4 currentColor={currentColorData} backgroundSection={imageBG}/>;
                     
                 }
 

@@ -10,7 +10,7 @@ import 'aos/dist/aos.css';
 import { PiPencilLineDuotone } from "react-icons/pi";
 import { GrCopy } from "react-icons/gr";
 
-const Cover : React.FC<any> = ({ currentColor }: any) => {
+const Cover : React.FC<any> = ({ currentColor, backgroundSection }: any) => {
 
 // const Cover: React.FC = ({ currentColor }: any) => {
   useEffect(() => {
@@ -1292,7 +1292,7 @@ const Cover : React.FC<any> = ({ currentColor }: any) => {
 
         <div className={`relative flex flex-col min-h-screen overflow-hidden`}
           // style={{
-          //   backgroundImage: `url('https://asset.menica.pro/menicav4/bg-mandala-2.png')`,
+          //   backgroundImage: `url(`+ (backgroundSection === '') ? 'https://asset.menica.pro/menicav4/bg-mandala-2.png' : backgroundSection + `')`,
           //   backgroundSize: 'unset',
           //   backgroundPosition: 'center center',
           //   backgroundRepeat: 'space'
@@ -1305,7 +1305,7 @@ const Cover : React.FC<any> = ({ currentColor }: any) => {
             <div className="relative z-10 w-full">
                 <div className="h-screen-minus-40 sm:h-screen relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
                     style={{
-                    backgroundImage: `url('https://asset.menica.pro/menicav4/bg-mandala-2.png')`,
+                    backgroundImage: `url(`+ (backgroundSection === '') ? 'https://asset.menica.pro/menicav4/bg-mandala-2.png' : backgroundSection + `')`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundColor: (currentColor === '') ? '#152443' : currentColor
@@ -1395,7 +1395,7 @@ const Cover : React.FC<any> = ({ currentColor }: any) => {
 
                 <div className="h-auto sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
                     style={{
-                    backgroundImage: `url('https://asset.menica.pro/menicav4/bg-mandala-2.png')`,
+                    backgroundImage: `url(`+ (backgroundSection === '') ? 'https://asset.menica.pro/menicav4/bg-mandala-2.png' : backgroundSection + `')`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundColor: (currentColor === '') ? '#152443' : currentColor
@@ -1403,7 +1403,7 @@ const Cover : React.FC<any> = ({ currentColor }: any) => {
                 >
                     {/* Top Decoration Image */}
                     <div className="mx-auto mt-[-112px] w-1/2">
-                    <img src="https://asset.menica.pro/menicav4/mandala-navy1-B.svg" alt="Top Decoration" className='animate-spin-slow'/>
+                      <img src="https://asset.menica.pro/menicav4/mandala-navy1-B.svg" alt="Top Decoration" className='animate-spin-slow'/>
                     </div>
                     
                     {/* Invitation Content */}
@@ -1479,7 +1479,7 @@ const Cover : React.FC<any> = ({ currentColor }: any) => {
                 
                 <div className="h-auto sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
                     style={{
-                    backgroundImage: `url('https://asset.menica.pro/menicav4/bg-mandala-2.png')`,
+                    backgroundImage: `url(`+ (backgroundSection === '') ? 'https://asset.menica.pro/menicav4/bg-mandala-2.png' : backgroundSection + `')`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     }}
@@ -1561,7 +1561,7 @@ const Cover : React.FC<any> = ({ currentColor }: any) => {
                 </div>
                 <div className="sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
                     style={{
-                    backgroundImage: `url('https://asset.menica.pro/menicav4/bg-mandala-2.png')`,
+                    backgroundImage: `url(`+ (backgroundSection === '') ? 'https://asset.menica.pro/menicav4/bg-mandala-2.png' : backgroundSection + `')`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     }}
@@ -1661,7 +1661,7 @@ const Cover : React.FC<any> = ({ currentColor }: any) => {
                 </div>
                 <div className="sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
                     style={{
-                    backgroundImage: `url('https://asset.menica.pro/menicav4/bg-mandala-2.png')`,
+                    backgroundImage: `url(`+ (backgroundSection === '') ? 'https://asset.menica.pro/menicav4/bg-mandala-2.png' : backgroundSection + `')`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     }}
@@ -1799,7 +1799,7 @@ const Cover : React.FC<any> = ({ currentColor }: any) => {
                 </div>
                 <div className="sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
                     style={{
-                    backgroundImage: `url('https://asset.menica.pro/menicav4/bg-mandala-2.png')`,
+                    backgroundImage: `url(`+ (backgroundSection === '') ? 'https://asset.menica.pro/menicav4/bg-mandala-2.png' : backgroundSection + `')`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     }}
@@ -1943,7 +1943,7 @@ const Cover : React.FC<any> = ({ currentColor }: any) => {
                 </div>
                 <div className="h-screen-minus-40 sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
                     style={{
-                    backgroundImage: `url('https://asset.menica.pro/menicav4/bg-mandala-2.png')`,
+                    backgroundImage: `url(`+ (backgroundSection === '') ? 'https://asset.menica.pro/menicav4/bg-mandala-2.png' : backgroundSection + `')`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     }}  
@@ -2025,7 +2025,7 @@ const Cover : React.FC<any> = ({ currentColor }: any) => {
                 </div>
                 <div className="h-screen-minus-40 sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
                     style={{
-                    backgroundImage: `url('https://asset.menica.pro/menicav4/bg-mandala-2.png')`,
+                    backgroundImage: `url(`+ (backgroundSection === '') ? 'https://asset.menica.pro/menicav4/bg-mandala-2.png' : backgroundSection + `')`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     }}
@@ -2076,7 +2076,7 @@ const Cover : React.FC<any> = ({ currentColor }: any) => {
                 </div>
                 <div className="h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
                     style={{
-                    backgroundImage: `url('https://asset.menica.pro/menicav4/bg-mandala-2.png')`,
+                    backgroundImage: `url(`+ (backgroundSection === '') ? 'https://asset.menica.pro/menicav4/bg-mandala-2.png' : backgroundSection + `')`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     }}
