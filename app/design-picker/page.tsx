@@ -206,7 +206,7 @@ const Desain = () => {
   return (
     <div className='relative'>
 
-<div className="fixed bottom-2 left-1/2 transform -translate-x-1/2 w-1/3 bg-white py-2 flex rounded-md justify-around items-center shadow-[rgba(0,0,0,0.4)_0px_30px_90px] text-[0.5rem] sm:text-[0.6rem] tracking-tight"
+<div className="fixed bottom-2 left-1/2 transform -translate-x-1/2 w-auto bg-white py-2 flex rounded-md justify-around items-center shadow-[rgba(0,0,0,0.4)_0px_30px_90px] text-[0.5rem] sm:text-[0.6rem] tracking-tight"
       style={{
         zIndex: '999'
       }}
@@ -216,7 +216,7 @@ const Desain = () => {
       <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-2 rounded-md">
           <CgTemplate size={15}/>
       </div>
-      <div className='font-semibold mt-1 ml-1'>
+      <div className='font-semibold mt-1 ml-2'>
         Template
       </div>
     </div>
@@ -224,7 +224,7 @@ const Desain = () => {
       <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-2 rounded-md">
           <CgTemplate size={15}/>
       </div>
-     <div className='font-semibold mt-1 ml-1'>
+     <div className='font-semibold mt-1 ml-2'>
         Warna
       </div>
     </div>
