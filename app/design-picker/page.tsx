@@ -363,12 +363,13 @@ const Desain = () => {
 
                 <div className='cursor-pointer w-full p-2 my-2 text-slate-700 rounded-md bg-white shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]  flex flex-row justify-between items-center' onClick={togglePanel}>
                   <IoCloseCircle size={20} className='mr-1 text-red-900'/>
-                  Close
-                </div>
-
-                <div className='my-1'>
+                  {/* Close */}
                   Daftar Template
                 </div>
+
+                {/* <div className='my-1'>
+                  Daftar Template
+                </div> */}
 
                 <div className='cursor-pointer w-full p-2 my-2 text-slate-700 rounded-md bg-white shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] flex flex-row justify-between items-center'>
                   <BsFilterLeft size={20} className='mr-1'/>
