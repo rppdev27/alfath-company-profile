@@ -233,7 +233,11 @@ const Desain = () => {
                                     border: item.status ? '2px solid #d8d8d8' : ''
                                   }}
                                 >
-                                  <FaSquareCheck size={15} className='text-green-700'/>
+
+                                  {
+                                      item.status ?  <FaSquareCheck size={15} className='text-green-700'/> : <></>
+                                  }
+                                  
                                 </div>
                               ))}
                             </div>
