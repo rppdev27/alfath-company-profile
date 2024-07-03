@@ -220,11 +220,9 @@ const Desain = () => {
                               Warna
                             </div>
 
-                            {/* Scrollable section for the template list */}
                             <div className="flex flex-row w-auto p-2 overflow-x-auto">
                               {template_.color.map((item, idx) => (
                                 <div
-                                  // onClick={()=> changeColor(idx)}
                                   onClick={() => updateColorStatus(template_.id, idx)}
                                   key={idx}
                                   className='min-w-[60px] h-auto p-2 rounded-md shadow-md mb-1 mr-3 box-border transition-all duration-100 flex justify-center items-center'
