@@ -361,8 +361,8 @@ const Desain = () => {
               } transition-transform duration-300 ease-in-out`}
             >
 
-                <div className='cursor-pointer w-full p-2 my-2 text-slate-700 rounded-md bg-white shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]' onClick={togglePanel}>
-                  <IoCloseCircle size={20} className='mr-1'/>
+                <div className='cursor-pointer w-full p-2 my-2 text-slate-700 rounded-md bg-white shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]  flex flex-row justify-between' onClick={togglePanel}>
+                  <IoCloseCircle size={20} className='mr-1 text-red-900'/>
                   Close
                 </div>
 
@@ -370,7 +370,7 @@ const Desain = () => {
                   Daftar Template
                 </div>
 
-                <div className='my-1 flex flex-row shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-2 justify-between'>
+                <div className='cursor-pointer w-full p-2 my-2 text-slate-700 rounded-md bg-white shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] flex flex-row justify-between'>
                   <BsFilterLeft size={20} className='mr-1'/>
                   Filter Kategori
                 </div>
