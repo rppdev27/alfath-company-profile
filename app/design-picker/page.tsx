@@ -104,16 +104,9 @@ const Desain = () => {
 
       <button
         onClick={togglePanel}
-        className="fixed z-50 p-3 text-xs text-white bg-green-700 rounded-md shadow-lg top-1 right-4 hover:bg-green-600 focus:outline-none"
+        className="fixed z-50 p-2 text-[0.4rem] text-white bg-green-700 rounded-md shadow-lg top-1 right-4 hover:bg-green-600 focus:outline-none"
       >
         {isOpen ? 'Close' : 'Template'}
-      </button>
-            {/* this is collapsible menu */}
-            <button
-        onClick={togglePanel}
-        className="fixed z-50 p-2 text-[0.4rem] bg-white rounded-sm shadow-lg text-slate-500 top-2 right-4 hover:bg-slate-300"
-      >
-        {isOpen ? 'Close' : 'Open'}
       </button>
             {/* this is collapsible menu */}
             <div className={`fixed z-50 flex flex-col items-center text-[0.6rem] p-3 transition-all duration-500 bg-white rounded-sm top-8 right-0 h-screen-minus-80 overflow-scroll my-4
