@@ -7,6 +7,8 @@ import Mandala3 from '../../components/template-design/mandala-01'
 import Mandala4 from '../../components/template-design/mandala-02'
 import { FaSquareCheck } from "react-icons/fa6";
 import { CgTemplate } from "react-icons/cg";
+import { FaWhatsapp } from "react-icons/fa6";
+import { VscSymbolColor } from "react-icons/vsc";
 
 const Desain = () => {
 
@@ -222,7 +224,7 @@ const Desain = () => {
     </div>
     <div className="flex flex-row justify-center items-center p-1 text-slate-700 mx-2 cursor-pointer hover:bg-slate-400">
       <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-2 rounded-md">
-          <CgTemplate size={15}/>
+          <VscSymbolColor size={15}/>
       </div>
      <div className='font-semibold mt-1 ml-2'>
         Warna
@@ -230,7 +232,7 @@ const Desain = () => {
     </div>
     <div className="flex flex-row justify-center items-center p-1 text-slate-700 mx-2 cursor-pointer hover:bg-slate-400">
       <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-2 rounded-md">
-          <CgTemplate size={15}/>
+          <FaWhatsapp size={15}/>
       </div>
      <div className='font-semibold mt-1 ml-2'>
         Order
