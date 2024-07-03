@@ -9,6 +9,7 @@ import { FaSquareCheck } from "react-icons/fa6";
 import { CgTemplate } from "react-icons/cg";
 import { FaWhatsapp } from "react-icons/fa6";
 import { VscSymbolColor } from "react-icons/vsc";
+import { BsFilterLeft } from "react-icons/bs";
 
 const Desain = () => {
 
@@ -359,12 +360,17 @@ const Desain = () => {
               } transition-transform duration-300 ease-in-out`}
             >
 
-                <div className='cursor-pointer w-full p-2 my-2 text-white rounded-md bg-slate-600 shadow-lg' onClick={togglePanel}>
+                <div className='cursor-pointer w-full p-2 my-2 text-slate-700 rounded-md bg-white shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]' onClick={togglePanel}>
                   Close
                 </div>
 
-                <div className='my-2'>
-                  Template List
+                <div className='my-1'>
+                  Daftar Template
+                </div>
+
+                <div className='my-1 flex flex-row shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]'>
+                  <BsFilterLeft size={20} className='mr-1'/>
+                  Filter Kategori
                 </div>
                 
                 {
