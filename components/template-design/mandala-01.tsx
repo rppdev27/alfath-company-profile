@@ -1298,7 +1298,7 @@ const Cover : React.FC<any> = ({ currentColor }: any) => {
           //   backgroundRepeat: 'space'
           // }}
           style={{
-            backgroundColor: (currentColor === '') ? '#152443' : currentColor
+            backgroundColor: currentColor == '' ? '#152443' : currentColor
           }}
         >
             <div className="fixed inset-0 w-full h-screen bg-no-repeat bg-contain bg-center animate-spin-slow" style={{ backgroundImage: 'url("https://ik.imagekit.io/vtvggda66/mandala-navy1-big.png?updatedAt=1719847550283")' }}></div>
