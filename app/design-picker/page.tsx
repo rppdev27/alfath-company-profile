@@ -105,7 +105,7 @@ const Desain = () => {
     setActiveColor(index);
   }
 
-  const changeTemplate = (id: any, ndex: any) => {
+  const changeTemplate = (id: any, index: any) => {
     setTemplate(id);
     setActiveTemplate(index)
   }
