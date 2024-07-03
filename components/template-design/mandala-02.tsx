@@ -12,6 +12,14 @@ import { GrCopy } from "react-icons/gr";
 
 // const Cover: React.FC = ({ currentColor }:any) => {
 const Cover : React.FC<any> = ({ currentColor, backgroundSection }: any) => {
+
+  const topRef: any = useRef(null);
+
+  useEffect(() => {
+    if (topRef.current) {
+      topRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, []);
   useEffect(() => {
     AOS.init();
   }, [])
@@ -1288,7 +1296,7 @@ const Cover : React.FC<any> = ({ currentColor, backgroundSection }: any) => {
 
   return (
     <>
-
+        <div ref={topRef}></div>
         <div className="relative flex flex-col min-h-screen overflow-hidden"
           // style={{
           //   backgroundImage: `url('https://asset.menica.pro/menicav4/bg-mandala-2.png')`,
