@@ -206,13 +206,13 @@ const Desain = () => {
   return (
     <div className='relative'>
 
-<div className="fixed bottom-2 left-1/2 transform -translate-x-1/2 w-auto bg-white py-2 flex rounded-md justify-around items-center shadow-[rgba(0,0,0,0.4)_0px_30px_90px] text-[0.5rem] sm:text-[0.6rem] tracking-tight"
+<div className="fixed bottom-2 left-1/2 transform -translate-x-1/2 w-auto bg-white py-2 px-3 flex rounded-md justify-around items-center shadow-[rgba(0,0,0,0.4)_0px_30px_90px] text-[0.5rem] sm:text-[0.6rem] tracking-tight"
       style={{
         zIndex: '999'
       }}
     >
 
-    <div className="flex flex-row justify-center items-center p-1 text-slate-700">
+    <div className="flex flex-row justify-center items-center p-1 text-slate-700 mx-2">
       <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-2 rounded-md">
           <CgTemplate size={15}/>
       </div>
@@ -220,7 +220,7 @@ const Desain = () => {
         Template
       </div>
     </div>
-    <div className="flex flex-row justify-center items-center p-1 text-slate-700">
+    <div className="flex flex-row justify-center items-center p-1 text-slate-700 mx-2">
       <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-2 rounded-md">
           <CgTemplate size={15}/>
       </div>
