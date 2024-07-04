@@ -388,7 +388,7 @@ const Desain = () => {
 
              <div className="flex justify-between items-center mb-4 text-xs">
                 <button
-                    className="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded"
+                    className="flex-1 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded"
                     onClick={() => handleTabChange('tanya')}
                     style={{
                         // backgroundColor: activeTab === 'tanya' ? 'gray' : 'white',
@@ -400,7 +400,7 @@ const Desain = () => {
                     Tanya
                 </button>
                 <button
-                    className="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded"
+                    className="flex-1 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded"
                     onClick={() => handleTabChange('order')}
                     style={{
                         // backgroundColor: activeTab === 'order' ? 'gray' : 'white',
