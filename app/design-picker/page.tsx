@@ -306,19 +306,19 @@ const Desain = () => {
       id: 2, 
       name: 'Birtday',
       status: true,
-      icon: <CgTemplate size={9}/> 
+      icon: <VscSymbolColor size={9}/> 
     },
     {
       id: 3, 
       name: 'Khitan',
       status: true,
-      icon: <CgTemplate size={9}/>  
+      icon: <FaWhatsapp size={9}/>  
     },
     {
       id: 4, 
       name: 'Aqiqah',
       status: true,
-      icon: <CgTemplate size={9}/>  
+      icon: <IoCloseCircle size={9}/>  
     },
     // {
     //   id: 5, 
@@ -408,21 +408,21 @@ const Desain = () => {
                   Filter Kategori
                 </div>
 
-                <div className="grid grid-cols-2 gap-4">
+                {/*<div className="grid grid-cols-2 gap-4">
                   {categoryTemplates.map((category, index) => (
                     <div key={index} className='frosted-glass-sm cursor-pointer w-full p-1 text-slate-700 rounded-md flex flex-col justify-between items-center font-[0.4rem]'>
                       
                       <div>
                           {category.icon}
                       </div>
-                      <div className="font-semibold">
+                      <div className="font-semibold font-[0.4rem]">
                           {category.name}
                       </div>
                     </div>
                   ))}
-                </div>
+                </div>*/}
 
-                <div className="flex flex-col">
+                <div className="flex flex-col my-1">
                   {categoryTemplates.map((category, index) => (
                     <div key={index} className='cursor-pointer w-full p-1 text-slate-700 rounded-m flex flex-row text-white justify-end items-center font-[0.4rem]'>
                       
