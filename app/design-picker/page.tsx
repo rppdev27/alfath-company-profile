@@ -380,9 +380,11 @@ const Desain = () => {
 
         isOpen ? <></> : <button
         onClick={togglePanel}
-        className="fixed z-50 p-2 text-[0.4rem] text-white rounded-md top-2 right-2 hover:bg-slate-300 focus:outline-none frosted-glass"
+        className="fixed z-50 p-2 text-[0.4rem] text-white rounded-md top-2 right-2 hover:bg-slate-300 focus:outline-none frosted-glass text-center text-white font-semibold"
       >
         <CgTemplate size={15} className='text-white'/>
+        <br/>
+        Template
 
       </button>
 
