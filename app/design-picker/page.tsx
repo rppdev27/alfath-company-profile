@@ -659,7 +659,17 @@ const Desain = () => {
                             {
                               index === isActiveTemplate ? <div className='top-0 left-0 h-auto w-auto bg-transparent mt-2'>
 
-                              <IoCheckbox size={20} className="text-green-700 shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"/>
+                              <div className='flex flex-row items-center justify-center'>
+
+                                  <IoCheckbox size={20} className="text-green-700 shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"/>
+                             
+                                  <div className='ml-1 text-xs'> 
+                                    
+                                    Selected
+
+                                  </div>
+                              </div>
+
                               
                             </div> : <></>
                             }
