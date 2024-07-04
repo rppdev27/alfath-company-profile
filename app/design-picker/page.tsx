@@ -426,14 +426,14 @@ const Desain = () => {
                     <div className="bg-white p-4 shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]">
                         <h2 className="text-base font-bold">Tanya tentang</h2>
                         <div className="flex gap-10">
-                            <input type="radio" name="type" value="Desain" />
-                            <label for="Desain">Desain</label>
-                            <input type="radio" name="type" value="Mekanisme Daftar" />
-                            <label for="Mekanisme Daftar">Mekanisme Daftar</label>
-                            <input type="radio" name="type" value="Kerjasama/Bisnis" />
-                            <label for="Kerjasama/Bisnis">Kerjasama/Bisnis</label>
-                            <input type="radio" name="type" value="Lainnya" />
-                            <label for="Lainnya">Lainnya</label>
+                            <input type="radio" name="type" value="Desain" onChange={handleOptionChange} />
+                            <label htmlFor="Desain">Desain</label>
+                            <input type="radio" name="type" value="Mekanisme Daftar" onChange={handleOptionChange} />
+                            <label htmlFor="Mekanisme Daftar">Mekanisme Daftar</label>
+                            <input type="radio" name="type" value="Kerjasama/Bisnis" onChange={handleOptionChange} />
+                            <label htmlFor="Kerjasama/Bisnis">Kerjasama/Bisnis</label>
+                            <input type="radio" name="type" value="Lainnya" onChange={handleOptionChange} />
+                            <label htmlFor="Lainnya">Lainnya</label>
                         </div>
                         <button
                                 className="w-full bg-[#a71876] text-white px-4 py-2 rounded-md hover:bg-green-600 my-1 shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px]"
