@@ -368,10 +368,10 @@ const Desain = () => {
 
    const [selectedOption, setSelectedOption] = useState(null);
 
-    const handleOptionChange = (event) => {
-        setSelectedOption(event.target.value);
-        console.log(`Selected Option: ${event.target.value}`);
-    };
+  const handleOptionChange = (event: any) => {
+      setSelectedOption(event.target.value);
+      console.log(`Selected Option: ${event.target.value}`);
+  };
 
   return (
     <div className='relative'>
