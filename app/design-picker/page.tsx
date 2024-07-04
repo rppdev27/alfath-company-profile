@@ -42,7 +42,7 @@ const Desain = () => {
         {
           name: "Navy",
           hex: "#152443",
-          status: true,
+          status: false,
           background_section: "https://asset.menica.pro/menicav4/bg-mandala-2.png"
         },
         {
@@ -90,7 +90,7 @@ const Desain = () => {
         {
           name: "Navy",
           hex: "#152443",
-          status: true,
+          status: false,
           background_section: "https://asset.menica.pro/menicav4/bg-mandala-2.png"
         },
         {
