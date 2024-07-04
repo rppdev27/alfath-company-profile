@@ -97,10 +97,10 @@ const Desain = () => {
         // { name: 'Pastel Teal', hex: '#B3D9D9', status: false }
     ]
     },
-    { id: 'template2', 
-      name: 'Luxury 2', 
+    { id: 'template3', 
+      name: 'Spiderman', 
       description: 'This is the first template', 
-      thumbnail: 'https://img.freepik.com/free-vector/lovely-wedding-invitation-template-with-colorful-mandala_23-2147884397.jpg?uid=R8509531&ga=GA1.1.1663214348.1704683280&semt=ais_user-customized', 
+      thumbnail: 'https://asset.menica.pro/thumbnail-kidseries-02.webp', 
       publicity: true, 
       color: [
         {
@@ -129,10 +129,10 @@ const Desain = () => {
         // { name: 'Pastel Teal', hex: '#B3D9D9', status: false }
     ]
     },
-    { id: 'template2', 
-      name: 'Luxury 2', 
+    { id: 'template4', 
+      name: 'Batman', 
       description: 'This is the first template', 
-      thumbnail: 'https://img.freepik.com/free-vector/purple-wedding-card-with-golden-mandala_23-2147639115.jpg?uid=R8509531&ga=GA1.1.1663214348.1704683280&semt=ais_user-customized', 
+      thumbnail: 'https://asset.menica.pro/thumbnail-kidseries-06.webp', 
       publicity: true, 
       color: [
         {
@@ -512,6 +512,8 @@ const Desain = () => {
                   case 'template2':
                     return <Mandala2 currentColor={currentColorData} backgroundSection={imageBG}/>;
                   case 'template3':
+                    return <Spiderman currentColor={currentColorData} backgroundSection={imageBG}/>;
+                  case 'template4':
                     return <Spiderman currentColor={currentColorData} backgroundSection={imageBG}/>;
                   default:
                     return <Batman currentColor={currentColorData} backgroundSection={imageBG}/>;
