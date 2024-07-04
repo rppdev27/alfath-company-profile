@@ -479,11 +479,6 @@ const Desain = () => {
                               {template_.name}
                             </div>
 
-
-                            // <div className="mb-1">
-                            //   Warna
-                            // </div>
-
                             <div className="flex flex-row w-auto p-2 overflow-x-auto">
                                 {template_.color.map((item, idx) => (
                                   <div
