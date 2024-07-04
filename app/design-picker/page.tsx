@@ -28,7 +28,7 @@ const Desain = () => {
 
   const toggleModal = () => {
     setIsOpenModal(!isOpenModal);
-    setLocked(!isOpenModal);
+    // setLocked(!isOpenModal);
   };
   
   const [template_list, setTemplateList] = useState([
@@ -509,7 +509,7 @@ const Desain = () => {
 >
 
     {
-        (isOpen || isLocked) ? <></> : <div className="flex flex-row justify-center items-center p-1 text-white mx-2 cursor-pointer" onClick={togglePanel}>
+        isOpen ? <></> : <div className="flex flex-row justify-center items-center p-1 text-white mx-2 cursor-pointer" onClick={togglePanel}>
 
           <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-2 rounded-md hover:bg-slate-400 bg-[#3f3f3f30]">
               <CgTemplate size={15}/>
@@ -535,7 +535,7 @@ const Desain = () => {
 
       {
 
-        (isOpen || isLocked) ? <></> : <button
+        isOpen ? <></> : <button
         onClick={togglePanel}
         className="flex flex-col justify-center items-center fixed z-50 p-2 text-[0.4rem] text-white rounded-md top-2 right-2 hover:bg-slate-300 focus:outline-none frosted-glass font-semibold"
       >
@@ -549,7 +549,7 @@ const Desain = () => {
       }
             {/* this is collapsible menu */}
             <div className={`fixed z-50 flex flex-col items-center text-[0.6rem] p-3 transition-all duration-500 text-white rounded-full frosted-glass rounded-sm top-2 right-0 sm:h-screen h-screen-minus-80 transform ${
-                (isOpen || isLocked) ? 'translate-x-0' : 'translate-x-full'
+                isOpen? 'translate-x-0' : 'translate-x-full'
               } transition-transform duration-300 ease-in-out`}>
             <div className="relative w-full">
               <div className='sticky top-0 cursor-pointer w-full p-1 text-white rounded-md bg-transparent flex flex-row justify-between items-center' onClick={togglePanel}>
