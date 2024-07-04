@@ -473,8 +473,8 @@ const Desain = () => {
                             <div className="my-2">
                                 <img src={'https://asset.menica.pro/thumbnail-kidseries-06.webp'} alt='undangan digital menica' className='rounded-md shadow-lg'/>
                             </div>
-                            <div className="my-2 text-black font-semibold">
-                                <u>Custom</u> Template atau Tidak?
+                            <div className="mt-5 my-2 text-black font-semibold">
+                                <u>CUSTOM</u> Template atau Tidak?
                             </div>
                             <select className="w-full p-2 text-black my-2">
                                 <option value="ya">Ya, sama mau custom</option>
