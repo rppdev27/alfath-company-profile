@@ -435,8 +435,8 @@ const Desain = () => {
                 )}
             </div>
 
-
-            <div className="mt-4 flex justify-end text-black font-semibold">
+            {
+              false &&  <div className="mt-4 flex justify-end text-black font-semibold">
                 <button
                     className="bg-slate-700 text-white px-4 py-2 rounded hover:bg-blue-600"
                     onClick={toggleModal}
@@ -444,6 +444,11 @@ const Desain = () => {
                     Close
                 </button>
             </div>
+            }
+
+            
+
+
         </div>
         </div>
       )}
