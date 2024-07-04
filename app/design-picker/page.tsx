@@ -320,7 +320,7 @@ const Desain = () => {
       }}
 >
 
-    <div className="flex flex-row justify-center items-center p-1 text-slate-700 mx-2 cursor-pointer" onClick={togglePanel}>
+    <div className="flex flex-row justify-center items-center p-1 text-white mx-2 cursor-pointer" onClick={togglePanel}>
       <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-2 rounded-md hover:bg-slate-400">
           <CgTemplate size={15}/>
       </div>
@@ -336,7 +336,7 @@ const Desain = () => {
         Warna
       </div>
     </div> */}
-    <div className="flex flex-row justify-center items-center p-1 text-slate-700 mx-2 cursor-pointer">
+    <div className="flex flex-row justify-center items-center p-1 text-white mx-2 cursor-pointer">
       <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-2 rounded-md hover:bg-slate-400">
           <FaWhatsapp size={15}/>
       </div>
