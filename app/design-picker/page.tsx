@@ -291,6 +291,12 @@ const Desain = () => {
     setIsOpen(prev => !prev);
   };
 
+   const [activeTab, setActiveTab] = useState('tanya');
+
+    const handleTabChange = (tab) => {
+        setActiveTab(tab);
+    };
+
   const pastelColors = [
     { name: 'Pastel Pink', hex: '#FADADD' },
     { name: 'Pastel Blue', hex: '#A2C2E3' },
@@ -375,21 +381,56 @@ const Desain = () => {
                     ✖
                 </button>
             </div>
-            <div className="mt-4 text-black font-semibold">
-                <p>Kamu Memilih Tema : Spiderman</p>
-            </div>
-            <div className="mt-4 text-black">
-                <p>Custom Template atau Tidak?</p>
-                <select className="w-full p-2 text-black">
-                    <option value="ya">Ya, sama mau custom</option>
-                    <option value="tidak">Tidak, saya sudah cocok</option>
-                </select>
-                <button
-                    className="bg-slate-700 text-white px-4 py-2 rounded hover:bg-blue-600"
-                    onClick={()=>sendWhatsAppMessage('Spiderman')}
+            
+
+            <button
+                    className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded"
+                    onClick={() => handleTabChange('tanya')}
+                    style={{
+                        backgroundColor: activeTab === 'tanya' ? 'gray' : 'gray-200',
+                        color: activeTab === 'tanya' ? 'black' : 'gray-800',
+                    }}
                 >
-                    Order Now
+                    Tanya
                 </button>
+                <button
+                    className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded"
+                    onClick={() => handleTabChange('order')}
+                    style={{
+                        backgroundColor: activeTab === 'order' ? 'gray' : 'gray-200',
+                        color: activeTab === 'order' ? 'black' : 'gray-800',
+                    }}
+                >
+                    Order
+                </button>
+            </div>
+            <div className="flex flex-col w-full h-full">
+                {activeTab === 'tanya' ? (
+                    <div className="bg-gray-200 p-4">
+                        <h2 className="text-2xl font-bold">Tanya Content</h2>
+                        <p className="text-lg">This is the content for Tanya.</p>
+                    </div>
+                ) : (
+                    <div className="bg-gray-200 p-4">
+                        <h2 className="text-2xl font-bold">Order Content</h2>
+                        <div className="mt-4 text-black font-semibold">
+                            <p>Kamu Memilih Tema : Spiderman</p>
+                        </div>
+                        <div className="mt-4 text-black">
+                            <p>Custom Template atau Tidak?</p>
+                            <select className="w-full p-2 text-black">
+                                <option value="ya">Ya, sama mau custom</option>
+                                <option value="tidak">Tidak, saya sudah cocok</option>
+                            </select>
+                            <button
+                                className="bg-slate-700 text-white px-4 py-2 rounded hover:bg-blue-600"
+                                onClick={()=>sendWhatsAppMessage('Spiderman')}
+                            >
+                                Order Now
+                            </button>
+                        </div>
+                    </div>
+                )}
             </div>
             <div className="mt-4 flex justify-end text-black font-semibold">
                 <button
