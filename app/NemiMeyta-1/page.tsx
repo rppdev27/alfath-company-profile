@@ -333,6 +333,7 @@ const Cover: React.FC = () => {
       }
         
       </div>
+      
     </>
   );
 };

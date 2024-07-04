@@ -306,11 +306,19 @@ const Desain = () => {
   return (
     <div className='relative'>
 
-<div className="fixed bottom-2 left-1/2 transform -translate-x-1/2 w-auto bg-white py-2 px-3 flex rounded-md justify-around items-center shadow-[rgba(0,0,0,0.4)_0px_30px_90px] text-[0.5rem] sm:text-[0.6rem] tracking-tight"
+ {/*bg-transparent border border-white text-white rounded-full backdrop-filter backdrop-blur-md bg-opacity-20 hover:bg-opacity-40 font-bold   */}
+
+{/*<div className="fixed bottom-2 left-1/2 transform -translate-x-1/2 w-auto bg-white py-2 px-3 flex rounded-md justify-around items-center shadow-[rgba(0,0,0,0.4)_0px_30px_90px] text-[0.5rem] sm:text-[0.6rem] tracking-tight"
       style={{
         zIndex: '999'
       }}
-    >
+>*/}
+
+<div className="fixed bottom-2 left-1/2 transform -translate-x-1/2 w-auto py-2 px-3 flex text-[0.5rem] sm:text-[0.6rem] tracking-tight bg-transparent border border-white text-white rounded-full backdrop-filter backdrop-blur-md bg-opacity-20 hover:bg-opacity-40 font-bold"
+      style={{
+        zIndex: '999'
+      }}
+>
 
     <div className="flex flex-row justify-center items-center p-1 text-slate-700 mx-2 cursor-pointer" onClick={togglePanel}>
       <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-2 rounded-md hover:bg-slate-400">
@@ -371,7 +379,7 @@ const Desain = () => {
                   Daftar Template
                 </div> */}
 
-                <div className='cursor-pointer w-full p-2 my-2 text-slate-700 rounded-md bg-white shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] flex flex-row justify-between items-center'>
+                <div className='cursor-pointer w-full px-2 py-1 my-2 mb-3 text-slate-700 rounded-md bg-white shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] flex flex-row justify-between items-center'>
                   <BsFilterLeft size={20} className='mr-1'/>
                   Filter Kategori
                 </div>
