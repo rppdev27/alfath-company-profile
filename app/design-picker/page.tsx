@@ -480,7 +480,7 @@ const Desain = () => {
                                   <div
                                     onClick={() => updateColorStatus(template_.id, idx, item.hex, item.background_section)}
                                     key={idx}
-                                    className="w-[30px] h-[30px] p-2 rounded-md shadow-md mb-1 mr-3 box-border transition-all duration-100 flex justify-center items-center"
+                                    className="w-[30px] h-[30px] p-2 rounded-full shadow-md mb-1 mr-3 box-border transition-all duration-100 flex justify-center items-center"
                                     style={{
                                       backgroundColor: item.hex,
                                       border: item.status ? '2px solid #d8d8d8' : '',
