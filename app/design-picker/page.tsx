@@ -408,19 +408,19 @@ const Desain = () => {
                   Filter Kategori
                 </div>
 
-                {/*<div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-2 gap-4">
                   {categoryTemplates.map((category, index) => (
                     <div key={index} className='frosted-glass-sm cursor-pointer w-full p-1 text-slate-700 rounded-md flex flex-col justify-between items-center font-[0.4rem]'>
                       
                       <div>
                           {category.icon}
                       </div>
-                      <div className="font-semibold font-[0.4rem]">
+                      <div className="font-semibold">
                           {category.name}
                       </div>
                     </div>
                   ))}
-                </div>*/}
+                </div>
 
                 <div className="flex flex-col">
                   {categoryTemplates.map((category, index) => (
@@ -461,12 +461,10 @@ const Desain = () => {
                               shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)] 
                               cursor-pointer
                               mb-4
-                              rounded-md
-                              ${backgroundColor: index === isActiveTemplate ? 'grey' : 'frosted-glass'}
                             `}
-                            // style={{
-                            //   backgroundColor: index === isActiveTemplate ? 'grey' : 'white'
-                            // }}
+                            style={{
+                              backgroundColor: index === isActiveTemplate ? 'grey' : 'white'
+                            }}
                           >
                             <img src={template_.thumbnail} alt='undangan digital'/>
                             
