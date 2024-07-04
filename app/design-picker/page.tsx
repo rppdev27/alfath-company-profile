@@ -394,7 +394,7 @@ const Desain = () => {
                         // backgroundColor: activeTab === 'tanya' ? 'gray' : 'white',
                         color: activeTab === 'tanya' ? 'black' : '#868686',
                         fontWeight: activeTab === 'tanya' ? '700' : '500',
-                        boxShadow: activeTab === 'tanya' ? 'box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px' : ''
+                        boxShadow: activeTab === 'tanya' ? 'rgba(17, 17, 26, 0.1) 0px 0px 16px' : ''
                     }}
                 >
                     Tanya
@@ -406,7 +406,7 @@ const Desain = () => {
                         // backgroundColor: activeTab === 'order' ? 'gray' : 'white',
                         color: activeTab === 'order' ? 'black' : '#868686',
                         fontWeight: activeTab === 'order' ? '700' : '500',
-                        boxShadow: activeTab === 'tanya' ? 'box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px' : ''
+                        boxShadow: activeTab === 'order' ? 'rgba(17, 17, 26, 0.1) 0px 0px 16px' : ''
                     }}
                 >
                     Order
@@ -414,14 +414,14 @@ const Desain = () => {
             </div>
             <div className="flex flex-col w-full h-full text-xs transition-all duration-500">
                 {activeTab === 'tanya' ? (
-                    <div className="bg-white p-4 rgba(17, 17, 26, 0.1) 0px 0px 16px">
+                    <div className="bg-white p-4 shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]">
                         <h2 className="text-base font-bold">Tanya Content</h2>
                         <p className="text-md">
                           Radio Button
                         </p>
                     </div>
                 ) : (
-                    <div className="bg-white p-4 rgba(17, 17, 26, 0.1) 0px 0px 16px">
+                    <div className="bg-white p-4 shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]">
                         <div className="mt-4 text-black font-semibold">
                             <p>Kamu Memilih Tema : Spiderman</p>
                         </div>
