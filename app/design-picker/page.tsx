@@ -428,6 +428,9 @@ const Desain = () => {
                             <div className="my-1 text-black font-semibold">
                                 Kamu memilih tema <b>Spiderman</b>
                             </div>
+                            <div className="my-1">
+                                <img src={'https://asset.menica.pro/thumbnail-kidseries-06.webp'} alt='undangan digital menica' className='rounded-md shadow-lg'/>
+                            </div>
                             <div className="my-1 text-black font-semibold">
                                 Custom Template atau Tidak?
                             </div>
@@ -436,7 +439,7 @@ const Desain = () => {
                                 <option value="tidak">Tidak, saya sudah cocok</option>
                             </select>
                             <button
-                                className="w-full bg-green-700 text-white px-4 py-2 rounded-md hover:bg-green-600 my-1 shadow-lg"
+                                className="w-full bg-green-700 text-white px-4 py-2 rounded-md hover:bg-green-600 my-1 shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px]"
                                 onClick={()=>sendWhatsAppMessage('Spiderman')}
                             >
                                 Order Now
