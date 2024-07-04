@@ -21,7 +21,6 @@ const App : React.FC<any> = ({ currentColor, backgroundSection }: any) => {
         AOS.init();
     }, [])
 
-
     const scrollToSection = (sectionId: string) => {
         setShowSections(true);
         setTimeout(() => {

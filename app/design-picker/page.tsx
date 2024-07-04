@@ -514,9 +514,9 @@ const Desain = () => {
                   case 'template3':
                     return <Spiderman currentColor={currentColorData} backgroundSection={imageBG}/>;
                   case 'template4':
-                    return <Spiderman currentColor={currentColorData} backgroundSection={imageBG}/>;
-                  default:
                     return <Batman currentColor={currentColorData} backgroundSection={imageBG}/>;
+                  default:
+                    return <></>
                     
                 }
 
