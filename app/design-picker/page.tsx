@@ -475,7 +475,8 @@ const Desain = () => {
                             </div>
 
                             <div className="flex flex-row w-auto mt-1 overflow-x-auto">
-                                {template_.color.map((item, idx) => (
+                            {
+                              template_.color ? {template_.color.map((item, idx) => (
                                   <div
                                     onClick={() => updateColorStatus(template_.id, idx, item.hex, item.background_section)}
                                     key={idx}
@@ -491,7 +492,11 @@ const Desain = () => {
                                   >
                                     {item.status ? <FaSquareCheck size={10} className="text-green-700" /> : null}
                                   </div>
-                                ))}
+                                ))} : <>
+                                  No Color
+                                </>
+                            }
+                                
                               </div>
                           </div>
                         </>
