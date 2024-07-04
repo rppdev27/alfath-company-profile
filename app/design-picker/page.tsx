@@ -11,6 +11,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 import { VscSymbolColor } from "react-icons/vsc";
 import { BsFilterLeft } from "react-icons/bs";
 import { IoCloseCircle } from "react-icons/io5";
+import { MdOutlineCheckBoxOutlineBlank } from "react-icons/md";
 
 const Desain = () => {
 
@@ -299,32 +300,32 @@ const Desain = () => {
       id: 1, 
       name: 'Wedding',
       status: true,
-      icon: <CgTemplate size={12}/> 
+      icon: <CgTemplate size={11}/> 
     },
     {
       id: 2, 
       name: 'Birtday',
       status: true,
-      icon: <CgTemplate size={12}/> 
+      icon: <CgTemplate size={11}/> 
     },
     {
       id: 3, 
       name: 'Khitan',
       status: true,
-      icon: <CgTemplate size={12}/>  
+      icon: <CgTemplate size={11}/>  
     },
     {
       id: 4, 
       name: 'Aqiqah',
       status: true,
-      icon: <CgTemplate size={12}/>  
+      icon: <CgTemplate size={11}/>  
     },
-    {
-      id: 5, 
-      name: 'Event',
-      status: true,
-      icon: <CgTemplate size={12}/>  
-    },
+    // {
+    //   id: 5, 
+    //   name: 'Event',
+    //   status: true,
+    //   icon: <CgTemplate size={11}/>  
+    // },
 
   ]
 
@@ -379,9 +380,10 @@ const Desain = () => {
 
         isOpen ? <></> : <button
         onClick={togglePanel}
-        className="fixed z-50 p-2 text-[0.4rem] text-white bg-white rounded-md top-2 right-2 hover:bg-slate-300 focus:outline-none shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
+        className="fixed z-50 p-2 text-[0.4rem] text-white rounded-md top-2 right-2 hover:bg-slate-300 focus:outline-none frosted-glass"
       >
-        <CgTemplate size={15} className='text-slate-500'/>
+        <CgTemplate size={15} className='text-black'/>
+
       </button>
 
       }
@@ -408,12 +410,30 @@ const Desain = () => {
 
                 <div className="grid grid-cols-2 gap-4">
                   {categoryTemplates.map((category, index) => (
-                    <div key={index} className='frosted-glass cursor-pointer w-full p-1 text-slate-700 rounded-md bg-white flex flex-col justify-between items-center'>
+                    <div key={index} className='frosted-glass-sm cursor-pointer w-full p-1 text-slate-700 rounded-md flex flex-col justify-between items-center font-[0.4rem]'>
+                      
                       <div>
+                          {category.icon}
+                      </div>
+                      <div className="font-semibold">
+                          {category.name}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="flex flex-col">
+                  {categoryTemplates.map((category, index) => (
+                    <div key={index} className='cursor-pointer w-full p-1 text-slate-700 rounded-m flex flex-col text-white justify-between items-center font-[0.4rem]'>
+                      
+                      <div>
+                          {category.icon}
+                      </div>
+                      <div className="font-semibold">
                           {category.name}
                       </div>
                       <div>
-                          {category.icon}
+                          <MdOutlineCheckBoxOutlineBlank size={12} className="ml-1"/>
                       </div>
                     </div>
                   ))}
