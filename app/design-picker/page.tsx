@@ -400,8 +400,6 @@ const Desain = () => {
                 Daftar Template
               </div>
             </div>
-                
-
                 {/* <div className='my-1'>
                   Daftar Template
                 </div> */}
@@ -425,7 +423,7 @@ const Desain = () => {
                   ))}
                 </div>*/}
 
-                <div className="flex flex-col w-full mb-2">
+                <div className="flex flex-col w-full mb-3">
                   {categoryTemplates.map((category, index) => (
                     <div key={index} className='cursor-pointer w-full py-1 text-slate-700 rounded-m flex flex-row text-white justify-end items-center font-[0.4rem]'>
                       
@@ -479,7 +477,7 @@ const Desain = () => {
                               {template_.name}
                             </div>
 
-                            <div className="flex flex-row w-auto p-2 overflow-x-auto">
+                            <div className="flex flex-row w-auto mt-1 overflow-x-auto">
                                 {template_.color.map((item, idx) => (
                                   <div
                                     onClick={() => updateColorStatus(template_.id, idx, item.hex, item.background_section)}
