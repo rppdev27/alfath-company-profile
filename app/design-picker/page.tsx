@@ -435,7 +435,7 @@ const Desain = () => {
                 {activeTab === 'tanya' ? (
                     <div className="bg-white p-4 shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]">
                         <h2 className="text-base font-bold">Topik Pertanyaan</h2>
-                        <div className="flex flex-col w-full h-full">
+                        <div className="flex flex-col w-full h-full my-2">
                           <div className="flex flex-row my-2">
                               <input type="radio" name="type" value="Desain" onChange={handleOptionChange} className="mr-1" />
                               <label htmlFor="Desain">Desain</label>
