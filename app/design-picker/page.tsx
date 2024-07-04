@@ -380,11 +380,12 @@ const Desain = () => {
 
         isOpen ? <></> : <button
         onClick={togglePanel}
-        className="fixed z-50 p-2 text-[0.4rem] text-white rounded-md top-2 right-2 hover:bg-slate-300 focus:outline-none frosted-glass font-semibold"
+        className="flex justify-center items-center fixed z-50 p-2 text-[0.4rem] text-white rounded-md top-2 right-2 hover:bg-slate-300 focus:outline-none frosted-glass font-semibold"
       >
         <CgTemplate size={15} className='text-white'/>
-        <br/>
-        Template
+        <div>
+          Template
+        </div>
 
       </button>
 
@@ -464,6 +465,7 @@ const Desain = () => {
                                             cursor-pointer 
                                             mb-4 
                                             rounded-md
+                                            text-black
                                             `}
 
                               style={{
