@@ -291,7 +291,7 @@ const Desain = () => {
     setIsOpen(prev => !prev);
   };
 
-   const [activeTab, setActiveTab] = useState('tanya');
+   const [activeTab, setActiveTab] = useState('order');
 
     const handleTabChange = (tab: any) => {
         setActiveTab(tab);
@@ -384,12 +384,12 @@ const Desain = () => {
 
             
 
-             <div className="flex justify-between items-center mb-4">
+             <div className="flex justify-between items-center mb-4 text-xs">
                 <button
                     className="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded"
                     onClick={() => handleTabChange('tanya')}
                     style={{
-                        backgroundColor: activeTab === 'tanya' ? 'gray' : 'gray-200',
+                        backgroundColor: activeTab === 'tanya' ? 'gray' : 'white',
                         color: activeTab === 'tanya' ? 'black' : 'gray-800',
                     }}
                 >
@@ -399,14 +399,14 @@ const Desain = () => {
                     className="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded"
                     onClick={() => handleTabChange('order')}
                     style={{
-                        backgroundColor: activeTab === 'order' ? 'gray' : 'gray-200',
+                        backgroundColor: activeTab === 'order' ? 'gray' : 'white',
                         color: activeTab === 'order' ? 'black' : 'gray-800',
                     }}
                 >
                     Order
                 </button>
             </div>
-            <div className="flex flex-col w-full h-full">
+            <div className="flex flex-col w-full h-full text-xs">
                 {activeTab === 'tanya' ? (
                     <div className="bg-gray-200 p-4">
                         <h2 className="text-2xl font-bold">Tanya Content</h2>
