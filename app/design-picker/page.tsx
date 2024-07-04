@@ -507,7 +507,7 @@ const Desain = () => {
                                 Kamu memilih tema <b>{themeActive}</b>
                             </div>
                             <div className="my-2 text-black font-semibold">
-                               dengan warna <b><span style={{color: currentColorData }}>currentColorData</span></b>
+                               Dengan warna <b><span style={{color: currentColorData, fontWeight: '700' }}>{colorActive}</span></b>
                             </div>
                             <div className="my-2">
                                 <img src={thumbnalActive} alt='undangan digital menica' className='rounded-md shadow-lg'/>
