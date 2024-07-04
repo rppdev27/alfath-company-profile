@@ -355,7 +355,7 @@ const Desain = () => {
 
   }
 
-  const sendWhatsAppMessage = (variable) => {
+  const sendWhatsAppMessage = (variable: any) => {
     const whatsappLink = `https://wa.me/628567637243?text=Hello%20Admin,%0A%0AI%20want%20to%20order%20${variable}%20with%20custimization%0A%0AThank%20you`;
     window.open(whatsappLink, '_blank');
   };
