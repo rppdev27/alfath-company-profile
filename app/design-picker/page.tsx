@@ -107,18 +107,18 @@ const Desain = () => {
       thumbnail: 'https://asset.menica.pro/thumbnail-kidseries-02.webp', 
       publicity: true, 
       color: [
-        {
-          name: "Navy",
-          hex: "#152443",
-          status: true,
-          background_section: "https://asset.menica.pro/menicav4/bg-mandala-2.png"
-        },
-        {
-          name: "Maroon",
-          hex: "#5B1A27",
-          status: false,
-          background_section: "https://asset.menica.pro/menicav4/bg-mandala-2.png"
-        },
+        // {
+        //   name: "Navy",
+        //   hex: "#152443",
+        //   status: true,
+        //   background_section: "https://asset.menica.pro/menicav4/bg-mandala-2.png"
+        // },
+        // {
+        //   name: "Maroon",
+        //   hex: "#5B1A27",
+        //   status: false,
+        //   background_section: "https://asset.menica.pro/menicav4/bg-mandala-2.png"
+        // },
         // { name: 'Pastel Pink', hex: '#FADADD', status: false },
         // { name: 'Pastel Blue', hex: '#A2C2E3', status: false },
         // { name: 'Pastel Green', hex: '#B3E5C6', status: false },
@@ -139,18 +139,18 @@ const Desain = () => {
       thumbnail: 'https://asset.menica.pro/thumbnail-kidseries-06.webp', 
       publicity: true, 
       color: [
-        {
-          name: "Navy",
-          hex: "#152443",
-          status: true,
-          background_section: "https://asset.menica.pro/menicav4/bg-mandala-2.png"
-        },
-        {
-          name: "Maroon",
-          hex: "#5B1A27",
-          status: false,
-          background_section: "https://asset.menica.pro/menicav4/bg-mandala-2.png"
-        },
+        // {
+        //   name: "Navy",
+        //   hex: "#152443",
+        //   status: true,
+        //   background_section: "https://asset.menica.pro/menicav4/bg-mandala-2.png"
+        // },
+        // {
+        //   name: "Maroon",
+        //   hex: "#5B1A27",
+        //   status: false,
+        //   background_section: "https://asset.menica.pro/menicav4/bg-mandala-2.png"
+        // },
         // { name: 'Pastel Pink', hex: '#FADADD', status: false },
         // { name: 'Pastel Blue', hex: '#A2C2E3', status: false },
         // { name: 'Pastel Green', hex: '#B3E5C6', status: false },
@@ -171,18 +171,18 @@ const Desain = () => {
       thumbnail: 'https://asset.menica.pro/WhatsApp+Image+2024-06-23+at+10.30.54+AM.jpeg', 
       publicity: true, 
       color: [
-        {
-          name: "Navy",
-          hex: "#152443",
-          status: true,
-          background_section: "https://asset.menica.pro/menicav4/bg-mandala-2.png"
-        },
-        {
-          name: "Maroon",
-          hex: "#5B1A27",
-          status: false,
-          background_section: "https://asset.menica.pro/menicav4/bg-mandala-2.png"
-        },
+        // {
+        //   name: "Navy",
+        //   hex: "#152443",
+        //   status: true,
+        //   background_section: "https://asset.menica.pro/menicav4/bg-mandala-2.png"
+        // },
+        // {
+        //   name: "Maroon",
+        //   hex: "#5B1A27",
+        //   status: false,
+        //   background_section: "https://asset.menica.pro/menicav4/bg-mandala-2.png"
+        // },
         // { name: 'Pastel Pink', hex: '#FADADD', status: false },
         // { name: 'Pastel Blue', hex: '#A2C2E3', status: false },
         // { name: 'Pastel Green', hex: '#B3E5C6', status: false },
