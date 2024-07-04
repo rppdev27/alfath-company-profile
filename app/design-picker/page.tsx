@@ -366,6 +366,13 @@ const Desain = () => {
     window.open(whatsappLink, '_blank');
   };
 
+  const [selectedOption, setSelectedOption] = useState(null);
+
+    const handleOptionChange = (event: any) => {
+        setSelectedOption(event.target.value);
+        console.log(`Selected Option: ${event.target.value}`);
+    };
+
   return (
     <div className='relative'>
 
@@ -413,10 +420,43 @@ const Desain = () => {
             <div className="flex flex-col w-full h-full text-xs transition-all duration-500">
                 {activeTab === 'tanya' ? (
                     <div className="bg-white p-4 shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]">
-                        <h2 className="text-base font-bold">Tanya Content</h2>
-                        <p className="text-md">
-                          Radio Button
-                        </p>
+                        <h2 className="text-base font-bold">Tanya tentang</h2>
+                        <div className="flex gap-10">
+                              <Radio
+                                  name="options"
+                                  label="Desain"
+                                  value="Desain"
+                                  checked={selectedOption === 'Desain'}
+                                  onChange={handleOptionChange}
+                              />
+                              <Radio
+                                  name="options"
+                                  label="Mekanisme Daftar"
+                                  value="Mekanisme Daftar"
+                                  checked={selectedOption === 'Mekanisme Daftar'}
+                                  onChange={handleOptionChange}
+                              />
+                              <Radio
+                                  name="options"
+                                  label="Kerjasama/Bisnis"
+                                  value="Kerjasama/Bisnis"
+                                  checked={selectedOption === 'Kerjasama/Bisnis'}
+                                  onChange={handleOptionChange}
+                              />
+                              <Radio
+                                  name="options"
+                                  label="Lainnya"
+                                  value="Lainnya"
+                                  checked={selectedOption === 'Lainnya'}
+                                  onChange={handleOptionChange}
+                              />
+                          </div>
+                        <button
+                                className="w-full bg-[#a71876] text-white px-4 py-2 rounded-md hover:bg-green-600 my-1 shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px]"
+                                onClick={()=>sendWhatsAppMessage('Spiderman')}
+                            >
+                                Kontak Whatsapp
+                        </button>
                     </div>
                 ) : (
                     <div className="bg-white p-4 shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]">
