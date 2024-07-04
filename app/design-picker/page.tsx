@@ -377,7 +377,11 @@ const Desain = () => {
     <div className='relative'>
 
     {isOpenModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
+          style={{
+            zIndex: '99999'
+          }}
+        >
           <div className="bg-white rounded-lg shadow-lg max-w-md w-full p-6"
             style={{
               fontFamily: 'Plus Jakarta Sans'
@@ -468,7 +472,7 @@ const Desain = () => {
                             <div className="my-1 text-black font-semibold">
                                 Kamu memilih tema <b>Spiderman</b>
                             </div>
-                            <div className="my-1">
+                            <div className="my-2">
                                 <img src={'https://asset.menica.pro/thumbnail-kidseries-06.webp'} alt='undangan digital menica' className='rounded-md shadow-lg'/>
                             </div>
                             <div className="my-1 text-black font-semibold">
