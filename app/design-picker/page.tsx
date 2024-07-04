@@ -657,7 +657,7 @@ const Desain = () => {
                               }}
                             >
                             {
-                              index === isActiveTemplate ? <div className='top-0 left-0 h-auto w-auto bg-transparent mt-2'>
+                              index === isActiveTemplate ? <div className='top-0 left-0 h-auto w-auto bg-transparent mb-2'>
 
                               <div className='flex flex-row items-center justify-center'>
 
