@@ -363,17 +363,24 @@ const Desain = () => {
 
   }
 
-  const sendWhatsAppMessage = (variable: any) => {
+  const sendWhatsAppMessageAsk = () => {
     const whatsappLink = `https://wa.me/628567637243?text=Hello%20Admin,%0A%0AI%20want%20to%20order%20${variable}%20with%20custimization%0A%0AThank%20you`;
     window.open(whatsappLink, '_blank');
   };
 
+  const sendWhatsAppMessage = (variable: any) => {
+    const whatsappLink = `https://wa.me/628567637243?text=Hello%20Admin,%0A%0AI%20want%20to%ask%20${topic}%20with%20custimization%0A%0AThank%20you`;
+    window.open(whatsappLink, '_blank');
+  };
+
    const [selectedOption, setSelectedOption] = useState(null);
+   const [topic, setTopic] = useState(null);
 
   const handleOptionChange = (event: any) => {
       setSelectedOption(event.target.value);
       console.log(`Selected Option: ${event.target.value}`);
-      alert(event.target.value);
+      // alert(event.target.value);
+      setTopic(event.target.value);
   };
 
   return (
@@ -429,26 +436,26 @@ const Desain = () => {
                     <div className="bg-white p-4 shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]">
                         <h2 className="text-base font-bold">Topik Pertanyaan</h2>
                         <div className="flex flex-col w-full h-full">
-                          <div className="flex flex-row my-1">
+                          <div className="flex flex-row my-2">
                               <input type="radio" name="type" value="Desain" onChange={handleOptionChange} className="mr-1" />
                               <label htmlFor="Desain">Desain</label>
                           </div>
-                          <div className="flex flex-row my-1">
+                          <div className="flex flex-row my-2">
                               <input type="radio" name="type" value="Mekanisme Daftar" onChange={handleOptionChange} className="mr-1"/>
                               <label htmlFor="Mekanisme Daftar">Mekanisme Daftar</label>
                           </div>
-                          <div className="flex flex-row my-1">
+                          <div className="flex flex-row my-2">
                               <input type="radio" name="type" value="Kerjasama/Bisnis" onChange={handleOptionChange} className="mr-1"/>
                               <label htmlFor="Kerjasama/Bisnis">Kerjasama/Bisnis</label>
                           </div>
-                          <div className="flex flex-row my-1">
+                          <div className="flex flex-row my-2">
                               <input type="radio" name="type" value="Lainnya" onChange={handleOptionChange} className="mr-1"/>
                               <label htmlFor="Lainnya">Lainnya</label>
                           </div>
                       </div>
                         <button
                                 className="w-full bg-[#a71876] text-white px-4 py-2 rounded-md hover:bg-green-600 my-1 shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px]"
-                                onClick={()=>sendWhatsAppMessage('Spiderman')}
+                                onClick={()=>sendWhatsAppMessageAsk()}
                             >
                                 Kontak Whatsapp
                         </button>
