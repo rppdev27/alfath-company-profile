@@ -426,7 +426,7 @@ const Desain = () => {
                     <div key={index} className='cursor-pointer w-full py-1 text-slate-700 rounded-m flex flex-row text-white justify-end items-center font-[0.4rem]'>
                       
                       <div className="mr-1">
-                          category.status ? <IoCheckbox size={12} className="ml-1"/> : <MdOutlineCheckBoxOutlineBlank size={12} className="ml-1"/>
+                         { category.status ? <IoCheckbox size={12} className="ml-1"/> : <MdOutlineCheckBoxOutlineBlank size={12} className="ml-1"/> }
                       </div>
                       <div className="font-semibold hover:underline">
                           {category.name}
@@ -437,9 +437,6 @@ const Desain = () => {
                     </div>
                   ))}
                 </div>
-
-
-
                 <div className='overflow-auto h-full w-full'>
                 
                 {
