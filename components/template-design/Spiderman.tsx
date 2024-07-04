@@ -11,7 +11,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css';
 
 
-const App: React.FC = () => {
+const App : React.FC<any> = ({ currentColor, backgroundSection }: any) => {
 
     const [showSections, setShowSections] = useState(false);
     const [currentSection, setCurrentSection] = useState('section1');
