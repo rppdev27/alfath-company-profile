@@ -293,7 +293,7 @@ const Desain = () => {
 
    const [activeTab, setActiveTab] = useState('tanya');
 
-    const handleTabChange = (tab) => {
+    const handleTabChange = (tab: any) => {
         setActiveTab(tab);
     };
 
