@@ -451,20 +451,22 @@ const Desain = () => {
                             key={index}
                             // onClick={() => setTemplate(template_.id)} 
                             onClick={()=> changeTemplate(template_.id, index)}
-                            className='max-w-[130px] 
-                            h-auto 
-                            z-50 
-                            hover:bg-slate-200 
-                            transition-all 
-                            duration-500 
-                            p-2 
-                            shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)] 
-                            cursor-pointer
-                            mb-4
-                            '
-                            style={{
-                              backgroundColor: index === isActiveTemplate ? 'grey' : 'white'
-                            }}
+                            className={`max-w-[130px] 
+                              h-auto 
+                              z-50 
+                              hover:bg-slate-200 
+                              transition-all 
+                              duration-500 
+                              p-2 
+                              shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)] 
+                              cursor-pointer
+                              mb-4
+                              rounded-md
+                              ${backgroundColor: index === isActiveTemplate ? 'grey' : 'frosted-glass'}
+                            `}
+                            // style={{
+                            //   backgroundColor: index === isActiveTemplate ? 'grey' : 'white'
+                            // }}
                           >
                             <img src={template_.thumbnail} alt='undangan digital'/>
                             
