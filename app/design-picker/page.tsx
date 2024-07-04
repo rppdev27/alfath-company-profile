@@ -669,7 +669,6 @@ const Desain = () => {
 
                                   </div>
                               </div>
-
                               
                             </div> : <></>
                             }
@@ -696,7 +695,6 @@ const Desain = () => {
                                       maxHeight: '30px'
                                     }}
                                   >
-                                    {item.status ? <FaSquareCheck size={10} className="text-green-700" /> : null}
                                   </div>
                                 )) : <>
                                   No Color
