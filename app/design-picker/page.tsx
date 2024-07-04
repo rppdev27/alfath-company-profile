@@ -391,9 +391,10 @@ const Desain = () => {
                     className="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded"
                     onClick={() => handleTabChange('tanya')}
                     style={{
-                        backgroundColor: activeTab === 'tanya' ? 'gray' : 'white',
-                        color: activeTab === 'tanya' ? 'black' : 'gray-500',
-                        fontWeight: activeTab === 'tanya' ? '700' : '400',
+                        // backgroundColor: activeTab === 'tanya' ? 'gray' : 'white',
+                        color: activeTab === 'tanya' ? 'black' : '#868686',
+                        fontWeight: activeTab === 'tanya' ? '700' : '500',
+                        boxShadow: activeTab === 'tanya' ? 'box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px' : ''
                     }}
                 >
                     Tanya
@@ -402,9 +403,10 @@ const Desain = () => {
                     className="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded"
                     onClick={() => handleTabChange('order')}
                     style={{
-                        backgroundColor: activeTab === 'order' ? 'gray' : 'white',
-                        color: activeTab === 'order' ? 'black' : 'gray-500',
-                        fontWeight: activeTab === 'order' ? '700' : '400',
+                        // backgroundColor: activeTab === 'order' ? 'gray' : 'white',
+                        color: activeTab === 'order' ? 'black' : '#868686',
+                        fontWeight: activeTab === 'order' ? '700' : '500',
+                        boxShadow: activeTab === 'tanya' ? 'box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px' : ''
                     }}
                 >
                     Order
@@ -412,14 +414,14 @@ const Desain = () => {
             </div>
             <div className="flex flex-col w-full h-full text-xs transition-all duration-500">
                 {activeTab === 'tanya' ? (
-                    <div className="bg-gray-200 p-4">
+                    <div className="bg-white p-4 rgba(17, 17, 26, 0.1) 0px 0px 16px">
                         <h2 className="text-base font-bold">Tanya Content</h2>
                         <p className="text-md">
                           Radio Button
                         </p>
                     </div>
                 ) : (
-                    <div className="bg-gray-200 p-4">
+                    <div className="bg-white p-4 rgba(17, 17, 26, 0.1) 0px 0px 16px">
                         <div className="mt-4 text-black font-semibold">
                             <p>Kamu Memilih Tema : Spiderman</p>
                         </div>
