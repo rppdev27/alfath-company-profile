@@ -408,7 +408,7 @@ const Desain = () => {
                   Filter Kategori
                 </div>
 
-                <div className="grid grid-cols-2 gap-4">
+               {/* <div className="grid grid-cols-2 gap-4">
                   {categoryTemplates.map((category, index) => (
                     <div key={index} className='frosted-glass-sm cursor-pointer w-full p-1 text-slate-700 rounded-md flex flex-col justify-between items-center font-[0.4rem]'>
                       
@@ -420,11 +420,11 @@ const Desain = () => {
                       </div>
                     </div>
                   ))}
-                </div>
+                </div>*/}
 
                 <div className="flex flex-col">
                   {categoryTemplates.map((category, index) => (
-                    <div key={index} className='cursor-pointer w-full p-1 text-slate-700 rounded-m flex flex-row text-white justify-end items-center font-[0.4rem]'>
+                    <div key={index} className='cursor-pointer w-full py-1 text-slate-700 rounded-m flex flex-row text-white justify-end items-center font-[0.4rem]'>
                       
                       <div className="mr-1">
                           {category.icon}
