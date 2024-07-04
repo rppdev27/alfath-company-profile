@@ -3,8 +3,8 @@
 import React, { useState } from 'react'
 import Mandala1 from '../../components/template-design/mandala-01'
 import Mandala2 from '../../components/template-design/mandala-02'
-import Spiderman from '../../components/template-design/spiderman-01'
-import Batman from '../../components/template-design/batman-02'
+import Spiderman from '../../components/template-design/Spiderman'
+import Batman from '../../components/template-design/Batman'
 import { FaSquareCheck } from "react-icons/fa6";
 import { CgTemplate } from "react-icons/cg";
 import { FaWhatsapp } from "react-icons/fa6";
