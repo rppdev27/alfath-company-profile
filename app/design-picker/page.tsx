@@ -394,7 +394,7 @@ const Desain = () => {
     window.open(whatsappLink, '_blank');
   };
 
-   const [order, setOrder] = useState(null);
+   const [order, setOrder] = useState('');
    const [topic, setTopic] = useState(null);
 
   const handleOptionChange = (event: any) => {
@@ -404,7 +404,7 @@ const Desain = () => {
   };
 
   const handleOptionChangeOrder = (event: any) => {
-      setOrder(event.target.value);
+      // setOrder(event.target.value);
       if(event.target.value === 'ya'){
           setOrder('Custom Template')
       }else{
