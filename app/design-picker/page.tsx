@@ -378,11 +378,6 @@ const Desain = () => {
     setActiveTemplate(index)
   }
 
-  const modalOrder = () => {
-
-    alert('modal order')
-
-  }
 
   const sendWhatsAppMessageAsk = () => {
     const whatsappLink = `https://wa.me/628567637243?text=Hello%20Admin,%0A%0AI%20want%20to%ask%20${topic}%20with%20custimization%0A%0AThank%20you`;
@@ -390,7 +385,7 @@ const Desain = () => {
   };
 
   const sendWhatsAppMessage = () => {
-    const whatsappLink = `https://wa.me/628567637243?text=Hello%20Admin,%0A%0AI%20want%20to%20order%20${order}%20with%20custimization%0A%0AThank%20you`;
+    const whatsappLink = `https://wa.me/628567637243?text=Hello%20Admin,%0A%0AI%20want%20to%20order%20${order}%20%0A%0AThank%20you`;
     window.open(whatsappLink, '_blank');
   };
 
@@ -407,11 +402,13 @@ const Desain = () => {
       // setOrder(event.target.value);
       alert(event.target.value);
       if(event.target.value === 'ya'){
-          setOrder('Custom Template')
+          setOrder('dengan Custom Template')
       }else{
          setOrder('Tanpa Custom')
       }
   };
+
+
 
   return (
     <div className='relative'>
