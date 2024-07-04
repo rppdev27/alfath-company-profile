@@ -306,19 +306,19 @@ const Desain = () => {
       id: 2, 
       name: 'Birtday',
       status: true,
-      icon: <VscSymbolColor size={9}/> 
+      icon: <CgTemplate size={9}/> 
     },
     {
       id: 3, 
       name: 'Khitan',
       status: true,
-      icon: <FaWhatsapp size={9}/>  
+      icon: <CgTemplate size={9}/>  
     },
     {
       id: 4, 
       name: 'Aqiqah',
       status: true,
-      icon: <IoCloseCircle size={9}/>  
+      icon: <CgTemplate size={9}/>  
     },
     // {
     //   id: 5, 
@@ -422,7 +422,7 @@ const Desain = () => {
                   ))}
                 </div>*/}
 
-                <div className="flex flex-col my-1">
+                <div className="flex flex-col">
                   {categoryTemplates.map((category, index) => (
                     <div key={index} className='cursor-pointer w-full p-1 text-slate-700 rounded-m flex flex-row text-white justify-end items-center font-[0.4rem]'>
                       
