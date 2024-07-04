@@ -1,10 +1,13 @@
 'use client'
 
+// important, add flag for panel temple if the backgrround is light
+
 import React, { useState } from 'react'
 import Mandala1 from '../../components/template-design/mandala-01'
 import Mandala2 from '../../components/template-design/mandala-02'
 import Spiderman from '../../components/template-design/Spiderman'
 import Batman from '../../components/template-design/Batman'
+import Astronot from '../../components/template-design/Astronot'
 import { FaSquareCheck } from "react-icons/fa6";
 import { CgTemplate } from "react-icons/cg";
 import { FaWhatsapp } from "react-icons/fa6";
@@ -63,6 +66,7 @@ const Desain = () => {
         // { name: 'Pastel Coral', hex: '#F5A9A2', status: false },
         // { name: 'Pastel Gray', hex: '#D0D0D0', status: false },
         // { name: 'Pastel Teal', hex: '#B3D9D9', status: false }
+
     ]
     },
     { id: 'template2', 
@@ -161,10 +165,10 @@ const Desain = () => {
         // { name: 'Pastel Teal', hex: '#B3D9D9', status: false }
     ]
     },
-    { id: 'template2', 
-      name: 'Luxury 2', 
+    { id: 'template5', 
+      name: 'Astronot', 
       description: 'This is the first template', 
-      thumbnail: 'https://img.freepik.com/premium-vector/luxury-ornamental-mandala-wedding-invitation-card-with-golden-arabesque-arabic-islamic-background_492681-398.jpg?uid=R8509531&ga=GA1.1.1663214348.1704683280&semt=ais_user-customized', 
+      thumbnail: 'https://asset.menica.pro/WhatsApp+Image+2024-06-23+at+10.30.54+AM.jpeg', 
       publicity: true, 
       color: [
         {
@@ -442,8 +446,6 @@ const Desain = () => {
                 {
                   template_list.map((template_, index) => (
                     <>
-                          {/* Container div for the template item */}
-
                           <div 
                                 key={index}
                                 onClick={() => changeTemplate(template_.id, index)}
@@ -491,18 +493,12 @@ const Desain = () => {
                                   </div>
                                 ))}
                               </div>
-
-
                           </div>
                         </>
-
-                    
                   ))
                 }
-
                 </div>
           </div>
-
             {(() => {
               
                 switch (template_id) {
@@ -515,8 +511,11 @@ const Desain = () => {
                     return <Spiderman currentColor={currentColorData} backgroundSection={imageBG}/>;
                   case 'template4':
                     return <Batman currentColor={currentColorData} backgroundSection={imageBG}/>;
+                  case 'template5':
+                    return <Astronot currentColor={currentColorData} backgroundSection={imageBG}/>;
                   default:
                     return <></>
+
                     
                 }
 
