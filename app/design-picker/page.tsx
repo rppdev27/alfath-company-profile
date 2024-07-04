@@ -359,8 +359,8 @@ const Desain = () => {
     <div className='relative'>
 
     {isOpenModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white rounded-lg shadow-lg max-w-md w-full p-6">
+        <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
+          <div className="frosted-glass rounded-lg shadow-lg max-w-md w-full p-6">
             <div className="flex justify-between items-center pb-3">
               <h2 className="text-xl font-semibold">Order Details</h2>
               <button
@@ -370,12 +370,12 @@ const Desain = () => {
                 ✖
               </button>
             </div>
-            <div className="mt-4">
+            <div className="mt-4 text-white font-semibold">
               <p>Here you can put the details of the order...</p>
             </div>
-            <div className="mt-4 flex justify-end">
+            <div className="mt-4 flex justify-end text-white font-semibold">
               <button
-                className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+                className="bg-slate-700 text-white px-4 py-2 rounded hover:bg-blue-600"
                 onClick={toggleModal}
               >
                 Close
