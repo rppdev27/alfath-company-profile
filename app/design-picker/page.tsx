@@ -363,7 +363,7 @@ const Desain = () => {
       
 
             {/* this is collapsible menu */}
-            <div className={`fixed z-50 flex flex-col items-center text-[0.6rem] p-3 transition-all duration-500 bg-transparent border border-white text-white rounded-full backdrop-filter backdrop-blur-md bg-opacity-20 rounded-sm top-2 my-1 right-0 sm:h-screen h-screen-minus-80 transform ${
+            <div className={`fixed z-50 flex flex-col items-center text-[0.6rem] p-3 transition-all duration-500 text-white rounded-full frosted-glass rounded-sm top-2 right-0 sm:h-screen h-screen-minus-80 transform ${
                 isOpen ? 'translate-x-0' : 'translate-x-full'
               } transition-transform duration-300 ease-in-out`}>
             <div className="relative w-full">
