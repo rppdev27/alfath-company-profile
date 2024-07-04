@@ -314,14 +314,14 @@ const Desain = () => {
       }}
 >*/}
 
-<div className="fixed bottom-2 left-1/2 transform -translate-x-1/2 w-auto py-2 px-3 flex text-[0.5rem] sm:text-[0.6rem] tracking-tight bg-transparent border border-white text-white rounded-full backdrop-filter backdrop-blur-md bg-opacity-20 hover:bg-opacity-40 font-bold"
+<div className="fixed bottom-2 left-1/2 transform -translate-x-1/2 w-auto py-1 px-3 flex text-[0.5rem] sm:text-[0.6rem] tracking-tight bg-transparent border border-white text-white rounded-lg backdrop-filter backdrop-blur-md bg-opacity-20 hover:bg-opacity-40 font-bold"
       style={{
         zIndex: '999'
       }}
 >
 
     <div className="flex flex-row justify-center items-center p-1 text-white mx-2 cursor-pointer" onClick={togglePanel}>
-      <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-2 rounded-md hover:bg-slate-400">
+      <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-2 rounded-md hover:bg-slate-400 bg-[#3f3f3f]">
           <CgTemplate size={15}/>
       </div>
       <div className='font-semibold mt-1 ml-2'>
@@ -337,7 +337,7 @@ const Desain = () => {
       </div>
     </div> */}
     <div className="flex flex-row justify-center items-center p-1 text-white mx-2 cursor-pointer">
-      <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-2 rounded-md hover:bg-slate-400">
+      <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-2 rounded-md hover:bg-slate-400 bg-[#3f3f3f]">
           <FaWhatsapp size={15}/>
       </div>
      <div className='font-semibold mt-1 ml-2'>
