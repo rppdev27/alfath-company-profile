@@ -271,6 +271,14 @@ const Desain = () => {
     //       publicity: false },
   ]);
 
+  const compButtonLightTheme = () => {
+    return (
+        <div>
+          Light Theme
+        </div>
+    );
+  };
+
   const [currentColorData, setColorCurrent] = useState('');
   const [imageBG, setBackgroundAsset] = useState('');
 
