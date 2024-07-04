@@ -373,7 +373,7 @@ const Desain = () => {
         <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg shadow-lg max-w-md w-full p-6">
             <div className="flex justify-between items-center pb-3">
-                <h2 className="text-xl text-black font-semibold">Order Details</h2>
+                <h2 className="text-xl text-black font-semibold">Tanya atau Order ?</h2>
                 <button
                     className="text-gray-400 hover:text-gray-600"
                     onClick={toggleModal}
@@ -385,9 +385,8 @@ const Desain = () => {
             
 
              <div className="flex justify-between items-center mb-4">
-                <h2 className="text-2xl font-bold">Menu Options</h2>
                 <button
-                    className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded"
+                    className="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded"
                     onClick={() => handleTabChange('tanya')}
                     style={{
                         backgroundColor: activeTab === 'tanya' ? 'gray' : 'gray-200',
@@ -397,7 +396,7 @@ const Desain = () => {
                     Tanya
                 </button>
                 <button
-                    className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded"
+                    className="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded"
                     onClick={() => handleTabChange('order')}
                     style={{
                         backgroundColor: activeTab === 'order' ? 'gray' : 'gray-200',
@@ -426,7 +425,7 @@ const Desain = () => {
                                 <option value="tidak">Tidak, saya sudah cocok</option>
                             </select>
                             <button
-                                className="bg-slate-700 text-white px-4 py-2 rounded hover:bg-blue-600"
+                                className="bg-slate-700 text-white px-4 py-2 rounded hover:bg-blue-600 my-1"
                                 onClick={()=>sendWhatsAppMessage('Spiderman')}
                             >
                                 Order Now
