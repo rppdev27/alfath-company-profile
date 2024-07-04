@@ -400,7 +400,7 @@ const Desain = () => {
                     style={{
                         backgroundColor: activeTab === 'order' ? 'gray' : 'white',
                         color: activeTab === 'order' ? 'black' : 'gray-500',
-                        fontWeight: activeTab === 'tanya' ? '700' : '400',
+                        fontWeight: activeTab === 'order' ? '700' : '400',
                     }}
                 >
                     Order
@@ -410,7 +410,9 @@ const Desain = () => {
                 {activeTab === 'tanya' ? (
                     <div className="bg-gray-200 p-4">
                         <h2 className="text-base font-bold">Tanya Content</h2>
-                        <p className="text-md">This is the content for Tanya.</p>
+                        <p className="text-md">
+                          Radio Button
+                        </p>
                     </div>
                 ) : (
                     <div className="bg-gray-200 p-4">
