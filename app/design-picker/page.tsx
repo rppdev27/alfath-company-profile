@@ -22,6 +22,12 @@ const Desain = () => {
   const [template_id, setTemplate] = useState('template1');
   const [isActiveTemplate, setActiveTemplate] = useState(0);
   const [isActiveColor, setActiveColor] = useState(0);
+
+  const [isOpenModal, setIsOpenModal] = useState(false);
+
+  const toggleModal = () => {
+    setIsOpenModal(!isOpenModal);
+  };
   
   const [template_list, setTemplateList] = useState([
     { id: 'template1', 
@@ -343,8 +349,41 @@ const Desain = () => {
     setActiveTemplate(index)
   }
 
+  const modalOrder = () => {
+
+    alert('modal order')
+
+  }
+
   return (
     <div className='relative'>
+
+    {isOpenModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white rounded-lg shadow-lg max-w-md w-full p-6">
+            <div className="flex justify-between items-center pb-3">
+              <h2 className="text-xl font-semibold">Order Details</h2>
+              <button
+                className="text-gray-400 hover:text-gray-600"
+                onClick={toggleModal}
+              >
+                ✖
+              </button>
+            </div>
+            <div className="mt-4">
+              <p>Here you can put the details of the order...</p>
+            </div>
+            <div className="mt-4 flex justify-end">
+              <button
+                className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+                onClick={toggleModal}
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
 <div className="fixed bottom-2 left-1/2 transform -translate-x-1/2 w-auto py-1 px-3 flex text-[0.5rem] sm:text-[0.6rem] tracking-tight text-white rounded-full frosted-glass hover:bg-opacity-40 font-bold transition-all duration-500"
       style={{
@@ -369,7 +408,7 @@ const Desain = () => {
       <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-2 rounded-md hover:bg-slate-400 bg-[#3f3f3f30]">
           <FaWhatsapp size={15}/>
       </div>
-     <div className='font-semibold mt-1 ml-2'>
+     <div className='font-semibold mt-1 ml-2' onClick={ () => toggleModal() }>
         Order/Tanya
       </div>
     </div>
