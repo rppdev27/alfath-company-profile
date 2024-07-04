@@ -12,6 +12,7 @@ import { VscSymbolColor } from "react-icons/vsc";
 import { BsFilterLeft } from "react-icons/bs";
 import { IoCloseCircle } from "react-icons/io5";
 import { MdOutlineCheckBoxOutlineBlank } from "react-icons/md";
+import { IoCheckbox } from "react-icons/io5";
 
 const Desain = () => {
 
@@ -300,7 +301,7 @@ const Desain = () => {
       id: 1, 
       name: 'Wedding',
       status: true,
-      icon: <CgTemplate size={9}/> 
+      icon: <IoCheckbox size={9}/> 
     },
     {
       id: 2, 
