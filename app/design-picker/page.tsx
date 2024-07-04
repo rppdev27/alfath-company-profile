@@ -373,6 +373,7 @@ const Desain = () => {
   const handleOptionChange = (event: any) => {
       setSelectedOption(event.target.value);
       console.log(`Selected Option: ${event.target.value}`);
+      alert(event.target.value);
   };
 
   return (
@@ -428,20 +429,20 @@ const Desain = () => {
                     <div className="bg-white p-4 shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]">
                         <h2 className="text-base font-bold">Topik Pertanyaan</h2>
                         <div className="flex flex-col w-full h-full">
-                          <div className="flex flex-row">
-                              <input type="radio" name="type" value="Desain" onChange={handleOptionChange} />
+                          <div className="flex flex-row my-1">
+                              <input type="radio" name="type" value="Desain" onChange={handleOptionChange} className="mr-1" />
                               <label htmlFor="Desain">Desain</label>
                           </div>
-                          <div className="flex flex-row">
-                              <input type="radio" name="type" value="Mekanisme Daftar" onChange={handleOptionChange} />
+                          <div className="flex flex-row my-1">
+                              <input type="radio" name="type" value="Mekanisme Daftar" onChange={handleOptionChange} className="mr-1"/>
                               <label htmlFor="Mekanisme Daftar">Mekanisme Daftar</label>
                           </div>
-                          <div className="flex flex-row">
-                              <input type="radio" name="type" value="Kerjasama/Bisnis" onChange={handleOptionChange} />
+                          <div className="flex flex-row my-1">
+                              <input type="radio" name="type" value="Kerjasama/Bisnis" onChange={handleOptionChange} className="mr-1"/>
                               <label htmlFor="Kerjasama/Bisnis">Kerjasama/Bisnis</label>
                           </div>
-                          <div className="flex flex-row">
-                              <input type="radio" name="type" value="Lainnya" onChange={handleOptionChange} />
+                          <div className="flex flex-row my-1">
+                              <input type="radio" name="type" value="Lainnya" onChange={handleOptionChange} className="mr-1"/>
                               <label htmlFor="Lainnya">Lainnya</label>
                           </div>
                       </div>
