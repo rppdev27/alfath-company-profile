@@ -306,7 +306,7 @@ const Desain = () => {
       name: 'Birtday',
       status: true,
       icon: <CgTemplate size={12}/> 
-    }
+    },
     {
       id: 3, 
       name: 'Khitan',
