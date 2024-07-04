@@ -301,24 +301,24 @@ const Desain = () => {
       id: 1, 
       name: 'Wedding',
       status: true,
-      icon: <IoCheckbox size={9}/> 
+      icon: <CgTemplate size={9}/> 
     },
     {
       id: 2, 
       name: 'Birtday',
-      status: true,
+      status: false,
       icon: <CgTemplate size={9}/> 
     },
     {
       id: 3, 
       name: 'Khitan',
-      status: true,
+      status: false,
       icon: <CgTemplate size={9}/>  
     },
     {
       id: 4, 
       name: 'Aqiqah',
-      status: true,
+      status: false,
       icon: <CgTemplate size={9}/>  
     },
     // {
@@ -426,13 +426,13 @@ const Desain = () => {
                     <div key={index} className='cursor-pointer w-full py-1 text-slate-700 rounded-m flex flex-row text-white justify-end items-center font-[0.4rem]'>
                       
                       <div className="mr-1">
-                          {category.icon}
+                          category.status ? <IoCheckbox size={12} className="ml-1"/> : <MdOutlineCheckBoxOutlineBlank size={12} className="ml-1"/>
                       </div>
                       <div className="font-semibold">
                           {category.name}
                       </div>
                       <div>
-                          <MdOutlineCheckBoxOutlineBlank size={12} className="ml-1"/>
+                              <MdOutlineCheckBoxOutlineBlank size={12} className="ml-1"/>
                       </div>
                     </div>
                   ))}
