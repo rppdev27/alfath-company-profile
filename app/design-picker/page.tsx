@@ -375,8 +375,12 @@ const Desain = () => {
 
   const [thumbnalActive, setThumbnail] = useState('')
   const [themeActive, setTheme] = useState('')
+  const [colorActive, setColor] = useState('')
+  const [hexActive, setHex] = useState('')
 
   const changeTemplate = (id: any, index: any) => {
+    setColor(template_list[index].color.name);
+    setHex(template_list[index].color.hex);
     setTheme(template_list[index].name)
     setThumbnail(template_list[index].thumbnail);
     setTemplate(id);
@@ -499,6 +503,9 @@ const Desain = () => {
                             <h2 className="text-base font-bold">Detail Order</h2>
                             <div className="my-2 text-black font-semibold">
                                 Kamu memilih tema <b>{themeActive}</b>
+                            </div>
+                            <div className="my-2 text-black font-semibold">
+                                dengan warna <b><span style={{ fontColor: hexActive }}>{colorActive}</span></b>
                             </div>
                             <div className="my-2">
                                 <img src={thumbnalActive} alt='undangan digital menica' className='rounded-md shadow-lg'/>
