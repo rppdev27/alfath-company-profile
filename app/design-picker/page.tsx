@@ -420,7 +420,7 @@ const Desain = () => {
                     </div>
                 ) : (
                     <div className="bg-white p-4 shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]">
-                        <div className="mt-4 text-black font-semibold">
+                        <div className="mt-2 text-black font-semibold">
                             <p>Kamu Memilih Tema : Spiderman</p>
                         </div>
                         <div className="mt-4 text-black">
@@ -432,7 +432,7 @@ const Desain = () => {
                                 <option value="tidak">Tidak, saya sudah cocok</option>
                             </select>
                             <button
-                                className="bg-slate-700 text-white px-4 py-2 rounded hover:bg-blue-600 my-1"
+                                className="w-full bg-green-700 text-white px-4 py-2 rounded-md hover:bg-green-600 my-1 shadow-lg"
                                 onClick={()=>sendWhatsAppMessage('Spiderman')}
                             >
                                 Order Now
