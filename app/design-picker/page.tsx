@@ -655,13 +655,15 @@ const Desain = () => {
                               style={{
                                 backgroundColor: index === isActiveTemplate ? 'white' : 'grey'
                               }}
-
                             >
-                            <div className='top-0 left-0 h-8 w-8 bg-transparent'>
+                            {
+                              index === isActiveTemplate ? <div className='top-0 left-0 h-auto w-auto bg-transparent'>
 
-                              <IoCheckbox size={15} className="text-green-700 shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"/>
+                              <IoCheckbox size={20} className="text-green-700 shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"/>
                               
-                            </div>
+                            </div> : <></>
+                            }
+                            
                             <img src={template_.thumbnail} className="rounded-md shadow-lg" alt='undangan digital'/>
                             
                             <div className="pt-1 pb-1 mt-1 font-semibold">
