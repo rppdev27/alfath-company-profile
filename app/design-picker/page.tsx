@@ -467,18 +467,18 @@ const Desain = () => {
                         </div>
                         <div className="mt-4 text-black">
                             <h2 className="text-base font-bold">Detail Order</h2>
-                            <div className="my-1 text-black font-semibold">
+                            <div className="my-2 text-black font-semibold">
                                 Kamu memilih tema <b>Spiderman</b>
                             </div>
                             <div className="my-2">
                                 <img src={'https://asset.menica.pro/thumbnail-kidseries-06.webp'} alt='undangan digital menica' className='rounded-md shadow-lg'/>
                             </div>
-                            <div className="my-1 text-black font-semibold">
-                                Custom Template atau Tidak?
+                            <div className="my-2 text-black font-semibold">
+                                <u>Custom</u> Template atau Tidak?
                             </div>
                             <select className="w-full p-2 text-black my-2">
                                 <option value="ya">Ya, sama mau custom</option>
-                                <option value="tidak">Tidak, saya sudah cocok</option>
+                                <option value="tidak" selected>Tidak, saya sudah cocok</option>
                             </select>
                             <button
                                 className="w-full bg-green-700 text-white px-4 py-2 rounded-md hover:bg-green-600 my-1 shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px]"
