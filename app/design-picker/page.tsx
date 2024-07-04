@@ -382,6 +382,8 @@ const Desain = () => {
                   <BsFilterLeft size={20} className='mr-1'/>
                   Filter Kategori
                 </div>
+
+                <div className='overflow-auto h-full w-full'>
                 
                 {
                   template_list.map((template_, index) => (
@@ -444,7 +446,7 @@ const Desain = () => {
                     
                   ))
                 }
-
+                </div
           </div>
 
             {(() => {
