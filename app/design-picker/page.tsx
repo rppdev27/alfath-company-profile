@@ -3,8 +3,8 @@
 import React, { useState } from 'react'
 import Mandala1 from '../../components/template-design/mandala-01'
 import Mandala2 from '../../components/template-design/mandala-02'
-import Mandala3 from '../../components/template-design/mandala-01'
-import Mandala4 from '../../components/template-design/mandala-02'
+import Spiderman from '../../components/template-design/spiderman-01'
+import Batman from '../../components/template-design/batman-02'
 import { FaSquareCheck } from "react-icons/fa6";
 import { CgTemplate } from "react-icons/cg";
 import { FaWhatsapp } from "react-icons/fa6";
@@ -512,9 +512,9 @@ const Desain = () => {
                   case 'template2':
                     return <Mandala2 currentColor={currentColorData} backgroundSection={imageBG}/>;
                   case 'template3':
-                    return <Mandala3 currentColor={currentColorData} backgroundSection={imageBG}/>;
+                    return <Spiderman currentColor={currentColorData} backgroundSection={imageBG}/>;
                   default:
-                    return <Mandala4 currentColor={currentColorData} backgroundSection={imageBG}/>;
+                    return <Batman currentColor={currentColorData} backgroundSection={imageBG}/>;
                     
                 }
 
