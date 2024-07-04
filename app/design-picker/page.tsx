@@ -180,7 +180,7 @@ const Desain = () => {
         // { name: 'Pastel Lavender', hex: '#E6C6E7', status: false },
         // { name: 'Pastel Coral', hex: '#F5A9A2', status: false },
         // { name: 'Pastel Gray', hex: '#D0D0D0', status: false },
-        // { name: 'Pastel Teal', hex: '#B3D9D9', status: false }
+        // { name: 'Pastel Teal', hex: '#B3D9D9', status: false },
     ]
     },
     { id: 'template5', 
@@ -389,19 +389,22 @@ const Desain = () => {
     window.open(whatsappLink, '_blank');
   };
 
-  const sendWhatsAppMessage = (variable: any) => {
-    const whatsappLink = `https://wa.me/628567637243?text=Hello%20Admin,%0A%0AI%20want%20to%20order%20${variable}%20with%20custimization%0A%0AThank%20you`;
+  const sendWhatsAppMessage = () => {
+    const whatsappLink = `https://wa.me/628567637243?text=Hello%20Admin,%0A%0AI%20want%20to%20order%20${order}%20with%20custimization%0A%0AThank%20you`;
     window.open(whatsappLink, '_blank');
   };
 
-   const [selectedOption, setSelectedOption] = useState(null);
+   const [order, setOrder] = useState(null);
    const [topic, setTopic] = useState(null);
 
   const handleOptionChange = (event: any) => {
-      setSelectedOption(event.target.value);
       console.log(`Selected Option: ${event.target.value}`);
       // alert(event.target.value);
       setTopic(event.target.value);
+  };
+
+  const handleOptionChangeOrder = (event: any) => {
+      setOrder(event.target.value);
   };
 
   return (
@@ -503,7 +506,7 @@ const Desain = () => {
                             </select>
                             <button
                                 className="w-full bg-green-700 text-white px-4 py-2 rounded-md hover:bg-green-600 my-1 shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px]"
-                                onClick={()=>sendWhatsAppMessage('Spiderman')}
+                                onClick={()=>sendWhatsAppMessage()}
                             >
                                 Order Now
                             </button>
