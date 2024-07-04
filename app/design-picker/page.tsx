@@ -381,9 +381,12 @@ const Desain = () => {
                     ✖
                 </button>
             </div>
+
             
 
-            <button
+             <div className="flex justify-between items-center mb-4">
+                <h2 className="text-2xl font-bold">Menu Options</h2>
+                <button
                     className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded"
                     onClick={() => handleTabChange('tanya')}
                     style={{
@@ -432,6 +435,8 @@ const Desain = () => {
                     </div>
                 )}
             </div>
+
+
             <div className="mt-4 flex justify-end text-black font-semibold">
                 <button
                     className="bg-slate-700 text-white px-4 py-2 rounded hover:bg-blue-600"
