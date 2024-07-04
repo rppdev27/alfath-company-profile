@@ -355,6 +355,11 @@ const Desain = () => {
 
   }
 
+  const sendWhatsAppMessage = (variable) => {
+    const whatsappLink = `https://wa.me/628567637243?text=Hello%20Admin,%0A%0AI%20want%20to%20order%20${variable}%20with%20custimization%0A%0AThank%20you`;
+    window.open(whatsappLink, '_blank');
+  };
+
   return (
     <div className='relative'>
 
@@ -380,6 +385,9 @@ const Desain = () => {
                     <option value="ya">Ya, sama mau custom</option>
                     <option value="tidak">Tidak, saya sudah cocok</option>
                 </select>
+                <div className="my-2" onClick={()=>sendWhatsAppMessage('Spiderman')}>
+                  Order Now
+                </div>
             </div>
             <div className="mt-4 flex justify-end text-black font-semibold">
                 <button
