@@ -84,6 +84,8 @@ const Desain = () => {
       thumbnail: 'https://img.freepik.com/premium-vector/beautiful-ornamental-wedding-invitation_606364-1512.jpg?uid=R8509531&ga=GA1.1.1663214348.1704683280&semt=ais_user-customized', 
       publicity: true, 
       colorMode: 'dark',
+      price: 'IDR 150.000',
+      category: 'wedding',
       color: [
         {
           name: "Navy",
@@ -117,6 +119,8 @@ const Desain = () => {
       thumbnail: 'https://asset.menica.pro/thumbnail-kidseries-02.webp', 
       publicity: true, 
       colorMode: 'dark',
+      price: 'IDR 150.000',
+      category: 'wedding',
       color: [
         // {
         //   name: "Navy",
@@ -150,6 +154,8 @@ const Desain = () => {
       thumbnail: 'https://asset.menica.pro/thumbnail-kidseries-06.webp', 
       publicity: true, 
       colorMode: 'dark',
+      price: 'IDR 150.000',
+      category: 'wedding',
       color: [
         // {
         //   name: "Navy",
@@ -183,6 +189,8 @@ const Desain = () => {
       thumbnail: 'https://asset.menica.pro/WhatsApp+Image+2024-06-23+at+10.30.54+AM.jpeg', 
       publicity: true, 
       colorMode: 'dark',
+      price: 'IDR 150.000',
+      category: 'wedding',
       color: [
         // {
         //   name: "Navy",
