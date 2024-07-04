@@ -405,6 +405,11 @@ const Desain = () => {
 
   const handleOptionChangeOrder = (event: any) => {
       setOrder(event.target.value);
+      if(event.target.value === 'ya'){
+          setOrder('Custom Template')
+      }else{
+         setOrder('Tanpa Custom')
+      }
   };
 
   return (
@@ -501,8 +506,8 @@ const Desain = () => {
                                 <span className='text-green-700 font-bold'>CUSTOM</span> Template atau Tidak?
                             </div>
                             <select className="w-full p-2 text-black my-2">
-                                <option value="ya">Ya, sama mau custom</option>
-                                <option value="tidak" selected>Tidak, saya sudah cocok</option>
+                                <option value="ya" onChange={handleOptionChangeOrder}>Ya, sama mau custom</option>
+                                <option value="tidak" onChange={handleOptionChangeOrder} selected>Tidak, saya sudah cocok</option>
                             </select>
                             <button
                                 className="w-full bg-green-700 text-white px-4 py-2 rounded-md hover:bg-green-600 my-1 shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px]"
