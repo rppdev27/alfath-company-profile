@@ -289,9 +289,11 @@ const Desain = () => {
 
   const [currentColorData, setColorCurrent] = useState('');
   const [imageBG, setBackgroundAsset] = useState('');
+  const [colorIndex, setColorIndex] = useState(0);
+  
 
   const updateColorStatus = (templateId: any, index: any, color: any, imageBGs: any) => {
-    console.log(imageBGs);
+    setColorIndex(index);
     setColorCurrent(color);
     setBackgroundAsset(imageBGs);
     setTemplateList(prevTemplates => {
@@ -379,7 +381,7 @@ const Desain = () => {
   const [hexActive, setHex] = useState('')
 
   const changeTemplate = (id: any, index: any) => {
-    // setColor(template_list[index].color[].name);
+    setColor(template_list[index].color[colorIndex].name);
     // setHex(template_list[index].color[].hex);
     setTheme(template_list[index].name)
     setThumbnail(template_list[index].thumbnail);
@@ -505,7 +507,7 @@ const Desain = () => {
                                 Kamu memilih tema <b>{themeActive}</b>
                             </div>
                             <div className="my-2 text-black font-semibold">
-                                dengan warna <b><span style={{ fontColor: currentColorData }}>{currentColorData}</span></b>
+                               dengan warna <b><span style={{color: currentColorData }}>currentColorData</span></b>
                             </div>
                             <div className="my-2">
                                 <img src={thumbnalActive} alt='undangan digital menica' className='rounded-md shadow-lg'/>
