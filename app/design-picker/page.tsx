@@ -368,18 +368,22 @@ const Desain = () => {
                 isOpen ? 'translate-x-0' : 'translate-x-full'
               } transition-transform duration-300 ease-in-out`}
             >
+              <div className="relative">
 
-                <div className='cursor-pointer w-full p-2 my-2 text-slate-700 rounded-md bg-white shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]  flex flex-row justify-between items-center' onClick={togglePanel}>
+                <div className='fixed top-0 cursor-pointer w-full p-2 mb-2 text-slate-700 rounded-md bg-white shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]  flex flex-row justify-between items-center' onClick={togglePanel}>
                   <IoCloseCircle size={20} className='mr-1 text-red-900'/>
                   {/* Close */}
                   Daftar Template
                 </div>
+                
+              </div>
+                
 
                 {/* <div className='my-1'>
                   Daftar Template
                 </div> */}
 
-                <div className='cursor-pointer w-full px-2 py-1 my-2 mb-3 text-slate-700 rounded-md bg-white shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] flex flex-row justify-between items-center'>
+                <div className='cursor-pointer w-full px-2 py-1 my-2 mb-4 text-slate-700 rounded-md bg-white shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] flex flex-row justify-between items-center'>
                   <BsFilterLeft size={20} className='mr-1'/>
                   Filter Kategori
                 </div>
