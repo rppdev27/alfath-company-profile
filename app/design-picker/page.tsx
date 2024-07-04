@@ -422,7 +422,7 @@ const Desain = () => {
                   ))}
                 </div>*/}
 
-                <div className="flex flex-col">
+                <div className="flex flex-col w-full mb-2">
                   {categoryTemplates.map((category, index) => (
                     <div key={index} className='cursor-pointer w-full py-1 text-slate-700 rounded-m flex flex-row text-white justify-end items-center font-[0.4rem]'>
                       
