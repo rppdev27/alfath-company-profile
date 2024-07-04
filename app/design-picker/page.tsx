@@ -421,10 +421,14 @@ const Desain = () => {
                 ) : (
                     <div className="bg-white p-4 shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]">
                         <div className="mt-2 text-black font-semibold">
-                            <p>Kamu Memilih Tema : Spiderman</p>
+                            
                         </div>
                         <div className="mt-4 text-black">
-                            <div className="mt-4 text-black font-semibold">
+                            <h2 className="text-base font-bold">Detail Order</h2>
+                            <div className="my-1 text-black font-semibold">
+                                Kamu memilih tema <b>Spiderman</b>
+                            </div>
+                            <div className="my-1 text-black font-semibold">
                                 Custom Template atau Tidak?
                             </div>
                             <select className="w-full p-2 text-black my-2">
