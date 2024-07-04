@@ -294,6 +294,40 @@ const Desain = () => {
     { name: 'Pastel Teal', hex: '#B3D9D9' },
   ];
 
+  const categoryTemplates = [
+    {
+      id: 1, 
+      name: 'Wedding',
+      status: true,
+      icon: <CgTemplate size={12}/> 
+    },
+    {
+      id: 2, 
+      name: 'Birtday',
+      status: true,
+      icon: <CgTemplate size={12}/> 
+    }
+    {
+      id: 3, 
+      name: 'Khitan',
+      status: true,
+      icon: <CgTemplate size={12}/>  
+    },
+    {
+      id: 4, 
+      name: 'Aqiqah',
+      status: true,
+      icon: <CgTemplate size={12}/>  
+    },
+    {
+      id: 5, 
+      name: 'Event',
+      status: true,
+      icon: <CgTemplate size={12}/>  
+    },
+
+  ]
+
   const changeColor = (index: any) => {
     setActiveColor(index);
   }
@@ -356,8 +390,8 @@ const Desain = () => {
                 isOpen ? 'translate-x-0' : 'translate-x-full'
               } transition-transform duration-300 ease-in-out`}>
             <div className="relative w-full">
-              <div className='sticky top-0 cursor-pointer w-full p-1 text-slate-700 rounded-md bg-transparent flex flex-row justify-between items-center' onClick={togglePanel}>
-                <IoCloseCircle size={20} className='mr-1 text-red-900'/>
+              <div className='sticky top-0 cursor-pointer w-full p-1 text-white rounded-md bg-transparent flex flex-row justify-between items-center' onClick={togglePanel}>
+                <IoCloseCircle size={20} className='mr-1 text-black'/>
                 Daftar Template
               </div>
             </div>
@@ -367,10 +401,25 @@ const Desain = () => {
                   Daftar Template
                 </div> */}
 
-                <div className='cursor-pointer w-full px-2 py-1 my-2 mb-4 text-white font-semibold rounded-md bg-[#3f3f3f30] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] flex flex-row justify-between items-center'>
+                <div className='hover:text-slate-300 cursor-pointer w-full px-2 py-1 my-2 mb-4 text-white font-semibold rounded-md bg-[#3f3f3f30] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] flex flex-row justify-between items-center'>
                   <BsFilterLeft size={20} className='mr-1'/>
                   Filter Kategori
                 </div>
+
+                <div className="grid grid-cols-2 gap-4">
+                  {categoryTemplates.map((category, index) => (
+                    <div key={index} className='frosted-glass cursor-pointer w-full p-1 text-slate-700 rounded-md bg-white flex flex-col justify-between items-center'>
+                      <div>
+                          {category.name}
+                      </div>
+                      <div>
+                          {category.icon}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+
 
                 <div className='overflow-auto h-full w-full'>
                 
