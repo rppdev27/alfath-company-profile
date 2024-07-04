@@ -463,7 +463,7 @@ const Desain = () => {
                                             `}
 
                               style={{
-                                backgroundColor: index === isActiveTemplate ? 'grey' : 'white'
+                                backgroundColor: index === isActiveTemplate ? 'white' : 'grey'
                               }}
 
                             >
