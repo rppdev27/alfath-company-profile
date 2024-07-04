@@ -379,8 +379,8 @@ const Desain = () => {
   const [hexActive, setHex] = useState('')
 
   const changeTemplate = (id: any, index: any) => {
-    setColor(template_list[index].color.name);
-    setHex(template_list[index].color.hex);
+    setColor(template_list[index]?.color.name);
+    setHex(template_list[index]?.color.hex);
     setTheme(template_list[index].name)
     setThumbnail(template_list[index].thumbnail);
     setTemplate(id);
