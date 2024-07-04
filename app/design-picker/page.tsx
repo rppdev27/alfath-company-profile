@@ -300,25 +300,25 @@ const Desain = () => {
       id: 1, 
       name: 'Wedding',
       status: true,
-      icon: <CgTemplate size={11}/> 
+      icon: <CgTemplate size={9}/> 
     },
     {
       id: 2, 
       name: 'Birtday',
       status: true,
-      icon: <CgTemplate size={11}/> 
+      icon: <CgTemplate size={9}/> 
     },
     {
       id: 3, 
       name: 'Khitan',
       status: true,
-      icon: <CgTemplate size={11}/>  
+      icon: <CgTemplate size={9}/>  
     },
     {
       id: 4, 
       name: 'Aqiqah',
       status: true,
-      icon: <CgTemplate size={11}/>  
+      icon: <CgTemplate size={9}/>  
     },
     // {
     //   id: 5, 
@@ -382,7 +382,7 @@ const Desain = () => {
         onClick={togglePanel}
         className="fixed z-50 p-2 text-[0.4rem] text-white rounded-md top-2 right-2 hover:bg-slate-300 focus:outline-none frosted-glass"
       >
-        <CgTemplate size={15} className='text-black'/>
+        <CgTemplate size={15} className='text-white'/>
 
       </button>
 
@@ -424,9 +424,9 @@ const Desain = () => {
 
                 <div className="flex flex-col">
                   {categoryTemplates.map((category, index) => (
-                    <div key={index} className='cursor-pointer w-full p-1 text-slate-700 rounded-m flex flex-col text-white justify-between items-center font-[0.4rem]'>
+                    <div key={index} className='cursor-pointer w-full p-1 text-slate-700 rounded-m flex flex-row text-white justify-end items-center font-[0.4rem]'>
                       
-                      <div>
+                      <div className="mr-1">
                           {category.icon}
                       </div>
                       <div className="font-semibold">
