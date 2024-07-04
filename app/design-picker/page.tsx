@@ -367,7 +367,7 @@ const Desain = () => {
         <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg shadow-lg max-w-md w-full p-6">
             <div className="flex justify-between items-center pb-3">
-                <h2 className="text-xl text-black font-semibold">Order atau Tanya</h2>
+                <h2 className="text-xl text-black font-semibold">Order Details</h2>
                 <button
                     className="text-gray-400 hover:text-gray-600"
                     onClick={toggleModal}
@@ -378,16 +378,18 @@ const Desain = () => {
             <div className="mt-4 text-black font-semibold">
                 <p>Kamu Memilih Tema : Spiderman</p>
             </div>
-            <div className="mt-4 text-black font-semibold">
-                <p>Order</p>
+            <div className="mt-4 text-black">
                 <p>Custom Template atau Tidak?</p>
                 <select className="w-full p-2 text-black">
                     <option value="ya">Ya, sama mau custom</option>
                     <option value="tidak">Tidak, saya sudah cocok</option>
                 </select>
-                <div className="my-2" onClick={()=>sendWhatsAppMessage('Spiderman')}>
-                  Order Now
-                </div>
+                <button
+                    className="bg-slate-700 text-white px-4 py-2 rounded hover:bg-blue-600"
+                    onClick={()=>sendWhatsAppMessage('Spiderman')}
+                >
+                    Order Now
+                </button>
             </div>
             <div className="mt-4 flex justify-end text-black font-semibold">
                 <button
