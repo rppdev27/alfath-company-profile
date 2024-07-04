@@ -475,14 +475,14 @@ const Desain = () => {
                             >
                             <img src={template_.thumbnail} className="rounded-md shadow-lg" alt='undangan digital'/>
                             
-                            <div className="p-1 mt-1 font-semibold">
+                            <div className="pt-1 pb-1 mt-1 font-semibold">
                               {template_.name}
                             </div>
 
 
-                            <div className="mb-1">
-                              Warna
-                            </div>
+                            // <div className="mb-1">
+                            //   Warna
+                            // </div>
 
                             <div className="flex flex-row w-auto p-2 overflow-x-auto">
                                 {template_.color.map((item, idx) => (
