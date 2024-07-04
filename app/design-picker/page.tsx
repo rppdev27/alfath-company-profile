@@ -406,7 +406,7 @@ const Desain = () => {
                     Order
                 </button>
             </div>
-            <div className="flex flex-col w-full h-full text-xs">
+            <div className="flex flex-col w-full h-full text-xs transition-all duration-500">
                 {activeTab === 'tanya' ? (
                     <div className="bg-gray-200 p-4">
                         <h2 className="text-base font-bold">Tanya Content</h2>
