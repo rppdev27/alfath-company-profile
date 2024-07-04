@@ -363,14 +363,18 @@ const Desain = () => {
       
 
             {/* this is collapsible menu */}
-            <div className={`fixed z-50 flex flex-col items-center text-[0.6rem] p-3 transition-all duration-500 bg-white rounded-sm top-2 right-0 h-screen-minus-80 transform ${
+            <div className={`fixed z-50 flex flex-col items-center text-[0.6rem] p-3 transition-all duration-500 bg-white rounded-sm top-2 right-0 h-screen-minus-80 overflow-scroll
+              transform ${
                 isOpen ? 'translate-x-0' : 'translate-x-full'
-              } transition-transform duration-300 ease-in-out`}>
-              <div className="relative w-full">
-                <div className='sticky top-0 cursor-pointer w-full p-2 mb-2 text-slate-700 rounded-md bg-white shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] flex flex-row justify-between items-center' onClick={togglePanel}>
+              } transition-transform duration-300 ease-in-out`}
+            >
+              <div className="relative">
+
+                <div className='sticky top-0 cursor-pointer w-full p-2 mb-2 text-slate-700 rounded-md bg-white shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]  flex flex-row justify-between items-center' onClick={togglePanel}>
                   <IoCloseCircle size={20} className='mr-1 text-red-900'/>
                   Daftar Template
                 </div>
+                
               </div>
                 
 
