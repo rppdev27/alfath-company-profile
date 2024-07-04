@@ -373,7 +373,7 @@ const Desain = () => {
         <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg shadow-lg max-w-md w-full p-6">
             <div className="flex justify-between items-center pb-3">
-                <h2 className="text-xl text-black font-semibold">Tanya atau Order ?</h2>
+                <h2 className="text-base text-black font-semibold">Tanya atau Order ?</h2>
                 <button
                     className="text-gray-400 hover:text-gray-600"
                     onClick={toggleModal}
@@ -382,15 +382,14 @@ const Desain = () => {
                 </button>
             </div>
 
-            
-
              <div className="flex justify-between items-center mb-4 text-xs">
                 <button
                     className="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded"
                     onClick={() => handleTabChange('tanya')}
                     style={{
                         backgroundColor: activeTab === 'tanya' ? 'gray' : 'white',
-                        color: activeTab === 'tanya' ? 'black' : 'gray-800',
+                        color: activeTab === 'tanya' ? 'black' : 'gray-500',
+                        fontWeight: activeTab === 'tanya' ? '700' : '400',
                     }}
                 >
                     Tanya
@@ -400,7 +399,8 @@ const Desain = () => {
                     onClick={() => handleTabChange('order')}
                     style={{
                         backgroundColor: activeTab === 'order' ? 'gray' : 'white',
-                        color: activeTab === 'order' ? 'black' : 'gray-800',
+                        color: activeTab === 'order' ? 'black' : 'gray-500',
+                        fontWeight: activeTab === 'tanya' ? '700' : '400',
                     }}
                 >
                     Order
@@ -409,18 +409,19 @@ const Desain = () => {
             <div className="flex flex-col w-full h-full text-xs">
                 {activeTab === 'tanya' ? (
                     <div className="bg-gray-200 p-4">
-                        <h2 className="text-2xl font-bold">Tanya Content</h2>
-                        <p className="text-lg">This is the content for Tanya.</p>
+                        <h2 className="text-base font-bold">Tanya Content</h2>
+                        <p className="text-md">This is the content for Tanya.</p>
                     </div>
                 ) : (
                     <div className="bg-gray-200 p-4">
-                        <h2 className="text-2xl font-bold">Order Content</h2>
                         <div className="mt-4 text-black font-semibold">
                             <p>Kamu Memilih Tema : Spiderman</p>
                         </div>
                         <div className="mt-4 text-black">
-                            <p>Custom Template atau Tidak?</p>
-                            <select className="w-full p-2 text-black">
+                            <div className="mt-4 text-black font-semibold">
+                                Custom Template atau Tidak?
+                            </div>
+                            <select className="w-full p-2 text-black my-2">
                                 <option value="ya">Ya, sama mau custom</option>
                                 <option value="tidak">Tidak, saya sudah cocok</option>
                             </select>
