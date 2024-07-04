@@ -373,9 +373,14 @@ const Desain = () => {
     setActiveColor(index);
   }
 
+  const [thumbnalActive, setThumbnail] = useState('')
+  const [themeActive, setTheme] = useState('')
+
   const changeTemplate = (id: any, index: any) => {
+    setTheme(template_list[index].name)
+    setThumbnail(template_list[index].thumbnail);
     setTemplate(id);
-    setActiveTemplate(index)
+    setActiveTemplate(index);
   }
 
 
@@ -493,10 +498,10 @@ const Desain = () => {
                         <div className="mt-4 text-black">
                             <h2 className="text-base font-bold">Detail Order</h2>
                             <div className="my-2 text-black font-semibold">
-                                Kamu memilih tema <b>Spiderman</b>
+                                Kamu memilih tema <b>{themeActive}</b>
                             </div>
                             <div className="my-2">
-                                <img src={'https://asset.menica.pro/thumbnail-kidseries-06.webp'} alt='undangan digital menica' className='rounded-md shadow-lg'/>
+                                <img src={thumbnalActive} alt='undangan digital menica' className='rounded-md shadow-lg'/>
                             </div>
                             <div className="mt-5 my-2 text-black font-semibold">
                                 <span className='text-green-700 font-bold'>CUSTOM</span> Template atau Tidak?
