@@ -364,12 +364,12 @@ const Desain = () => {
   }
 
   const sendWhatsAppMessageAsk = () => {
-    const whatsappLink = `https://wa.me/628567637243?text=Hello%20Admin,%0A%0AI%20want%20to%20order%20${variable}%20with%20custimization%0A%0AThank%20you`;
+    const whatsappLink = `https://wa.me/628567637243?text=Hello%20Admin,%0A%0AI%20want%20to%ask%20${topic}%20with%20custimization%0A%0AThank%20you`;
     window.open(whatsappLink, '_blank');
   };
 
   const sendWhatsAppMessage = (variable: any) => {
-    const whatsappLink = `https://wa.me/628567637243?text=Hello%20Admin,%0A%0AI%20want%20to%ask%20${topic}%20with%20custimization%0A%0AThank%20you`;
+    const whatsappLink = `https://wa.me/628567637243?text=Hello%20Admin,%0A%0AI%20want%20to%20order%20${variable}%20with%20custimization%0A%0AThank%20you`;
     window.open(whatsappLink, '_blank');
   };
 
