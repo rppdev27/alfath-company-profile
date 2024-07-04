@@ -428,7 +428,7 @@ const Desain = () => {
                       <div className="mr-1">
                           category.status ? <IoCheckbox size={12} className="ml-1"/> : <MdOutlineCheckBoxOutlineBlank size={12} className="ml-1"/>
                       </div>
-                      <div className="font-semibold">
+                      <div className="font-semibold hover:underline">
                           {category.name}
                       </div>
                       <div>
