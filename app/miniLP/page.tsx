@@ -53,7 +53,7 @@ function LandingPage() {
           }}
           data-aos='fade-up'
         >Luxury Wedding Invitation</h1>
-        <div className="transform -translate-x-1/2 w-auto py-1 px-3 flex text-[0.5rem] sm:text-[0.6rem] tracking-tight text-white rounded-full frosted-glass hover:bg-opacity-40 font-bold transition-all duration-500">
+        <div className="transform w-auto py-1 px-3 flex text-[0.5rem] sm:text-[0.6rem] tracking-tight text-white rounded-full frosted-glass hover:bg-opacity-40 font-bold transition-all duration-500 mx-auto">
 
             <div className="flex flex-row justify-center items-center p-1 text-white mx-2 cursor-pointer">
               <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-2 rounded-md hover:bg-slate-400 bg-[#3f3f3f30]">
