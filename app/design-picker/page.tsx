@@ -656,7 +656,7 @@ useEffect(() => {
                     <>
                           <div 
                                 key={index}
-                                onClick={() => changeTemplate(template_.id, index)}
+                                
                                 className={`max-w-[130px] 
                                             h-auto 
                                             z-50 
@@ -692,11 +692,14 @@ useEffect(() => {
                               
                             </div> : <></>
                             }
-                            
-                            <img src={template_.thumbnail} className="rounded-md shadow-lg" alt='undangan digital'/>
-                            
-                            <div className="pt-1 pb-1 mt-1 font-semibold">
-                              {template_.name}
+                            <div onClick={() => changeTemplate(template_.id, index)}>
+                                <img src={template_.thumbnail} className="rounded-md shadow-lg" alt='undangan digital'
+
+                                />
+                                
+                                <div className="pt-1 pb-1 mt-1 font-semibold">
+                                  {template_.name}
+                                </div>
                             </div>
 
                             <div className="flex flex-row w-auto mt-1 overflow-x-auto">
