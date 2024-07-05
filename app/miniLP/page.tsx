@@ -90,7 +90,7 @@ function LandingPage() {
     </div>
 
     {
-      visible ? <DesignPicker/> : <></>
+      visible ?  <></> : <DesignPicker/>
     }
 
     </>
