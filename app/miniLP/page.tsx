@@ -16,9 +16,7 @@ function LandingPage() {
 
   const handleDemoClick = () => {
     setVisible(false);
-    setTimeout(() => {
-      setTotallyGone(false);
-    }, 1000); // 1 second delay
+    setTotallyGone(false);
   };
 
   const currentYear = new Date().getFullYear();
