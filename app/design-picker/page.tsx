@@ -2,7 +2,7 @@
 
 // important, add flag for panel temple if the backgrround is light
 
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Mandala1 from '../../components/template-design/mandala-01'
 import Mandala2 from '../../components/template-design/mandala-02'
 import Spiderman from '../../components/template-design/Spiderman'
