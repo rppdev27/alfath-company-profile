@@ -34,12 +34,12 @@ function LandingPage() {
           }}
           data-aos='fade-down'
         />
-        <h1 className="text-4xl tracking-tight font-extrabold my-6 text-white text-gradient-2"
+        <h1 className="text-4xl tracking-tight font-extrabold my-6 text-white text-red-800"
           style={{
             fontFamily: 'Alex Brush',
           }}
           data-aos='fade-up'
-        >Your Luxury Wedding Invitation</h1>
+        >Luxury Wedding Invitation</h1>
         <button 
           data-aos='fade-left'
           className="flex items-center justify-center mx-autoo flex-row p-8 font-semibold bg-green-700 hover:bg-green-800 text-white text-md py-2 px-4 rounded-lg shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]">
