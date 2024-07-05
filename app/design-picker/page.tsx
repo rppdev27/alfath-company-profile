@@ -315,7 +315,7 @@ const Desain = () => {
 
 useEffect(() => {
     console.log(themeActive); // This will log the updated colorIndex
-  }, [colorIndex]);
+  }, [themeActive]);
 
 useEffect(() => {
     console.log(currentColorData); // This will log the updated colorIndex
