@@ -35,7 +35,10 @@ function LandingPage() {
         />
         <h1 className="text-4xl tracking-tight font-extrabold my-6 text-white"
           style={{
-            fontFamily: 'Damion'
+            fontFamily: 'Damion',
+            background: 'linear-gradient(45deg, #FFD700, #FFAA00, #FF8C00)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
           }}
           data-aos='fade-down'
         >Your Luxury Wedding Invitation</h1>
