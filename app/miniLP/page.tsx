@@ -72,7 +72,7 @@ function LandingPage() {
 
             
         </div>
-        <div className="text-xs tracking-normal font-bold mb-4 text-white"
+        <div className="text-xs tracking-normal mt-2 text-white"
           style={{
             fontFamily: 'Ubuntu',
           }}
