@@ -60,7 +60,7 @@ function LandingPage() {
                   <FaWhatsapp size={15}/>
               </div>
              <div className='font-semibold ml-2'>
-                Templae
+                Explore Design
               </div>
             </div>
 
