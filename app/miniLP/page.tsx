@@ -8,21 +8,27 @@ import DesignPicker from '../../components/DesignPicker'
 
 function LandingPage() {
   const [visible, setVisible] = useState(true);
+  const [totallyGone, setTotallyGone] = useState(true);
 
   useEffect(() => {
     AOS.init();
   }, []);
 
   const handleDemoClick = () => {
-    // Trigger the animation to move the section out
     setVisible(false);
+    setTimeout(() => {
+      setTotallyGone(true);
+    }, 1000); // 1 second delay
   };
 
   const currentYear = new Date().getFullYear();
 
+  
+
   return (
     <>
-    <div
+    {
+      totallyGone ? <div
       className={`flex flex-col items-center justify-center h-screen w-screen bg-gray-100 transition-all duration-1000 ${visible ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'}`}
       style={{
         backgroundImage: 'url(https://asset.menica.pro/BGgreenwithornament%403x.webp)',
@@ -87,7 +93,9 @@ function LandingPage() {
           &copy; 2014 - {currentYear}
         </div>
       </div>
-    </div>
+    </div> : <></>
+    }
+    
 
     {
       visible ?  <></> : <DesignPicker/>

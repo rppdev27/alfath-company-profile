@@ -110,18 +110,6 @@ const Desain = () => {
           status: false,
           background_section: "https://asset.menica.pro/menicav4/bg-mandala-brown.png"
         },
-        // { name: 'Pastel Pink', hex: '#FADADD', status: false },
-        // { name: 'Pastel Blue', hex: '#A2C2E3', status: false },
-        // { name: 'Pastel Green', hex: '#B3E5C6', status: false },
-        // { name: 'Pastel Yellow', hex: '#FCE5A9', status: false },
-        // { name: 'Pastel Purple', hex: '#D9B6F0', status: false },
-        // { name: 'Pastel Orange', hex: '#F5B3A1', status: false },
-        // { name: 'Pastel Peach', hex: '#F7C6C7', status: false },
-        // { name: 'Pastel Mint', hex: '#A9D6E5', status: false },
-        // { name: 'Pastel Lavender', hex: '#E6C6E7', status: false },
-        // { name: 'Pastel Coral', hex: '#F5A9A2', status: false },
-        // { name: 'Pastel Gray', hex: '#D0D0D0', status: false },
-        // { name: 'Pastel Teal', hex: '#B3D9D9', status: false }
 
     ]
     },
@@ -147,18 +135,6 @@ const Desain = () => {
           status: false,
           background_section: "https://asset.menica.pro/menicav4/bg-mandala-2.png"
         },
-        // { name: 'Pastel Pink', hex: '#FADADD', status: false },
-        // { name: 'Pastel Blue', hex: '#A2C2E3', status: false },
-        // { name: 'Pastel Green', hex: '#B3E5C6', status: false },
-        // { name: 'Pastel Yellow', hex: '#FCE5A9', status: false },
-        // { name: 'Pastel Purple', hex: '#D9B6F0', status: false },
-        // { name: 'Pastel Orange', hex: '#F5B3A1', status: false },
-        // { name: 'Pastel Peach', hex: '#F7C6C7', status: false },
-        // { name: 'Pastel Mint', hex: '#A9D6E5', status: false },
-        // { name: 'Pastel Lavender', hex: '#E6C6E7', status: false },
-        // { name: 'Pastel Coral', hex: '#F5A9A2', status: false },
-        // { name: 'Pastel Gray', hex: '#D0D0D0', status: false },
-        // { name: 'Pastel Teal', hex: '#B3D9D9', status: false }
     ]
     },
     { id: 'template3', 
@@ -171,30 +147,6 @@ const Desain = () => {
       category: 'wedding',
       colorSet: 1,
       color: [
-        // {
-        //   name: "Navy",
-        //   hex: "#152443",
-        //   status: true,
-        //   background_section: "https://asset.menica.pro/menicav4/bg-mandala-2.png"
-        // },
-        // {
-        //   name: "Maroon",
-        //   hex: "#5B1A27",
-        //   status: false,
-        //   background_section: "https://asset.menica.pro/menicav4/bg-mandala-2.png"
-        // },
-        // { name: 'Pastel Pink', hex: '#FADADD', status: false },
-        // { name: 'Pastel Blue', hex: '#A2C2E3', status: false },
-        // { name: 'Pastel Green', hex: '#B3E5C6', status: false },
-        // { name: 'Pastel Yellow', hex: '#FCE5A9', status: false },
-        // { name: 'Pastel Purple', hex: '#D9B6F0', status: false },
-        // { name: 'Pastel Orange', hex: '#F5B3A1', status: false },
-        // { name: 'Pastel Peach', hex: '#F7C6C7', status: false },
-        // { name: 'Pastel Mint', hex: '#A9D6E5', status: false },
-        // { name: 'Pastel Lavender', hex: '#E6C6E7', status: false },
-        // { name: 'Pastel Coral', hex: '#F5A9A2', status: false },
-        // { name: 'Pastel Gray', hex: '#D0D0D0', status: false },
-        // { name: 'Pastel Teal', hex: '#B3D9D9', status: false }
     ]
     },
     { id: 'template4', 
@@ -207,30 +159,6 @@ const Desain = () => {
       category: 'wedding',
       colorSet: 1,
       color: [
-        // {
-        //   name: "Navy",
-        //   hex: "#152443",
-        //   status: true,
-        //   background_section: "https://asset.menica.pro/menicav4/bg-mandala-2.png"
-        // },
-        // {
-        //   name: "Maroon",
-        //   hex: "#5B1A27",
-        //   status: false,
-        //   background_section: "https://asset.menica.pro/menicav4/bg-mandala-2.png"
-        // },
-        // { name: 'Pastel Pink', hex: '#FADADD', status: false },
-        // { name: 'Pastel Blue', hex: '#A2C2E3', status: false },
-        // { name: 'Pastel Green', hex: '#B3E5C6', status: false },
-        // { name: 'Pastel Yellow', hex: '#FCE5A9', status: false },
-        // { name: 'Pastel Purple', hex: '#D9B6F0', status: false },
-        // { name: 'Pastel Orange', hex: '#F5B3A1', status: false },
-        // { name: 'Pastel Peach', hex: '#F7C6C7', status: false },
-        // { name: 'Pastel Mint', hex: '#A9D6E5', status: false },
-        // { name: 'Pastel Lavender', hex: '#E6C6E7', status: false },
-        // { name: 'Pastel Coral', hex: '#F5A9A2', status: false },
-        // { name: 'Pastel Gray', hex: '#D0D0D0', status: false },
-        // { name: 'Pastel Teal', hex: '#B3D9D9', status: false },
     ]
     },
     { id: 'template5', 
@@ -243,91 +171,8 @@ const Desain = () => {
       category: 'wedding',
       colorSet: 1,
       color: [
-        // {
-        //   name: "Navy",
-        //   hex: "#152443",
-        //   status: true,
-        //   background_section: "https://asset.menica.pro/menicav4/bg-mandala-2.png"
-        // },
-        // {
-        //   name: "Maroon",
-        //   hex: "#5B1A27",
-        //   status: false,
-        //   background_section: "https://asset.menica.pro/menicav4/bg-mandala-2.png"
-        // },
-        // { name: 'Pastel Pink', hex: '#FADADD', status: false },
-        // { name: 'Pastel Blue', hex: '#A2C2E3', status: false },
-        // { name: 'Pastel Green', hex: '#B3E5C6', status: false },
-        // { name: 'Pastel Yellow', hex: '#FCE5A9', status: false },
-        // { name: 'Pastel Purple', hex: '#D9B6F0', status: false },
-        // { name: 'Pastel Orange', hex: '#F5B3A1', status: false },
-        // { name: 'Pastel Peach', hex: '#F7C6C7', status: false },
-        // { name: 'Pastel Mint', hex: '#A9D6E5', status: false },
-        // { name: 'Pastel Lavender', hex: '#E6C6E7', status: false },
-        // { name: 'Pastel Coral', hex: '#F5A9A2', status: false },
-        // { name: 'Pastel Gray', hex: '#D0D0D0', status: false },
-        // { name: 'Pastel Teal', hex: '#B3D9D9', status: false }
     ]
-    },
-    // { id: 'template2', 
-    //   name: 'Luxury 2', 
-    //   description: 'This is the second template', 
-    //   thumbnail: 'https://via.placeholder.com/150',
-    //   publicity: true 
-    // },
-    // { id: 'template3', 
-    //   name: 'Luxury 3', 
-    //   description: 'This is the third template', 
-    //   thumbnail: 'https://via.placeholder.com/150', 
-    //   publicity: true 
-    // },
-    // { id: 'template4', 
-    //   name: 'Luxury 4', 
-    //   description: 'This is a non-public template', 
-    //   thumbnail: 'https://via.placeholder.com/150', 
-    //   publicity: false 
-    // },
-    //   { id: 'template1', 
-    //     name: 'Luxury 1', 
-    //     description: 'This is the first template', 
-    //     thumbnail: 'https://via.placeholder.com/150', 
-    //     publicity: true, 
-    //   },
-    //   { id: 'template2', 
-    //     name: 'Luxury 2', 
-    //     description: 'This is the second template', 
-    //     thumbnail: 'https://via.placeholder.com/150',
-    //     publicity: true },
-    //   { id: 'template3', 
-    //     name: 'Luxury 3', 
-    //     description: 'This is the third template', 
-    //     thumbnail: 'https://via.placeholder.com/150', 
-    //     publicity: true },
-    //   { id: 'template4', 
-    //     name: 'Luxury 4', 
-    //     description: 'This is a non-public template', 
-    //     thumbnail: 'https://via.placeholder.com/150', 
-    //     publicity: false },
-    //     { id: 'template1', 
-    //       name: 'Luxury 1', 
-    //       description: 'This is the first template', 
-    //       thumbnail: 'https://via.placeholder.com/150', 
-    //       publicity: true },
-    //     { id: 'template2', 
-    //       name: 'Luxury 2', 
-    //       description: 'This is the second template', 
-    //       thumbnail: 'https://via.placeholder.com/150',
-    //       publicity: true },
-    //     { id: 'template3', 
-    //       name: 'Luxury 3', 
-    //       description: 'This is the third template', 
-    //       thumbnail: 'https://via.placeholder.com/150', 
-    //       publicity: true },
-    //     { id: 'template4', 
-    //       name: 'Luxury 4', 
-    //       description: 'This is a non-public template', 
-    //       thumbnail: 'https://via.placeholder.com/150', 
-    //       publicity: false },
+    }
   ]);
 
   const compButtonLightTheme = () => {
