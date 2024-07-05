@@ -24,6 +24,17 @@ function LandingPage() {
       }}
     >
       <div className="text-center flex flex-col justify-center items-center">
+      
+        <img
+          src="https://asset.menica.pro/menicawhite_big%403x.webp"
+          alt="Logo"
+          className="mx-auto my-5"
+          style={{
+            width: '70px',
+            height: 'auto',
+          }}
+          data-aos='fade-down'
+        />
         <img
           src="https://menicapro.s3.ap-southeast-1.amazonaws.com/amplop%403x.webp"
           alt="Logo"
