@@ -308,7 +308,7 @@ const Desain = () => {
             return template;
         });
     });
-    console.log(template_list)
+    console.log(colorIndex)
 };
 
   const [isOpen, setIsOpen] = useState(false);
@@ -374,7 +374,6 @@ const Desain = () => {
       setThumbnail(template_list[index].thumbnail);
       setTemplate(id);
       setActiveTemplate(index);
-      console.log()
     }else{
 
       setTheme(template_list[index].name)
