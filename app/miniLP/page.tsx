@@ -52,10 +52,6 @@ function LandingPage() {
           data-aos='fade-up'
         >Luxury Wedding Invitation</h1>
         <div className="fixed bottom-2 left-1/2 transform -translate-x-1/2 w-auto py-1 px-3 flex text-[0.5rem] sm:text-[0.6rem] tracking-tight text-white rounded-full frosted-glass hover:bg-opacity-40 font-bold transition-all duration-500"
-      style={{
-        zIndex: '999',
-        left: isOpen ? '80px' : '50%'
-      }}
 >
 
     {
