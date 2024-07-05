@@ -310,8 +310,11 @@ const Desain = () => {
     });
 };
 
+
+
+
 useEffect(() => {
-    console.log(colorIndex); // This will log the updated colorIndex
+    console.log(themeActive); // This will log the updated colorIndex
   }, [colorIndex]);
 
 useEffect(() => {
