@@ -23,7 +23,7 @@ function LandingPage() {
         fontFamily: 'Plus Jakarta Sans',
       }}
     >
-      <div className="text-center">
+      <div className="text-center flex flex-col justify-center items-center">
         <img
           src="https://menicapro.s3.ap-southeast-1.amazonaws.com/amplop%403x.webp"
           alt="Logo"
