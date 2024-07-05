@@ -36,7 +36,7 @@ function LandingPage() {
         />
         <h1 className="text-4xl tracking-tight font-extrabold my-6 text-white text-gradient"
           style={{
-            fontFamily: 'Damion',
+            fontFamily: 'Alex Brush',
           }}
           data-aos='fade-down'
         >Your Luxury Wedding Invitation</h1>
