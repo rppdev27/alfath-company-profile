@@ -3,11 +3,11 @@
 // important, add flag for panel temple if the backgrround is light
 
 import React, { useState, useEffect } from 'react'
-import Mandala1 from '../../components/template-design/mandala-01'
-import Mandala2 from '../../components/template-design/mandala-02'
-import Spiderman from '../../components/template-design/Spiderman'
-import Batman from '../../components/template-design/Batman'
-import Astronot from '../../components/template-design/Astronot'
+import Mandala1 from '../components/template-design/mandala-01'
+import Mandala2 from '../components/template-design/mandala-02'
+import Spiderman from '../components/template-design/Spiderman'
+import Batman from '../components/template-design/Batman'
+import Astronot from '../components/template-design/Astronot'
 import { FaSquareCheck } from "react-icons/fa6";
 import { CgTemplate } from "react-icons/cg";
 import { FaWhatsapp } from "react-icons/fa6";
