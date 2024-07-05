@@ -14,6 +14,7 @@ function LandingPage() {
         AOS.init();
   }, [])
 
+  const currentYear = new Date().getFullYear(); 
 
   return (
     <div
@@ -70,6 +71,14 @@ function LandingPage() {
             </div>
 
             
+        </div>
+        <div className="text-xs tracking-normal font-bold mb-4 text-white"
+          style={{
+            fontFamily: 'Ubuntu',
+          }}
+          data-aos='fade-up'
+        >
+          &copy; 2014 - {currentYear}
         </div>
       </div>
     </div>
