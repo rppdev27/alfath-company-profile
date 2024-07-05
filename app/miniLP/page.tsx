@@ -25,7 +25,7 @@ function LandingPage() {
     >
       <div className="text-center">
         <img
-          src="https://asset.menica.pro/menicawhite_big%403x.webp"
+          src="https://menicapro.s3.ap-southeast-1.amazonaws.com/amplop%403x.webp"
           alt="Logo"
           className="mx-auto my-5"
           style={{
