@@ -425,6 +425,11 @@ useEffect(() => {
     console.log(currentColorData); // This will log the updated colorIndex
   }, [currentColorData]);
 
+useEffect(() => {
+    console.log(colorActive); // This will log the updated colorIndex
+  }, [colorActive]);
+
+
 
   return (
     <div className='relative'>
