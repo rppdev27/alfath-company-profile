@@ -45,7 +45,7 @@ function LandingPage() {
           }}
           data-aos='fade-down'
         />
-        <h1 className="sm:text-4xl text-lg tracking-tight font-extrabold mt-3 mb-4 text-[#f4706d]"
+        <h1 className="sm:text-4xl text-lg tracking-tight font-extrabold mt-3 mb-4 text-white"
           style={{
             fontFamily: 'Alex Brush',
           }}
