@@ -15,7 +15,7 @@ function LandingPage() {
   }, []);
 
   const handleDemoClick = () => {
-    setVisible(false);
+    // setVisible(false);
     setTotallyGone(false);
   };
 
