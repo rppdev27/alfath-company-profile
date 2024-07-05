@@ -17,9 +17,9 @@ function LandingPage() {
         <img
           src="https://asset.menica.pro/menicawhite_big%403x.webp"
           alt="Logo"
-          className="mx-auto mb-4"
+          className="mx-auto my-5"
           style={{
-            width: '300px',
+            width: '175px',
             height: 'auto',
           }}
         />
@@ -28,7 +28,7 @@ function LandingPage() {
             fontFamily: 'Damion'
           }}
         >Luxury Wedding Invitation</h1>
-        <button className="font-semibold bg-green-700 hover:bg-green-800 text-white text-xl py-2 px-4 rounded shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]">
+        <button className="p-5 font-semibold bg-green-700 hover:bg-green-800 text-white text-md py-2 px-4 rounded shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]">
           Explore Design
         </button>
       </div>
