@@ -415,7 +415,7 @@ const Desain = () => {
     setActiveColor(index);
   }
 
-  const [thumbnalActive, setThumbnail] = useState('')
+  const [thumbnailActive, setThumbnail] = useState('')
   const [themeActive, setTheme] = useState('')
   const [colorActive, setColor] = useState('')
   const [hexActive, setHex] = useState('')
