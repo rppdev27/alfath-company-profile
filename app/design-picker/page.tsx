@@ -423,7 +423,7 @@ const Desain = () => {
   const changeTemplate = (id: any, index: any) => { 
 
     if(template_list[index].color.length > 0){
-
+      setColorIndex(0);
       setColor(template_list[colorIndex].color[colorIndex].name);
       setTheme(template_list[index].name)
       setThumbnail(template_list[index].thumbnail);
@@ -586,12 +586,14 @@ useEffect(() => {
                               </div>
 
                               </> : <>
+
+                                No color options
                                 
                               </> 
                             }
                             
                             <div className="my-2">
-                                <img src={thumbnalActive} alt='undangan digital menica' className='rounded-md shadow-lg'/>
+                                <img src={thumbnailActive} alt='undangan digital menica' className='rounded-md shadow-lg'/>
                             </div>
                             <div className="mt-5 my-2 text-black font-semibold">
                                 <span className='text-green-700 font-bold'>CUSTOM</span> Template atau Tidak?
