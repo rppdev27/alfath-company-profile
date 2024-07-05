@@ -59,7 +59,7 @@ function LandingPage() {
               <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-2 rounded-md hover:bg-slate-400 bg-[#3f3f3f30]">
                   <FaWhatsapp size={15}/>
               </div>
-             <div className='font-semibold mt-1 ml-2'>
+             <div className='font-semibold ml-2'>
                 Templae
               </div>
             </div>
