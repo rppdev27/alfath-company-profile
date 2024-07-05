@@ -345,7 +345,7 @@ const Desain = () => {
   
 
   const updateColorStatus = (templateId: any, index: any, color: any, imageBGs: any) => {
-    alert(index);
+    // alert(index);
     setIndexTemplate(index);
     setColorIndex(index);
     setColorCurrent(color);
