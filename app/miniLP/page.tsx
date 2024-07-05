@@ -45,7 +45,7 @@ function LandingPage() {
           }}
           data-aos='fade-down'
         />
-        <h1 className="sm:text-4xl text-lg tracking-tight font-bold mt-3 mb-4 text-white"
+        <h1 className="sm:text-4xl text-lg tracking-normal font-bold mb-4 text-white"
           style={{
             fontFamily: 'Ubuntu',
           }}
