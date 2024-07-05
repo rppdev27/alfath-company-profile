@@ -578,9 +578,18 @@ useEffect(() => {
                             <div className="my-2 text-black font-semibold">
                                 Kamu memilih tema <b>{themeActive}</b>
                             </div>
-                            <div className="my-2 text-black font-semibold">
-                               Dengan warna <b><span style={{color: currentColorData, fontWeight: '700' }}>{template_list[templateIndex].color[colorIndex].name}</span></b>
-                            </div>
+                            {
+                              template_list[templateIndex].color.length > 0 ? <>
+                                
+                              <div className="my-2 text-black font-semibold">
+                                Dengan warna <b><span style={{color: currentColorData, fontWeight: '700' }}>{template_list[templateIndex].color[colorIndex].name}</span></b>
+                              </div>
+
+                              </> : <>
+                                
+                              </> 
+                            }
+                            
                             <div className="my-2">
                                 <img src={thumbnalActive} alt='undangan digital menica' className='rounded-md shadow-lg'/>
                             </div>
