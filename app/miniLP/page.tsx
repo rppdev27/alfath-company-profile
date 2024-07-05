@@ -16,7 +16,7 @@ function LandingPage() {
   const currentYear = new Date().getFullYear();
 
   const handleOpenInvitationClick = () => {
-    document.getElementById('invitationSection').scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('invitationSection')?.scrollIntoView({ behavior: 'smooth' });
   }
 
   return (
@@ -69,7 +69,7 @@ function LandingPage() {
               </div>
             </div>
           </div>
-          <div className="text-xs tracking-normal mt-2 text-white"
+          <div className="text-xs tracking-normal mt-4 text-white"
             style={{
               fontFamily: 'Ubuntu',
             }}
