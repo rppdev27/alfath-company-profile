@@ -105,6 +105,15 @@ html{
   -webkit-text-fill-color: transparent;
 }
 
+.text-gradient-2 {
+  /* font-weight: bold;  */
+  background: linear-gradient(180deg,#dfff00,#ffdb4e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
 .gradient-border {
   position: relative;
   width: fit-content;
