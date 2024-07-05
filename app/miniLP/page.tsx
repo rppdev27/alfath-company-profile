@@ -4,6 +4,7 @@ import React,{ useEffect } from 'react';
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 import { MdOutlineImageSearch } from "react-icons/md";
+import { CgTemplate } from "react-icons/cg";
 
 
 function LandingPage() {
