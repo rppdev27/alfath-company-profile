@@ -51,14 +51,36 @@ function LandingPage() {
           }}
           data-aos='fade-up'
         >Luxury Wedding Invitation</h1>
-        <button 
-          data-aos='fade-left'
-          className="flex items-center justify-center mx-autoo flex-row p-8 font-semibold bg-green-700 hover:bg-green-800 text-white text-md py-2 px-4 rounded-lg shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] text-xs sm:text-base">
-          <MdOutlineImageSearch className='mr-1 text-white'/>
-          <div>
-              Explore Design
+        <div className="fixed bottom-2 left-1/2 transform -translate-x-1/2 w-auto py-1 px-3 flex text-[0.5rem] sm:text-[0.6rem] tracking-tight text-white rounded-full frosted-glass hover:bg-opacity-40 font-bold transition-all duration-500"
+      style={{
+        zIndex: '999',
+        left: isOpen ? '80px' : '50%'
+      }}
+>
+
+    {
+        true ? <></> : <div className="flex flex-row justify-center items-center p-1 text-white mx-2 cursor-pointer">
+
+          <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-2 rounded-md hover:bg-slate-400 bg-[#3f3f3f30]">
+              <CgTemplate size={15}/>
           </div>
-        </button>
+          <div className='font-semibold mt-1 ml-2'>
+            Template
+          </div>
+        </div>
+      }
+
+    <div className="flex flex-row justify-center items-center p-1 text-white mx-2 cursor-pointer">
+      <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-2 rounded-md hover:bg-slate-400 bg-[#3f3f3f30]">
+          <FaWhatsapp size={15}/>
+      </div>
+     <div className='font-semibold mt-1 ml-2'>
+        Templae
+      </div>
+    </div>
+
+    
+</div>
       </div>
     </div>
   );
