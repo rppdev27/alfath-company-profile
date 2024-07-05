@@ -308,8 +308,11 @@ const Desain = () => {
             return template;
         });
     });
-    console.log(colorIndex)
 };
+
+useEffect(() => {
+    console.log(colorIndex); // This will log the updated colorIndex
+  }, [colorIndex]);
 
   const [isOpen, setIsOpen] = useState(false);
 
