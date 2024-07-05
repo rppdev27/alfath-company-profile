@@ -28,7 +28,7 @@ function LandingPage() {
         <img
           src="https://asset.menica.pro/menicawhite_big%403x.webp"
           alt="Logo"
-          className="mx-auto my-5"
+          className="mx-auto"
           style={{
             width: '70px',
             height: 'auto',
@@ -38,7 +38,7 @@ function LandingPage() {
         <img
           src="https://menicapro.s3.ap-southeast-1.amazonaws.com/amplop%403x.webp"
           alt="Logo"
-          className="mx-auto my-2"
+          className="mx-auto"
           style={{
             width: '175px',
             height: 'auto',
