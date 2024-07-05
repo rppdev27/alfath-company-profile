@@ -38,14 +38,14 @@ function LandingPage() {
         <img
           src="https://menicapro.s3.ap-southeast-1.amazonaws.com/amplop%403x.webp"
           alt="Logo"
-          className="mx-auto my-5"
+          className="mx-auto my-2"
           style={{
             width: '175px',
             height: 'auto',
           }}
           data-aos='fade-down'
         />
-        <h1 className="sm:text-4xl text-lg tracking-tight font-extrabold mt-3 mb-6 text-[#f4706d]"
+        <h1 className="sm:text-4xl text-lg tracking-tight font-extrabold mt-3 mb-4 text-[#f4706d]"
           style={{
             fontFamily: 'Alex Brush',
           }}
