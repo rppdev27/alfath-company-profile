@@ -311,16 +311,6 @@ const Desain = () => {
 };
 
 
-
-
-useEffect(() => {
-    console.log(themeActive); // This will log the updated colorIndex
-  }, [themeActive]);
-
-useEffect(() => {
-    console.log(currentColorData); // This will log the updated colorIndex
-  }, [currentColorData]);
-
   const [isOpen, setIsOpen] = useState(false);
 
   const togglePanel = () => {
@@ -424,6 +414,17 @@ useEffect(() => {
          setOrder('Tanpa Custom')
       }
   };
+
+  useEffect(() => {
+    console.log(themeActive); // This will log the updated colorIndex
+  }, [themeActive]);
+
+
+
+useEffect(() => {
+    console.log(currentColorData); // This will log the updated colorIndex
+  }, [currentColorData]);
+
 
   return (
     <div className='relative'>
