@@ -67,7 +67,7 @@ function LandingPage() {
         </h1>
         <div
           className="transform w-auto py-1 px-3 flex text-[0.5rem] sm:text-[0.6rem] tracking-tight text-white rounded-full frosted-glass hover:bg-opacity-40 font-bold transition-all duration-500 mx-auto mt-2 cursor-pointer"
-          onClick={handleDemoClick}
+          onClick={()=> window.open('https://alfath.co.id/design-picker')}
         >
           <div className="flex flex-row justify-center items-center p-1 text-white mx-2">
             <CgTemplate size={17} className="mr-1" />
