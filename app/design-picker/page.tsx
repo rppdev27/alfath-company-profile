@@ -323,20 +323,6 @@ const Desain = () => {
         setActiveTab(tab);
     };
 
-  const pastelColors = [
-    { name: 'Pastel Pink', hex: '#FADADD' },
-    { name: 'Pastel Blue', hex: '#A2C2E3' },
-    { name: 'Pastel Green', hex: '#B3E5C6' },
-    { name: 'Pastel Yellow', hex: '#FCE5A9' },
-    { name: 'Pastel Purple', hex: '#D9B6F0' },
-    { name: 'Pastel Orange', hex: '#F5B3A1' },
-    { name: 'Pastel Peach', hex: '#F7C6C7' },
-    { name: 'Pastel Mint', hex: '#A9D6E5' },
-    { name: 'Pastel Lavender', hex: '#E6C6E7' },
-    { name: 'Pastel Coral', hex: '#F5A9A2' },
-    { name: 'Pastel Gray', hex: '#D0D0D0' },
-    { name: 'Pastel Teal', hex: '#B3D9D9' },
-  ];
 
   const categoryTemplates = [
     {
@@ -383,11 +369,12 @@ const Desain = () => {
 
   const changeTemplate = (id: any, index: any) => { 
     if(template_list[index].color.length > 0){
-      setColor(template_list[index].color[colorIndex].name);
+      setColor(template_list[colorIndex].color[colorIndex].name);
       setTheme(template_list[index].name)
       setThumbnail(template_list[index].thumbnail);
       setTemplate(id);
       setActiveTemplate(index);
+      console.log()
     }else{
 
       setTheme(template_list[index].name)
