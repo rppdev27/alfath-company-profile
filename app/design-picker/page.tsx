@@ -293,6 +293,7 @@ const Desain = () => {
   
 
   const updateColorStatus = (templateId: any, index: any, color: any, imageBGs: any) => {
+    alert(index);
     setColorIndex(index);
     setColorCurrent(color);
     setBackgroundAsset(imageBGs);
