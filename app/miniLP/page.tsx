@@ -17,13 +17,13 @@ function LandingPage() {
   const handleDemoClick = () => {
     setVisible(false);
     setTimeout(() => {
-      setTotallyGone(true);
+      setTotallyGone(false);
     }, 1000); // 1 second delay
   };
 
   const currentYear = new Date().getFullYear();
 
-  
+
 
   return (
     <>
