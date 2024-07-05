@@ -314,6 +314,10 @@ useEffect(() => {
     console.log(colorIndex); // This will log the updated colorIndex
   }, [colorIndex]);
 
+useEffect(() => {
+    console.log(currentColorData); // This will log the updated colorIndex
+  }, [currentColorData]);
+
   const [isOpen, setIsOpen] = useState(false);
 
   const togglePanel = () => {
