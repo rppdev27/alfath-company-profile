@@ -45,9 +45,9 @@ function LandingPage() {
           }}
           data-aos='fade-down'
         />
-        <h1 className="sm:text-4xl text-lg tracking-tight font-extrabold mt-3 mb-4 text-white"
+        <h1 className="sm:text-4xl text-lg tracking-tight font-bold mt-3 mb-4 text-white"
           style={{
-            fontFamily: 'Alex Brush',
+            fontFamily: 'Ubuntu',
           }}
           data-aos='fade-up'
         >Luxury Wedding Invitation</h1>
