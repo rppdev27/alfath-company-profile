@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { CgTemplate } from "react-icons/cg";
+import DesignPicker from '../../components/DesignPicker'
 
 function LandingPage() {
   const [visible, setVisible] = useState(true);
@@ -20,6 +21,7 @@ function LandingPage() {
   const currentYear = new Date().getFullYear();
 
   return (
+    <>
     <div
       className={`flex flex-col items-center justify-center h-screen w-screen bg-gray-100 transition-all duration-1000 ${visible ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'}`}
       style={{
@@ -86,6 +88,12 @@ function LandingPage() {
         </div>
       </div>
     </div>
+
+    {
+      visible ? <DesignPicker/> : <></>
+    }
+
+    </>
   );
 }
 
