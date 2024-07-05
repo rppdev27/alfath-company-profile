@@ -342,11 +342,15 @@ const Desain = () => {
   const [imageBG, setBackgroundAsset] = useState('');
   const [colorIndex, setColorIndex] = useState(0);
   const [templateIndex, setIndexTemplate] = useState(0);
+  const [thumbnailActive, setThumbnail] = useState('')
+  const [themeActive, setTheme] = useState('')
+  const [colorActive, setColor] = useState('')
+  const [hexActive, setHex] = useState('')
   
 
   const updateColorStatus = (templateId: any, index: any, color: any, imageBGs: any) => {
     // alert(index);
-    setIndexTemplate(index);
+    // setIndexTemplate(index);
     setColorIndex(index);
     setColorCurrent(color);
     setBackgroundAsset(imageBGs);
@@ -415,12 +419,11 @@ const Desain = () => {
     setActiveColor(index);
   }
 
-  const [thumbnailActive, setThumbnail] = useState('')
-  const [themeActive, setTheme] = useState('')
-  const [colorActive, setColor] = useState('')
-  const [hexActive, setHex] = useState('')
+  
 
   const changeTemplate = (id: any, index: any) => { 
+
+    setIndexTemplate(index);
 
     if(template_list[index].color.length > 0){
       setColorIndex(0);
