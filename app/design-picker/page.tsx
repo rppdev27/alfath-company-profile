@@ -26,6 +26,52 @@ const Desain = () => {
   const [isOpenModal, setIsOpenModal] = useState(false);
   const [isLocked, setLocked] = useState(false);
 
+  const colorSet_01 = [
+
+        {
+          name: "Navy",
+          hex: "#152443",
+          status: false,
+          background_section: "https://asset.menica.pro/menicav4/bg-mandala-2.png"
+        },
+        {
+          name: "Maroon",
+          hex: "#5B1A27",
+          status: false,
+          background_section: "https://asset.menica.pro/menicav4/bg-mandala-red.png"
+        },
+        {
+          name: "Green",
+          hex: "#2A3F3F",
+          status: false,
+          background_section: "https://asset.menica.pro/menicav4/bg-mandala-green.png"
+        },
+        {
+          name: "Brown",
+          hex: "#4D4035",
+          status: false,
+          background_section: "https://asset.menica.pro/menicav4/bg-mandala-brown.png"
+        },
+
+  ]
+
+  const colorSet_02 = [
+
+        {
+          name: "Navy",
+          hex: "#152443",
+          status: false,
+          background_section: "https://asset.menica.pro/menicav4/bg-mandala-2.png"
+        },
+        {
+          name: "Maroon",
+          hex: "#5B1A27",
+          status: false,
+          background_section: "https://asset.menica.pro/menicav4/bg-mandala-red.png"
+        },
+
+  ]
+
   const toggleModal = () => {
     setIsOpenModal(!isOpenModal);
     // setLocked(!isOpenModal);
@@ -38,6 +84,7 @@ const Desain = () => {
       thumbnail: 'https://asset.menica.pro/menicav4/thumbnail-mandala-NAVY.png', 
       publicity: true, 
       colorMode: 'dark',
+      colorSet: 1, 
       color: [
         {
           name: "Navy",
@@ -86,6 +133,7 @@ const Desain = () => {
       colorMode: 'dark',
       price: 'IDR 150.000',
       category: 'wedding',
+      colorSet: 2,
       color: [
         {
           name: "Navy",
@@ -121,6 +169,7 @@ const Desain = () => {
       colorMode: 'dark',
       price: 'IDR 150.000',
       category: 'wedding',
+      colorSet: 1,
       color: [
         // {
         //   name: "Navy",
@@ -156,6 +205,7 @@ const Desain = () => {
       colorMode: 'dark',
       price: 'IDR 150.000',
       category: 'wedding',
+      colorSet: 1,
       color: [
         // {
         //   name: "Navy",
@@ -191,6 +241,7 @@ const Desain = () => {
       colorMode: 'dark',
       price: 'IDR 150.000',
       category: 'wedding',
+      colorSet: 1,
       color: [
         // {
         //   name: "Navy",
@@ -290,10 +341,12 @@ const Desain = () => {
   const [currentColorData, setColorCurrent] = useState('');
   const [imageBG, setBackgroundAsset] = useState('');
   const [colorIndex, setColorIndex] = useState(0);
+  const [templateIndex, setIndexTemplate] = useState(0);
   
 
   const updateColorStatus = (templateId: any, index: any, color: any, imageBGs: any) => {
     alert(index);
+    setIndexTemplate(index);
     setColorIndex(index);
     setColorCurrent(color);
     setBackgroundAsset(imageBGs);
@@ -368,12 +421,15 @@ const Desain = () => {
   const [hexActive, setHex] = useState('')
 
   const changeTemplate = (id: any, index: any) => { 
+
     if(template_list[index].color.length > 0){
+
       setColor(template_list[colorIndex].color[colorIndex].name);
       setTheme(template_list[index].name)
       setThumbnail(template_list[index].thumbnail);
       setTemplate(id);
       setActiveTemplate(index);
+
     }else{
 
       setTheme(template_list[index].name)
@@ -414,6 +470,10 @@ const Desain = () => {
          setOrder('Tanpa Custom')
       }
   };
+
+  useEffect(()=>{
+    console.log(templateIndex)
+  },[templateIndex])
 
   useEffect(() => {
     console.log(themeActive); // This will log the updated colorIndex
@@ -519,7 +579,7 @@ useEffect(() => {
                                 Kamu memilih tema <b>{themeActive}</b>
                             </div>
                             <div className="my-2 text-black font-semibold">
-                               Dengan warna <b><span style={{color: currentColorData, fontWeight: '700' }}>{colorActive}</span></b>
+                               Dengan warna <b><span style={{color: currentColorData, fontWeight: '700' }}>{template_list[templateIndex].color[colorIndex].name}</span></b>
                             </div>
                             <div className="my-2">
                                 <img src={thumbnalActive} alt='undangan digital menica' className='rounded-md shadow-lg'/>
@@ -729,6 +789,10 @@ useEffect(() => {
                                   No Color
                                 </>
                             }
+
+
+
+
                               </div>
                           </div>
                         </>
