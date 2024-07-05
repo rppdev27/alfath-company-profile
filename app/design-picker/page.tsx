@@ -459,7 +459,7 @@ const Desain = () => {
  const [topic, setTopic] = useState(null);
 
   const handleOptionChange = (event: any) => {
-      console.log(`Selected Option: ${event.target.value}`);
+      // console.log(`Selected Option: ${event.target.value}`);
       // alert(event.target.value);
       setTopic(event.target.value);
   };
@@ -491,7 +491,6 @@ useEffect(() => {
 useEffect(() => {
     console.log(colorActive); // This will log the updated colorIndex
   }, [colorActive]);
-
 
 
   return (
