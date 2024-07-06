@@ -22,7 +22,7 @@ function LandingPage() {
       setTimeout(() => {
         sectionRef.current.scrollIntoView({ behavior: 'smooth' });
       }, 1000); // 1 second delay after setting setTotallyGone
-    }, 1000); // 1 second delay
+    }, 500); // 1 second delay
   };
 
 
