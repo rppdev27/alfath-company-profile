@@ -21,8 +21,8 @@ function LandingPage() {
       setTotallyGone(false);
       setTimeout(() => {
         sectionRef.current.scrollIntoView({ behavior: 'smooth' });
-      }, 2000); // 1 second delay after setting setTotallyGone
-    }, 500); // 1 second delay
+      }, 500); // 1 second delay after setting setTotallyGone
+    }, 2000); // 1 second delay
   };
 
 
