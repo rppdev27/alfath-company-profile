@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { CgTemplate } from "react-icons/cg";
@@ -8,6 +8,7 @@ import DesignPicker from '../../components/DesignPicker'
 
 function LandingPage() {
   const [visible, setVisible] = useState(true);
+  const sectionRef = useRef(null);
   const [totallyGone, setTotallyGone] = useState(true);
 
   useEffect(() => {
@@ -18,8 +19,12 @@ function LandingPage() {
     setVisible(false);
     setTimeout(() => {
       setTotallyGone(false);
+      setTimeout(() => {
+        sectionRef.current.scrollIntoView({ behavior: 'smooth' });
+      }, 1000); // 1 second delay after setting setTotallyGone
     }, 1000); // 1 second delay
   };
+
 
   const currentYear = new Date().getFullYear();
 
@@ -98,7 +103,7 @@ function LandingPage() {
     
 
     {
-      visible ?  <></> : <DesignPicker/>
+      visible ?  <></> : <div ref={sectionRef}><DesignPicker/></div>
     }
 
     </>
