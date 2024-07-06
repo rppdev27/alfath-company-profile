@@ -77,7 +77,7 @@ function LandingPage() {
                 fontFamily: 'Ubuntu',
               }}
             >
-              Demo Template
+              Demo Templatexxx
             </div>
           </div>
         </div>
