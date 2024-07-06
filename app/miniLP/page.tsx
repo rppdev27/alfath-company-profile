@@ -8,7 +8,7 @@ import DesignPicker from '../../components/DesignPicker'
 
 function LandingPage() {
   const [visible, setVisible] = useState(true);
-  const sectionRef = useRef<HTMLDivElement>(null);
+  const sectionRef: any = useRef<HTMLDivElement>(null);
   const [totallyGone, setTotallyGone] = useState(true);
 
   useEffect(() => {
