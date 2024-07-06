@@ -478,7 +478,7 @@ useEffect(() => {
         </div>
       )}
 
-<div className="fixed bottom-2 left-1/2 transform -translate-x-1/2 w-auto py-1 px-3 flex text-[0.5rem] sm:text-[0.6rem] tracking-tight text-white rounded-full frosted-glass hover:bg-opacity-40 font-bold transition-all duration-500"
+<div className="fixed bottom-2 left-1/2 transform -translate-x-1/2 w-auto py-1 px-3 flex text-[0.5rem] sm:text-[0.6rem] tracking-tight text-white rounded-full yellow-bg hover:bg-opacity-40 font-bold transition-all duration-500"
       style={{
         zIndex: '999',
         left: isOpen ? '80px' : '50%'
@@ -491,7 +491,7 @@ useEffect(() => {
           <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-2 rounded-md hover:bg-slate-400 bg-[#3f3f3f30]">
               <CgTemplate size={15}/>
           </div>
-          <div className='font-semibold ml-2'>
+          <div className='font-semibold ml-2  text-[#575429]'>
             Template
           </div>
         </div>
@@ -501,7 +501,7 @@ useEffect(() => {
       <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-2 rounded-md hover:bg-slate-400 bg-[#3f3f3f30]">
           <FaWhatsapp size={15}/>
       </div>
-     <div className='font-semibold ml-2' onClick={ () => toggleModal() }>
+     <div className='font-semibold ml-2 text-[#575429]' onClick={ () => toggleModal() }>
         Order/Tanya
       </div>
     </div>
