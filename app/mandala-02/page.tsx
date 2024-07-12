@@ -1324,9 +1324,12 @@ const Cover: React.FC = () => {
           
           
         {/* Top Decoration Image */}
-        <div className="mx-auto mt-[-112px] w-1/2" data-aos="fade-in">
+        <div className="mx-auto mt-[-112px] w-full" data-aos="fade-in">
           {/* <img src="https://asset.menica.pro/menicav4/mandala-navy1-B.svg" alt="Top Decoration" className='animate-spin-slow'/> */}
-          <img src="https://asset.menica.pro/kubah-navy2.svg"/>
+          <img src="https://asset.menica.pro/kubah-navy2.svg" style={{
+            width: '100%',
+            height: 'auto'
+          }}/>
         </div>
         
         {/* Invitation Content */}
