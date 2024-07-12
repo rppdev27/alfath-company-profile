@@ -1332,7 +1332,7 @@ const Cover: React.FC = () => {
             height: 'auto'
           }}/>
         </div>
-        <div className="mx-auto w-full mt-[-100px]" data-aos="fade-in">
+        <div className="mx-auto w-full mt-[-300px]" data-aos="fade-in">
           {/* <img src="https://asset.menica.pro/menicav4/mandala-navy1-B.svg" alt="Top Decoration" className='animate-spin-slow'/> */}
           <img src="https://asset.menica.pro/kubah-navy2.svg" style={{
             width: '100%',
@@ -1341,7 +1341,7 @@ const Cover: React.FC = () => {
         </div>
         
         {/* Invitation Content */}
-        <div className="flex flex-col flex-grow justify-between w-[70%] mx-auto text-center">
+        <div className="flex flex-col flex-grow justify-between w-[70%] mx-auto text-center mt-[-300px]">
           {/* Invitation Title and Names */}
           <div>
             <div className="text-md text-white uppercase tracking-widest sm:mt-[30%] mt-[18%] font-light" style={{ fontFamily: 'Prata' }} data-aos="fade-up">
