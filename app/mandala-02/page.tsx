@@ -1324,7 +1324,15 @@ const Cover: React.FC = () => {
           
           
         {/* Top Decoration Image */}
+        
         <div className="mx-auto w-full" data-aos="fade-in">
+          {/* <img src="https://asset.menica.pro/menicav4/mandala-navy1-B.svg" alt="Top Decoration" className='animate-spin-slow'/> */}
+          <img src="https://asset.menica.pro/mandala-navy2.svg" style={{
+            width: '100%',
+            height: 'auto'
+          }}/>
+        </div>
+        <div className="mx-auto w-full mt-[-100px]" data-aos="fade-in">
           {/* <img src="https://asset.menica.pro/menicav4/mandala-navy1-B.svg" alt="Top Decoration" className='animate-spin-slow'/> */}
           <img src="https://asset.menica.pro/kubah-navy2.svg" style={{
             width: '100%',
