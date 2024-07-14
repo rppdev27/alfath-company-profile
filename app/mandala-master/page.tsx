@@ -1,26 +1,307 @@
-'use client';
+'use client'
 
 import React, { useRef, useState, useEffect } from 'react';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { GiOppositeHearts } from "react-icons/gi";
+import { Button, Dialog, DialogPanel } from '@tremor/react';
 import Countdown from 'react-countdown';
+import { useDispatch, useSelector } from 'react-redux';
+import { FiX } from "react-icons/fi";
+import fontFamilySet from '@/components/fontFamiltSet';
 import { IoIosArrowForward } from "react-icons/io";
-
+import { getCommentbyInv, createComment, createComments, getComment } from '@/utils/request'
+import { RootState } from '@/app/GlobalRedux/store';
+import { useForm, Controller } from 'react-hook-form';
+import { addComment } from '@/app/GlobalRedux/Features/invitation/invitationSlice';
+import { useSearchParams } from 'next/navigation';
+import toast, { Toaster } from 'react-hot-toast';
+import Loadingscreen from '../loadingscreen';
+import { GetUserData, GetUserDataByEmail, createCommentsGuestica, getCommentbyInvGuestica } from "@/utils/guestica"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { PiPencilLineDuotone } from "react-icons/pi";
 import { GrCopy } from "react-icons/gr";
+// this is how to get email.
 
-const Cover: React.FC = () => {
+const nemimeytawedding = ({invi_id}: any) => {
+
+      useEffect(()=>{
+        const setInv = async () => {
+
+          const aaa: any = await GetUserDataByEmail( {
+            email: 'test@example.com'
+          } );
+          console.log('gasss');
+          console.log(aaa[0]);
+
+        }
+
+        setInv();
+
+      },[])
+
+    const searchParams = useSearchParams();
+    const guestname: string | null = searchParams.get('tamu');
+
+    // useEffect(() => {
+    //   if (guestname) {
+    //     setValue('fullname', guestname);
+    //   }
+    // }, [guestname]);
+
+    useEffect(() => {
+      if (guestname) {
+        setValue('fullname', guestname);
+      }
+    }, []);
+
+    const notify = () => toast.success(`Nomor rekening sudah disalin`);
+    const handleCopyClick = async (textToCopy: any) => {
+        try {
+        await navigator.clipboard.writeText(textToCopy);
+        notify();
+        } catch (err) {
+        console.error('Unable to copy to clipboard', err);
+        }
+    }
+
+    const guestcomments = useSelector((state: RootState) => state.invitation.guestcomment);
+    const { register, handleSubmit,reset, setValue,  formState: { errors } } = useForm();
+    const [comment, setComment] = useState('');
+    const [showEmojiPicker, setShowEmojiPicker] = useState(false);
+    const [isOpens, setIsOpens] = useState(false);
+    const [isLoadingSubmit, setLoadingSubmit] = useState(false);
+
+  const handleEmojiSelect = (emoji: any) => {
+    setComment(comment + emoji.native);
+  };
+
+  const [avtr, setAvatar] = useState('https://img.freepik.com/premium-psd/3d-illustrations-muslimah_10376-1741.jpg?w=1380');
+  const [activeAvatar, setActiveAvatar] = useState(-1);
+
+  const setAvatars = (avatar: any,index: any) => {
+    setAvatar(avatar);
+    setActiveAvatar(index);
+  }
+
+  const onSubmit = async(data: any) => {
+    setLoadingSubmit(true);
+    const dataComment: any = {
+          fullname: data.fullname,
+          attendance: data.response,
+          avatar: avtr,
+          content: data.comment,
+          privateNotes: '',
+          // invitationId:  invi_id
+           user_id: 5
+      }
+  
+      // const commentCallback: any = await createComments({
+      //   dataComment:  dataComment
+      // });
+
+      const commentCallback: any = await createCommentsGuestica({
+        dataComment:  dataComment
+      });
+
+      // const comments: any = await getComment();
+
+      const comments = await getCommentbyInvGuestica({
+        id: 5
+      })
+
+      dispatch(addComment(
+      {
+          comments: comments
+      }))
+      
+      setTimeout(() => {
+        // console.log('Timeout executed after 1 second');
+        setIsOpen(false);
+      }, 1200);
+
+      setLoadingSubmit(false);
+  };
+
+  const [html, setHtml] = useState('my <b>HTML</b>');
+  const [message, setMessage] = useState([]);
+
+  const onChange = (e: any) => {
+    setHtml(e.target.value);
+  }
+
+  const dispatch = useDispatch();
+  const avatars = [
+    { src: 'https://asset.menica.pro/menicav4/3d+avatar-1.png' },
+    { src: 'https://asset.menica.pro/menicav4/3d+avatar-4.png' },
+    { src: 'https://asset.menica.pro/menicav4/3d+avatar-5.png' },
+    { src: 'https://asset.menica.pro/menicav4/3d+avatar-6.png' },
+    { src: 'https://asset.menica.pro/menicav4/3d+avatar-7.png' },
+    { src: 'https://asset.menica.pro/menicav4/3d+avatar-8.png' },
+    { src: 'https://asset.menica.pro/menicav4/3d+avatar-9.png' },
+    { src: 'https://asset.menica.pro/menicav4/3d+avatar-10.png' },
+    { src: 'https://asset.menica.pro/menicav4/3d+avatar-2.png' },
+    { src: 'https://asset.menica.pro/menicav4/3d+avatar-3.png' },
+    {
+      src: 'https://img.freepik.com/premium-psd/3d-illustration-character-muslim-woman-man_786615-236.jpg?w=1380'
+    },
+    {
+      src: 'https://img.freepik.com/premium-psd/lovable-3d-muslim-cartoon-character-joyfully-carrying-his-beloved-woman_152558-96630.jpg?w=1380'
+    },
+    {
+      src: 'https://img.freepik.com/premium-psd/muslim-muslim-women-are-apologizing_487474-4667.jpg?w=1380'
+    },
+    {
+      src: 'https://img.freepik.com/premium-psd/psd-3d-woman-hijab-cartoon-character-avatar-isolated-3d-rendering_460336-1503.jpg?w=1380'
+    },
+    {
+      src: 'https://img.freepik.com/premium-photo/cartoon-character-with-yellow-hood-that-says-i-love-you_618582-2659.jpg?w=1380'
+    },
+    {
+      src: 'https://img.freepik.com/premium-psd/3d-illustrations-muslimah_10376-1741.jpg?w=1380'
+    },
+    {
+      src: 'https://img.freepik.com/premium-psd/3d-render-stack-books-with-graduation-hat-icon_460336-489.jpg?w=1380'
+    },
+    {
+      src: 'https://img.freepik.com/premium-vector/happy-smiling-young-man-avatar-3d-portrait-man-cartoon-character-people-vector-illustration_653240-187.jpg?w=1380'
+    },
+    {
+      src: 'https://img.freepik.com/premium-photo/happy-woman_68067-560.jpg?w=1380'
+    },
+    {
+      src: 'https://img.freepik.com/premium-photo/happy-woman_68067-541.jpg?w=1380'
+    },
+    {
+      src: 'https://img.freepik.com/premium-psd/3d-muslim-woman-avatar-with-glasses_541652-482.jpg'
+    },
+    {
+      src: 'https://img.freepik.com/premium-psd/3d-illustration-cartoon-avatar-cute-girl_611602-141.jpg?w=1380'
+    },
+  ]
+
+  const PhotoGallery = [
+    {
+        src: 'https://ik.imagekit.io/vtvggda66/menicaid6_kKPg4qjo8.png?updatedAt=1719819011595',
+        caption: '',
+    },
+    {
+        src: 'https://ik.imagekit.io/vtvggda66/menicaid6_fCBOfyS-Y.png?updatedAt=1719819007743',
+        caption: '',
+    },
+    {
+        src: 'https://ik.imagekit.io/vtvggda66/menicaid6_KDeRGtWBR.png?updatedAt=1719819004269',
+        caption: '',
+    },
+    {
+        src: 'https://ik.imagekit.io/vtvggda66/menicaid6_6k7fNNyhm.png?updatedAt=1719819000408',
+        caption: '',
+    },
+    {
+        src: 'https://ik.imagekit.io/vtvggda66/menicaid6_ogOCt64bZ.png?updatedAt=1719818997426',
+        caption: '',
+    },
+    {
+        src: 'https://ik.imagekit.io/vtvggda66/WhatsApp%20Image%202024-07-02%20at%204.35.20%20PM.jpeg?updatedAt=1719924074694',
+        caption: '',
+    },
+    {
+        src: 'https://ik.imagekit.io/vtvggda66/WhatsApp%20Image%202024-07-02%20at%204.35.17%20PM.jpeg?updatedAt=1719924074279',
+        caption: '',
+    },
+];
+  
+  let [isOpen, setIsOpen] = useState(false);
+  let [property, setProperty] = useState('');
+
+  let [text_test, setText_text] = useState<string>('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.');
+
+  function closeModal() {
+
+    setIsOpen(false)
+
+  }
+
+  // jadinya gimana ini ya giman akita 
+
+  const [bufferObj, setBufferObj] = useState<any>(
+    {}
+  );
+  
+
+  const openModal = (property: string, value: any) => {
+
+
+    setBufferObj({ ...bufferObj, 
+      content: value.content,
+      font_color: value.font_color,
+      font_family: value.font_family
+    });
+
+    setText_text(value.content);
+    setProperty(property);
+    setIsOpen(true);
+
+  }
+
+  const divRef: any = useRef(null);
 
   useEffect(() => {
-    AOS.init();
+    // Scroll to top when page is refreshed
+    if (divRef.current) {
+        divRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+}, []);
 
-  }, []);
+useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 4000);
 
-  const videoRef1 = useRef<HTMLVideoElement>(null);
+    return () => clearTimeout(timer);
+  }, []); 
+
+    
+    useEffect(() => {
+        AOS.init(); 
+    }, [])
+
+    useEffect(() => {
+      const fetchData = async () => {
+          try {
+              const comments: any = await getCommentbyInvGuestica({id: 5}); // Assuming getComment fetches comments from the API
+              // Handle the fetched comments here, such as updating state
+              // setMessage(comments);
+              // console.log(comments);
+              dispatch(
+                await addComment({
+                  comments: comments
+                })
+              )
+          } catch (error) {
+              // Handle errors if any
+          }
+      };
+  
+      fetchData(); // Call the fetchData function
+      console.log('iv'+5)
+  }, []); 
+
+  const getMonthName = (month: any) => {
+    const months = [
+      "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+      "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+    ];
+    return months[month];
+  }
+
+    useEffect(() => {
+        AOS.init();
+      }, []);
+
+      const videoRef1 = useRef<HTMLVideoElement>(null);
   const videoRef2 = useRef<HTMLVideoElement>(null);
   const videoRef3 = useRef<HTMLVideoElement>(null);
-
   const videoRef4 = useRef<HTMLVideoElement>(null);
   const videoRef5 = useRef<HTMLVideoElement>(null);
   const section2Ref = useRef<HTMLDivElement>(null);
@@ -30,6 +311,7 @@ const Cover: React.FC = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [musicPlaying, setMusicPlaying] = useState(false);
   const [audio, setAudio]: any = useState(null);
+  const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
     // Lock scroll
@@ -1278,26 +1560,34 @@ const Cover: React.FC = () => {
     }
 };
 
-    const handlePlay = () => {
-        if (!musicPlaying) {
-            audio.play();
-            setMusicPlaying(true);
-        } else {
-            audio.pause();
-            setMusicPlaying(false);
-        }
-    };
+const handlePlay = () => {
+    if (!musicPlaying) {
+        audio.play();
+        setMusicPlaying(true);
+    } else {
+        audio.pause();
+        setMusicPlaying(false);
+    }
+};
 
-  return (
+return (
     <>
-      <div className="h-screen-minus-40 sm:h-screen relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
+            <Toaster />
+
+            {
+            isLoading ? <Loadingscreen/> : 
+            <div ref={divRef} className="relative flex flex-col min-h-screen bg-[#152443] overflow-hidden"
+            >
+                <div className="fixed inset-0 w-full h-screen bg-center bg-no-repeat bg-contain animate-spin-slow" style={{ backgroundImage: 'url("https://ik.imagekit.io/vtvggda66/mandala-navy1-big.png?updatedAt=1719847550283")' }}></div>
+                <div className="relative z-10 w-full">
+
+                <div className="h-screen-minus-40 sm:h-screen relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
          style={{
           backgroundImage: `url('https://asset.menica.pro/menicav4/bg-mandala-2.png')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
       >
-
           <audio
                 src="https://asset.menica.pro/Worthy-NemiMeyta.mp3"
                 ref={(audio) => setAudio(audio)}
@@ -1306,7 +1596,7 @@ const Cover: React.FC = () => {
           />
 
           {  isPlaying ? <button
-                  className="fixed bottom-1 left-1 text-white font-bold py-2 px-4 rounded w-20 h-20 sm:w-32 sm:h-32 z-50"
+                  className="fixed z-50 w-20 h-20 px-4 py-2 font-bold text-white rounded bottom-1 left-1 sm:w-32 sm:h-32"
                   onClick={handlePlay}
                   style={{
                     zIndex: '9999'
@@ -1320,11 +1610,8 @@ const Cover: React.FC = () => {
               </button> : <></>
               
           }
-
-          
           
         {/* Top Decoration Image */}
-        
         <div className="mx-auto w-full" data-aos="fade-in">
           {/* <img src="https://asset.menica.pro/menicav4/mandala-navy1-B.svg" alt="Top Decoration" className='animate-spin-slow'/> */}
           <img src="https://asset.menica.pro/mandala-navy2.svg" style={{
@@ -1341,33 +1628,50 @@ const Cover: React.FC = () => {
         </div>
         
         {/* Invitation Content */}
-        <div className="flex flex-col flex-grow justify-between w-[70%] mx-auto text-center mt-[-300px]">
+        <div className="flex flex-col flex-grow justify-between w-[70%] mx-auto text-center">
           {/* Invitation Title and Names */}
           <div>
             <div className="text-md text-white uppercase tracking-widest sm:mt-[30%] mt-[18%] font-light" style={{ fontFamily: 'Prata' }} data-aos="fade-up">
               The Wedding Of
             </div>
-            <div className="text-8xl font-normal sm:font-semibold mt-8 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
-              Nemi <br />
+            {/* <div className="mt-8 font-normal tracking-tight text-8xl sm:font-semibold text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
+              Nemi 
+              <br />
+              <span className='text-xs'>
+                &
+              </span>
+              <br/>
               Meyta
+            </div> */}
+            <div className="mt-8 font-normal tracking-tight text-7xl sm:font-semibold text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
+              Nemi 
             </div>
-            <div className="text-md text-white uppercase mt-4 tracking-widest font-light" style={{ fontFamily: 'Prata' }}  data-aos="fade-up">
+            <div className="text-xl font-normal tracking-tight sm:font-semibold text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
+              & 
+            </div>
+            <div className="font-normal tracking-tight text-7xl sm:font-semibold text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
+              Meyta 
+            </div>
+            <div className="mt-4 font-light tracking-widest text-white uppercase text-md" style={{ fontFamily: 'Prata' }}  data-aos="fade-up">
               17 . 08 . 2024
             </div>
             {/* Guest Name Section at the Bottom */}
-            <div className="font-normal mt-8" >
+            <div className="mt-8 font-normal" >
               <div className="text-xs text-[#AE843C] tracking-widest" style={{ fontFamily: 'Montserrat' }}  data-aos="fade-in">
                 Kepada Yth :
               </div>
-              <div className="text-white font-light tracking-tighter text-xl mt-5" style={{ fontFamily: 'Prata' }}  data-aos="fade-in">
-                Nama Tamu
+              <div className="mt-5 text-xl font-light tracking-tighter text-white" style={{ fontFamily: 'Prata' }}  data-aos="fade-in">
+               
+                {
+                  (guestname === '' || guestname === null) ?  <>Tamu Undangan</> : guestname 
+                }
               </div>
-              <div className="mt-4 mx-auto" data-aos="fade-down">
+              <div className="mx-auto mt-4">
                 {
                   isPlaying ? <></> : (
                     <button
                       onClick={handlePlayPause}
-                      className="bg-transparent text-black px-6 py-3 rounded-full backdrop-filter backdrop-blur-md bg-opacity-20 hover:bg-opacity-40 transition-all duration-500 font-bold"
+                      className="z-50 px-6 py-3 font-bold text-black transition-all duration-500 bg-transparent rounded-full backdrop-filter backdrop-blur-md bg-opacity-20 hover:bg-opacity-40"
                       style={{
                         fontFamily: 'Prata',
                         backgroundImage: 'linear-gradient(180deg, #F9BD5D 0%, #D2852D 100%)',
@@ -1381,12 +1685,16 @@ const Cover: React.FC = () => {
             </div>
             </div>
           </div>
+          
+          
         </div>
+        
         {/* Bottom Decoration Image */}
-        {/*<div className="mx-auto mb-[-112px] w-1/2" data-aos="fade-in">
+        <div className="mx-auto mb-[-112px] w-1/2" data-aos="fade-in">
           <img src="https://asset.menica.pro/menicav4/mandala-navy1-B.svg" alt="Bottom Decoration" className="rotate-180 animate-spin-slow" />
-        </div>*/}
+        </div>
       </div>
+
 
       <div className="h-auto sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
         style={{
@@ -1403,12 +1711,12 @@ const Cover: React.FC = () => {
         {/* Invitation Content */}
         <div className="w-[75%] z-50 text-center mx-auto my-10" ref={section2Ref}>
             {/* <img src={'https://asset.menica.pro/menicav4/galeri-mandala-icon.svg'} className='mx-auto' alt='undangan digital menica'/> */}
-            <div className="text-3xl sm:text-5xl font-semibold mt-4 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
+            <div className="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
                 Opening
             </div>
 
             <img src={'https://menicapro.s3.ap-southeast-1.amazonaws.com/mandala-navy1-divider.svg'} className='mx-auto mt-1' alt='undangan digital menica'/>
-            {/* <div className="flex items-center mt-7 flex-row justify-between">
+            {/* <div className="flex flex-row items-center justify-between mt-7">
             <img 
               src="https://ik.imagekit.io/vtvggda66/menicaid6_tKdAiCowm.png" 
               alt="Nemi Photo" 
@@ -1437,16 +1745,16 @@ const Cover: React.FC = () => {
           </div> */}
 
 
-            <div className="flex justify-around items-center mt-8 mb-32 flex-col">    
-                <div className="text-center flex flex-col">
+            <div className="flex flex-col items-center justify-around mt-8 mb-32">    
+                <div className="flex flex-col text-center">
                     <div className="flex flex-col">
 
                     <div className="text-sm text-[#fff] mt-2 ml-4 tracking-normal italic" style={{ fontFamily: 'Prata' }}  data-aos="fade-down">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut dui quis nunc elementum rutrum
+                        TUHAN Allah berfirman: "Tidak baik, kalau manusia itu seorang diri saja. Aku akan menjadikan penolong baginya, yang sepadan dengan dia."
                     </div>
 
-                    <div className="text-xl sm:text-2xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }} data-aos="fade-in">
-                        Ayat 4:44
+                    <div className="mt-3 ml-4 text-xl sm:text-2xl text-gradient" style={{ fontFamily: 'Alex Brush' }} data-aos="fade-in">
+                        Kejadian 2:18
                     </div>
                     
                     </div>
@@ -1456,11 +1764,11 @@ const Cover: React.FC = () => {
                     <div className="flex flex-col">
 
                     <div className="text-sm text-[#fff] mt-2 ml-4 tracking-normal italics" style={{ fontFamily: 'Prata' }}  data-aos="fade-down">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut dui quis nunc elementum rutrum
+                    Inilah perintah-Ku, yaitu supaya kamu saling mengasihi, seperti Aku telah mengasihi kamu.
                     </div>
 
-                    <div className="text-xl sm:text-2xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }} data-aos="fade-in">
-                        Ayat 2:24
+                    <div className="mt-3 ml-4 text-xl sm:text-2xl text-gradient" style={{ fontFamily: 'Alex Brush' }} data-aos="fade-in">
+                        Yohanes 15:12
                     </div>
                     
                     </div>
@@ -1486,11 +1794,11 @@ const Cover: React.FC = () => {
         {/* Invitation Content */}
         <div className="w-[75%] z-50 text-center mx-auto my-10">
             <img src={'https://asset.menica.pro/menicav4/galeri-mandala-icon.svg'} className='mx-auto' alt='undangan digital menica'/>
-            <div className="text-3xl sm:text-5xl font-semibold mt-4 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
+            <div className="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
                 Mempelai
             </div>
             <img src={'https://menicapro.s3.ap-southeast-1.amazonaws.com/mandala-navy1-divider.svg'} className='mx-auto mt-1' alt='undangan digital menica'/>
-            <div className="flex items-center mt-7 flex-row justify-between">
+            <div className="flex flex-row items-center justify-between mt-7">
             <img 
               src="https://ik.imagekit.io/vtvggda66/menicaid6_tKdAiCowm.png" 
               alt="Nemi Photo" 
@@ -1519,32 +1827,32 @@ const Cover: React.FC = () => {
           </div>
 
 
-            <div className="flex justify-around items-center mt-8 mb-32 flex-col">    
-                <div className="text-center flex flex-row">
+            <div className="flex flex-col items-center justify-around mt-8 mb-32">    
+                <div className="flex flex-row text-center">
                     <div className="flex flex-col">
 
-                    <div className="text-3xl sm:text-4xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }} data-aos="fade-in">
-                        Lorem Ipsum, S.Sn
+                    <div className="mt-3 ml-4 text-3xl sm:text-4xl text-gradient" style={{ fontFamily: 'Alex Brush' }} data-aos="fade-in">
+                        Mahanaim Purba, S.Sn
                     </div>
                     <div className="text-xs text-[#fff] mt-2 ml-4 tracking-normal" style={{ fontFamily: 'Prata' }}  data-aos="fade-down">
-                        Anak pertama dari Bapak Lorem Ipsum & Ibu Lorem Ipsum, S.Pd
+                        Anak pertama dari Bapak Pdt. Demu Purba & Ibu Cynthia Grace, S.Pd
                     </div>
                     </div>
                     
                 </div>
 
-                <div className='text-gradient mt-5 font-semibold text-xl'  style={{ fontFamily: 'Alex Brush' }}>
+                <div className='mt-5 text-xl font-semibold text-gradient'  style={{ fontFamily: 'Alex Brush' }}>
                   &
                 </div>
 
-                <div className="text-center flex flex-row">
+                <div className="flex flex-row text-center">
                     <div className="flex flex-col">
 
-                    <div className="text-3xl sm:text-4xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }} data-aos="fade-in">
-                        dr. Lorem Ipsum
+                    <div className="mt-3 ml-4 text-3xl sm:text-4xl text-gradient" style={{ fontFamily: 'Alex Brush' }} data-aos="fade-in">
+                        dr. Agnes Meyta Arpinda Tampubolon
                     </div>
                     <div className="text-xs text-[#fff] mt-2 ml-4" style={{ fontFamily: 'Prata' }} data-aos="fade-down">
-                        Anak kedua dari Bapak Lorem Ipsum & Ibu Lorem Ipsum
+                        Anak kedua dari Bapak Arnold Tampubolon & Ibu Hevrida br Barus
                     </div>
 
                     </div>
@@ -1568,83 +1876,30 @@ const Cover: React.FC = () => {
         {/* Invitation Content */}
         <div className="w-[70%] z-50 text-center mx-auto mt-10 sm:mb-16 mb-32" ref={section3Ref}>
             <img src={'https://asset.menica.pro/menicav4/galeri-mandala-icon.svg'} className='mx-auto' alt='undangan digital menica'/>
-            <div className="text-3xl sm:text-5xl font-semibold mt-4 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
+            
+            <div className="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
                 Galeri
             </div>
+            
             <img src={'https://menicapro.s3.ap-southeast-1.amazonaws.com/mandala-navy1-divider.svg'} className='mx-auto mt-1' alt='undangan digital menica'/>
-            <div className="grid grid-flow-col grid-rows-2 grid-cols-3 gap-4 mt-8">
-              {/* addition */}
-              <div className="transform scale-150 -rotate-6 translate-y-10 mt-[80px]">
-                <img 
-                  src="https://plus.unsplash.com/premium_photo-1674581215484-e6242a37c51e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2VkZGluZ3xlbnwwfDF8MHx8fDA%3D" 
-                  alt="" 
-                  loading="lazy" 
-                  className="border-4 border-white shadow-lg"
-                  data-aos="fade-left"
-                />
-              </div>
-              <div className="col-start-3 transform scale-150 rotate-6 translate-x-2 translate-y-15 z-30">
-                <img 
-                  src="https://plus.unsplash.com/premium_photo-1674581215484-e6242a37c51e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2VkZGluZ3xlbnwwfDF8MHx8fDA%3D" 
-                  alt="" 
-                  loading="lazy" 
-                  className="border-4 border-white shadow-lg"
-                   data-aos="fade-right"
-                />
-              </div>
-              <div className="transform scale-150 translate-y-11" >
-                <img 
-                  src="https://plus.unsplash.com/premium_photo-1674581215484-e6242a37c51e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2VkZGluZ3xlbnwwfDF8MHx8fDA%3D" 
-                  alt="" 
-                  loading="lazy" 
-                  className="border-4 border-white shadow-lg"
-                   data-aos="fade-down"
-                />
-              </div>
-              <div className="transform translate-y-24 scale-150" >
-                <img 
-                  src="https://plus.unsplash.com/premium_photo-1674581215484-e6242a37c51e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2VkZGluZ3xlbnwwfDF8MHx8fDA%3D" 
-                  alt="" 
-                  loading="lazy" 
-                  className="border-4 border-white shadow-lg"
-                   data-aos="fade-left"
-                />
-              </div>
-              <div className="row-start-1 col-start-2 col-span-2 transform translate-x-5 translate-y-4 scale-100" >
-                <img 
-                  src="https://plus.unsplash.com/premium_photo-1674581215484-e6242a37c51e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2VkZGluZ3xlbnwwfDF8MHx8fDA%3D" 
-                  alt="" 
-                  loading="lazy" 
-                  className="border-4 border-white shadow-lg"
-                   data-aos="fade-right"
-                />
-              </div>
-              {/* addition */}
-              {/* <div>
-                <img 
-                  src="https://ik.imagekit.io/vtvggda66/WhatsApp%20Image%202024-07-02%20at%204.35.20%20PM.jpeg?updatedAt=1719924074694" 
-                  alt="" 
-                  loading="lazy" 
-                  className="border-4 border-white shadow-lg"
-                  data-aos="fade-left"
-                  style={{
-                    width: '20%'
-                  }}
-                />
-              </div>
-              <div>
-                <img 
-                  src="https://ik.imagekit.io/vtvggda66/WhatsApp%20Image%202024-07-02%20at%204.35.17%20PM.jpeg?updatedAt=1719924074279" 
-                  alt="" 
-                  loading="lazy" 
-                  className="border-4 border-white shadow-lg"
-                   data-aos="fade-down"
-                   style={{
-                    width: '20%'
-                  }}
-                />
-              </div> */}
-              </div>
+
+            <div className="grid grid-cols-2 gap-4">
+                {PhotoGallery.map((image: any, index: any) => (
+                    <div key={index} className="w-full mb-4">
+                    <img
+                        src={image.src}
+                        alt="Photo"
+                        className="transition duration-500 transform border-8 border-white rounded shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] hover:scale-105"
+                        style={{
+                        transform: `rotate(${Math.random() * 30 - 15}deg)`,
+                        }}
+                        // data-aos="fade-down"
+                        data-aos={["fade-down", "fade-left", "fade-right"][Math.floor(Math.random() * 3)]}
+                    />
+                    </div>
+                ))}
+            </div>
+
         </div>
       </div>
       <div className="sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
@@ -1653,22 +1908,23 @@ const Cover: React.FC = () => {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
+      
       >
         {/* Top Decoration Image */}
-        <div className="mx-auto mt-[-112px] w-1/2">
+        {/* <div className="mx-auto mt-[-112px] w-1/2">
           <img src="https://asset.menica.pro/menicav4/mandala-navy1-B.svg" alt="Top Decoration" className='animate-spin-slow'/>
-        </div>
+        </div> */}
         
         {/* Invitation Content */}
         <div className="w-[70%] z-50 text-center mx-auto my-10">
             <img src={'https://asset.menica.pro/menicav4/galeri-mandala-icon.svg'} className='mx-auto' alt='undangan digital menica'/>
-            <div className="text-3xl sm:text-5xl font-semibold mt-4 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
+            <div className="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
                 Acara
             </div>
             <img src={'https://menicapro.s3.ap-southeast-1.amazonaws.com/mandala-navy1-divider.svg'} className='mx-auto mt-1' alt='undangan digital menica'/>
 
-            <div className="flex justify-around items-center mt-8 mb-32 flex-col">    
-            <div className="relative text-center flex flex-row w-full" data-aos='fade-down'>
+            <div className="flex flex-col items-center justify-around mt-8 mb-32">    
+            <div className="relative flex flex-row w-full text-center" data-aos='fade-down'>
                     <div className="absolute top-1 left-1 z-40 w-[20%]">
                         <img src="https://asset.menica.pro/menicav4/corner-mandala.svg" className="w-[100%] h-auto object-contain rotate-180" />
                     </div>
@@ -1684,7 +1940,7 @@ const Cover: React.FC = () => {
                 <div className="relative flex flex-col shadow-2xl rounded-lg p-8 bg-[#202f51] w-full">
                     
 
-                    <div className="text-3xl sm:text-4xl text-gradient mt-3" style={{ fontFamily: 'Alex Brush' }}>
+                    <div className="mt-3 text-3xl sm:text-4xl text-gradient" style={{ fontFamily: 'Alex Brush' }}>
                       Holy Matrimony
                     </div>
                     <div className="flex flex-col items-center justify-center">
@@ -1712,7 +1968,9 @@ const Cover: React.FC = () => {
                     Ibis Style Hotel Gajah Mada
 
                     </div>
-                    <div className="bg-gradient-to-r from-[#F6B859] to-[#DB9238] p-2 rounded-md my-3 text-[#202f51] cursor-pointer font-semibold" style={{ fontFamily: 'Prata' }}>
+                    <div className="bg-gradient-to-r from-[#F6B859] to-[#DB9238] p-2 rounded-md my-3 text-[#202f51] cursor-pointer font-semibold hover:bg-[#DB9238]" style={{ fontFamily: 'Prata' }}
+                    onClick={()=> window.open('https://maps.app.goo.gl/8zhvcBYvsumDEY6h9', '_blank')}
+                    >
                         Google Maps
                     </div>
 
@@ -1721,11 +1979,11 @@ const Cover: React.FC = () => {
             </div>
 
 
-                <div className='text-gradient my-5 font-semibold text-xl'  style={{ fontFamily: 'Alex Brush' }}  data-aos='fade-up'>
+                <div className='my-5 text-xl font-semibold text-gradient'  style={{ fontFamily: 'Alex Brush' }}  data-aos='fade-up'>
                   &
                 </div>
 
-                <div className="relative text-center flex flex-row w-full"  data-aos='fade-down'>
+                <div className="relative flex flex-row w-full text-center"  data-aos='fade-down'>
                     <div className="absolute top-1 left-1 z-40 w-[20%]">
                         <img src="https://asset.menica.pro/menicav4/corner-mandala.svg" className="w-[100%] h-auto object-contain rotate-180" />
                     </div>
@@ -1741,7 +1999,7 @@ const Cover: React.FC = () => {
                 <div className="relative flex flex-col shadow-2xl rounded-lg p-8 bg-[#202f51] w-full">
                     
 
-                    <div className="text-3xl sm:text-4xl text-gradient mt-3" style={{ fontFamily: 'Alex Brush' }}>
+                    <div className="mt-3 text-3xl sm:text-4xl text-gradient" style={{ fontFamily: 'Alex Brush' }}>
                         Wedding Reception
                     </div>
                     <div className="flex flex-col items-center justify-center">
@@ -1771,17 +2029,17 @@ const Cover: React.FC = () => {
                     
 
 
-                    <div className="bg-gradient-to-r from-[#F6B859] to-[#DB9238] p-2 rounded-md my-3 text-[#202f51] cursor-pointer font-semibold" style={{ fontFamily: 'Prata' }}>
+                    <div className="bg-gradient-to-r from-[#F6B859] to-[#DB9238] p-2 rounded-md my-3 text-[#202f51] cursor-pointer font-semibold hover:bg-[#DB9238]" style={{ fontFamily: 'Prata' }}
+                        onClick={()=> window.open('https://maps.app.goo.gl/Ybc2uf6D3v9YfFbF8', '_blank')}
+                    
+                    >
+
                         Google Maps
                     </div>
 
                 </div>
-                
             </div>
             </div>
-
-           
-
         </div>
       </div>
       <div className="sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
@@ -1799,14 +2057,14 @@ const Cover: React.FC = () => {
         {/* Invitation Content */}
         <div className="w-[70%] z-50 text-center mx-auto my-10">
         <img src={'https://asset.menica.pro/weddinggift-mandala-icon.svg'} className='mx-auto' alt='undangan digital menica'/>
-            <div className="text-3xl sm:text-5xl font-semibold mt-4 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
+            <div className="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
                 Hadiah
             </div>
             <img src={'https://menicapro.s3.ap-southeast-1.amazonaws.com/mandala-navy1-divider.svg'} className='mx-auto mt-1' alt='undangan digital menica'/>
 
-            <div className="flex justify-around items-center my-8 flex-col font-semibold gap-y-4" style={{ fontFamily: 'Prata' }}>  
+            <div className="flex flex-col items-center justify-around my-8 font-semibold gap-y-4" style={{ fontFamily: 'Prata' }}>  
 
-                <div className="relative text-center flex flex-row w-full"  data-aos='fade-down'>
+                <div className="relative flex flex-row w-full text-center"  data-aos='fade-down'>
                         <div className="absolute top-1 left-1 z-40 w-[20%]">
                             <img src="https://asset.menica.pro/menicav4/corner-mandala.svg" className="w-[100%] h-auto object-contain rotate-180" />
                         </div>
@@ -1833,15 +2091,15 @@ const Cover: React.FC = () => {
                         <div className="text-lg text-[#fff] mt-2 tracking-normal" style={{ fontFamily: 'Prata' }}>
                         1240010709534
                         </div>
-                        <div className="flex flex-row items-center justify-center text-xs bg-gradient-to-r from-[#F6B859] to-[#DB9238] p-2 rounded-md my-3 text-[#202f51] cursor-pointer font-semibold" style={{ fontFamily: 'Prata' }}>
+                        <div className="flex flex-row items-center justify-center text-xs bg-gradient-to-r from-[#F6B859] to-[#DB9238] p-2 rounded-md my-3 text-[#202f51] cursor-pointer font-semibold" style={{ fontFamily: 'Prata' }}
+                            onClick={ () => { handleCopyClick('1240010709534') } }
+                        >
                             <GrCopy className="mr-1" size={14}/> Copy
                         </div>
-
                     </div>
-                    
                 </div>
 
-                <div className="relative text-center flex flex-row w-full"  data-aos='fade-down'>
+                <div className="relative flex flex-row w-full text-center"  data-aos='fade-down'>
                         <div className="absolute top-1 left-1 z-40 w-[20%]">
                             <img src="https://asset.menica.pro/menicav4/corner-mandala.svg" className="w-[100%] h-auto object-contain rotate-180" />
                         </div>
@@ -1866,9 +2124,12 @@ const Cover: React.FC = () => {
                         </div>
                         
                         <div className="text-lg text-[#fff] mt-2 tracking-normal" style={{ fontFamily: 'Prata' }}>
-                        0948033235
+                            0948033235
                         </div>
-                        <div className="flex flex-row items-center justify-center text-xs bg-gradient-to-r from-[#F6B859] to-[#DB9238] p-2 rounded-md my-3 text-[#202f51] cursor-pointer font-semibold" style={{ fontFamily: 'Prata' }}>
+                        <div className="flex flex-row items-center justify-center text-xs bg-gradient-to-r from-[#F6B859] to-[#DB9238] p-2 rounded-md my-3 text-[#202f51] cursor-pointer font-semibold" style={{ fontFamily: 'Prata' }}
+                            onClick={ () => { handleCopyClick('0948033235') } }
+                            
+                        >
                             <GrCopy className="mr-1" size={14}/> Copy
                         </div>
 
@@ -1885,11 +2146,11 @@ const Cover: React.FC = () => {
 
 
         </div>
-        {/* <div className="text-3xl font-semibold my-10 tracking-tight text-gradient mx-auto" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
+        {/* <div className="mx-auto my-10 text-3xl font-semibold tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
                 Katalog Kado
         </div> */}
         {/* <div className="min-h-[400px] h-auto w-full pb-32">
-        <div ref={scrollContainerRef} className="flex overflow-x-auto space-x-4 p-4 bg-transparent w-full">
+        <div ref={scrollContainerRef} className="flex w-full p-4 space-x-4 overflow-x-auto bg-transparent">
             {dataKado.map((comment, index) => (
               <div 
                 key={index} 
@@ -1936,81 +2197,227 @@ const Cover: React.FC = () => {
         }}  
       >
         {/* Top Decoration Image */}
+        
         <div className="mx-auto mt-[-112px] w-1/2">
           <img src="https://asset.menica.pro/menicav4/mandala-navy1-B.svg" alt="Top Decoration" className='animate-spin-slow'/>
         </div>
         
         {/* Invitation Content */}
+
+        <Dialog open={isOpen} onClose={(val) => setIsOpen(val)} static={true}>
+          <DialogPanel> 
+          <div className="flex flex-col justify-center w-full h-full p-4 mx-auto my-auto bg-white rounded-md">
+                      <div className="relative flex-col flex-1 w-full text-left font-DM">
+                      <h3 className="text-base font-semibold text-center font-DM text-tremor-content-strong dark:text-dark-tremor-content-strong">Buku Tamu</h3>
+                        <form onSubmit={handleSubmit(onSubmit)} className="max-w-md mx-auto">
+                        <div className="mb-4">
+                          <label htmlFor="fullname" className="block mb-1 text-xs">Nama</label>
+                          {/* <input
+                            {...register("fullname", { required: true, minLength: 4 })}
+                            type="text"
+                            id="fullname"
+                            disabled
+                            className={`w-full px-4 py-2 border rounded-md focus:outline-none disabled:opacity-75 ${errors.fullname ? 'border-red-500' : 'border-gray-300'}`}
+                          /> */}
+                          <input
+                            {...register("fullname", { required: true, minLength: 4 })}
+                            type="text"
+                            id="fullname"
+                            className={`w-full px-4 py-2 border rounded-md focus:outline-none ${errors.fullname ? 'border-red-500' : 'border-gray-300'}`}
+                          />
+                          {errors.fullname && <p className="text-[0.6rem] tracking-wide text-red-500">Nama wajib diisi minimal 4 karakter</p>}
+                        </div>
+
+                        <div className="mb-4">
+                          <label htmlFor="response" className="block mb-1 text-xs">Kehadiran</label>
+                          <select
+                            {...register("response")}
+                            id="response"
+                            className="w-full px-4 py-2 border rounded-md focus:outline-none"
+                          >
+                            <option value="yes">Ya</option>
+                            <option value="no">Tidak</option>
+                            <option value="maybe">Ragu-ragu</option>
+                          </select>
+                          {errors.response && <p className="text-[0.6rem] tracking-wide text-red-500">Pilih salah satu opsi</p>}
+                        </div>
+
+                        <div className="mb-4">
+                          <label htmlFor="comment" className="block mb-1 text-xs">Testimoni</label>
+                          <textarea
+                            {...register("comment", { required: true, minLength: 5 })}
+                            id="comment"
+                            className={`w-full px-4 py-2 border rounded-md focus:outline-none ${errors.comment ? 'border-red-500' : 'border-gray-300'}`}
+                          />
+                          {errors.comment && <p className="text-[0.6rem] tracking-wide text-red-500">Testi wajib diisi</p>}
+                        </div>
+
+                        <div className="w-full mb-4 overflow-x-auto">
+                        <label htmlFor="comment" className="block mb-1 text-xs">Avatar</label>
+                          <div className="flex min-w-[800px]">
+                            {avatars.map((items: any, index: any) => (
+                              <div className={`m-1 w-10 h-10 rounded-md cursor-pointer hover:scale-105 ${ (activeAvatar === index) ? 'shadow-md' : '' }`} onClick={() => {setAvatars(items.src, index)}}>
+                                <img src={items.src} width="100%" height="auto" alt="undangan digital menica" className='object-cover rounded-md shadow-sm hover:shadow-lg'/>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                        <div className="mb-4">
+                          <label htmlFor="email" className="block mb-1 text-xs">Email</label>
+                          <input
+                            {...register("email")}
+                            type="email"
+                            id="email"
+                            className="w-full px-4 py-2 border rounded-md focus:outline-none"
+                          />
+                          <p className="text-[0.6rem] text-gray-500 tracking-wide mt-1">Untuk mendapat balasan dari Mempelai</p>
+                        </div>
+
+                        {
+                          isLoadingSubmit ? <>
+
+                          <button type="submit" className="w-full py-2 text-base text-white transition duration-300 rounded-md bg-[#152443] hover:bg-blue-800" disabled>
+                              Loading...
+                          </button>
+
+
+                          </> : <>
+                          <button type="submit" className="w-full py-2 text-base text-white transition duration-300 rounded-md bg-[#152443] hover:bg-blue-800">
+                          
+                            Submit
+
+                          </button>
+                          </>
+                        }
+
+                        
+                        <div 
+                        className='absolute top-0 right-0 cursor-pointer'
+                        onClick={()=> {setIsOpen(false)}}><FiX/></div>
+                        </form>
+                      </div>
+                  </div>
+              {/* <Button className="w-full mt-8" onClick={() => setIsOpen(false)}> Got it! </Button> */}
+          </DialogPanel>
+          </Dialog>
             <div className="w-[90%] z-50 text-center mx-auto my-10">
             <img src={'https://asset.menica.pro/menicav4/guestbook-mandala-icon.svg'} className='mx-auto' alt='undangan digital menica'/>
-            <div className="text-3xl sm:text-5xlfont-semibold mt-4 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
+            <div className="mt-4 text-3xl tracking-tight sm:text-5xlfont-semibold text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
                 Buku Tamu
             </div>
             <img src={'https://menicapro.s3.ap-southeast-1.amazonaws.com/mandala-navy1-divider.svg'} className='mx-auto mt-1' alt='undangan digital menica'/>
 
-          <div className="flex justify-center items-center mt-7">
+          <div className="flex items-center justify-center mt-7">
+
+            {/* <div className="w-full max-h-[400px] flex justify-center flex-col overflow-y-auto px-4">
+                <div className="flex flex-col h-64 overflow-y-auto w-[75%] mx-auto">
+                {guestcomments.map((data: any, index: any) => {
+                    const borderColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+                    const createdAtDate = new Date(data.createdAt);
+                    const formattedDate = `${createdAtDate.getDate()} ${getMonthName(createdAtDate.getMonth())} ${createdAtDate.getFullYear()}`;
+                    return (
+                    <>
+                    {
+                        (data.isHide) ? <></> : <div key={index} className="flex items-start mt-4 space-x-2">
+                        <img
+                        src={data?.avatar}
+                        alt="Avatar"
+                        className="w-10 h-10 p-1 border-2 border-solid rounded-full"
+                        style={{ borderColor: borderColor, fontWeight: 'bold' }}
+                        />
+                        <div className={`
+                            flex flex-col w-full flex-nowrap ${fontFamilySet('montserrat')}
+                            bg-white p-2.5 rounded-lg opacity-80 shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]
+                            `}>
+                        <div className="flex flex-row items-center justify-between">
+                            <div className="flex items-center mr-2 text-xs font-medium tracking-wide text-black capitalize font-DM">{data?.fullname}</div>
+                            <div className="flex items-center text-[6pt] tracking-wide text-gray-500">{formattedDate}</div>
+                        </div>
+                        <div className="text-[10px] text-gray-800 capitalize">{data?.content}</div>
+                        </div>
+                    </div>
+                    }
+                    </>
+                    );
+                })}
+                </div>
+            </div> */}
         
-          <div ref={scrollContainerRef} className="flex overflow-x-auto space-x-4 p-4 bg-transparent w-full">
-            {comments.map((comment, index) => (
-              <div 
-                key={index} 
-                className={`relative min-w-[200px] p-4 bg-white rounded-lg shadow-lg font-bold ${getRandomRotation()}`}
-              >
-                <div className="flex flex-row justify-between">
-                <img 
-                  src={comment.avatar} 
-                  alt={`Avatar ${index + 1}`} 
-                  className="w-8 h-8 rounded-full"
-                />
-
-                <div className="flex-flex-col">
-                <p className="text-[1rem] text-slate-500 mt-2"
-                  style={{
-                    fontFamily: 'Prata'
-                  }}
-                >
-                  {comment.fullname}
-                </p>
-                <p className="text-[0.4rem] text-gray-500 mt-2"
-                  style={{
-                    fontFamily: 'Playwrite AU SA'
-                  }}
-                >
-                  {comment.date}
-                </p>
-
-                </div>
+          <div ref={scrollContainerRef} className="flex w-full p-4 space-x-4 overflow-x-auto bg-transparent">
+            <TransitionGroup className="flex w-full space-x-4">
+            {
+                guestcomments.map((data: any, index: any) => {
+                const borderColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+                const createdAtDate = new Date(data.created_at);
+                const formattedDate = `${createdAtDate.getDate()} ${getMonthName(createdAtDate.getMonth())} ${createdAtDate.getFullYear()}`;
+                // gimana sih ya , kira2 - 
                 
 
-                </div>
+          return (
+            <TransitionGroup className="flex w-full space-x-4">
+                return (
+                    <>
+                    <CSSTransition key={index} timeout={500} classNames="flash">
+                    <div
+                        className={`relative min-w-[200px] p-4 bg-white rounded-lg shadow-lg font-bold ${getRandomRotation()}`}
+                    >
+                        <div className="flex flex-row justify-between">
+                        <img
+                            src={data?.avatar}
+                            alt={`Avatar ${index + 1}`}
+                            className="w-8 h-8 rounded-full"
+                        />
+                        <div className="flex flex-col">
+                            <p
+                            className="text-[0.8rem] text-slate-500 mt-2"
+                            style={{ fontFamily: 'Prata' }}
+                            >
+                            {data.fullname}
+                            </p>
+                            <p
+                            className="text-[0.4rem] text-gray-500 mt-2"
+                            style={{ fontFamily: 'Playwrite AU SA' }}
+                            >
+                            {formattedDate}
+                            </p>
+                        </div>
+                        </div>
+                        <p
+                        className="mt-4 tracking-wider text-xs text-[#152443]"
+                        style={{ fontFamily: 'Playwrite AU SA' }}
+                        >
+                        {data.content}
+                        </p>
+                    </div>
+                    </CSSTransition>
+                    </>
+                );
+            </TransitionGroup>
+                );
                 
-                <p className="mt-4 tracking-wider text-xs text-[#152443]"
-                  style={{
-                    fontFamily: 'Playwrite AU SA'
-                  }}
-                >
-                  {comment.text}
-                </p>
-              </div>
-            ))}
+            })}
+            
+            </TransitionGroup>
           </div>
 
 
           </div>
-          <div className="flex flex-row justify-center w-full items-center mx-auto my-5">
-            <button onClick={scrollLeft} className="p-2 bg-gray-300 rounded-md shadow-lg mx-2">
+          <div className="flex flex-row items-center justify-center w-full mx-auto my-5">
+            <button onClick={scrollLeft} className="p-2 mx-2 bg-gray-300 rounded-md shadow-lg">
               <IoIosArrowForward className='rotate-180'/>
             </button>
-            <button onClick={scrollRight} className="p-2 bg-gray-300 rounded-md shadow-lg mx-2">
+            <button onClick={scrollRight} className="p-2 mx-2 bg-gray-300 rounded-md shadow-lg">
                 <IoIosArrowForward/>
             </button>
           </div>
-          <div className="flex flex-row items-center justify-center bg-gradient-to-r from-[#F6B859] to-[#DB9238] p-2 rounded-md my-3 text-[#202f51] cursor-pointer font-semibold mt-3" style={{ fontFamily: 'Prata' }}>
+          <div className="flex flex-row items-center justify-center bg-gradient-to-r from-[#F6B859] to-[#DB9238] p-2 rounded-md my-3 text-[#202f51] cursor-pointer font-semibold mt-3" style={{ fontFamily: 'Prata' }}
+            onClick={() => setIsOpen(true)}
+          >
               <PiPencilLineDuotone size={20} className="mr-1"/> Kirim Ucapan 
           </div>
         </div>
       </div>
-      <div className="h-screen-minus-40 sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
+      <div className="h-screen-minus-40 sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col <bg-[#152443]> shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
          style={{
           backgroundImage: `url('https://asset.menica.pro/menicav4/bg-mandala-2.png')`,
           backgroundSize: 'cover',
@@ -2025,14 +2432,14 @@ const Cover: React.FC = () => {
         {/* Invitation Content */}
         <div className="w-[70%] z-50 text-center mx-auto my-10">
           <img src={'https://asset.menica.pro/menicav4/galeri-mandala-icon.svg'} className='mx-auto' alt='undangan digital menica'/>
-            <div className="text-3xl sm:text-5xl font-semibold mt-4 tracking-tight text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
+            <div className="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl text-gradient" style={{ fontFamily: 'Alex Brush' }}  data-aos="fade-down">
                 Save The Date
             </div>
             <img src={'https://menicapro.s3.ap-southeast-1.amazonaws.com/mandala-navy1-divider.svg'} className='mx-auto mt-1' alt='undangan digital menica'/>
 
             <Countdown date={targetDate} renderer={renderer} />
 
-            <div className="flex justify-around items-center mt-8 flex-col">    
+            <div className="flex flex-col items-center justify-around mt-8">    
 
                 {/* <img 
                   src="https://ik.imagekit.io/vtvggda66/Elegant%20Photo%20Collage%20White%20Save%20The%20Date%20Wedding%20Invitation.png?updatedAt=1719858590321" 
@@ -2040,7 +2447,7 @@ const Cover: React.FC = () => {
                   className="rounded-lg shadow-lg rotate-6"
                 /> */}
 
-            <div className="gradient-border rounded-lg shadow-lg" >
+            <div className="rounded-lg shadow-lg gradient-border" >
               <img 
                 src="https://ik.imagekit.io/vtvggda66/Elegant%20Photo%20Collage%20White%20Save%20The%20Date%20Wedding%20Invitation.png?updatedAt=1719858590321" 
                 alt="Rounded Shadow Image" 
@@ -2076,12 +2483,12 @@ const Cover: React.FC = () => {
         {/* Invitation Content */}
         <div className="w-[70%] z-50 text-center mx-auto my-10">
             <img src={'https://asset.menica.pro/menicav4/galeri-mandala-icon.svg'} className='mx-auto' alt='undangan digital menica'/>
-            <div className="text-base font-semibold mt-4 tracking-tight text-gradient" style={{ fontFamily: 'Prata' }}  data-aos="fade-down">
+            <div className="mt-4 text-base font-semibold tracking-tight text-gradient" style={{ fontFamily: 'Prata' }}  data-aos="fade-down">
                 Luxury Wedding Invitation
             </div>
             <img src={'https://menicapro.s3.ap-southeast-1.amazonaws.com/mandala-navy1-divider.svg'} className='mx-auto mt-1' alt='undangan digital menica'/>
 
-            <div className="flex justify-around items-center mt-8 flex-col">    
+            <div className="flex flex-col items-center justify-around mt-8">    
 
                 {/* <img 
                   src="https://ik.imagekit.io/vtvggda66/Elegant%20Photo%20Collage%20White%20Save%20The%20Date%20Wedding%20Invitation.png?updatedAt=1719858590321" 
@@ -2100,38 +2507,24 @@ const Cover: React.FC = () => {
                 }}
               />
             </div>
-            <div className="text-base font-semibold mt-4 tracking-tight text-gradient cursor-pointer" onClick={()=>{ alert('...') }} style={{ fontFamily: 'Prata' }}>
+            <div className="mt-4 text-base font-semibold tracking-tight cursor-pointer text-gradient" onClick={()=>{ window.open('https://menica.id', '_blank') }} style={{ fontFamily: 'Prata' }}>
                 https://menica.id
             </div>
                 
-                
+
             </div>
+        </div>
+      </div>
 
             
 
 
+                </div>
+            </div>
 
-        </div>
-      </div>
-      {/* <div className="fixed bottom-36 left-1/2 transform -translate-x-1/2">
-        {
-          isPlaying ? <></> : (
-            <button
-              onClick={handlePlayPause}
-              className="bg-transparent text-black px-6 py-3 rounded-full backdrop-filter backdrop-blur-md bg-opacity-20 hover:bg-opacity-40 transition-all duration-500 font-bold"
-              style={{
-                fontFamily: 'Prata',
-                backgroundImage: 'linear-gradient(180deg, #F9BD5D 0%, #D2852D 100%)',
-                backgroundClip: 'padding-box', // Ensures the gradient covers the padding area
-              }}
-            >
-              {isPlaying ? 'Pause' : 'Open Invitation'}
-            </button>
-          )
-        }
-      </div> */}
+            }
     </>
-  );
-};
+  )
+}
 
-export default Cover;
+export default nemimeytawedding
