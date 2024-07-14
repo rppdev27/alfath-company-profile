@@ -1442,11 +1442,11 @@ const Cover: React.FC = () => {
                     <div className="flex flex-col">
 
                     <div className="text-sm text-[#fff] mt-2 ml-4 tracking-normal italic" style={{ fontFamily: 'Prata' }}  data-aos="fade-down">
-                        TUHAN Allah berfirman: "Tidak baik, kalau manusia itu seorang diri saja. Aku akan menjadikan penolong baginya, yang sepadan dengan dia."
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut dui quis nunc elementum rutrum
                     </div>
 
                     <div className="text-xl sm:text-2xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }} data-aos="fade-in">
-                        Kejadian 2:18
+                        Ayat 4:44
                     </div>
                     
                     </div>
@@ -1456,11 +1456,11 @@ const Cover: React.FC = () => {
                     <div className="flex flex-col">
 
                     <div className="text-sm text-[#fff] mt-2 ml-4 tracking-normal italics" style={{ fontFamily: 'Prata' }}  data-aos="fade-down">
-                    Inilah perintah-Ku, yaitu supaya kamu saling mengasihi, seperti Aku telah mengasihi kamu.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut dui quis nunc elementum rutrum
                     </div>
 
                     <div className="text-xl sm:text-2xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }} data-aos="fade-in">
-                        Yohanes 15:12
+                        Ayat 2:24
                     </div>
                     
                     </div>
@@ -1524,10 +1524,10 @@ const Cover: React.FC = () => {
                     <div className="flex flex-col">
 
                     <div className="text-3xl sm:text-4xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }} data-aos="fade-in">
-                        Mahanaim Purba, S.Sn
+                        Lorem Ipsum, S.Sn
                     </div>
                     <div className="text-xs text-[#fff] mt-2 ml-4 tracking-normal" style={{ fontFamily: 'Prata' }}  data-aos="fade-down">
-                        Anak pertama dari bapak Pdt. Demu Purba & ibu Cynthia Grace, S.Pd
+                        Anak pertama dari Bapak Lorem Ipsum & Ibu Lorem Ipsum, S.Pd
                     </div>
                     </div>
                     
@@ -1541,10 +1541,10 @@ const Cover: React.FC = () => {
                     <div className="flex flex-col">
 
                     <div className="text-3xl sm:text-4xl text-gradient mt-3 ml-4" style={{ fontFamily: 'Alex Brush' }} data-aos="fade-in">
-                        dr. Agnes Meyta Arpinda Tampubolon
+                        dr. Lorem Ipsum
                     </div>
                     <div className="text-xs text-[#fff] mt-2 ml-4" style={{ fontFamily: 'Prata' }} data-aos="fade-down">
-                        Anak kedua dari bapak Arnold Tampubolon dan Hevrida br Barus
+                        Anak kedua dari Bapak Lorem Ipsum & Ibu Lorem Ipsum
                     </div>
 
                     </div>
@@ -1576,7 +1576,7 @@ const Cover: React.FC = () => {
               {/* addition */}
               <div className="transform scale-150 -rotate-6 translate-y-10 mt-[80px]">
                 <img 
-                  src="https://ik.imagekit.io/vtvggda66/menicaid6_kKPg4qjo8.png?updatedAt=1719819011595" 
+                  src="https://plus.unsplash.com/premium_photo-1674581215484-e6242a37c51e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2VkZGluZ3xlbnwwfDF8MHx8fDA%3D" 
                   alt="" 
                   loading="lazy" 
                   className="border-4 border-white shadow-lg"
@@ -1585,7 +1585,7 @@ const Cover: React.FC = () => {
               </div>
               <div className="col-start-3 transform scale-150 rotate-6 translate-x-2 translate-y-15 z-30">
                 <img 
-                  src="https://ik.imagekit.io/vtvggda66/menicaid6_fCBOfyS-Y.png?updatedAt=1719819007743" 
+                  src="https://plus.unsplash.com/premium_photo-1674581215484-e6242a37c51e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2VkZGluZ3xlbnwwfDF8MHx8fDA%3D" 
                   alt="" 
                   loading="lazy" 
                   className="border-4 border-white shadow-lg"
@@ -1594,7 +1594,7 @@ const Cover: React.FC = () => {
               </div>
               <div className="transform scale-150 translate-y-11" >
                 <img 
-                  src="https://ik.imagekit.io/vtvggda66/menicaid6_KDeRGtWBR.png?updatedAt=1719819004269" 
+                  src="https://plus.unsplash.com/premium_photo-1674581215484-e6242a37c51e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2VkZGluZ3xlbnwwfDF8MHx8fDA%3D" 
                   alt="" 
                   loading="lazy" 
                   className="border-4 border-white shadow-lg"
@@ -1603,7 +1603,7 @@ const Cover: React.FC = () => {
               </div>
               <div className="transform translate-y-24 scale-150" >
                 <img 
-                  src="https://ik.imagekit.io/vtvggda66/menicaid6_6k7fNNyhm.png?updatedAt=1719819000408" 
+                  src="https://plus.unsplash.com/premium_photo-1674581215484-e6242a37c51e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2VkZGluZ3xlbnwwfDF8MHx8fDA%3D" 
                   alt="" 
                   loading="lazy" 
                   className="border-4 border-white shadow-lg"
@@ -1612,7 +1612,7 @@ const Cover: React.FC = () => {
               </div>
               <div className="row-start-1 col-start-2 col-span-2 transform translate-x-5 translate-y-4 scale-100" >
                 <img 
-                  src="https://ik.imagekit.io/vtvggda66/menicaid6_ogOCt64bZ.png?updatedAt=1719818997426" 
+                  src="https://plus.unsplash.com/premium_photo-1674581215484-e6242a37c51e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2VkZGluZ3xlbnwwfDF8MHx8fDA%3D" 
                   alt="" 
                   loading="lazy" 
                   className="border-4 border-white shadow-lg"
