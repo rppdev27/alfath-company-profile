@@ -1383,9 +1383,9 @@ const Cover: React.FC = () => {
           </div>
         </div>
         {/* Bottom Decoration Image */}
-        <div className="mx-auto mb-[-112px] w-1/2" data-aos="fade-in">
+        {/*<div className="mx-auto mb-[-112px] w-1/2" data-aos="fade-in">
           <img src="https://asset.menica.pro/menicav4/mandala-navy1-B.svg" alt="Bottom Decoration" className="rotate-180 animate-spin-slow" />
-        </div>
+        </div>*/}
       </div>
 
       <div className="h-auto sm:min-h-screen sm:h-auto relative flex justify-start max-w-[451px] whitespace-pre-line mx-auto flex-col bg-[#152443] shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]"
