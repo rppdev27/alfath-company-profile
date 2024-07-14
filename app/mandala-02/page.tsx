@@ -1381,10 +1381,7 @@ const Cover: React.FC = () => {
             </div>
             </div>
           </div>
-          
-          
         </div>
-        
         {/* Bottom Decoration Image */}
         <div className="mx-auto mb-[-112px] w-1/2" data-aos="fade-in">
           <img src="https://asset.menica.pro/menicav4/mandala-navy1-B.svg" alt="Bottom Decoration" className="rotate-180 animate-spin-slow" />
